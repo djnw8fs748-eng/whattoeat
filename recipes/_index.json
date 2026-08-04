@@ -210,6 +210,12 @@
     "file": "sheet-pan.json"
   },
   {
+    "title": "Miso Salmon with Sesame Greens",
+    "category": "Sheet-Pan",
+    "time": 20,
+    "file": "sheet-pan.json"
+  },
+  {
     "title": "Tomato & Lentil Soup",
     "category": "Soup",
     "time": 30,
@@ -354,6 +360,18 @@
     "file": "mexican.json"
   },
   {
+    "title": "Blackened Salmon Tacos",
+    "category": "Mexican",
+    "time": 20,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Chicken Enchiladas",
+    "category": "Mexican",
+    "time": 35,
+    "file": "mexican.json"
+  },
+  {
     "title": "Sausage & Bean Casserole",
     "category": "Casserole",
     "time": 35,
@@ -369,6 +387,12 @@
     "title": "One-Pot Chicken & Chickpea Stew",
     "category": "Casserole",
     "time": 35,
+    "file": "casserole.json"
+  },
+  {
+    "title": "Creamy Beef Mince Stroganoff",
+    "category": "Casserole",
+    "time": 25,
     "file": "casserole.json"
   },
   {
@@ -403,6 +427,12 @@
   },
   {
     "title": "Chicken Noodle Stir-Fry",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
+  },
+  {
+    "title": "Sticky Sesame Chicken Noodles",
     "category": "Noodles",
     "time": 20,
     "file": "noodles.json"
