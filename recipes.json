@@ -1597,5 +1597,121 @@
       "Top with the grated cheddar and jalapeños if using.",
       "Bake or grill for 5-8 minutes until the cheese has melted. Serve with salsa and soured cream."
     ]
+  },
+  {
+    "title": "Sticky Sesame Chicken Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Juicy chicken and noodles tossed in a sticky sesame-soy glaze, ready faster than delivery.",
+    "ingredients": [
+      "2 chicken breasts, sliced thin",
+      "2 nests medium egg noodles",
+      "2 tbsp soy sauce",
+      "1 tbsp honey",
+      "1 tbsp sesame oil",
+      "2 cloves garlic, minced",
+      "1 tsp grated ginger",
+      "1 tbsp sesame seeds",
+      "2 spring onions, sliced"
+    ],
+    "steps": [
+      "Cook the noodles according to packet instructions, then drain and set aside.",
+      "Heat the sesame oil in a large pan or wok and stir-fry the chicken for 5-6 minutes until golden and cooked through.",
+      "Add the garlic and ginger and cook for 1 minute.",
+      "Stir in the soy sauce and honey and let it bubble into a sticky glaze, coating the chicken.",
+      "Toss through the noodles until well coated, then scatter with sesame seeds and spring onions to serve."
+    ]
+  },
+  {
+    "title": "Blackened Salmon Tacos",
+    "category": "Mexican",
+    "time": 20,
+    "teaser": "Spiced salmon fillets flaked into warm tortillas with a quick lime slaw.",
+    "ingredients": [
+      "2 salmon fillets",
+      "1 tsp smoked paprika",
+      "1/2 tsp cumin",
+      "1/2 tsp chilli powder",
+      "4 small tortillas",
+      "1/4 red cabbage, shredded",
+      "1 lime, juiced",
+      "2 tbsp soured cream",
+      "Fresh coriander, chopped"
+    ],
+    "steps": [
+      "Mix the paprika, cumin, and chilli powder and rub over the salmon fillets.",
+      "Pan-fry the salmon skin-side down for 4-5 minutes, then flip and cook for 2-3 minutes more until just cooked through. Flake into large pieces.",
+      "Toss the cabbage with half the lime juice and a pinch of salt.",
+      "Warm the tortillas in a dry pan or microwave.",
+      "Fill with the slaw and flaked salmon, top with soured cream, coriander, and a squeeze of the remaining lime."
+    ]
+  },
+  {
+    "title": "Creamy Beef Mince Stroganoff",
+    "category": "Comfort Food",
+    "time": 25,
+    "teaser": "A speedy mince twist on stroganoff, finished with a paprika soured cream sauce.",
+    "ingredients": [
+      "400g beef mince",
+      "1 onion, sliced",
+      "1 red bell pepper, sliced",
+      "2 tsp smoked paprika",
+      "1 tbsp tomato purée",
+      "150ml soured cream",
+      "200ml beef stock",
+      "Rice or pasta, to serve"
+    ],
+    "steps": [
+      "Fry the onion and pepper in a little oil for 4-5 minutes until softened.",
+      "Add the mince and cook, breaking it up, until browned all over.",
+      "Stir in the paprika and tomato purée and cook for 1 minute.",
+      "Pour in the stock, bring to a simmer, and cook for 8-10 minutes until slightly reduced.",
+      "Take off the heat and stir through the soured cream. Season to taste and serve over rice or pasta."
+    ]
+  },
+  {
+    "title": "Chicken Enchiladas",
+    "category": "Mexican",
+    "time": 30,
+    "teaser": "Shredded chicken and cheese rolled into tortillas and baked under a smoky tomato sauce.",
+    "ingredients": [
+      "2 cooked chicken breasts, shredded",
+      "4 flour tortillas",
+      "1 tin (400g) chopped tomatoes",
+      "1 tsp smoked paprika",
+      "1 tsp cumin",
+      "1 clove garlic, minced",
+      "120g cheddar, grated",
+      "Fresh coriander, to serve"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Simmer the tomatoes, paprika, cumin, and garlic in a pan for 5 minutes to make a quick sauce.",
+      "Mix the shredded chicken with a few spoonfuls of the sauce, then roll into the tortillas and place in an ovenproof dish.",
+      "Pour the remaining sauce over the top and scatter with cheddar.",
+      "Bake for 15 minutes until the cheese is melted and bubbling. Scatter with coriander to serve."
+    ]
+  },
+  {
+    "title": "Miso Salmon with Sesame Greens",
+    "category": "Sheet-Pan",
+    "time": 20,
+    "teaser": "Sticky miso-glazed salmon roasted with quick sesame greens, on the table in 20 minutes.",
+    "ingredients": [
+      "2 salmon fillets",
+      "1 tbsp miso paste",
+      "1 tbsp honey",
+      "1 tsp soy sauce",
+      "150g tenderstem broccoli or greens",
+      "1 tsp sesame oil",
+      "1 tsp sesame seeds"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Mix the miso, honey, and soy sauce and brush over the salmon fillets.",
+      "Place the salmon on a lined tray with the greens tossed in sesame oil alongside.",
+      "Roast for 12-15 minutes until the salmon is cooked through and the greens are tender.",
+      "Scatter with sesame seeds and serve."
+    ]
   }
 ]
