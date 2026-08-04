@@ -6,8 +6,9 @@ Repo: https://github.com/djnw8fs748-eng/whattoeat
 
 ## How the pieces fit together
 
-- **`index.html`** — the recipe page itself.
-- **`Dockerfile`** — instructions for turning that HTML file into a runnable container image (a tiny nginx web server with the file baked in).
+- **`index.html`** — the page's structure, styling, and logic. It doesn't contain the recipes themselves — it fetches `recipes.json` when the page loads.
+- **`recipes.json`** — just the recipe data: a plain list of objects (title, category, time, ingredients, steps). This is the *only* file that needs editing to add, remove, or change recipes — by you or by an automated agent.
+- **`Dockerfile`** — instructions for turning those two files into a runnable container image (a tiny nginx web server with both baked in).
 - **`.github/workflows/docker-publish.yml`** — tells GitHub to build that image and publish it to GitHub's container registry (GHCR) every time you push to `main`. You never run this by hand.
 - **`docker-compose.yml`** — what you paste into Portainer to actually run the published image.
 
@@ -22,28 +23,9 @@ Repo: https://github.com/djnw8fs748-eng/whattoeat
 
 **1. The GitHub repo**
 
-Already created: [`djnw8fs748-eng/whattoeat`](https://github.com/djnw8fs748-eng/whattoeat) — it currently has just a README in it, so we'll add these files alongside it.
+Already created: [`djnw8fs748-eng/whattoeat`](https://github.com/djnw8fs748-eng/whattoeat).
 
-**2. Push this folder's contents to it**
-
-Since the repo already exists with a commit in it, clone it first rather than starting a fresh repo:
-
-```bash
-git clone https://github.com/djnw8fs748-eng/whattoeat.git
-```
-
-Then copy `index.html`, `Dockerfile`, `docker-compose.yml`, and the `.github` folder from this download into the cloned `whattoeat` folder (overwrite the existing README only if you want to replace it — otherwise just add these alongside it), then:
-
-```bash
-cd whattoeat
-git add .
-git commit -m "Add recipe catalogue and Docker build"
-git push
-```
-
-(If you haven't set up `gh auth login` or a credential helper, GitHub will prompt you to authenticate the first time you push — follow its instructions.)
-
-**3. Watch it build**
+**2. Watch it build**
 
 Go to the **Actions** tab on the repo. You'll see "Build and publish Docker image" running. Once it's green, your image is live at:
 
@@ -51,22 +33,35 @@ Go to the **Actions** tab on the repo. You'll see "Build and publish Docker imag
 ghcr.io/djnw8fs748-eng/whattoeat:latest
 ```
 
-**4. If the repo is private**
+**3. If the repo is private**
 
 By default, a package built from a private repo is also private, which means Portainer would need to authenticate to pull it. Easiest fix: go to your GitHub profile → **Packages** → click the `whattoeat` package → **Package settings** → change visibility to **Public**. The image itself contains nothing sensitive (just the HTML page), so this is generally fine even if the repo stays private.
 
 ## Deploying it
 
-In Portainer: **Stacks → Add stack**, paste in `docker-compose.yml` from this folder, and deploy — the image name is already set to `ghcr.io/djnw8fs748-eng/whattoeat:latest`, no username swap needed.
+In Portainer: **Stacks → Add stack**, paste in `docker-compose.yml` from this repo, and deploy — the image name is already set to `ghcr.io/djnw8fs748-eng/whattoeat:latest`, no username swap needed.
 
 Then visit `http://docker.dom.local:8090` (or wherever you pointed it) to see the page. Add an Nginx Proxy Manager proxy host if you want it on a subdomain like `whattoeat.domlittler.com` instead — point it at the same host and the 8090 port.
 
 ## Updating the recipes later
 
-1. Edit `index.html` in this folder.
-2. `git add . && git commit -m "Update recipes" && git push`
-3. GitHub Actions rebuilds and republishes the image automatically (a minute or two).
+1. Edit `recipes.json` only — `index.html` never needs to change for a recipe update. Each entry follows this shape:
+
+   ```json
+   {
+     "title": "Recipe Name",
+     "category": "Pasta",
+     "time": 20,
+     "teaser": "One sentence describing the dish.",
+     "ingredients": ["200g pasta", "..."],
+     "steps": ["First step.", "Second step.", "..."]
+   }
+   ```
+
+2. `git add recipes.json && git commit -m "Update recipes" && git push` (or edit directly on GitHub).
+3. GitHub Actions rebuilds and republishes the image automatically (a minute or two) — it copies whatever's in `recipes.json` at push time, so no other step is needed there.
 4. In Portainer, go to the `recipes` stack and hit **Update the stack** (or **Pull and redeploy**) to grab the new image and restart the container with it.
 
-That last step is the only manual part — Portainer won't automatically notice a new image unless you tell it to check, though tools like Watchtower (which I know you already run in your setup) can automate that too if you'd rather not do it by hand.
+That last step is the only manual part — Portainer won't automatically notice a new image unless you tell it to check, though tools like Watchtower can automate that too if you'd rather not do it by hand.
 
+This split is also what makes a scheduled/automated update job practical: an agent just needs to read `recipes.json`, append new entries in the same shape, and push — it never has to parse or touch the page's HTML/CSS/JS to do it.
