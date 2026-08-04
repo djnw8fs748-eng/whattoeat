@@ -1,0 +1,272 @@
+[
+  {
+    "title": "Garlic Butter Pasta with Parmesan",
+    "category": "Pasta",
+    "time": 15,
+    "teaser": "A five-ingredient pantry pasta that tastes far fancier than the effort involved.",
+    "ingredients": [
+      "200g spaghetti or linguine",
+      "3 tbsp butter",
+      "4 cloves garlic, minced",
+      "50g parmesan, grated",
+      "Salt and black pepper",
+      "Fresh parsley, chopped (optional)"
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Melt the butter in the same pot over low heat and add the garlic. Cook for 1 minute until fragrant, not browned.",
+      "Tip the pasta back in with a splash of the reserved water and toss well.",
+      "Stir in the parmesan until it melts into a light sauce, adding more water if it looks dry.",
+      "Season with salt and pepper and scatter parsley over the top."
+    ]
+  },
+  {
+    "title": "One-Pan Tomato & Basil Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "teaser": "The pasta cooks straight in the sauce, so there's only one pot to wash.",
+    "ingredients": [
+      "250g short pasta (penne or fusilli)",
+      "1 tin (400g) chopped tomatoes",
+      "500ml vegetable stock",
+      "2 cloves garlic, minced",
+      "1 tbsp olive oil",
+      "Handful fresh basil, torn",
+      "Grated parmesan to serve"
+    ],
+    "steps": [
+      "Heat the oil in a large pot and soften the garlic for 30 seconds.",
+      "Add the tomatoes, stock, and pasta, and stir well.",
+      "Bring to a simmer and cook uncovered, stirring often, until the pasta is tender and most of the liquid has absorbed (about 12-15 minutes).",
+      "Stir in most of the basil and season to taste.",
+      "Serve topped with parmesan and the remaining basil."
+    ]
+  },
+  {
+    "title": "Creamy Chicken & Bacon Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Chicken, bacon, and a light cream sauce — a firm favourite for a reason.",
+    "ingredients": [
+      "200g pasta (tagliatelle or penne)",
+      "1 chicken breast, diced",
+      "3 rashers bacon, chopped",
+      "150ml single cream",
+      "2 cloves garlic, minced",
+      "Grated parmesan",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions.",
+      "Meanwhile, fry the bacon in a pan until starting to crisp, then add the chicken and cook until golden and cooked through.",
+      "Add the garlic and cook for 1 more minute.",
+      "Pour in the cream, season, and simmer for 2-3 minutes until slightly thickened.",
+      "Drain the pasta and toss through the sauce with a little parmesan."
+    ]
+  },
+  {
+    "title": "Sausage & Pepper Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "teaser": "Sausages, peppers, and a tomato sauce — hearty and simple.",
+    "ingredients": [
+      "4 pork sausages",
+      "1 bell pepper, sliced",
+      "1 onion, sliced",
+      "1 tin (400g) chopped tomatoes",
+      "250g pasta",
+      "1 tsp dried oregano",
+      "Olive oil"
+    ],
+    "steps": [
+      "Squeeze the sausage meat out of the skins into small chunks and fry in a little oil until browned.",
+      "Add the onion and pepper and cook for 5 minutes until softened.",
+      "Pour in the tomatoes and oregano, season, and simmer for 10 minutes.",
+      "Meanwhile, cook the pasta according to packet instructions and drain.",
+      "Toss the pasta through the sauce and serve."
+    ]
+  },
+  {
+    "title": "Tuna & Sweetcorn Pasta Bake",
+    "category": "Pasta",
+    "time": 35,
+    "teaser": "A store-cupboard bake that kids and adults both tend to like.",
+    "ingredients": [
+      "250g pasta",
+      "2 tins tuna, drained",
+      "1 tin sweetcorn, drained",
+      "200ml crème fraîche or cream",
+      "100g cheddar, grated",
+      "1 tsp mustard (optional)"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Cook the pasta until just tender, then drain.",
+      "Mix the pasta with the tuna, sweetcorn, crème fraîche, and mustard in an ovenproof dish.",
+      "Top with the grated cheddar.",
+      "Bake for 15-20 minutes until golden and bubbling."
+    ]
+  },
+  {
+    "title": "Pesto Pasta with Cherry Tomatoes",
+    "category": "Pasta",
+    "time": 12,
+    "teaser": "About as fast as dinner gets — jarred pesto, pasta, and fresh tomatoes.",
+    "ingredients": [
+      "200g pasta",
+      "3-4 tbsp basil pesto (jarred or homemade)",
+      "150g cherry tomatoes, halved",
+      "Handful of rocket or spinach (optional)",
+      "Grated parmesan"
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain, keeping a splash of the water.",
+      "Return the pasta to the pot off the heat and stir in the pesto and a splash of pasta water.",
+      "Fold in the cherry tomatoes and rocket if using.",
+      "Serve with parmesan on top."
+    ]
+  },
+  {
+    "title": "Simple Spaghetti Bolognese",
+    "category": "Pasta",
+    "time": 30,
+    "teaser": "The classic mince-and-tomato sauce that's always worth having in your back pocket.",
+    "ingredients": [
+      "400g beef mince",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tin (400g) chopped tomatoes",
+      "1 tbsp tomato purée",
+      "1 tsp dried oregano",
+      "250g spaghetti",
+      "Grated parmesan"
+    ],
+    "steps": [
+      "Fry the onion and garlic in a little oil for 4 minutes until soft.",
+      "Add the mince and cook, breaking it up, until browned all over.",
+      "Stir in the tomato purée, chopped tomatoes, and oregano, and simmer for 15-20 minutes, stirring occasionally.",
+      "Meanwhile, cook the spaghetti according to packet instructions and drain.",
+      "Toss the pasta through the sauce, or serve the sauce on top, with parmesan."
+    ]
+  },
+  {
+    "title": "Creamy Salmon & Spinach Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Pan-fried salmon flaked through a light cream and spinach sauce.",
+    "ingredients": [
+      "2 salmon fillets",
+      "200g pasta (tagliatelle or penne)",
+      "2 handfuls spinach",
+      "150ml single cream",
+      "1 clove garlic, minced",
+      "Salt and pepper",
+      "Grated parmesan"
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain.",
+      "Meanwhile, season the salmon and pan-fry skin-side down for 4-5 minutes, then flip and cook for 2-3 minutes more until just cooked through. Flake into large chunks.",
+      "In the same pan, soften the garlic for 30 seconds, then add the cream and spinach and simmer until the spinach wilts.",
+      "Fold the pasta and flaked salmon through the sauce.",
+      "Season to taste and serve with parmesan."
+    ]
+  },
+  {
+    "title": "Chipotle Beef & Pork Rigatoni",
+    "category": "Pasta",
+    "time": 30,
+    "teaser": "A smoky, chipotle-spiked mince and tomato sauce tossed through rigatoni, with wilted spinach and a peppery rocket topping.",
+    "ingredients": [
+      "180g rigatoni pasta",
+      "240g beef and pork mince",
+      "1 garlic clove, grated or crushed",
+      "20g chipotle paste (use less for a milder version)",
+      "1 cup tomato passata",
+      "10g beef stock paste (or 1 stock cube)",
+      "1 tsp sugar",
+      "100ml water",
+      "40g baby spinach",
+      "30g mature cheddar, grated",
+      "20g wild rocket",
+      "1 tsp olive oil, to finish",
+      "90g diced chorizo (optional)",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Cook the rigatoni in salted boiling water until tender, then drain, drizzle with a little oil, and set aside.",
+      "In a dry frying pan over medium-high heat, fry the mince (and chorizo, if using) until browned all over, breaking it up as it cooks.",
+      "Stir in the garlic and chipotle paste and cook for 1 minute.",
+      "Add the passata, stock paste, sugar, and water, and simmer for 5-6 minutes until thickened.",
+      "Add the spinach a handful at a time until wilted.",
+      "Fold the drained pasta and most of the cheddar through the sauce, adding a splash of water if it's too thick.",
+      "Serve topped with the remaining cheddar, the rocket, and a drizzle of olive oil."
+    ]
+  },
+  {
+    "title": "Salmon & Lemon Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "A lighter salmon pasta with lemon, garlic, and a splash of cream.",
+    "ingredients": [
+      "2 salmon fillets",
+      "200g pasta (linguine or tagliatelle)",
+      "1 lemon, zested and juiced",
+      "100ml single cream",
+      "1 clove garlic, minced",
+      "Olive oil",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain.",
+      "Season the salmon and pan-fry for 4-5 minutes per side until cooked through. Flake into chunks.",
+      "In the same pan, soften the garlic for 30 seconds, then add the cream, lemon zest, and juice.",
+      "Simmer for 1-2 minutes, then toss the pasta and flaked salmon through the sauce.",
+      "Season to taste and serve."
+    ]
+  },
+  {
+    "title": "Beef Meatballs in Tomato Sauce",
+    "category": "Pasta",
+    "time": 30,
+    "teaser": "Simple homemade meatballs simmered in a tomato sauce, served over pasta.",
+    "ingredients": [
+      "400g beef mince",
+      "1 egg",
+      "30g breadcrumbs",
+      "1 tin (400g) chopped tomatoes",
+      "1 clove garlic, minced",
+      "1 tsp dried oregano",
+      "250g spaghetti",
+      "Grated parmesan"
+    ],
+    "steps": [
+      "Mix the mince, egg, and breadcrumbs together and season well. Shape into small balls.",
+      "Fry the meatballs in a little oil until browned all over, then remove.",
+      "Add the garlic to the pan, then the tomatoes and oregano.",
+      "Return the meatballs to the sauce and simmer for 15 minutes until cooked through.",
+      "Meanwhile, cook the pasta, drain, and serve with the meatballs and sauce on top, finished with parmesan."
+    ]
+  },
+  {
+    "title": "Chicken Alfredo Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "A simple, creamy parmesan sauce tossed with pasta and pan-fried chicken.",
+    "ingredients": [
+      "2 chicken breasts, sliced",
+      "200g pasta (fettuccine or tagliatelle)",
+      "150ml single cream",
+      "50g parmesan, grated",
+      "2 cloves garlic, minced",
+      "Butter",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain.",
+      "Season the chicken and pan-fry in a little butter until golden and cooked through. Set aside.",
+      "In the same pan, soften the garlic for 30 seconds, then add the cream and parmesan and stir until melted into a sauce.",
+      "Toss the pasta through the sauce.",
+      "Slice the chicken and serve on top."
+    ]
+  }
+]

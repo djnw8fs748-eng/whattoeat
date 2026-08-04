@@ -1,0 +1,141 @@
+[
+  {
+    "title": "Halloumi Wrap with Sweet Chilli",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "Fried halloumi, salad, and sweet chilli sauce rolled into a wrap.",
+    "ingredients": [
+      "1 block halloumi, sliced",
+      "2 large tortilla wraps",
+      "Handful lettuce, shredded",
+      "Sweet chilli sauce",
+      "Olive oil"
+    ],
+    "steps": [
+      "Fry the halloumi slices in a little oil until golden on both sides, about 2 minutes per side.",
+      "Warm the tortillas briefly if you like.",
+      "Layer the lettuce and halloumi onto the wraps.",
+      "Drizzle with sweet chilli sauce, roll up, and serve."
+    ]
+  },
+  {
+    "title": "Chicken Caesar Wrap",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "A lunch-counter classic that works just as well for dinner.",
+    "ingredients": [
+      "1 cooked chicken breast, sliced (or leftover roast chicken)",
+      "2 large tortilla wraps",
+      "Handful romaine or cos lettuce, shredded",
+      "3 tbsp caesar dressing",
+      "2 tbsp parmesan, grated"
+    ],
+    "steps": [
+      "Toss the lettuce with the caesar dressing and parmesan.",
+      "Lay the chicken over each wrap.",
+      "Top with the dressed lettuce.",
+      "Roll up tightly and slice in half to serve."
+    ]
+  },
+  {
+    "title": "Falafel Wrap with Hummus",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "Shop-bought falafel and hummus make this a five-minute assembly job.",
+    "ingredients": [
+      "6-8 falafel (shop-bought or homemade)",
+      "2 large tortilla wraps or pitta",
+      "3 tbsp hummus",
+      "Handful lettuce, shredded",
+      "Few slices cucumber and tomato"
+    ],
+    "steps": [
+      "Warm the falafel according to packet instructions.",
+      "Spread hummus over the wraps.",
+      "Layer in the lettuce, cucumber, tomato, and falafel.",
+      "Roll up and serve, or wrap in foil to eat on the go."
+    ]
+  },
+  {
+    "title": "BLT Sandwich",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "Bacon, lettuce, and tomato — a sandwich that never needs improving.",
+    "ingredients": [
+      "6 rashers bacon",
+      "4 slices bread",
+      "Handful lettuce",
+      "1 tomato, sliced",
+      "Mayonnaise"
+    ],
+    "steps": [
+      "Fry or grill the bacon until crisp.",
+      "Toast the bread if you like.",
+      "Spread mayonnaise on the bread.",
+      "Layer the bacon, lettuce, and tomato, then close the sandwich and slice in half."
+    ]
+  },
+  {
+    "title": "Chicken Shawarma Wrap",
+    "category": "Wrap",
+    "time": 25,
+    "teaser": "Spiced chicken strips with a garlic yoghurt sauce, rolled into a warm wrap.",
+    "ingredients": [
+      "2 chicken breasts, sliced",
+      "2 tsp shawarma or mixed spice (cumin, paprika, turmeric)",
+      "2 large tortilla wraps",
+      "3 tbsp yoghurt",
+      "1 clove garlic, minced",
+      "Shredded lettuce and sliced tomato",
+      "Olive oil"
+    ],
+    "steps": [
+      "Toss the chicken with the spices and a little oil.",
+      "Fry in a hot pan for 6-8 minutes until cooked through and lightly charred.",
+      "Mix the yoghurt with the garlic to make a quick sauce.",
+      "Warm the tortillas and layer with lettuce, tomato, and chicken.",
+      "Drizzle with the yoghurt sauce, roll up, and serve."
+    ]
+  },
+  {
+    "title": "BBQ Chicken Wraps",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "Shredded or sliced chicken tossed in barbecue sauce and rolled into a wrap.",
+    "ingredients": [
+      "1 cooked chicken breast, shredded (or leftover roast chicken)",
+      "3 tbsp barbecue sauce",
+      "2 large tortilla wraps",
+      "Handful lettuce, shredded",
+      "30g cheddar, grated"
+    ],
+    "steps": [
+      "Toss the shredded chicken with the barbecue sauce.",
+      "Warm the tortillas briefly if you like.",
+      "Layer the lettuce, chicken, and cheese onto the wraps.",
+      "Roll up tightly and slice in half to serve."
+    ]
+  },
+  {
+    "title": "Sloppy Joe Rolls",
+    "category": "Wrap",
+    "time": 25,
+    "teaser": "A messy, saucy mince filling piled into soft bread rolls.",
+    "ingredients": [
+      "400g beef mince",
+      "1 onion, diced",
+      "1 tin (400g) chopped tomatoes",
+      "1 tbsp Worcestershire sauce",
+      "1 tbsp brown sugar",
+      "1 tsp mustard",
+      "4 soft bread rolls"
+    ],
+    "steps": [
+      "Fry the onion in a little oil for 4 minutes until soft.",
+      "Add the mince and brown, breaking it up as it cooks.",
+      "Stir in the tomatoes, Worcestershire sauce, brown sugar, and mustard.",
+      "Simmer for 12-15 minutes until thickened.",
+      "Split the rolls and pile the mince mixture inside."
+    ]
+  }
+]

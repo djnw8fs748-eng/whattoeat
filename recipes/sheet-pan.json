@@ -1,0 +1,189 @@
+[
+  {
+    "title": "Sheet-Pan Chicken Fajitas",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "teaser": "Everything roasts on one tray, so prep and cleanup both take minutes.",
+    "ingredients": [
+      "2 chicken breasts, sliced into strips",
+      "2 bell peppers, sliced",
+      "1 onion, sliced",
+      "2 tsp fajita seasoning (or chilli powder, cumin, paprika)",
+      "2 tbsp olive oil",
+      "Tortillas and soured cream to serve"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the chicken, peppers, and onion with the oil and seasoning on a baking tray.",
+      "Spread everything into a single layer and roast for 20-25 minutes, stirring halfway, until the chicken is cooked through.",
+      "Warm the tortillas and serve everything alongside soured cream."
+    ]
+  },
+  {
+    "title": "Sheet-Pan Sausages & Roast Veg",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "teaser": "Sausages and vegetables roast together for an almost effortless dinner.",
+    "ingredients": [
+      "6 sausages",
+      "2 potatoes, chopped into chunks",
+      "1 red onion, wedged",
+      "1 courgette, sliced thick",
+      "2 tbsp olive oil",
+      "1 tsp dried herbs (mixed or rosemary)"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the potatoes with half the oil and roast for 10 minutes to get a head start.",
+      "Add the sausages, onion, and courgette to the tray, drizzle with the rest of the oil and the herbs.",
+      "Roast for 25-30 minutes, turning once, until the sausages are browned and the veg is tender."
+    ]
+  },
+  {
+    "title": "Honey Garlic Salmon with Broccoli",
+    "category": "Sheet-Pan",
+    "time": 20,
+    "teaser": "Salmon fillets glazed with honey and garlic, roasted alongside broccoli.",
+    "ingredients": [
+      "2 salmon fillets",
+      "1 head broccoli, cut into florets",
+      "2 tbsp honey",
+      "2 tbsp soy sauce",
+      "2 cloves garlic, minced",
+      "1 tbsp olive oil"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the broccoli with the olive oil and spread on a baking tray. Nestle the salmon among it.",
+      "Mix the honey, soy sauce, and garlic, and spoon over the salmon.",
+      "Roast for 12-15 minutes until the salmon is cooked through and the broccoli is tender."
+    ]
+  },
+  {
+    "title": "Roasted Veg & Halloumi Tray Bake",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "teaser": "A vegetarian tray bake where salty halloumi does most of the work.",
+    "ingredients": [
+      "1 block halloumi, sliced",
+      "1 courgette, chopped",
+      "1 red pepper, chopped",
+      "1 red onion, wedged",
+      "2 tbsp olive oil",
+      "1 tsp smoked paprika",
+      "Handful cherry tomatoes"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the vegetables with the oil and paprika on a baking tray and roast for 15 minutes.",
+      "Add the halloumi slices and cherry tomatoes to the tray.",
+      "Roast for a further 10 minutes until the halloumi is golden and the veg is soft."
+    ]
+  },
+  {
+    "title": "Lemon Herb Chicken Thighs & Potatoes",
+    "category": "Sheet-Pan",
+    "time": 40,
+    "teaser": "Skin-on chicken thighs roast with baby potatoes for a Sunday-dinner feel on a weeknight.",
+    "ingredients": [
+      "4 chicken thighs, skin on",
+      "400g baby potatoes, halved",
+      "1 lemon, sliced",
+      "2 tbsp olive oil",
+      "1 tsp dried thyme or mixed herbs",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the potatoes with half the oil and season, and spread on a baking tray.",
+      "Rub the chicken thighs with the remaining oil, herbs, salt, and pepper, and place among the potatoes with the lemon slices.",
+      "Roast for 35-40 minutes until the chicken is cooked through and the skin is crisp."
+    ]
+  },
+  {
+    "title": "Mince & Potato Hash",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "teaser": "A one-pan skillet hash of mince, potatoes, and onion that needs almost no watching.",
+    "ingredients": [
+      "400g beef mince",
+      "3 potatoes, diced small",
+      "1 onion, diced",
+      "1 tsp paprika",
+      "2 tbsp olive oil",
+      "Salt and pepper",
+      "Fried or poached egg to top (optional)"
+    ],
+    "steps": [
+      "Parboil the diced potatoes for 5 minutes, then drain well.",
+      "Heat the oil in a large frying pan and fry the potatoes until golden, about 8-10 minutes.",
+      "Push the potatoes to one side, add the mince and onion, and cook until the mince is browned.",
+      "Stir everything together with the paprika and season to taste.",
+      "Top with a fried or poached egg if you like."
+    ]
+  },
+  {
+    "title": "Honey Mustard Salmon Tray Bake",
+    "category": "Sheet-Pan",
+    "time": 25,
+    "teaser": "Salmon glazed with honey and mustard, roasted alongside potatoes and greens.",
+    "ingredients": [
+      "2 salmon fillets",
+      "300g baby potatoes, halved",
+      "Handful green beans",
+      "2 tbsp honey",
+      "1 tbsp wholegrain mustard",
+      "1 tbsp olive oil"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the potatoes with the oil and roast for 15 minutes.",
+      "Mix the honey and mustard together.",
+      "Add the salmon and green beans to the tray and brush the salmon with the honey mustard mix.",
+      "Roast for a further 10-12 minutes until the salmon is cooked through."
+    ]
+  },
+  {
+    "title": "Salmon & Asparagus Sheet Pan",
+    "category": "Sheet-Pan",
+    "time": 20,
+    "teaser": "A quick, light dinner that roasts in one tray with minimal washing up.",
+    "ingredients": [
+      "2 salmon fillets",
+      "1 bunch asparagus, trimmed",
+      "1 lemon, sliced",
+      "2 tbsp olive oil",
+      "2 cloves garlic, minced",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the asparagus with half the oil and spread on a baking tray.",
+      "Nestle the salmon among the asparagus and top with the garlic and lemon slices.",
+      "Drizzle with the remaining oil and season.",
+      "Roast for 12-15 minutes until the salmon is cooked through."
+    ]
+  },
+  {
+    "title": "Sticky Chicken Drumsticks with Sweet Potato Wedges",
+    "category": "Sheet-Pan",
+    "time": 40,
+    "teaser": "Honey-glazed drumsticks and sweet potato wedges roast together on one tray.",
+    "ingredients": [
+      "6 chicken drumsticks",
+      "2 sweet potatoes, cut into wedges",
+      "2 tbsp honey",
+      "2 tbsp soy sauce",
+      "1 clove garlic, minced",
+      "1 tbsp olive oil",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the sweet potato wedges with the olive oil and a pinch of salt, and spread on a baking tray.",
+      "Mix the honey, soy sauce, and garlic, and brush over the drumsticks.",
+      "Add the drumsticks to the tray among the wedges.",
+      "Roast for 35-40 minutes, turning once, until the chicken is cooked through and the skin is sticky and golden."
+    ]
+  }
+]

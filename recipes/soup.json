@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Tomato & Lentil Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A filling, budget-friendly soup that mostly looks after itself on the stove.",
+    "ingredients": [
+      "1 tin (400g) chopped tomatoes",
+      "150g red lentils, rinsed",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "800ml vegetable stock",
+      "1 tsp cumin",
+      "Olive oil"
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and garlic for 4-5 minutes.",
+      "Add the cumin, tomatoes, lentils, and stock.",
+      "Bring to a simmer and cook for 20-25 minutes, stirring occasionally, until the lentils are soft.",
+      "Blend if you'd like it smooth, or leave as is. Season to taste and serve with bread."
+    ]
+  },
+  {
+    "title": "Chicken Noodle Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A comforting classic that comes together with shop-bought stock and leftover or quick-cooked chicken.",
+    "ingredients": [
+      "1 litre chicken stock",
+      "150g cooked chicken, shredded (or 1 raw breast, sliced thin)",
+      "100g dried noodles or vermicelli",
+      "1 carrot, sliced",
+      "1 stick celery, sliced",
+      "1 tsp dried thyme"
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot.",
+      "Add the carrot and celery and cook for 5 minutes.",
+      "Add the chicken (raw or cooked) and thyme, and simmer for 8-10 minutes until the chicken is cooked through.",
+      "Add the noodles for the last 3-4 minutes of cooking, until tender. Season and serve."
+    ]
+  },
+  {
+    "title": "Creamy Broccoli & Potato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Blended into velvety smoothness — good for using up an ageing head of broccoli.",
+    "ingredients": [
+      "1 head broccoli, chopped",
+      "2 potatoes, peeled and chopped",
+      "1 onion, diced",
+      "800ml vegetable stock",
+      "100ml cream (optional)",
+      "Olive oil"
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion for 4 minutes.",
+      "Add the potatoes and stock, bring to a simmer, and cook for 10 minutes.",
+      "Add the broccoli and cook for a further 8-10 minutes until everything is tender.",
+      "Blend until smooth, stir in the cream if using, and season to taste."
+    ]
+  },
+  {
+    "title": "Spiced Carrot & Ginger Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Naturally sweet and warming, with just a handful of ingredients.",
+    "ingredients": [
+      "500g carrots, chopped",
+      "1 onion, diced",
+      "1 thumb ginger, grated",
+      "800ml vegetable stock",
+      "1 tsp ground coriander",
+      "Olive oil"
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and ginger for 4-5 minutes.",
+      "Add the carrots, coriander, and stock.",
+      "Simmer for 20 minutes until the carrots are soft.",
+      "Blend until smooth and season to taste."
+    ]
+  },
+  {
+    "title": "Chicken & Sweetcorn Chowder",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A creamy, filling soup that's closer to a stew — good on a cold evening.",
+    "ingredients": [
+      "2 chicken breasts, diced",
+      "1 tin sweetcorn, drained",
+      "2 potatoes, diced small",
+      "1 onion, diced",
+      "700ml chicken stock",
+      "100ml single cream",
+      "Olive oil"
+    ],
+    "steps": [
+      "Fry the onion in a little oil for 4 minutes.",
+      "Add the chicken and potatoes and cook for 3-4 minutes.",
+      "Pour in the stock, bring to a simmer, and cook for 15 minutes until the potatoes and chicken are cooked through.",
+      "Stir in the sweetcorn and cream, warm through, and season to taste."
+    ]
+  }
+]

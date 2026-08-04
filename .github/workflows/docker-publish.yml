@@ -24,6 +24,34 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
 
+      - name: Build recipes.json from the recipes/ category files
+        # The recipes/ folder is the source of truth (one small file per
+        # category, plus _index.json for quick lookups). This step just
+        # concatenates them into the single recipes.json the site fetches,
+        # so the browser still only ever makes one request.
+        run: |
+          python3 - <<'PYEOF'
+          import json
+
+          with open('recipes/_index.json') as f:
+              index = json.load(f)
+
+          seen_files = []
+          for entry in index:
+              if entry['file'] not in seen_files:
+                  seen_files.append(entry['file'])
+
+          recipes = []
+          for filename in seen_files:
+              with open(f'recipes/{filename}') as rf:
+                  recipes.extend(json.load(rf))
+
+          with open('recipes.json', 'w') as out:
+              json.dump(recipes, out, indent=2, ensure_ascii=False)
+
+          print(f"Built recipes.json with {len(recipes)} recipes from {len(seen_files)} category files")
+          PYEOF
+
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:

@@ -1,0 +1,89 @@
+[
+  {
+    "title": "Chicken & Broccoli Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "A reliable, veg-forward stir-fry with a simple soy-garlic sauce.",
+    "ingredients": [
+      "2 chicken breasts, sliced thin",
+      "1 head broccoli, cut into florets",
+      "3 cloves garlic, minced",
+      "3 tbsp soy sauce",
+      "1 tbsp honey",
+      "1 tsp cornflour mixed with 2 tbsp water",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Heat oil in a wok or large frying pan over high heat and stir-fry the chicken until cooked through, then set aside.",
+      "Add the broccoli to the pan with a splash of water, cover, and steam-fry for 3-4 minutes until just tender.",
+      "Add the garlic and cook for 30 seconds.",
+      "Return the chicken to the pan, add the soy sauce and honey, and toss.",
+      "Stir in the cornflour mixture and cook for 1 minute until the sauce thickens. Serve with rice."
+    ]
+  },
+  {
+    "title": "Beef & Pepper Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "Quick strips of beef with peppers in a glossy oyster sauce.",
+    "ingredients": [
+      "300g beef strips (or sliced sirloin)",
+      "2 bell peppers, sliced",
+      "1 onion, sliced",
+      "3 tbsp oyster sauce",
+      "1 tbsp soy sauce",
+      "2 cloves garlic, minced",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Heat oil in a wok over high heat and sear the beef quickly in batches until browned. Set aside.",
+      "Add the onion and peppers to the pan and stir-fry for 3-4 minutes.",
+      "Add the garlic and cook for 30 seconds.",
+      "Return the beef to the pan along with the oyster sauce and soy sauce.",
+      "Toss everything together for 1-2 minutes and serve with rice or noodles."
+    ]
+  },
+  {
+    "title": "Tofu & Vegetable Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "Crispy tofu cubes with whatever vegetables you have to hand.",
+    "ingredients": [
+      "1 block firm tofu, cubed and patted dry",
+      "2 cups mixed vegetables (carrot, pepper, mangetout, etc.)",
+      "3 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "2 cloves garlic, minced",
+      "1 tsp grated ginger",
+      "Cornflour for dusting"
+    ],
+    "steps": [
+      "Dust the tofu cubes lightly in cornflour and fry in oil until golden and crisp on most sides. Remove and set aside.",
+      "In the same pan, stir-fry the vegetables for 3-4 minutes until just tender.",
+      "Add the garlic and ginger and cook for 30 seconds.",
+      "Return the tofu to the pan, add the soy sauce and sesame oil, and toss to coat.",
+      "Serve over rice or noodles."
+    ]
+  },
+  {
+    "title": "Sweet Chilli Prawn Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 15,
+    "teaser": "Prawns cook in minutes, making this one of the fastest dinners here.",
+    "ingredients": [
+      "300g raw prawns",
+      "1 red pepper, sliced",
+      "3 tbsp sweet chilli sauce",
+      "1 tbsp soy sauce",
+      "2 cloves garlic, minced",
+      "Vegetable oil",
+      "Spring onion to garnish"
+    ],
+    "steps": [
+      "Heat oil in a pan over high heat and stir-fry the pepper for 2-3 minutes.",
+      "Add the garlic and prawns and cook for 2-3 minutes until the prawns turn pink and opaque.",
+      "Stir in the sweet chilli sauce and soy sauce and toss to coat.",
+      "Cook for 1 more minute, then garnish with spring onion and serve with rice."
+    ]
+  }
+]

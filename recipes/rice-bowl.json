@@ -1,0 +1,216 @@
+[
+  {
+    "title": "Egg Fried Rice",
+    "category": "Rice Bowl",
+    "time": 15,
+    "teaser": "The best use for leftover rice — fast, cheap, and endlessly adaptable.",
+    "ingredients": [
+      "300g cooked rice (day-old is best)",
+      "2 eggs, beaten",
+      "1 cup frozen peas and carrots",
+      "2 spring onions, sliced",
+      "3 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Heat oil in a wok over high heat, pour in the eggs, and scramble briefly. Remove and set aside.",
+      "Add a little more oil and stir-fry the frozen veg for 2-3 minutes until heated through.",
+      "Add the rice, breaking up any clumps, and stir-fry for 3-4 minutes.",
+      "Return the egg to the pan along with the soy sauce and sesame oil.",
+      "Toss everything together, top with spring onion, and serve."
+    ]
+  },
+  {
+    "title": "Chicken & Rice Bowl with Peanut Sauce",
+    "category": "Rice Bowl",
+    "time": 25,
+    "teaser": "Grilled chicken and rice tied together with a quick peanut butter sauce.",
+    "ingredients": [
+      "2 chicken breasts",
+      "300g cooked rice",
+      "3 tbsp peanut butter",
+      "2 tbsp soy sauce",
+      "1 tbsp lime juice",
+      "1 tsp honey",
+      "Splash of hot water to loosen",
+      "Cucumber, sliced, to serve"
+    ],
+    "steps": [
+      "Season the chicken and grill or pan-fry until cooked through, then slice.",
+      "Whisk the peanut butter, soy sauce, lime juice, and honey together, adding hot water until pourable.",
+      "Serve the chicken over rice, drizzled with the peanut sauce.",
+      "Add sliced cucumber on the side."
+    ]
+  },
+  {
+    "title": "Teriyaki Chicken Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 20,
+    "teaser": "A sticky homemade teriyaki glaze over chicken and rice.",
+    "ingredients": [
+      "2 chicken thighs or breasts, sliced",
+      "300g cooked rice",
+      "3 tbsp soy sauce",
+      "2 tbsp honey",
+      "1 tbsp rice vinegar (or any vinegar)",
+      "1 clove garlic, minced",
+      "Sesame seeds to garnish"
+    ],
+    "steps": [
+      "Pan-fry the chicken in a little oil until cooked through and lightly browned.",
+      "Mix the soy sauce, honey, vinegar, and garlic in a small bowl.",
+      "Pour the sauce over the chicken and simmer for 2-3 minutes until it thickens and coats the chicken.",
+      "Serve over rice with sesame seeds scattered on top."
+    ]
+  },
+  {
+    "title": "Black Bean & Rice Burrito Bowl",
+    "category": "Rice Bowl",
+    "time": 20,
+    "teaser": "A vegetarian bowl built from tinned staples and whatever fresh veg you have.",
+    "ingredients": [
+      "300g cooked rice",
+      "1 tin black beans, drained and rinsed",
+      "1 tin sweetcorn, drained",
+      "1 avocado, sliced",
+      "Handful cherry tomatoes, halved",
+      "Lime juice",
+      "1 tsp cumin"
+    ],
+    "steps": [
+      "Warm the black beans with the cumin in a small pan for 3-4 minutes.",
+      "Divide the rice between bowls.",
+      "Top with the beans, sweetcorn, tomatoes, and avocado.",
+      "Squeeze lime juice over everything before serving."
+    ]
+  },
+  {
+    "title": "Chickpea & Spinach Curry Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 25,
+    "teaser": "A mild, quick curry that leans entirely on tinned and frozen basics.",
+    "ingredients": [
+      "1 tin chickpeas, drained and rinsed",
+      "2 handfuls spinach",
+      "1 tin (400g) chopped tomatoes",
+      "1 onion, diced",
+      "2 tsp curry powder",
+      "300g cooked rice",
+      "Olive oil"
+    ],
+    "steps": [
+      "Heat oil in a pan and soften the onion for 4-5 minutes.",
+      "Add the curry powder and cook for 30 seconds, then add the tomatoes and chickpeas.",
+      "Simmer for 10-12 minutes until slightly thickened.",
+      "Stir in the spinach until wilted, and serve over rice."
+    ]
+  },
+  {
+    "title": "Chicken & Chorizo Rice",
+    "category": "Rice Bowl",
+    "time": 30,
+    "teaser": "A one-pot Spanish-inspired rice dish with chicken and smoky chorizo.",
+    "ingredients": [
+      "2 chicken thighs, diced",
+      "100g chorizo, diced",
+      "1 onion, diced",
+      "1 red pepper, sliced",
+      "200g rice",
+      "500ml chicken stock",
+      "1 tsp smoked paprika"
+    ],
+    "steps": [
+      "Fry the chorizo in a dry pan for 2-3 minutes until it releases its oil.",
+      "Add the chicken and onion and cook for 5 minutes.",
+      "Stir in the pepper, rice, and paprika.",
+      "Pour in the stock, bring to a simmer, cover, and cook for 18-20 minutes until the rice is tender and the liquid absorbed."
+    ]
+  },
+  {
+    "title": "Chicken Fried Rice",
+    "category": "Rice Bowl",
+    "time": 20,
+    "teaser": "A heartier take on egg fried rice with strips of chicken added in.",
+    "ingredients": [
+      "1 chicken breast, diced small",
+      "300g cooked rice (day-old is best)",
+      "2 eggs, beaten",
+      "1 cup frozen peas and carrots",
+      "3 tbsp soy sauce",
+      "2 spring onions, sliced",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Stir-fry the chicken in a hot wok until cooked through, then set aside.",
+      "Push the chicken aside, pour in the eggs, and scramble briefly. Remove and set aside with the chicken.",
+      "Add the frozen veg and stir-fry for 2-3 minutes.",
+      "Add the rice, breaking up any clumps, and stir-fry for 3-4 minutes.",
+      "Return the chicken and egg to the pan with the soy sauce, toss together, and top with spring onion."
+    ]
+  },
+  {
+    "title": "Salmon Poke-Style Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 20,
+    "teaser": "A fresh, no-cook-required bowl if you use sushi-grade salmon, or lightly seared if you'd rather cook it through.",
+    "ingredients": [
+      "2 salmon fillets, cubed (sushi-grade if eating raw, or seared)",
+      "300g cooked rice",
+      "1 avocado, sliced",
+      "1 cucumber, diced",
+      "3 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "Sesame seeds to garnish"
+    ],
+    "steps": [
+      "If searing, cook the salmon cubes in a hot pan for 2-3 minutes until just cooked through. If using sushi-grade salmon, this step can be skipped.",
+      "Toss the salmon with the soy sauce and sesame oil.",
+      "Divide the rice between bowls.",
+      "Top with the salmon, avocado, and cucumber.",
+      "Scatter with sesame seeds and serve."
+    ]
+  },
+  {
+    "title": "Chicken Fajita Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 25,
+    "teaser": "All the flavours of fajitas, served over rice instead of in a wrap.",
+    "ingredients": [
+      "2 chicken breasts, sliced",
+      "1 bell pepper, sliced",
+      "1 onion, sliced",
+      "2 tsp fajita seasoning",
+      "300g cooked rice",
+      "Soured cream and lime to serve"
+    ],
+    "steps": [
+      "Toss the chicken with the fajita seasoning.",
+      "Fry the chicken, pepper, and onion together in a little oil for 8-10 minutes until the chicken is cooked through and everything is lightly charred.",
+      "Divide the rice between bowls.",
+      "Top with the chicken and vegetables, and finish with soured cream and a squeeze of lime."
+    ]
+  },
+  {
+    "title": "Cajun Salmon Rice Bowl with Sweetcorn",
+    "category": "Rice Bowl",
+    "time": 20,
+    "teaser": "Blackened cajun salmon over rice with sweetcorn and a squeeze of lime.",
+    "ingredients": [
+      "2 salmon fillets",
+      "2 tsp cajun seasoning",
+      "300g cooked rice",
+      "1 tin sweetcorn, drained",
+      "1 lime",
+      "1 tbsp olive oil",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Rub the salmon with the cajun seasoning.",
+      "Heat the oil in a pan and pan-fry the salmon for 4-5 minutes per side until cooked through and blackened at the edges.",
+      "Warm the sweetcorn in a small pan for 2-3 minutes.",
+      "Divide the rice between bowls and top with the sweetcorn.",
+      "Flake the salmon over the top and finish with a squeeze of lime."
+    ]
+  }
+]
