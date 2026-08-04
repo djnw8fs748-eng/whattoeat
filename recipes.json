@@ -1488,5 +1488,114 @@
       "Toss the pasta through the sauce.",
       "Slice the chicken and serve on top."
     ]
+  },
+  {
+    "title": "Sticky Chicken Drumsticks with Sweet Potato Wedges",
+    "category": "Sheet-Pan",
+    "time": 40,
+    "teaser": "Honey-glazed drumsticks and sweet potato wedges roast together on one tray.",
+    "ingredients": [
+      "6 chicken drumsticks",
+      "2 sweet potatoes, cut into wedges",
+      "2 tbsp honey",
+      "2 tbsp soy sauce",
+      "1 clove garlic, minced",
+      "1 tbsp olive oil",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the sweet potato wedges with the olive oil and a pinch of salt, and spread on a baking tray.",
+      "Mix the honey, soy sauce, and garlic, and brush over the drumsticks.",
+      "Add the drumsticks to the tray among the wedges.",
+      "Roast for 35-40 minutes, turning once, until the chicken is cooked through and the skin is sticky and golden."
+    ]
+  },
+  {
+    "title": "Cajun Salmon Rice Bowl with Sweetcorn",
+    "category": "Rice Bowl",
+    "time": 20,
+    "teaser": "Blackened cajun salmon over rice with sweetcorn and a squeeze of lime.",
+    "ingredients": [
+      "2 salmon fillets",
+      "2 tsp cajun seasoning",
+      "300g cooked rice",
+      "1 tin sweetcorn, drained",
+      "1 lime",
+      "1 tbsp olive oil",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Rub the salmon with the cajun seasoning.",
+      "Heat the oil in a pan and pan-fry the salmon for 4-5 minutes per side until cooked through and blackened at the edges.",
+      "Warm the sweetcorn in a small pan for 2-3 minutes.",
+      "Divide the rice between bowls and top with the sweetcorn.",
+      "Flake the salmon over the top and finish with a squeeze of lime."
+    ]
+  },
+  {
+    "title": "Sloppy Joe Rolls",
+    "category": "Wrap",
+    "time": 25,
+    "teaser": "A messy, saucy mince filling piled into soft bread rolls.",
+    "ingredients": [
+      "400g beef mince",
+      "1 onion, diced",
+      "1 tin (400g) chopped tomatoes",
+      "1 tbsp Worcestershire sauce",
+      "1 tbsp brown sugar",
+      "1 tsp mustard",
+      "4 soft bread rolls"
+    ],
+    "steps": [
+      "Fry the onion in a little oil for 4 minutes until soft.",
+      "Add the mince and brown, breaking it up as it cooks.",
+      "Stir in the tomatoes, Worcestershire sauce, brown sugar, and mustard.",
+      "Simmer for 12-15 minutes until thickened.",
+      "Split the rolls and pile the mince mixture inside."
+    ]
+  },
+  {
+    "title": "One-Pot Chicken & Chickpea Stew",
+    "category": "Casserole",
+    "time": 35,
+    "teaser": "A simple, warming stew that leans on tinned chickpeas and tomatoes.",
+    "ingredients": [
+      "2 chicken thighs, diced",
+      "1 tin chickpeas, drained and rinsed",
+      "1 tin (400g) chopped tomatoes",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tsp smoked paprika",
+      "Chicken stock as needed"
+    ],
+    "steps": [
+      "Fry the onion and garlic in a little oil for 4-5 minutes.",
+      "Add the chicken and cook for 3-4 minutes until lightly browned.",
+      "Stir in the paprika, tomatoes, and chickpeas, adding a splash of stock if it looks dry.",
+      "Simmer for 20-25 minutes until the chicken is cooked through and the stew has thickened. Serve with bread or rice."
+    ]
+  },
+  {
+    "title": "Beef Mince Nachos",
+    "category": "Mexican",
+    "time": 20,
+    "teaser": "A tray of nachos loaded with spiced mince and melted cheese, ready to share.",
+    "ingredients": [
+      "300g beef mince",
+      "1 tsp cumin",
+      "1 tsp paprika",
+      "150g tortilla chips",
+      "100g cheddar, grated",
+      "Salsa and soured cream to serve",
+      "Sliced jalapeños (optional)"
+    ],
+    "steps": [
+      "Fry the mince with the cumin and paprika until browned, breaking it up as it cooks.",
+      "Preheat the oven to 200°C (fan 180°C) or use the grill.",
+      "Spread the tortilla chips on a baking tray and scatter over the mince.",
+      "Top with the grated cheddar and jalapeños if using.",
+      "Bake or grill for 5-8 minutes until the cheese has melted. Serve with salsa and soured cream."
+    ]
   }
 ]
