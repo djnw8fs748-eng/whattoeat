@@ -185,5 +185,27 @@
       "Add the drumsticks to the tray among the wedges.",
       "Roast for 35-40 minutes, turning once, until the chicken is cooked through and the skin is sticky and golden."
     ]
+  },
+  {
+    "title": "Miso Salmon with Sesame Greens",
+    "category": "Sheet-Pan",
+    "time": 20,
+    "teaser": "Salmon glazed with miso, roasted alongside quick sesame greens.",
+    "ingredients": [
+      "2 salmon fillets",
+      "2 tbsp miso paste",
+      "1 tbsp honey",
+      "1 tbsp soy sauce",
+      "2 heads pak choi (or a bag of greens)",
+      "1 tsp sesame oil",
+      "1 tsp sesame seeds"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Mix the miso, honey, and soy sauce, and brush over the salmon.",
+      "Place the salmon on a baking tray and roast for 10-12 minutes until cooked through.",
+      "Meanwhile, steam or stir-fry the greens with the sesame oil for 3-4 minutes until just wilted.",
+      "Serve the salmon over the greens, scattered with sesame seeds."
+    ]
   }
 ]
