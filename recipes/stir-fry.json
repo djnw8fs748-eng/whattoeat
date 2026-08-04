@@ -85,5 +85,52 @@
       "Stir in the sweet chilli sauce and soy sauce and toss to coat.",
       "Cook for 1 more minute, then garnish with spring onion and serve with rice."
     ]
+  },
+  {
+    "title": "Cashew Chicken Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "A takeaway favourite you can put together with pantry staples and a bag of cashews.",
+    "ingredients": [
+      "2 chicken breasts, diced",
+      "1 red pepper, sliced",
+      "60g roasted cashews",
+      "3 tbsp soy sauce",
+      "1 tbsp rice vinegar",
+      "1 tbsp honey",
+      "2 cloves garlic, minced",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Heat oil in a wok over high heat and stir-fry the chicken until browned and cooked through. Set aside.",
+      "Add the pepper to the pan and stir-fry for 2-3 minutes.",
+      "Add the garlic and cashews and cook for 30 seconds.",
+      "Return the chicken to the pan, add the soy sauce, rice vinegar, and honey, and toss to coat.",
+      "Cook for 1-2 minutes until glossy, then serve with rice."
+    ]
+  },
+  {
+    "title": "Prawn Pad Thai Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "A simplified, weeknight take on pad thai using flat rice noodles and a quick tangy sauce.",
+    "ingredients": [
+      "200g flat rice noodles",
+      "300g raw prawns",
+      "2 eggs, beaten",
+      "2 tbsp fish sauce",
+      "1 tbsp brown sugar",
+      "1 tbsp lime juice",
+      "2 cloves garlic, minced",
+      "Handful beansprouts",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Soak the rice noodles in boiling water according to packet instructions, then drain.",
+      "Heat oil in a wok over high heat and stir-fry the prawns until pink, about 2-3 minutes. Set aside.",
+      "Push everything aside, pour in the beaten eggs, and scramble until just set.",
+      "Add the garlic, noodles, fish sauce, brown sugar, and lime juice, and toss to coat.",
+      "Return the prawns to the pan with the beansprouts, toss for 1 minute, and serve."
+    ]
   }
 ]

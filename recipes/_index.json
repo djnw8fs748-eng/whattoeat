@@ -478,5 +478,35 @@
     "category": "Other",
     "time": 30,
     "file": "other.json"
+  },
+  {
+    "title": "Cashew Chicken Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Prawn Pad Thai Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Thai Green Chicken Curry",
+    "category": "Curry",
+    "time": 25,
+    "file": "curry.json"
+  },
+  {
+    "title": "Coconut Chickpea Curry",
+    "category": "Curry",
+    "time": 30,
+    "file": "curry.json"
+  },
+  {
+    "title": "Leek & Potato Soup",
+    "category": "Soup",
+    "time": 30,
+    "file": "soup.json"
   }
 ]

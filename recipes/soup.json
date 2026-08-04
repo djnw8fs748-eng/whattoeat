@@ -100,5 +100,25 @@
       "Pour in the stock, bring to a simmer, and cook for 15 minutes until the potatoes and chicken are cooked through.",
       "Stir in the sweetcorn and cream, warm through, and season to taste."
     ]
+  },
+  {
+    "title": "Leek & Potato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A classic, gently flavoured soup that blends into something silky with barely any effort.",
+    "ingredients": [
+      "2 leeks, sliced",
+      "3 potatoes, peeled and chopped",
+      "1 onion, diced",
+      "800ml vegetable stock",
+      "100ml cream (optional)",
+      "Olive oil"
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and leeks for 5 minutes.",
+      "Add the potatoes and stock, bring to a simmer, and cook for 15-18 minutes until the potatoes are soft.",
+      "Blend until smooth, stir in the cream if using, and season to taste.",
+      "Serve with crusty bread."
+    ]
   }
 ]

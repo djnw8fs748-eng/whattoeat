@@ -90,5 +90,50 @@
       "Add the salmon cubes and cook gently for 4-5 minutes until just cooked through.",
       "Stir in the spinach until wilted, and serve over rice."
     ]
+  },
+  {
+    "title": "Thai Green Chicken Curry",
+    "category": "Curry",
+    "time": 25,
+    "teaser": "A fragrant, coconut-based curry that comes together fast using shop-bought green curry paste.",
+    "ingredients": [
+      "2 chicken breasts, sliced",
+      "3 tbsp Thai green curry paste",
+      "1 tin (400ml) coconut milk",
+      "1 red pepper, sliced",
+      "1 tbsp fish sauce",
+      "Handful Thai basil or regular basil",
+      "Rice to serve"
+    ],
+    "steps": [
+      "Fry the curry paste in a little oil for 1 minute until fragrant.",
+      "Add the chicken and cook for 3-4 minutes until lightly coloured.",
+      "Pour in the coconut milk and simmer for 10 minutes.",
+      "Add the pepper and fish sauce, and simmer for a further 5 minutes until the chicken is cooked through.",
+      "Stir in the basil and serve with rice."
+    ]
+  },
+  {
+    "title": "Coconut Chickpea Curry",
+    "category": "Curry",
+    "time": 30,
+    "teaser": "A vegetarian curry that's mostly tinned and store-cupboard ingredients.",
+    "ingredients": [
+      "2 tins (400g each) chickpeas, drained",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 thumb ginger, grated",
+      "2 tsp curry powder",
+      "1 tin (400ml) coconut milk",
+      "1 tin (400g) chopped tomatoes",
+      "Rice to serve"
+    ],
+    "steps": [
+      "Fry the onion, garlic, and ginger in a little oil for 4-5 minutes.",
+      "Stir in the curry powder and cook for 1 minute.",
+      "Add the chopped tomatoes and coconut milk, and simmer for 10 minutes.",
+      "Add the chickpeas and simmer for a further 8-10 minutes until thickened.",
+      "Season to taste and serve with rice."
+    ]
   }
 ]
