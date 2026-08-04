@@ -44,5 +44,28 @@
       "Add the garlic, then return the chicken and noodles to the pan with the soy sauce and sesame oil.",
       "Toss everything together for 1-2 minutes and serve."
     ]
+  },
+  {
+    "title": "Sticky Sesame Chicken Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Chicken and egg noodles tossed in a sticky sesame-soy glaze.",
+    "ingredients": [
+      "2 chicken breasts, sliced",
+      "150g egg noodles",
+      "3 tbsp soy sauce",
+      "2 tbsp honey",
+      "1 tbsp sesame oil",
+      "2 cloves garlic, minced",
+      "1 tsp sesame seeds",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Cook the noodles according to packet instructions, drain, and set aside.",
+      "Stir-fry the chicken in a little vegetable oil over high heat until cooked through and lightly browned.",
+      "Add the garlic and cook for 30 seconds.",
+      "Stir in the soy sauce, honey, and sesame oil, and simmer for 1-2 minutes until sticky.",
+      "Toss the noodles through the chicken and sauce, and top with sesame seeds."
+    ]
   }
 ]
