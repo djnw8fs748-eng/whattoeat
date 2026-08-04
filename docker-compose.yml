@@ -3,7 +3,7 @@
 # Replace YOUR-USERNAME with your actual GitHub username.
 services:
   recipes:
-    image: ghcr.io/YOUR-USERNAME/recipe-catalogue:latest
+    image: ghcr.io/djnw8fs748-eng/recipe-catalogue:latest
     container_name: recipes
     restart: unless-stopped
     ports:
