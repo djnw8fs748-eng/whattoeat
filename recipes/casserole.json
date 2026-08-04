@@ -60,5 +60,27 @@
       "Stir in the paprika, tomatoes, and chickpeas, adding a splash of stock if it looks dry.",
       "Simmer for 20-25 minutes until the chicken is cooked through and the stew has thickened. Serve with bread or rice."
     ]
+  },
+  {
+    "title": "Creamy Beef Mince Stroganoff",
+    "category": "Casserole",
+    "time": 25,
+    "teaser": "A quicker mince twist on stroganoff, finished with a paprika soured cream sauce.",
+    "ingredients": [
+      "400g beef mince",
+      "1 onion, diced",
+      "1 bell pepper, sliced",
+      "1 tbsp smoked paprika",
+      "150ml soured cream",
+      "200ml beef stock",
+      "Rice or pasta to serve"
+    ],
+    "steps": [
+      "Fry the onion and pepper in a little oil for 4-5 minutes until softened.",
+      "Add the mince and brown, breaking it up as it cooks.",
+      "Stir in the paprika and beef stock and simmer for 8-10 minutes.",
+      "Take off the heat and stir in the soured cream.",
+      "Serve over rice or pasta."
+    ]
   }
 ]
