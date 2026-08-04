@@ -83,5 +83,49 @@
       "Top with the grated cheddar and jalapeños if using.",
       "Bake or grill for 5-8 minutes until the cheese has melted. Serve with salsa and soured cream."
     ]
+  },
+  {
+    "title": "Blackened Salmon Tacos",
+    "category": "Mexican",
+    "time": 20,
+    "teaser": "Spiced salmon and a quick lime slaw, piled into warm tortillas.",
+    "ingredients": [
+      "2 salmon fillets",
+      "2 tsp blackening or cajun seasoning",
+      "1/4 red cabbage, shredded",
+      "1 lime, juiced",
+      "2 tbsp soured cream or yoghurt",
+      "6 small tortillas",
+      "1 tbsp olive oil"
+    ],
+    "steps": [
+      "Rub the salmon with the blackening seasoning.",
+      "Heat the oil in a pan and pan-fry the salmon for 4-5 minutes per side until cooked through and blackened at the edges. Flake into chunks.",
+      "Toss the cabbage with the lime juice and soured cream to make a quick slaw.",
+      "Warm the tortillas.",
+      "Fill with the salmon and slaw and serve."
+    ]
+  },
+  {
+    "title": "Chicken Enchiladas",
+    "category": "Mexican",
+    "time": 35,
+    "teaser": "Shredded chicken rolled in tortillas, smothered in a smoky tomato sauce, and baked with cheese.",
+    "ingredients": [
+      "300g cooked chicken, shredded (or 2 chicken breasts, cooked and shredded)",
+      "8 small tortillas",
+      "1 tin (400g) chopped tomatoes",
+      "1 tbsp chipotle paste or smoked paprika",
+      "1 onion, diced",
+      "150g cheddar, grated",
+      "1 clove garlic, minced"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Fry the onion and garlic in a little oil for 4 minutes, then add the tomatoes and chipotle paste or paprika. Simmer for 8-10 minutes to make the sauce.",
+      "Mix a few spoonfuls of the sauce through the shredded chicken.",
+      "Divide the chicken between the tortillas, roll up, and place in an ovenproof dish.",
+      "Pour the remaining sauce over the top, scatter with cheese, and bake for 15-20 minutes until bubbling."
+    ]
   }
 ]
