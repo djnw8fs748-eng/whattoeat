@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Salmon Fishcakes",
+    "category": "Other",
+    "time": 30,
+    "teaser": "Homemade fishcakes using tinned or cooked salmon and mashed potato.",
+    "ingredients": [
+      "2 tins salmon, drained (or 300g cooked salmon)",
+      "2 potatoes, boiled and mashed",
+      "2 spring onions, sliced",
+      "1 egg, beaten",
+      "50g breadcrumbs",
+      "Salt and pepper",
+      "Oil for frying"
+    ],
+    "steps": [
+      "Mix the mashed potato, salmon, and spring onions together, and season well.",
+      "Shape into 4-6 patties.",
+      "Dip each patty in the beaten egg, then coat in breadcrumbs.",
+      "Fry in a little oil for 3-4 minutes per side until golden and heated through."
+    ]
+  }
+]

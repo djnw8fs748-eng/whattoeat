@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Beef Mince Cottage Pie",
+    "category": "Bake",
+    "time": 45,
+    "teaser": "A comforting mince and mashed potato bake that's mostly hands-off in the oven.",
+    "ingredients": [
+      "400g beef mince",
+      "4 potatoes, peeled and chopped",
+      "1 onion, diced",
+      "2 carrots, diced",
+      "1 tin (400g) chopped tomatoes",
+      "1 tbsp Worcestershire sauce",
+      "50g butter",
+      "50ml milk",
+      "Cheddar, grated (optional)"
+    ],
+    "steps": [
+      "Boil the potatoes until soft, about 15 minutes, then drain and mash with the butter and milk.",
+      "Meanwhile, fry the onion and carrots in a little oil for 5 minutes.",
+      "Add the mince and brown, breaking it up as it cooks.",
+      "Stir in the tomatoes and Worcestershire sauce and simmer for 10 minutes.",
+      "Preheat the oven to 200°C (fan 180°C). Spoon the mince into an ovenproof dish, top with the mash, and scatter with cheese if using.",
+      "Bake for 20 minutes until golden on top."
+    ]
+  },
+  {
+    "title": "Beef Mince Stuffed Peppers",
+    "category": "Bake",
+    "time": 40,
+    "teaser": "Bell peppers filled with a savoury mince and rice mixture, baked until tender.",
+    "ingredients": [
+      "4 bell peppers, tops cut and deseeded",
+      "300g beef mince",
+      "100g cooked rice",
+      "1 onion, diced",
+      "1 tin (400g) chopped tomatoes",
+      "50g cheddar, grated",
+      "1 tsp dried oregano"
+    ],
+    "steps": [
+      "Preheat the oven to 190°C (fan 170°C).",
+      "Fry the onion and mince until browned, breaking it up as it cooks.",
+      "Stir in the rice, half the tomatoes, and the oregano.",
+      "Spoon the mixture into the peppers and place in an ovenproof dish. Pour the remaining tomatoes around them.",
+      "Top with cheese and bake for 25-30 minutes until the peppers are tender."
+    ]
+  },
+  {
+    "title": "Mince & Onion Pasta Bake",
+    "category": "Bake",
+    "time": 40,
+    "teaser": "A baked pasta dish with a rich mince sauce and melted cheese on top.",
+    "ingredients": [
+      "250g pasta (penne works well)",
+      "400g beef mince",
+      "1 onion, diced",
+      "1 tin (400g) chopped tomatoes",
+      "100g cheddar or mozzarella, grated",
+      "1 tsp dried mixed herbs"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Cook the pasta until just tender and drain.",
+      "Fry the onion and mince until browned, breaking it up as it cooks.",
+      "Stir in the tomatoes and herbs and simmer for 10 minutes.",
+      "Mix the pasta through the sauce, transfer to an ovenproof dish, top with cheese, and bake for 15-20 minutes until golden."
+    ]
+  },
+  {
+    "title": "Chicken Parmesan Bake",
+    "category": "Bake",
+    "time": 35,
+    "teaser": "Breaded chicken baked under tomato sauce and melted cheese.",
+    "ingredients": [
+      "2 chicken breasts",
+      "50g breadcrumbs",
+      "1 egg, beaten",
+      "1 tin (400g) chopped tomatoes",
+      "100g mozzarella, sliced",
+      "2 tbsp parmesan, grated",
+      "1 tsp dried oregano"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Dip the chicken in the egg, then coat in breadcrumbs.",
+      "Fry in a little oil for 3-4 minutes per side until golden (it doesn't need to be fully cooked through yet).",
+      "Place in an ovenproof dish, spoon over the tomatoes and oregano, and top with mozzarella and parmesan.",
+      "Bake for 15-20 minutes until the chicken is cooked through and the cheese is bubbling."
+    ]
+  },
+  {
+    "title": "Lamb Mince Shepherd's Pie",
+    "category": "Bake",
+    "time": 45,
+    "teaser": "The classic mashed-potato-topped bake, made with lamb mince for a slightly richer flavour.",
+    "ingredients": [
+      "400g lamb mince",
+      "4 potatoes, peeled and chopped",
+      "1 onion, diced",
+      "2 carrots, diced",
+      "1 tbsp tomato purée",
+      "300ml beef or lamb stock",
+      "50g butter",
+      "50ml milk"
+    ],
+    "steps": [
+      "Boil the potatoes until soft, about 15 minutes, then drain and mash with the butter and milk.",
+      "Fry the onion and carrots in a little oil for 5 minutes.",
+      "Add the lamb mince and brown, breaking it up as it cooks.",
+      "Stir in the tomato purée and stock and simmer for 12-15 minutes until thickened.",
+      "Preheat the oven to 200°C (fan 180°C). Spoon the mince into an ovenproof dish, top with the mash, and bake for 20 minutes until golden."
+    ]
+  },
+  {
+    "title": "Beef Mince Lasagne",
+    "category": "Bake",
+    "time": 50,
+    "teaser": "A weeknight-sized lasagne — not quick, but mostly hands-off once it's in the oven.",
+    "ingredients": [
+      "400g beef mince",
+      "1 onion, diced",
+      "1 tin (400g) chopped tomatoes",
+      "6-8 lasagne sheets",
+      "300ml cheese sauce (from a jar, or butter, flour, and milk with cheddar stirred through)",
+      "50g cheddar, grated",
+      "1 tsp dried oregano"
+    ],
+    "steps": [
+      "Preheat the oven to 190°C (fan 170°C).",
+      "Fry the onion and mince until browned, breaking it up as it cooks.",
+      "Stir in the tomatoes and oregano and simmer for 10 minutes.",
+      "In an ovenproof dish, layer mince sauce, lasagne sheets, and cheese sauce, repeating until you run out, finishing with cheese sauce on top.",
+      "Scatter with the grated cheddar and bake for 30-35 minutes until golden and the pasta is tender."
+    ]
+  }
+]

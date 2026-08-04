@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Salmon Teriyaki Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Pan-fried salmon and noodles tossed in a sticky homemade teriyaki sauce.",
+    "ingredients": [
+      "2 salmon fillets",
+      "150g noodles (egg or udon)",
+      "3 tbsp soy sauce",
+      "2 tbsp honey",
+      "1 tbsp rice vinegar",
+      "1 clove garlic, minced",
+      "1 tsp sesame oil",
+      "Spring onion and sesame seeds to garnish"
+    ],
+    "steps": [
+      "Cook the noodles according to packet instructions and drain.",
+      "Season the salmon and pan-fry skin-side down for 4-5 minutes, then flip and cook for 2-3 minutes more. Flake into chunks.",
+      "Whisk the soy sauce, honey, vinegar, and garlic together in the pan and simmer for 1-2 minutes until slightly sticky.",
+      "Toss the noodles through the sauce, then fold in the salmon.",
+      "Drizzle with sesame oil and top with spring onion and sesame seeds."
+    ]
+  },
+  {
+    "title": "Chicken Noodle Stir-Fry",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Chicken and vegetables stir-fried with noodles in a simple soy sauce.",
+    "ingredients": [
+      "2 chicken breasts, sliced",
+      "150g noodles",
+      "1 bell pepper, sliced",
+      "1 carrot, julienned",
+      "3 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "2 cloves garlic, minced",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Cook the noodles according to packet instructions, drain, and set aside.",
+      "Stir-fry the chicken in a hot wok until cooked through, then set aside.",
+      "Add the pepper and carrot and stir-fry for 3-4 minutes.",
+      "Add the garlic, then return the chicken and noodles to the pan with the soy sauce and sesame oil.",
+      "Toss everything together for 1-2 minutes and serve."
+    ]
+  }
+]

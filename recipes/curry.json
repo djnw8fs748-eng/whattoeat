@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Chicken Tikka Masala",
+    "category": "Curry",
+    "time": 30,
+    "teaser": "A creamy, mildly spiced curry using shop-bought tikka paste to keep things fast.",
+    "ingredients": [
+      "2 chicken breasts, diced",
+      "2 tbsp tikka curry paste",
+      "1 onion, diced",
+      "1 tin (400g) chopped tomatoes",
+      "100ml single cream or yoghurt",
+      "2 cloves garlic, minced",
+      "Rice to serve"
+    ],
+    "steps": [
+      "Fry the onion and garlic in a little oil for 4-5 minutes until soft.",
+      "Add the chicken and cook for 5 minutes until lightly browned.",
+      "Stir in the curry paste and cook for 1 minute.",
+      "Add the chopped tomatoes and simmer for 12-15 minutes until the chicken is cooked through.",
+      "Stir in the cream, warm through, and serve with rice."
+    ]
+  },
+  {
+    "title": "Chicken Katsu Curry",
+    "category": "Curry",
+    "time": 30,
+    "teaser": "Crispy breaded chicken with a mild, slightly sweet Japanese-style curry sauce.",
+    "ingredients": [
+      "2 chicken breasts",
+      "50g flour",
+      "1 egg, beaten",
+      "100g breadcrumbs",
+      "1 onion, diced",
+      "2 tsp curry powder",
+      "1 tbsp flour",
+      "400ml chicken stock",
+      "1 tsp honey",
+      "Rice to serve"
+    ],
+    "steps": [
+      "Coat the chicken in flour, then egg, then breadcrumbs, and fry in oil for 4-5 minutes per side until golden and cooked through. Slice.",
+      "Meanwhile, soften the onion in a little oil for 4 minutes.",
+      "Stir in the curry powder and flour and cook for 1 minute.",
+      "Gradually whisk in the stock, then simmer for 8-10 minutes until thickened. Stir in the honey.",
+      "Serve the sliced chicken over rice with the curry sauce poured over."
+    ]
+  },
+  {
+    "title": "Mince Keema Curry",
+    "category": "Curry",
+    "time": 30,
+    "teaser": "A spiced mince curry that's quicker to make than most curries since there's no meat to cut up.",
+    "ingredients": [
+      "400g beef or lamb mince",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 thumb ginger, grated",
+      "2 tsp curry powder",
+      "1 tin (400g) chopped tomatoes",
+      "Handful frozen peas",
+      "Rice to serve"
+    ],
+    "steps": [
+      "Fry the onion, garlic, and ginger in a little oil for 4-5 minutes.",
+      "Add the mince and brown, breaking it up as it cooks.",
+      "Stir in the curry powder and cook for 1 minute.",
+      "Add the tomatoes and simmer for 12-15 minutes.",
+      "Stir in the peas for the last 3 minutes of cooking, and serve with rice."
+    ]
+  },
+  {
+    "title": "Salmon & Spinach Curry",
+    "category": "Curry",
+    "time": 20,
+    "teaser": "A milder, quicker curry that keeps the salmon in large flakes rather than breaking it up.",
+    "ingredients": [
+      "2 salmon fillets, cubed",
+      "2 handfuls spinach",
+      "1 onion, diced",
+      "2 tsp curry powder",
+      "1 tin (400ml) coconut milk",
+      "1 clove garlic, minced",
+      "Rice to serve"
+    ],
+    "steps": [
+      "Fry the onion and garlic in a little oil for 4-5 minutes.",
+      "Stir in the curry powder and cook for 1 minute.",
+      "Add the coconut milk and simmer for 5 minutes.",
+      "Add the salmon cubes and cook gently for 4-5 minutes until just cooked through.",
+      "Stir in the spinach until wilted, and serve over rice."
+    ]
+  }
+]

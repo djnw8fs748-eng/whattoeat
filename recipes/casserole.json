@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Sausage & Bean Casserole",
+    "category": "Casserole",
+    "time": 35,
+    "teaser": "Sausages simmered with beans in a tomato sauce — a filling one-pot dinner.",
+    "ingredients": [
+      "6 sausages",
+      "1 tin (400g) chopped tomatoes",
+      "1 tin butter beans or cannellini beans, drained",
+      "1 onion, diced",
+      "1 tsp dried mixed herbs",
+      "Olive oil"
+    ],
+    "steps": [
+      "Brown the sausages in a little oil in a large pan, then remove and set aside.",
+      "Add the onion to the pan and soften for 4 minutes.",
+      "Return the sausages to the pan with the tomatoes, beans, and herbs.",
+      "Simmer for 20-25 minutes until the sausages are cooked through and the sauce has thickened. Serve with crusty bread or mash."
+    ]
+  },
+  {
+    "title": "Beef Mince & Butter Bean Stew",
+    "category": "Casserole",
+    "time": 35,
+    "teaser": "A simple, filling stew that mostly looks after itself once it's simmering.",
+    "ingredients": [
+      "400g beef mince",
+      "1 tin butter beans, drained",
+      "1 tin (400g) chopped tomatoes",
+      "1 onion, diced",
+      "2 carrots, sliced",
+      "1 tsp smoked paprika",
+      "Beef stock as needed"
+    ],
+    "steps": [
+      "Fry the onion and carrots in a little oil for 5 minutes.",
+      "Add the mince and brown, breaking it up as it cooks.",
+      "Stir in the paprika, tomatoes, and butter beans, adding a splash of stock if it looks dry.",
+      "Simmer for 20-25 minutes until the carrots are tender and the stew has thickened. Serve with bread or mash."
+    ]
+  },
+  {
+    "title": "One-Pot Chicken & Chickpea Stew",
+    "category": "Casserole",
+    "time": 35,
+    "teaser": "A simple, warming stew that leans on tinned chickpeas and tomatoes.",
+    "ingredients": [
+      "2 chicken thighs, diced",
+      "1 tin chickpeas, drained and rinsed",
+      "1 tin (400g) chopped tomatoes",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tsp smoked paprika",
+      "Chicken stock as needed"
+    ],
+    "steps": [
+      "Fry the onion and garlic in a little oil for 4-5 minutes.",
+      "Add the chicken and cook for 3-4 minutes until lightly browned.",
+      "Stir in the paprika, tomatoes, and chickpeas, adding a splash of stock if it looks dry.",
+      "Simmer for 20-25 minutes until the chicken is cooked through and the stew has thickened. Serve with bread or rice."
+    ]
+  }
+]

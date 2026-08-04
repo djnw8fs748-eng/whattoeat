@@ -1,0 +1,87 @@
+[
+  {
+    "title": "Beef Tacos",
+    "category": "Mexican",
+    "time": 20,
+    "teaser": "Mince and a simple spice mix, spooned into tortillas with your favourite toppings.",
+    "ingredients": [
+      "400g beef mince",
+      "8 small tortillas or taco shells",
+      "1 tsp cumin",
+      "1 tsp paprika",
+      "1/2 tsp chilli powder",
+      "1 onion, diced",
+      "Lettuce, cheese, and salsa to serve"
+    ],
+    "steps": [
+      "Fry the onion in a little oil for 3-4 minutes until soft.",
+      "Add the beef mince and spices and cook, breaking it up, until browned through.",
+      "Warm the tortillas or taco shells.",
+      "Fill with the mince and top with lettuce, cheese, and salsa."
+    ]
+  },
+  {
+    "title": "Bean & Cheese Quesadillas",
+    "category": "Mexican",
+    "time": 15,
+    "teaser": "A crisp, cheesy vegetarian option that's ready in one pan.",
+    "ingredients": [
+      "4 large tortillas",
+      "1 tin black beans or kidney beans, drained and mashed lightly",
+      "150g cheddar, grated",
+      "1 tsp cumin",
+      "Salsa and soured cream to serve"
+    ],
+    "steps": [
+      "Mix the mashed beans with the cumin.",
+      "Spread the bean mixture and cheese over half of each tortilla, then fold over.",
+      "Dry-fry each quesadilla in a pan over medium heat for 2-3 minutes per side, until golden and the cheese has melted.",
+      "Slice into wedges and serve with salsa and soured cream."
+    ]
+  },
+  {
+    "title": "Simple Chilli Con Carne",
+    "category": "Mexican",
+    "time": 35,
+    "teaser": "A weeknight-sized batch of chilli that also reheats well the next day.",
+    "ingredients": [
+      "400g beef mince",
+      "1 tin (400g) chopped tomatoes",
+      "1 tin kidney beans, drained",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tbsp chilli powder",
+      "1 tsp cumin",
+      "Rice to serve"
+    ],
+    "steps": [
+      "Fry the onion and garlic in a little oil for 4 minutes.",
+      "Add the beef mince and brown, breaking it up as it cooks.",
+      "Stir in the chilli powder and cumin, then add the tomatoes and kidney beans.",
+      "Simmer for 20-25 minutes, stirring occasionally, until thickened.",
+      "Serve over rice."
+    ]
+  },
+  {
+    "title": "Beef Mince Nachos",
+    "category": "Mexican",
+    "time": 20,
+    "teaser": "A tray of nachos loaded with spiced mince and melted cheese, ready to share.",
+    "ingredients": [
+      "300g beef mince",
+      "1 tsp cumin",
+      "1 tsp paprika",
+      "150g tortilla chips",
+      "100g cheddar, grated",
+      "Salsa and soured cream to serve",
+      "Sliced jalapeños (optional)"
+    ],
+    "steps": [
+      "Fry the mince with the cumin and paprika until browned, breaking it up as it cooks.",
+      "Preheat the oven to 200°C (fan 180°C) or use the grill.",
+      "Spread the tortilla chips on a baking tray and scatter over the mince.",
+      "Top with the grated cheddar and jalapeños if using.",
+      "Bake or grill for 5-8 minutes until the cheese has melted. Serve with salsa and soured cream."
+    ]
+  }
+]
