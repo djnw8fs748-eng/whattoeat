@@ -539,6 +539,71 @@
     color: var(--text-muted); font-size: 13px; cursor: pointer;
     text-decoration: underline; padding: 6px; font-family: 'Inter', sans-serif;
   }
+
+  /* ============ PLAN TAB ============ */
+  .plan-tab-inner { padding: 28px 0; }
+  .plan-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .day-col {
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    border-radius: var(--radius);
+    padding: 14px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .day-col-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--sage);
+  }
+  .day-col-recipe {
+    background: var(--surface-raised);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.35;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .day-col-remove {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .day-col-remove:hover { color: var(--danger); }
+  .day-col-empty {
+    border: 1px dashed var(--divider);
+    border-radius: var(--radius-sm);
+    padding: 18px 10px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+    flex: 1;
+  }
+  .day-col-empty:hover { border-color: var(--sage); color: var(--sage); }
+
+  @media (max-width: 640px) {
+    .plan-grid { grid-template-columns: 1fr 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -596,7 +661,10 @@
 
   <!-- ============ PLAN VIEW ============ -->
   <div class="plan-view" id="planView" role="tabpanel" aria-labelledby="planTab">
-    <!-- populated in later tasks -->
+    <div class="plan-tab-inner">
+      <div class="plan-grid" id="planGrid"></div>
+      <!-- shopping list added in Task 10 -->
+    </div>
   </div>
 
 </div>
@@ -738,7 +806,52 @@ function renderGrid() {
 
 function renderPlanTab() {
   updatePlanBadge();
-  // grid and shopping list rendering added in later tasks
+
+  const grid = document.getElementById('planGrid');
+  if (!grid) return;
+
+  grid.innerHTML = DAY_KEYS.map(d => {
+    const recipe = plan[d];
+    return `
+      <div class="day-col">
+        <div class="day-col-label">${DAY_LABELS[d].slice(0, 3)}</div>
+        ${recipe
+          ? `<div class="day-col-recipe">
+               <span>${recipe}</span>
+               <button class="day-col-remove" data-day="${d}" aria-label="Remove ${recipe} from ${DAY_LABELS[d]}">×</button>
+             </div>`
+          : `<div class="day-col-empty" data-day="${d}">+ Add recipe</div>`
+        }
+      </div>`;
+  }).join('');
+
+  grid.querySelectorAll('.day-col-remove').forEach(btn => {
+    btn.addEventListener('click', () => removeFromPlan(btn.dataset.day));
+  });
+
+  grid.querySelectorAll('.day-col-empty').forEach(el => {
+    el.addEventListener('click', () => switchTab('browse'));
+  });
+
+  renderShoppingList();
+}
+
+function removeFromPlan(day) {
+  fetch(`/api/plan/${day}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ recipe: null })
+  })
+    .then(res => res.json())
+    .then(data => {
+      plan = data;
+      renderGrid();
+      renderPlanTab();
+    });
+}
+
+function renderShoppingList() {
+  // implemented in Task 10
 }
 
 function escapeAttr(str) {
