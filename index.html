@@ -515,6 +515,12 @@ let activeSearch = "";
 let activeCategory = "";
 let activeMaxTime = 999;
 
+let activeFridge = "";
+
+let plan = { mon: null, tue: null, wed: null, thu: null, fri: null };
+const DAY_KEYS = ['mon', 'tue', 'wed', 'thu', 'fri'];
+const DAY_LABELS = { mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday', fri: 'Friday' };
+
 /* ============================================================
    SETUP: build the category dropdown from the data itself,
    so if you add more recipes later you don't need to update
@@ -589,6 +595,10 @@ function renderGrid() {
       }
     });
   });
+}
+
+function renderPlanTab() {
+  // implemented in Task 9
 }
 
 function escapeAttr(str) {
@@ -704,6 +714,20 @@ document.getElementById('surpriseBtn').addEventListener('click', () => {
 });
 
 /* ============================================================
+   PLAN: fetch from server, update in-memory state, re-render
+   plan tab if it's visible. Called on load and every 15s.
+   ============================================================ */
+function fetchPlan() {
+  fetch('/api/plan')
+    .then(res => res.json())
+    .then(data => {
+      plan = data;
+      renderPlanTab();
+    })
+    .catch(() => {}); // silent — don't break the page if api is down
+}
+
+/* ============================================================
    LOAD DATA: fetch recipes.json (sitting alongside this page)
    and only render the page once it's arrived. If it fails to
    load — e.g. the file's missing or malformed — show a plain
@@ -718,6 +742,8 @@ fetch('recipes.json')
     recipes = data;
     populateCategories();
     renderGrid();
+    fetchPlan();
+    setInterval(fetchPlan, 15000);
   })
   .catch(err => {
     console.error('Could not load recipes.json:', err);
