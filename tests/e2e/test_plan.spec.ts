@@ -17,8 +17,11 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('Add to plan button opens day picker with 5 day rows', async ({ page }) => {
+  // Scroll down to simulate a real user who has scrolled past the hero — this is what
+  // exposed the scrollY positioning bug where the picker appeared below the viewport.
+  await page.evaluate(() => window.scrollBy(0, 300));
   await page.locator('.card').first().locator('.add-plan-btn').click();
-  await expect(page.locator('#dayPicker')).toHaveClass(/open/);
+  await expect(page.locator('#dayPicker')).toBeVisible();
   await expect(page.locator('#dayPickerList .day-picker-row')).toHaveCount(5);
   await page.locator('#dayPickerCancel').dispatchEvent('click');
 });

@@ -1109,10 +1109,16 @@ function openDayPicker(recipeTitle, anchorEl) {
     });
   });
 
-  // Position near the anchor button
+  // Position near the anchor button.
+  // getBoundingClientRect() returns viewport coords; position:fixed is also viewport-relative,
+  // so scrollX/scrollY must NOT be added here.
   const rect = anchorEl.getBoundingClientRect();
-  dayPickerEl.style.top = (rect.bottom + window.scrollY + 6) + 'px';
-  dayPickerEl.style.left = Math.min(rect.left + window.scrollX, window.innerWidth - 256) + 'px';
+  const pickerTop = rect.bottom + 6;
+  const pickerLeft = Math.min(rect.left, window.innerWidth - 256);
+  // If the picker would go below the viewport, flip it above the button instead
+  const pickerHeight = 220;
+  dayPickerEl.style.top = (pickerTop + pickerHeight > window.innerHeight ? rect.top - pickerHeight - 6 : pickerTop) + 'px';
+  dayPickerEl.style.left = Math.max(0, pickerLeft) + 'px';
   dayPickerEl.classList.add('open');
 }
 
