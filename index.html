@@ -199,12 +199,11 @@
   }
 
   .chip-label {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--text-muted);
     white-space: nowrap;
     align-self: center;
-    padding-right: 2px;
   }
 
   .clear-btn {
@@ -709,14 +708,14 @@
         <button class="chip" data-time="30">Under 30 min</button>
         <button class="chip" data-time="999">Any time</button>
       </div>
-      <div class="chip-row" id="allergenChips">
+      <div class="chip-row" id="allergenChips" role="group" aria-label="Free from allergens">
         <span class="chip-label">Free from:</span>
         <button class="chip allergen-chip" data-allergen="gluten">Gluten</button>
         <button class="chip allergen-chip" data-allergen="dairy">Dairy</button>
         <button class="chip allergen-chip" data-allergen="eggs">Eggs</button>
         <button class="chip allergen-chip" data-allergen="fish">Fish</button>
         <button class="chip allergen-chip" data-allergen="shellfish">Shellfish</button>
-        <button class="chip allergen-chip" data-allergen="nuts">Nuts</button>
+        <button class="chip allergen-chip" data-allergen="nuts">Nuts & Peanuts</button>
         <button class="chip allergen-chip" data-allergen="soy">Soy</button>
         <button class="chip allergen-chip" data-allergen="sesame">Sesame</button>
         <button class="chip allergen-chip" data-allergen="mustard">Mustard</button>
