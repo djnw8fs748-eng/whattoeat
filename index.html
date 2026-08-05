@@ -444,6 +444,48 @@
     .filters-inner { flex-direction: column; align-items: stretch; }
     .chip-row { overflow-x: auto; padding-bottom: 4px; }
   }
+
+  /* ============ TAB BAR ============ */
+  .tab-bar {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--divider);
+    margin-bottom: 0;
+    background: var(--surface);
+  }
+
+  .tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 22px;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--text); border-bottom-color: var(--accent); }
+  .tab-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+  .tab-badge {
+    background: var(--accent);
+    color: #1B2420;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 999px;
+    min-width: 18px;
+    text-align: center;
+  }
+
+  .plan-view { display: none; }
+  .browse-view { display: block; }
 </style>
 </head>
 <body>
@@ -461,6 +503,17 @@
     </button>
     <div class="hero-count"><strong id="resultCount">70</strong> recipes ready when you are</div>
   </div>
+
+  <!-- ============ TAB BAR ============ -->
+  <div class="tab-bar" role="tablist">
+    <button class="tab-btn active" id="browseTab" role="tab" aria-selected="true" aria-controls="browseView">Browse</button>
+    <button class="tab-btn" id="planTab" role="tab" aria-selected="false" aria-controls="planView">
+      Plan <span class="tab-badge" id="planBadge" style="display:none">0</span>
+    </button>
+  </div>
+
+  <!-- ============ BROWSE VIEW ============ -->
+  <div class="browse-view" id="browseView" role="tabpanel" aria-labelledby="browseTab">
 
   <!-- ============ FILTERS ============ -->
   <div class="filters">
@@ -483,6 +536,13 @@
   <div class="empty-state" id="emptyState" style="display:none;">
     <h3>No recipes match that</h3>
     <p>Try a different search term or clear your filters.</p>
+  </div>
+
+  </div><!-- end browse-view -->
+
+  <!-- ============ PLAN VIEW ============ -->
+  <div class="plan-view" id="planView" role="tabpanel" aria-labelledby="planTab">
+    <!-- populated in later tasks -->
   </div>
 
 </div>
@@ -598,7 +658,8 @@ function renderGrid() {
 }
 
 function renderPlanTab() {
-  // implemented in Task 9
+  updatePlanBadge();
+  // grid and shopping list rendering added in later tasks
 }
 
 function escapeAttr(str) {
@@ -712,6 +773,31 @@ document.getElementById('surpriseBtn').addEventListener('click', () => {
     }
   }, 100);
 });
+
+/* ============================================================
+   TABS: switch between Browse and Plan views
+   ============================================================ */
+let activeTab = 'browse';
+
+function switchTab(tab) {
+  activeTab = tab;
+  document.getElementById('browseView').style.display = tab === 'browse' ? '' : 'none';
+  document.getElementById('planView').style.display = tab === 'plan' ? '' : 'none';
+  document.getElementById('browseTab').classList.toggle('active', tab === 'browse');
+  document.getElementById('browseTab').setAttribute('aria-selected', tab === 'browse');
+  document.getElementById('planTab').classList.toggle('active', tab === 'plan');
+  document.getElementById('planTab').setAttribute('aria-selected', tab === 'plan');
+}
+
+function updatePlanBadge() {
+  const count = DAY_KEYS.filter(d => plan[d]).length;
+  const badge = document.getElementById('planBadge');
+  badge.textContent = count;
+  badge.style.display = count > 0 ? '' : 'none';
+}
+
+document.getElementById('browseTab').addEventListener('click', () => switchTab('browse'));
+document.getElementById('planTab').addEventListener('click', () => switchTab('plan'));
 
 /* ============================================================
    PLAN: fetch from server, update in-memory state, re-render
