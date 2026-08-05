@@ -519,6 +519,7 @@
   <div class="filters">
     <div class="filters-inner">
       <input type="text" class="search-input" id="searchInput" placeholder="Search by name or ingredient (e.g. 'chicken', 'pasta')...">
+      <input type="text" class="search-input" id="fridgeInput" placeholder="Fridge search: e.g. chicken, rice, spinach…" style="border-color: var(--accent-soft);">
       <select class="cat-select" id="catSelect">
         <option value="">All categories</option>
       </select>
@@ -610,9 +611,12 @@ function getFilteredRecipes() {
     const matchesSearch = activeSearch === "" ||
       r.title.toLowerCase().includes(activeSearch) ||
       r.ingredients.some(i => i.toLowerCase().includes(activeSearch));
+    const matchesFridge = activeFridge === "" ||
+      activeFridge.split(',').map(t => t.trim()).filter(Boolean)
+        .every(term => r.ingredients.some(i => i.toLowerCase().includes(term)));
     const matchesCategory = activeCategory === "" || r.category === activeCategory;
     const matchesTime = r.time <= activeMaxTime;
-    return matchesSearch && matchesCategory && matchesTime;
+    return matchesSearch && matchesFridge && matchesCategory && matchesTime;
   });
 }
 
@@ -723,6 +727,19 @@ document.addEventListener('keydown', (e) => {
    ============================================================ */
 document.getElementById('searchInput').addEventListener('input', (e) => {
   activeSearch = e.target.value.trim().toLowerCase();
+  if (activeSearch) {
+    activeFridge = "";
+    document.getElementById('fridgeInput').value = "";
+  }
+  renderGrid();
+});
+
+document.getElementById('fridgeInput').addEventListener('input', (e) => {
+  activeFridge = e.target.value.trim().toLowerCase();
+  if (activeFridge) {
+    activeSearch = "";
+    document.getElementById('searchInput').value = "";
+  }
   renderGrid();
 });
 
@@ -744,7 +761,9 @@ document.getElementById('clearBtn').addEventListener('click', () => {
   activeSearch = "";
   activeCategory = "";
   activeMaxTime = 999;
+  activeFridge = "";
   document.getElementById('searchInput').value = "";
+  document.getElementById('fridgeInput').value = "";
   catSelect.value = "";
   document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
   renderGrid();
