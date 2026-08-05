@@ -58,10 +58,9 @@ def test_concurrent_writes_all_persist():
         assert data[day] == f"Recipe for {day}"
 
 
-def test_corrupt_plan_file_returns_empty_plan(tmp_path, monkeypatch):
-    plan_file = tmp_path / "plan.json"
-    plan_file.write_text("{bad json}")
-    monkeypatch.setattr(main_module, "PLAN_FILE", plan_file)
+def test_corrupt_plan_file_returns_empty_plan(tmp_path):
+    (tmp_path / "plan.json").write_text("{bad json}")
+    # autouse fixture already set PLAN_FILE = tmp_path / "plan.json"
 
     response = client.get("/api/plan")
     assert response.status_code == 200

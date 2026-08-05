@@ -5,8 +5,7 @@ async function addRecipeToDay(page: import('@playwright/test').Page, recipeTitle
   const card = page.locator(`.card[data-title="${recipeTitle}"]`);
   await card.locator('.add-plan-btn').click();
   await expect(page.locator('#dayPicker')).toHaveClass(/open/);
-  // The day picker is position:fixed but positioned outside the viewport in headless mode,
-  // so we dispatch the click event directly instead of relying on pointer simulation.
+  // Using dispatchEvent instead of click() to bypass viewport checks for fixed-position elements
   await page.locator(`#dayPickerList .day-picker-row[data-day="${day}"]`).dispatchEvent('click');
   await expect(page.locator('#dayPicker')).not.toHaveClass(/open/);
 }
