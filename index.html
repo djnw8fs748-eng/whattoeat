@@ -828,8 +828,8 @@ function renderGrid() {
       <div class="card-top">
         <span class="pill">${r.category}</span>
       </div>
-      <h3>${r.title}</h3>
-      <p class="teaser">${r.teaser}</p>
+      <h3>${escapeHtml(r.title)}</h3>
+      <p class="teaser">${escapeHtml(r.teaser)}</p>
       <div class="meta">
         <span>${clockIcon} ${r.time} min</span>
         <span>${r.ingredients.length} ingredients</span>
@@ -877,8 +877,8 @@ function renderPlanTab() {
         <div class="day-col-label">${DAY_LABELS[d].slice(0, 3)}</div>
         ${recipe
           ? `<div class="day-col-recipe">
-               <span>${recipe}</span>
-               <button class="day-col-remove" data-day="${d}" aria-label="Remove ${recipe} from ${DAY_LABELS[d]}">×</button>
+               <span>${escapeHtml(recipe)}</span>
+               <button class="day-col-remove" data-day="${d}" aria-label="Remove ${escapeHtml(recipe)} from ${DAY_LABELS[d]}">×</button>
              </div>`
           : `<div class="day-col-empty" data-day="${d}">+ Add recipe</div>`
         }
@@ -907,7 +907,8 @@ function removeFromPlan(day) {
       plan = data;
       renderGrid();
       renderPlanTab();
-    });
+    })
+    .catch(() => { renderGrid(); renderPlanTab(); });
 }
 
 function renderShoppingList() {
@@ -940,7 +941,7 @@ function renderShoppingList() {
   grid.innerHTML = ingredients.map((ing, i) => `
     <div class="shopping-item">
       <input type="checkbox" id="shop-${i}">
-      <label for="shop-${i}">${ing}</label>
+      <label for="shop-${i}">${escapeHtml(ing)}</label>
     </div>
   `).join('');
 
@@ -949,6 +950,10 @@ function renderShoppingList() {
 
 function escapeAttr(str) {
   return str.replace(/"/g, '&quot;');
+}
+
+function escapeHtml(str) {
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 /* ============================================================
@@ -1091,7 +1096,7 @@ function openDayPicker(recipeTitle, anchorEl) {
     return `
       <div class="day-picker-row ${taken ? 'taken' : ''}" data-day="${d}">
         <span class="day-name">${DAY_LABELS[d]}</span>
-        <span class="day-status">${taken ? current : 'Free'}</span>
+        <span class="day-status">${taken ? escapeHtml(current) : 'Free'}</span>
       </div>`;
   }).join('');
 
@@ -1126,7 +1131,8 @@ function selectDay(day) {
       renderGrid();
       renderPlanTab();
       closeDayPicker();
-    });
+    })
+    .catch(() => { closeDayPicker(); });
 }
 
 document.getElementById('dayPickerCancel').addEventListener('click', closeDayPicker);
@@ -1181,6 +1187,7 @@ function fetchPlan() {
     .then(data => {
       plan = data;
       renderPlanTab();
+      renderGrid();
     })
     .catch(() => {}); // silent — don't break the page if api is down
 }

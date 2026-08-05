@@ -1,10 +1,12 @@
 import json
+import os
+import tempfile
 import threading
 from pathlib import Path
 from typing import Optional
 
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 
 app = FastAPI()
 
@@ -18,12 +20,22 @@ EMPTY_PLAN: dict = {d: None for d in VALID_DAYS}
 def _read_plan() -> dict:
     if not PLAN_FILE.exists():
         return dict(EMPTY_PLAN)
-    return json.loads(PLAN_FILE.read_text())
+    try:
+        return json.loads(PLAN_FILE.read_text())
+    except json.JSONDecodeError:
+        return dict(EMPTY_PLAN)
 
 
 def _write_plan(plan: dict) -> None:
     PLAN_FILE.parent.mkdir(parents=True, exist_ok=True)
-    PLAN_FILE.write_text(json.dumps(plan))
+    fd, tmp = tempfile.mkstemp(dir=PLAN_FILE.parent)
+    try:
+        with os.fdopen(fd, 'w') as f:
+            json.dump(plan, f)
+        os.replace(tmp, PLAN_FILE)
+    except Exception:
+        os.unlink(tmp)
+        raise
 
 
 @app.get("/api/plan")
@@ -34,6 +46,13 @@ def get_plan():
 
 class DayUpdate(BaseModel):
     recipe: Optional[str] = None
+
+    @field_validator('recipe')
+    @classmethod
+    def cap_length(cls, v: Optional[str]) -> Optional[str]:
+        if v is not None and len(v) > 200:
+            raise ValueError('recipe name too long (max 200 chars)')
+        return v
 
 
 @app.patch("/api/plan/{day}")
