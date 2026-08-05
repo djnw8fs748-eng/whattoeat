@@ -444,6 +444,220 @@
     .filters-inner { flex-direction: column; align-items: stretch; }
     .chip-row { overflow-x: auto; padding-bottom: 4px; }
   }
+
+  /* ============ TAB BAR ============ */
+  .tab-bar {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--divider);
+    margin-bottom: 0;
+    background: var(--surface);
+  }
+
+  .tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 22px;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--text); border-bottom-color: var(--accent); }
+  .tab-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+  .tab-badge {
+    background: var(--accent);
+    color: #1B2420;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 999px;
+    min-width: 18px;
+    text-align: center;
+  }
+
+  .plan-view { display: none; }
+  .browse-view { display: block; }
+
+  /* ============ ADD TO PLAN / DAY PICKER ============ */
+  .add-plan-btn {
+    margin-top: 6px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--divider);
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .add-plan-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .add-plan-btn.planned { border-color: var(--sage); color: var(--sage); }
+
+  .day-picker {
+    position: fixed;
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    border-radius: var(--radius);
+    padding: 18px;
+    width: 240px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    z-index: 50;
+    display: none;
+  }
+  .day-picker.open { display: block; }
+  .day-picker h4 { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+  .day-picker-recipe { font-size: 12px; color: var(--accent); margin-bottom: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .day-picker-list { display: flex; flex-direction: column; gap: 5px; }
+  .day-picker-row {
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--surface-raised); border: 1px solid var(--divider);
+    border-radius: var(--radius-sm); padding: 9px 12px;
+    cursor: pointer; transition: border-color 0.15s, background 0.15s;
+    font-size: 13px;
+  }
+  .day-picker-row:hover { border-color: var(--sage); background: var(--surface-hover); }
+  .day-picker-row.taken:hover { border-color: var(--danger); }
+  .day-picker-row .day-name { font-weight: 600; }
+  .day-picker-row .day-status { font-size: 11px; color: var(--sage); }
+  .day-picker-row.taken .day-status { color: var(--text-muted); }
+  .day-picker-row.taken:hover .day-status { color: var(--danger); }
+  .day-picker-cancel {
+    margin-top: 12px; width: 100%; background: none; border: none;
+    color: var(--text-muted); font-size: 13px; cursor: pointer;
+    text-decoration: underline; padding: 6px; font-family: 'Inter', sans-serif;
+  }
+
+  /* ============ PLAN TAB ============ */
+  .plan-tab-inner { padding: 28px 0; }
+  .plan-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .day-col {
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    border-radius: var(--radius);
+    padding: 14px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .day-col-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--sage);
+  }
+  .day-col-recipe {
+    background: var(--surface-raised);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.35;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .day-col-remove {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .day-col-remove:hover { color: var(--danger); }
+  .day-col-empty {
+    border: 1px dashed var(--divider);
+    border-radius: var(--radius-sm);
+    padding: 18px 10px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+    flex: 1;
+  }
+  .day-col-empty:hover { border-color: var(--sage); color: var(--sage); }
+
+  @media (max-width: 640px) {
+    .plan-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ============ SHOPPING LIST ============ */
+  .shopping-section {
+    border-top: 1px solid var(--divider);
+    padding-top: 24px;
+    margin-top: 4px;
+  }
+  .shopping-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .shopping-header h3 { font-size: 18px; }
+  .shopping-empty { color: var(--text-muted); font-size: 14px; }
+  .copy-list-btn {
+    background: var(--surface-raised);
+    border: 1px solid var(--divider);
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .copy-list-btn:hover { border-color: var(--sage); color: var(--text); }
+  .shopping-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 4px 24px;
+  }
+  .shopping-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    padding: 5px 0;
+    line-height: 1.4;
+  }
+  .shopping-item input[type="checkbox"] {
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent);
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .shopping-item label { cursor: pointer; }
+  .shopping-item input:checked + label {
+    color: var(--text-muted);
+    text-decoration: line-through;
+  }
 </style>
 </head>
 <body>
@@ -462,10 +676,22 @@
     <div class="hero-count"><strong id="resultCount">70</strong> recipes ready when you are</div>
   </div>
 
+  <!-- ============ TAB BAR ============ -->
+  <div class="tab-bar" role="tablist">
+    <button class="tab-btn active" id="browseTab" role="tab" aria-selected="true" aria-controls="browseView">Browse</button>
+    <button class="tab-btn" id="planTab" role="tab" aria-selected="false" aria-controls="planView">
+      Plan <span class="tab-badge" id="planBadge" style="display:none">0</span>
+    </button>
+  </div>
+
+  <!-- ============ BROWSE VIEW ============ -->
+  <div class="browse-view" id="browseView" role="tabpanel" aria-labelledby="browseTab">
+
   <!-- ============ FILTERS ============ -->
   <div class="filters">
     <div class="filters-inner">
       <input type="text" class="search-input" id="searchInput" placeholder="Search by name or ingredient (e.g. 'chicken', 'pasta')...">
+      <input type="text" class="search-input" id="fridgeInput" placeholder="Fridge search: e.g. chicken, rice, spinach…" style="border-color: var(--accent-soft);">
       <select class="cat-select" id="catSelect">
         <option value="">All categories</option>
       </select>
@@ -485,6 +711,30 @@
     <p>Try a different search term or clear your filters.</p>
   </div>
 
+  </div><!-- end browse-view -->
+
+  <!-- ============ PLAN VIEW ============ -->
+  <div class="plan-view" id="planView" role="tabpanel" aria-labelledby="planTab">
+    <div class="plan-tab-inner">
+      <div class="plan-grid" id="planGrid"></div>
+      <div class="shopping-section" id="shoppingSection" style="display:none">
+        <div class="shopping-header">
+          <h3>Shopping list</h3>
+          <button class="copy-list-btn" id="copyListBtn">Copy list</button>
+        </div>
+        <div class="shopping-grid" id="shoppingGrid"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ DAY PICKER ============ -->
+<div class="day-picker" id="dayPicker" role="dialog" aria-modal="true" aria-label="Pick a day for this recipe">
+  <h4>Add to which day?</h4>
+  <div class="day-picker-recipe" id="dayPickerTitle"></div>
+  <div class="day-picker-list" id="dayPickerList"></div>
+  <button class="day-picker-cancel" id="dayPickerCancel">Cancel</button>
 </div>
 
 <!-- ============ DETAIL PANEL ============ -->
@@ -515,6 +765,12 @@ let activeSearch = "";
 let activeCategory = "";
 let activeMaxTime = 999;
 
+let activeFridge = "";
+
+let plan = { mon: null, tue: null, wed: null, thu: null, fri: null };
+const DAY_KEYS = ['mon', 'tue', 'wed', 'thu', 'fri'];
+const DAY_LABELS = { mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday', fri: 'Friday' };
+
 /* ============================================================
    SETUP: build the category dropdown from the data itself,
    so if you add more recipes later you don't need to update
@@ -544,9 +800,12 @@ function getFilteredRecipes() {
     const matchesSearch = activeSearch === "" ||
       r.title.toLowerCase().includes(activeSearch) ||
       r.ingredients.some(i => i.toLowerCase().includes(activeSearch));
+    const matchesFridge = activeFridge === "" ||
+      activeFridge.split(',').map(t => t.trim()).filter(Boolean)
+        .every(term => r.ingredients.some(i => i.toLowerCase().includes(term)));
     const matchesCategory = activeCategory === "" || r.category === activeCategory;
     const matchesTime = r.time <= activeMaxTime;
-    return matchesSearch && matchesCategory && matchesTime;
+    return matchesSearch && matchesFridge && matchesCategory && matchesTime;
   });
 }
 
@@ -569,19 +828,26 @@ function renderGrid() {
       <div class="card-top">
         <span class="pill">${r.category}</span>
       </div>
-      <h3>${r.title}</h3>
-      <p class="teaser">${r.teaser}</p>
+      <h3>${escapeHtml(r.title)}</h3>
+      <p class="teaser">${escapeHtml(r.teaser)}</p>
       <div class="meta">
         <span>${clockIcon} ${r.time} min</span>
         <span>${r.ingredients.length} ingredients</span>
       </div>
+      <button class="add-plan-btn ${DAY_KEYS.some(d => plan[d] === r.title) ? 'planned' : ''}"
+        data-recipe="${escapeAttr(r.title)}">
+        ${DAY_KEYS.some(d => plan[d] === r.title) ? '✓ In plan' : '+ Add to plan'}
+      </button>
     </div>
   `).join('');
 
   // Every card needs a click (mouse) and keydown (keyboard) handler
   // so the catalogue works for people navigating with Tab + Enter too.
   grid.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => openRecipe(card.dataset.title));
+    card.addEventListener('click', (e) => {
+      if (e.target.classList.contains('add-plan-btn')) return;
+      openRecipe(card.dataset.title);
+    });
     card.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
@@ -589,10 +855,105 @@ function renderGrid() {
       }
     });
   });
+
+  grid.querySelectorAll('.add-plan-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openDayPicker(btn.dataset.recipe, btn);
+    });
+  });
+}
+
+function renderPlanTab() {
+  updatePlanBadge();
+
+  const grid = document.getElementById('planGrid');
+  if (!grid) return;
+
+  grid.innerHTML = DAY_KEYS.map(d => {
+    const recipe = plan[d];
+    return `
+      <div class="day-col">
+        <div class="day-col-label">${DAY_LABELS[d].slice(0, 3)}</div>
+        ${recipe
+          ? `<div class="day-col-recipe">
+               <span>${escapeHtml(recipe)}</span>
+               <button class="day-col-remove" data-day="${d}" aria-label="Remove ${escapeHtml(recipe)} from ${DAY_LABELS[d]}">×</button>
+             </div>`
+          : `<div class="day-col-empty" data-day="${d}">+ Add recipe</div>`
+        }
+      </div>`;
+  }).join('');
+
+  grid.querySelectorAll('.day-col-remove').forEach(btn => {
+    btn.addEventListener('click', () => removeFromPlan(btn.dataset.day));
+  });
+
+  grid.querySelectorAll('.day-col-empty').forEach(el => {
+    el.addEventListener('click', () => switchTab('browse'));
+  });
+
+  renderShoppingList();
+}
+
+function removeFromPlan(day) {
+  fetch(`/api/plan/${day}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ recipe: null })
+  })
+    .then(res => res.json())
+    .then(data => {
+      plan = data;
+      renderGrid();
+      renderPlanTab();
+    })
+    .catch(() => { renderGrid(); renderPlanTab(); });
+}
+
+function renderShoppingList() {
+  const section = document.getElementById('shoppingSection');
+  const grid = document.getElementById('shoppingGrid');
+  if (!section || !grid) return;
+
+  const planned = DAY_KEYS.map(d => plan[d]).filter(Boolean);
+  if (planned.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+
+  // Gather all ingredients from planned recipes, deduplicate case-insensitively
+  const seen = new Set();
+  const ingredients = [];
+  planned.forEach(title => {
+    const r = recipes.find(x => x.title === title);
+    if (!r) return;
+    r.ingredients.forEach(ing => {
+      const key = ing.trim().toLowerCase();
+      if (!seen.has(key)) {
+        seen.add(key);
+        ingredients.push(ing.trim());
+      }
+    });
+  });
+  ingredients.sort((a, b) => a.localeCompare(b));
+
+  grid.innerHTML = ingredients.map((ing, i) => `
+    <div class="shopping-item">
+      <input type="checkbox" id="shop-${i}">
+      <label for="shop-${i}">${escapeHtml(ing)}</label>
+    </div>
+  `).join('');
+
+  section.style.display = '';
 }
 
 function escapeAttr(str) {
   return str.replace(/"/g, '&quot;');
+}
+
+function escapeHtml(str) {
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 /* ============================================================
@@ -652,6 +1013,19 @@ document.addEventListener('keydown', (e) => {
    ============================================================ */
 document.getElementById('searchInput').addEventListener('input', (e) => {
   activeSearch = e.target.value.trim().toLowerCase();
+  if (activeSearch) {
+    activeFridge = "";
+    document.getElementById('fridgeInput').value = "";
+  }
+  renderGrid();
+});
+
+document.getElementById('fridgeInput').addEventListener('input', (e) => {
+  activeFridge = e.target.value.trim().toLowerCase();
+  if (activeFridge) {
+    activeSearch = "";
+    document.getElementById('searchInput').value = "";
+  }
   renderGrid();
 });
 
@@ -673,7 +1047,9 @@ document.getElementById('clearBtn').addEventListener('click', () => {
   activeSearch = "";
   activeCategory = "";
   activeMaxTime = 999;
+  activeFridge = "";
   document.getElementById('searchInput').value = "";
+  document.getElementById('fridgeInput').value = "";
   catSelect.value = "";
   document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
   renderGrid();
@@ -704,6 +1080,119 @@ document.getElementById('surpriseBtn').addEventListener('click', () => {
 });
 
 /* ============================================================
+   DAY PICKER: open/close and day selection
+   ============================================================ */
+let dayPickerRecipe = null;
+const dayPickerEl = document.getElementById('dayPicker');
+
+function openDayPicker(recipeTitle, anchorEl) {
+  dayPickerRecipe = recipeTitle;
+  document.getElementById('dayPickerTitle').textContent = recipeTitle;
+
+  const list = document.getElementById('dayPickerList');
+  list.innerHTML = DAY_KEYS.map(d => {
+    const current = plan[d];
+    const taken = current !== null;
+    return `
+      <div class="day-picker-row ${taken ? 'taken' : ''}" data-day="${d}">
+        <span class="day-name">${DAY_LABELS[d]}</span>
+        <span class="day-status">${taken ? escapeHtml(current) : 'Free'}</span>
+      </div>`;
+  }).join('');
+
+  list.querySelectorAll('.day-picker-row').forEach(row => {
+    row.addEventListener('click', () => {
+      selectDay(row.dataset.day);
+    });
+  });
+
+  // Position near the anchor button
+  const rect = anchorEl.getBoundingClientRect();
+  dayPickerEl.style.top = (rect.bottom + window.scrollY + 6) + 'px';
+  dayPickerEl.style.left = Math.min(rect.left + window.scrollX, window.innerWidth - 256) + 'px';
+  dayPickerEl.classList.add('open');
+}
+
+function closeDayPicker() {
+  dayPickerEl.classList.remove('open');
+  dayPickerRecipe = null;
+}
+
+function selectDay(day) {
+  if (!dayPickerRecipe) return;
+  fetch(`/api/plan/${day}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ recipe: dayPickerRecipe })
+  })
+    .then(res => res.json())
+    .then(data => {
+      plan = data;
+      renderGrid();
+      renderPlanTab();
+      closeDayPicker();
+    })
+    .catch(() => { closeDayPicker(); });
+}
+
+document.getElementById('dayPickerCancel').addEventListener('click', closeDayPicker);
+document.getElementById('copyListBtn').addEventListener('click', () => {
+  const items = [...document.querySelectorAll('#shoppingGrid .shopping-item label')]
+    .map(l => l.textContent);
+  navigator.clipboard.writeText(items.join('\n')).then(() => {
+    const btn = document.getElementById('copyListBtn');
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = 'Copy list'; }, 1800);
+  });
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDayPicker(); });
+document.addEventListener('click', e => {
+  if (!dayPickerEl.contains(e.target) && !e.target.classList.contains('add-plan-btn')) {
+    closeDayPicker();
+  }
+});
+
+/* ============================================================
+   TABS: switch between Browse and Plan views
+   ============================================================ */
+let activeTab = 'browse';
+
+function switchTab(tab) {
+  activeTab = tab;
+  document.getElementById('browseView').style.display = tab === 'browse' ? '' : 'none';
+  document.getElementById('planView').style.display = tab === 'plan' ? 'block' : 'none';
+  document.getElementById('browseTab').classList.toggle('active', tab === 'browse');
+  document.getElementById('browseTab').setAttribute('aria-selected', tab === 'browse');
+  document.getElementById('planTab').classList.toggle('active', tab === 'plan');
+  document.getElementById('planTab').setAttribute('aria-selected', tab === 'plan');
+}
+
+function updatePlanBadge() {
+  const count = DAY_KEYS.filter(d => plan[d]).length;
+  const badge = document.getElementById('planBadge');
+  badge.textContent = count;
+  badge.style.display = count > 0 ? '' : 'none';
+}
+
+document.getElementById('browseTab').addEventListener('click', () => switchTab('browse'));
+document.getElementById('planTab').addEventListener('click', () => switchTab('plan'));
+
+/* ============================================================
+   PLAN: fetch from server, update in-memory state, re-render
+   plan tab if it's visible. Called on load and every 15s.
+   ============================================================ */
+function fetchPlan() {
+  fetch('/api/plan')
+    .then(res => res.json())
+    .then(data => {
+      plan = data;
+      renderPlanTab();
+      renderGrid();
+    })
+    .catch(() => {}); // silent — don't break the page if api is down
+}
+
+/* ============================================================
    LOAD DATA: fetch recipes.json (sitting alongside this page)
    and only render the page once it's arrived. If it fails to
    load — e.g. the file's missing or malformed — show a plain
@@ -718,6 +1207,8 @@ fetch('recipes.json')
     recipes = data;
     populateCategories();
     renderGrid();
+    fetchPlan();
+    setInterval(fetchPlan, 15000);
   })
   .catch(err => {
     console.error('Could not load recipes.json:', err);
