@@ -52,6 +52,24 @@ jobs:
           print(f"Built recipes.json with {len(recipes)} recipes from {len(seen_files)} category files")
           PYEOF
 
+      - name: Generate favicon PNGs and ICO from favicon.svg
+        # favicon.svg is the only favicon file actually committed to the
+        # repo (plain text, so it's trivial to edit or regenerate). The
+        # PNG and ICO variants various browsers/devices expect are
+        # generated fresh here on every build.
+        run: |
+          pip install --quiet cairosvg pillow
+          python3 - <<'PYEOF'
+          import cairosvg
+          from PIL import Image
+
+          for size, name in [(180, 'apple-touch-icon.png'), (32, 'favicon-32.png'), (16, 'favicon-16.png')]:
+              cairosvg.svg2png(url='favicon.svg', write_to=name, output_width=size, output_height=size)
+
+          Image.open('favicon-16.png').save('favicon.ico', sizes=[(16, 16), (32, 32)])
+          print("Favicon assets generated")
+          PYEOF
+
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:

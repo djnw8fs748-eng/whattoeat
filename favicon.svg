@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background: same deep green as the site -->
+  <circle cx="32" cy="32" r="32" fill="#1B2420"/>
+
+  <!-- Fork, in the site's warm accent yellow -->
+  <g fill="#E8A33D">
+    <!-- three tines -->
+    <rect x="19" y="10" width="5" height="20" rx="2.5"/>
+    <rect x="29.5" y="8" width="5" height="22" rx="2.5"/>
+    <rect x="40" y="10" width="5" height="20" rx="2.5"/>
+    <!-- crossbar joining tines to handle -->
+    <path d="M17 28 Q32 36 47 28 L47 32 Q32 40 17 32 Z"/>
+    <!-- handle -->
+    <rect x="28.5" y="32" width="7" height="24" rx="3.5"/>
+  </g>
+</svg>
