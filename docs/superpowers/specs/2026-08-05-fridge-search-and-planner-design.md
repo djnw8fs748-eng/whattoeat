@@ -38,7 +38,8 @@ All changes live in `index.html`. No new pages, no new dependencies.
 - Five day columns (Mon–Fri). Each column shows the assigned recipe name with an × to remove it, or a dashed "+ Add recipe" placeholder if empty.
 - Clicking "+ Add recipe" switches to the Browse tab so the user can find and add a recipe normally.
 - Below the day grid: a shopping list of all ingredients across planned recipes, deduplicated and sorted alphabetically. Each ingredient is a checkbox (tick off as you shop). A "Copy list" button copies the plain-text list to the clipboard.
-- The plan is loaded from `GET /api/plan` on page load and saved via `PUT /api/plan` on every change.
+- The plan is loaded from `GET /api/plan` on page load and polled every 15 seconds so users see each other's changes without refreshing.
+- Each change sends `PATCH /api/plan/{day}` with `{ "recipe": "Title" }` (or `{ "recipe": null }` to clear) — only the affected day is written, so concurrent edits to different days are safe.
 
 **State shape (in-memory JS)**
 ```js
@@ -57,11 +58,13 @@ All changes live in `index.html`. No new pages, no new dependencies.
 
 New `api/` directory in the repo root.
 
-**`api/main.py`** — Python FastAPI app, ~40 lines.
+**`api/main.py`** — Python FastAPI app, ~50 lines.
+
+A `threading.Lock()` serialises all file reads and writes, preventing corruption under concurrent requests.
 
 Endpoints:
-- `GET /api/plan` — reads `/data/plan.json`, returns the plan object. Returns an empty plan if the file doesn't exist yet.
-- `PUT /api/plan` — writes the request body (validated as the plan shape) to `/data/plan.json`.
+- `GET /api/plan` — reads `/data/plan.json` under the lock, returns the plan object. Returns an empty plan `{ mon: null, tue: null, ... }` if the file doesn't exist yet.
+- `PATCH /api/plan/{day}` — acquires the lock, reads the current plan, updates the single named day (`mon`|`tue`|`wed`|`thu`|`fri`), writes the file back. Request body: `{ "recipe": "Title or null" }`. Two users editing different days simultaneously both succeed; same-day conflicts are last-write-wins.
 
 Plan file lives at `/data/plan.json` inside the container, backed by a named Docker volume so it survives restarts.
 
@@ -124,17 +127,24 @@ The GitHub Actions workflow builds both images. The `recipes` image build gains 
 ## Data Flow
 
 ```
-User clicks "Add to plan"
-  → day picker opens (no network call)
-  → user picks a day
-  → JS updates in-memory plan state
-  → PUT /api/plan  (nginx → api container → writes plan.json)
-  → Plan tab re-renders from updated state
-
 Page load
-  → GET /api/plan  (nginx → api container → reads plan.json)
+  → GET /api/plan  (nginx → api container → reads plan.json under lock)
   → JS stores result as plan state
   → Plan tab renders
+  → 15s polling loop starts (GET /api/plan, merges into state, re-renders if changed)
+
+User clicks "Add to plan" → picks a day
+  → PATCH /api/plan/tue  { recipe: "Coconut Chickpea Curry" }
+     (nginx → api container → lock → read → update day → write → unlock)
+  → JS updates in-memory plan state immediately (optimistic)
+  → Plan tab re-renders
+
+Concurrent users
+  → User A: PATCH /api/plan/mon  — succeeds, writes mon
+  → User B: PATCH /api/plan/fri  — succeeds, writes fri (different day, no conflict)
+  → Both users see each other's change within 15s via polling
+  → User A + B both PATCH /api/plan/wed simultaneously
+     → lock serialises them, last one wins (acceptable at household scale)
 ```
 
 ---
