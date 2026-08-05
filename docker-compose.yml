@@ -1,5 +1,6 @@
-# This is what you paste into Portainer (Stacks > Add stack) to
-# run the image once it's been built and published by GitHub.
+# Paste into Portainer (Stacks > Add stack) to run both containers.
+# The recipes container serves the static site; the api container
+# handles the weekly plan. Both images are built and pushed by CI.
 services:
   recipes:
     image: ghcr.io/djnw8fs748-eng/whattoeat:latest
@@ -9,3 +10,13 @@ services:
       - target: 80
         published: 8090
         protocol: tcp
+
+  api:
+    image: ghcr.io/djnw8fs748-eng/whattoeat-api:latest
+    container_name: recipes-api
+    restart: unless-stopped
+    volumes:
+      - plan-data:/data
+
+volumes:
+  plan-data:
