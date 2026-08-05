@@ -1160,7 +1160,7 @@ let activeTab = 'browse';
 function switchTab(tab) {
   activeTab = tab;
   document.getElementById('browseView').style.display = tab === 'browse' ? '' : 'none';
-  document.getElementById('planView').style.display = tab === 'plan' ? '' : 'none';
+  document.getElementById('planView').style.display = tab === 'plan' ? 'block' : 'none';
   document.getElementById('browseTab').classList.toggle('active', tab === 'browse');
   document.getElementById('browseTab').setAttribute('aria-selected', tab === 'browse');
   document.getElementById('planTab').classList.toggle('active', tab === 'plan');
