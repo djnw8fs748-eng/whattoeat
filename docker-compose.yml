@@ -8,7 +8,7 @@ services:
     restart: unless-stopped
     ports:
       - target: 80
-        published: 8090
+        published: 9090
         protocol: tcp
 
   api:
