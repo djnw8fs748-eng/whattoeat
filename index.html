@@ -729,6 +729,9 @@
 
 </div>
 
+<!-- ============ API ERROR BANNER ============ -->
+<div id="apiErrorMsg" hidden style="position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:#c0392b;color:#fff;padding:.6rem 1.2rem;border-radius:.4rem;font-size:.9rem;z-index:1000;max-width:90vw;text-align:center;"></div>
+
 <!-- ============ DAY PICKER ============ -->
 <div class="day-picker" id="dayPicker" role="dialog" aria-modal="true" aria-label="Pick a day for this recipe">
   <h4>Add to which day?</h4>
@@ -1125,14 +1128,25 @@ function selectDay(day) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ recipe: dayPickerRecipe })
   })
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) throw new Error(`${res.status}`);
+      return res.json();
+    })
     .then(data => {
       plan = data;
       renderGrid();
       renderPlanTab();
       closeDayPicker();
     })
-    .catch(() => { closeDayPicker(); });
+    .catch((err) => {
+      closeDayPicker();
+      const msg = document.getElementById('apiErrorMsg');
+      if (msg) {
+        msg.textContent = `Could not save plan — is the API running? (${err.message})`;
+        msg.hidden = false;
+        setTimeout(() => { msg.hidden = true; }, 5000);
+      }
+    });
 }
 
 document.getElementById('dayPickerCancel').addEventListener('click', closeDayPicker);
