@@ -846,7 +846,13 @@ function getFilteredRecipes() {
         .every(term => r.ingredients.some(i => i.toLowerCase().includes(term)));
     const matchesCategory = activeCategory === "" || r.category === activeCategory;
     const matchesTime = r.time <= activeMaxTime;
-    return matchesSearch && matchesFridge && matchesCategory && matchesTime;
+    const matchesAllergens = activeAllergens.size === 0 ||
+      [...activeAllergens].every(allergen =>
+        !(ALLERGEN_KEYWORDS[allergen] || []).some(kw =>
+          r.ingredients.some(i => i.toLowerCase().includes(kw))
+        )
+      );
+    return matchesSearch && matchesFridge && matchesCategory && matchesTime && matchesAllergens;
   });
 }
 
@@ -1084,15 +1090,31 @@ document.querySelectorAll('.chip[data-time]').forEach(chip => {
   });
 });
 
+document.querySelectorAll('.allergen-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    const allergen = chip.dataset.allergen;
+    if (activeAllergens.has(allergen)) {
+      activeAllergens.delete(allergen);
+      chip.classList.remove('active');
+    } else {
+      activeAllergens.add(allergen);
+      chip.classList.add('active');
+    }
+    renderGrid();
+  });
+});
+
 document.getElementById('clearBtn').addEventListener('click', () => {
   activeSearch = "";
   activeCategory = "";
   activeMaxTime = 999;
   activeFridge = "";
+  activeAllergens.clear();
   document.getElementById('searchInput').value = "";
   document.getElementById('fridgeInput').value = "";
   catSelect.value = "";
   document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.allergen-chip').forEach(c => c.classList.remove('active'));
   renderGrid();
 });
 

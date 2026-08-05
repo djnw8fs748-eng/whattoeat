@@ -13,5 +13,5 @@ test('gluten chip hides recipes with pasta or bread ingredients', async ({ page 
   const totalAfter = await page.locator('.card').count();
   expect(totalAfter).toBeLessThan(totalBefore);
   await expect(page.locator('.card[data-title="Garlic Butter Pasta with Parmesan"]')).not.toBeVisible();
-  await expect(page.locator('.card[data-title="Lemon & Herb Chicken Thighs"]')).toBeVisible();
+  await expect(page.locator('.card[data-title="Lemon Herb Chicken Thighs & Potatoes"]')).toBeVisible();
 });
