@@ -486,6 +486,59 @@
 
   .plan-view { display: none; }
   .browse-view { display: block; }
+
+  /* ============ ADD TO PLAN / DAY PICKER ============ */
+  .add-plan-btn {
+    margin-top: 6px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--divider);
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .add-plan-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .add-plan-btn.planned { border-color: var(--sage); color: var(--sage); }
+
+  .day-picker {
+    position: fixed;
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    border-radius: var(--radius);
+    padding: 18px;
+    width: 240px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    z-index: 50;
+    display: none;
+  }
+  .day-picker.open { display: block; }
+  .day-picker h4 { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+  .day-picker-recipe { font-size: 12px; color: var(--accent); margin-bottom: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .day-picker-list { display: flex; flex-direction: column; gap: 5px; }
+  .day-picker-row {
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--surface-raised); border: 1px solid var(--divider);
+    border-radius: var(--radius-sm); padding: 9px 12px;
+    cursor: pointer; transition: border-color 0.15s, background 0.15s;
+    font-size: 13px;
+  }
+  .day-picker-row:hover { border-color: var(--sage); background: var(--surface-hover); }
+  .day-picker-row.taken:hover { border-color: var(--danger); }
+  .day-picker-row .day-name { font-weight: 600; }
+  .day-picker-row .day-status { font-size: 11px; color: var(--sage); }
+  .day-picker-row.taken .day-status { color: var(--text-muted); }
+  .day-picker-row.taken:hover .day-status { color: var(--danger); }
+  .day-picker-cancel {
+    margin-top: 12px; width: 100%; background: none; border: none;
+    color: var(--text-muted); font-size: 13px; cursor: pointer;
+    text-decoration: underline; padding: 6px; font-family: 'Inter', sans-serif;
+  }
 </style>
 </head>
 <body>
@@ -546,6 +599,14 @@
     <!-- populated in later tasks -->
   </div>
 
+</div>
+
+<!-- ============ DAY PICKER ============ -->
+<div class="day-picker" id="dayPicker" role="dialog" aria-modal="true" aria-label="Pick a day for this recipe">
+  <h4>Add to which day?</h4>
+  <div class="day-picker-recipe" id="dayPickerTitle"></div>
+  <div class="day-picker-list" id="dayPickerList"></div>
+  <button class="day-picker-cancel" id="dayPickerCancel">Cancel</button>
 </div>
 
 <!-- ============ DETAIL PANEL ============ -->
@@ -645,18 +706,32 @@ function renderGrid() {
         <span>${clockIcon} ${r.time} min</span>
         <span>${r.ingredients.length} ingredients</span>
       </div>
+      <button class="add-plan-btn ${DAY_KEYS.some(d => plan[d] === r.title) ? 'planned' : ''}"
+        data-recipe="${escapeAttr(r.title)}">
+        ${DAY_KEYS.some(d => plan[d] === r.title) ? '✓ In plan' : '+ Add to plan'}
+      </button>
     </div>
   `).join('');
 
   // Every card needs a click (mouse) and keydown (keyboard) handler
   // so the catalogue works for people navigating with Tab + Enter too.
   grid.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => openRecipe(card.dataset.title));
+    card.addEventListener('click', (e) => {
+      if (e.target.classList.contains('add-plan-btn')) return;
+      openRecipe(card.dataset.title);
+    });
     card.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         openRecipe(card.dataset.title);
       }
+    });
+  });
+
+  grid.querySelectorAll('.add-plan-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openDayPicker(btn.dataset.recipe, btn);
     });
   });
 }
@@ -791,6 +866,69 @@ document.getElementById('surpriseBtn').addEventListener('click', () => {
       setTimeout(() => card.classList.remove('flash'), 1600);
     }
   }, 100);
+});
+
+/* ============================================================
+   DAY PICKER: open/close and day selection
+   ============================================================ */
+let dayPickerRecipe = null;
+const dayPickerEl = document.getElementById('dayPicker');
+
+function openDayPicker(recipeTitle, anchorEl) {
+  dayPickerRecipe = recipeTitle;
+  document.getElementById('dayPickerTitle').textContent = recipeTitle;
+
+  const list = document.getElementById('dayPickerList');
+  list.innerHTML = DAY_KEYS.map(d => {
+    const current = plan[d];
+    const taken = current !== null;
+    return `
+      <div class="day-picker-row ${taken ? 'taken' : ''}" data-day="${d}">
+        <span class="day-name">${DAY_LABELS[d]}</span>
+        <span class="day-status">${taken ? current : 'Free'}</span>
+      </div>`;
+  }).join('');
+
+  list.querySelectorAll('.day-picker-row').forEach(row => {
+    row.addEventListener('click', () => {
+      selectDay(row.dataset.day);
+    });
+  });
+
+  // Position near the anchor button
+  const rect = anchorEl.getBoundingClientRect();
+  dayPickerEl.style.top = (rect.bottom + window.scrollY + 6) + 'px';
+  dayPickerEl.style.left = Math.min(rect.left + window.scrollX, window.innerWidth - 256) + 'px';
+  dayPickerEl.classList.add('open');
+}
+
+function closeDayPicker() {
+  dayPickerEl.classList.remove('open');
+  dayPickerRecipe = null;
+}
+
+function selectDay(day) {
+  if (!dayPickerRecipe) return;
+  fetch(`/api/plan/${day}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ recipe: dayPickerRecipe })
+  })
+    .then(res => res.json())
+    .then(data => {
+      plan = data;
+      renderGrid();
+      renderPlanTab();
+      closeDayPicker();
+    });
+}
+
+document.getElementById('dayPickerCancel').addEventListener('click', closeDayPicker);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDayPicker(); });
+document.addEventListener('click', e => {
+  if (!dayPickerEl.contains(e.target) && !e.target.classList.contains('add-plan-btn')) {
+    closeDayPicker();
+  }
 });
 
 /* ============================================================
