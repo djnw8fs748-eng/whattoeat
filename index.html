@@ -1252,7 +1252,7 @@ document.getElementById('clearBtn').addEventListener('click', () => {
   document.getElementById('searchInput').value = "";
   catSelect.value = "";
   document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('.allergen-chip').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(c => c.classList.remove('active'));
   renderGrid();
 });
 
@@ -1278,10 +1278,12 @@ function closeSheet() {
   filterSheet.classList.remove('open');
   filterSheetBackdrop.classList.remove('visible');
   filtersBtn.setAttribute('aria-expanded', 'false');
-  filterSheet.addEventListener('transitionend', () => {
+  const hide = () => {
     filterSheet.style.display = 'none';
     filterSheetBackdrop.style.display = 'none';
-  }, { once: true });
+  };
+  filterSheet.addEventListener('transitionend', hide, { once: true });
+  setTimeout(hide, 300);
 }
 
 function syncSheetControls() {
@@ -1328,6 +1330,7 @@ document.querySelectorAll('.sheet-time-chip').forEach(chip => {
     document.querySelectorAll('.sheet-time-chip').forEach(c => c.classList.remove('active'));
     chip.classList.add('active');
     activeMaxTime = parseInt(chip.dataset.sheetTime, 10);
+    document.querySelector(`.chip[data-time="${activeMaxTime}"]`)?.classList.add('active');
     renderGrid();
   });
 });
