@@ -57,4 +57,18 @@ test.describe('Mobile layout', () => {
     });
     await expect(page.locator('#filtersBtn')).toHaveText('Filters • 2');
   });
+
+  test('tapping Filters opens the bottom sheet', async ({ page }) => {
+    await page.locator('#filtersBtn').click();
+    await expect(page.locator('#filterSheet')).toBeVisible();
+    await expect(page.locator('#filtersBtn')).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  test('tapping backdrop closes the sheet', async ({ page }) => {
+    await page.locator('#filtersBtn').click();
+    await expect(page.locator('#filterSheet')).toBeVisible();
+    await page.locator('#filterSheetBackdrop').click();
+    await expect(page.locator('#filterSheet')).not.toBeVisible();
+    await expect(page.locator('#filtersBtn')).toHaveAttribute('aria-expanded', 'false');
+  });
 });

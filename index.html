@@ -476,6 +476,73 @@
     .chip-row { overflow-x: auto; padding-bottom: 4px; }
   }
 
+  /* ============ BOTTOM SHEET ============ */
+  #filterSheetBackdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 40;
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+  #filterSheetBackdrop.visible {
+    opacity: 1;
+  }
+
+  #filterSheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border-radius: 16px 16px 0 0;
+    z-index: 50;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: none;
+  }
+  #filterSheet.open {
+    transform: translateY(0);
+  }
+
+  .sheet-handle {
+    width: 40px;
+    height: 4px;
+    background: var(--divider);
+    border-radius: 2px;
+    margin: 12px auto 0;
+  }
+
+  .sheet-content {
+    padding: 16px 20px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sheet-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sheet-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  #sheetTimeChips, #sheetAllergenChips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
   /* ============ TAB BAR ============ */
   .tab-bar {
     display: flex;
@@ -742,7 +809,7 @@
         <button class="chip allergen-chip" data-allergen="sesame">Sesame</button>
         <button class="chip allergen-chip" data-allergen="mustard">Mustard</button>
       </div>
-      <button class="filters-btn" id="filtersBtn" type="button" aria-expanded="false">Filters</button>
+      <button class="filters-btn" id="filtersBtn" type="button" aria-expanded="false" aria-controls="filterSheet">Filters</button>
       <button class="clear-btn" id="clearBtn" type="button">Clear filters</button>
     </div>
   </div>
@@ -791,6 +858,43 @@
 </div>
 
 <footer>Pick something, cook it, eat it. That's the whole system.</footer>
+
+<!-- ============ BOTTOM SHEET (mobile filters) ============ -->
+<div id="filterSheetBackdrop"></div>
+<div id="filterSheet" role="dialog" aria-modal="true" aria-label="Filters">
+  <div class="sheet-handle"></div>
+  <div class="sheet-content">
+    <div class="sheet-section">
+      <label class="sheet-label" for="sheetCatSelect">Category</label>
+      <select class="cat-select" id="sheetCatSelect">
+        <option value="">All categories</option>
+      </select>
+    </div>
+    <div class="sheet-section">
+      <div class="sheet-label">Time</div>
+      <div class="chip-row" id="sheetTimeChips">
+        <button class="chip sheet-time-chip" data-sheet-time="20">Under 20 min</button>
+        <button class="chip sheet-time-chip" data-sheet-time="30">Under 30 min</button>
+        <button class="chip sheet-time-chip" data-sheet-time="999">Any time</button>
+      </div>
+    </div>
+    <div class="sheet-section">
+      <div class="sheet-label">Free from</div>
+      <div class="chip-row" id="sheetAllergenChips" role="group" aria-label="Free from allergens">
+        <button class="chip sheet-allergen-chip" data-allergen="gluten">Gluten</button>
+        <button class="chip sheet-allergen-chip" data-allergen="dairy">Dairy</button>
+        <button class="chip sheet-allergen-chip" data-allergen="eggs">Eggs</button>
+        <button class="chip sheet-allergen-chip" data-allergen="fish">Fish</button>
+        <button class="chip sheet-allergen-chip" data-allergen="shellfish">Shellfish</button>
+        <button class="chip sheet-allergen-chip" data-allergen="nuts">Nuts &amp; Peanuts</button>
+        <button class="chip sheet-allergen-chip" data-allergen="soy">Soy</button>
+        <button class="chip sheet-allergen-chip" data-allergen="sesame">Sesame</button>
+        <button class="chip sheet-allergen-chip" data-allergen="mustard">Mustard</button>
+      </div>
+    </div>
+    <button class="clear-btn" id="sheetClearBtn" type="button">Clear all filters</button>
+  </div>
+</div>
 
 <script>
 /* ============================================================
@@ -1153,6 +1257,121 @@ document.getElementById('clearBtn').addEventListener('click', () => {
 });
 
 /* ============================================================
+   BOTTOM SHEET: open/close, swipe-to-dismiss, sheet controls
+   ============================================================ */
+const filterSheet = document.getElementById('filterSheet');
+const filterSheetBackdrop = document.getElementById('filterSheetBackdrop');
+const filtersBtn = document.getElementById('filtersBtn');
+
+function openSheet() {
+  filterSheet.style.display = 'block';
+  filterSheetBackdrop.style.display = 'block';
+  // Force reflow so CSS transition fires
+  filterSheet.getBoundingClientRect();
+  filterSheet.classList.add('open');
+  filterSheetBackdrop.classList.add('visible');
+  filtersBtn.setAttribute('aria-expanded', 'true');
+  syncSheetControls();
+}
+
+function closeSheet() {
+  filterSheet.classList.remove('open');
+  filterSheetBackdrop.classList.remove('visible');
+  filtersBtn.setAttribute('aria-expanded', 'false');
+  filterSheet.addEventListener('transitionend', () => {
+    filterSheet.style.display = 'none';
+    filterSheetBackdrop.style.display = 'none';
+  }, { once: true });
+}
+
+function syncSheetControls() {
+  document.getElementById('sheetCatSelect').value = activeCategory;
+  document.querySelectorAll('.sheet-time-chip').forEach(c => {
+    c.classList.toggle('active', parseInt(c.dataset.sheetTime, 10) === activeMaxTime);
+  });
+  document.querySelectorAll('.sheet-allergen-chip').forEach(c => {
+    c.classList.toggle('active', activeAllergens.has(c.dataset.allergen));
+  });
+}
+
+filtersBtn.addEventListener('click', () => {
+  if (filterSheet.classList.contains('open')) {
+    closeSheet();
+  } else {
+    openSheet();
+  }
+});
+
+filterSheetBackdrop.addEventListener('click', closeSheet);
+
+const sheetCatSelect = document.getElementById('sheetCatSelect');
+
+function populateSheetCategories() {
+  const categories = [...new Set(recipes.map(r => r.category))].sort();
+  categories.forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = cat;
+    sheetCatSelect.appendChild(opt);
+  });
+}
+
+sheetCatSelect.addEventListener('change', (e) => {
+  activeCategory = e.target.value;
+  catSelect.value = activeCategory;
+  renderGrid();
+});
+
+document.querySelectorAll('.sheet-time-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.sheet-time-chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeMaxTime = parseInt(chip.dataset.sheetTime, 10);
+    renderGrid();
+  });
+});
+
+document.querySelectorAll('.sheet-allergen-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    const allergen = chip.dataset.allergen;
+    if (activeAllergens.has(allergen)) {
+      activeAllergens.delete(allergen);
+      chip.classList.remove('active');
+      document.querySelector(`.allergen-chip[data-allergen="${allergen}"]`)?.classList.remove('active');
+    } else {
+      activeAllergens.add(allergen);
+      chip.classList.add('active');
+      document.querySelector(`.allergen-chip[data-allergen="${allergen}"]`)?.classList.add('active');
+    }
+    renderGrid();
+  });
+});
+
+document.getElementById('sheetClearBtn').addEventListener('click', () => {
+  activeSearch = "";
+  activeCategory = "";
+  activeMaxTime = 999;
+  activeAllergens = new Set();
+  document.getElementById('searchInput').value = "";
+  catSelect.value = "";
+  sheetCatSelect.value = "";
+  document.querySelectorAll('.chip[data-time], .sheet-time-chip').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(c => c.classList.remove('active'));
+  renderGrid();
+});
+
+// Swipe down to close
+let touchStartY = 0;
+filterSheet.addEventListener('touchstart', (e) => {
+  touchStartY = e.touches[0].clientY;
+}, { passive: true });
+filterSheet.addEventListener('touchend', (e) => {
+  const delta = e.changedTouches[0].clientY - touchStartY;
+  if (delta > 80) closeSheet();
+}, { passive: true });
+
+/* ============================================================
    SURPRISE ME: picks a random recipe from whatever is currently
    filtered (so if you've already narrowed things down to
    "Pasta", it won't surprise you with a soup), opens it, and
@@ -1320,6 +1539,7 @@ fetch('recipes.json')
   .then(data => {
     recipes = data;
     populateCategories();
+    populateSheetCategories();
     renderGrid();
     fetchPlan();
     setInterval(fetchPlan, 15000);
