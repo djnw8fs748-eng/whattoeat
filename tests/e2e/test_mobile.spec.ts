@@ -14,8 +14,9 @@ test.describe('Unified search input', () => {
     const filtered = await page.locator('.card').count();
     expect(filtered).toBeGreaterThan(0);
     expect(filtered).toBeLessThan(total);
-    // Only pasta-related recipes visible (title or ingredient match)
-    expect(filtered).toBeGreaterThan(0);
+    // Verify title-match works: at least one visible card must have 'pasta' in its title
+    const titles = await page.locator('.card h3').allTextContents();
+    expect(titles.some(t => t.toLowerCase().includes('pasta'))).toBe(true);
   });
 
   test('comma search applies AND ingredient logic', async ({ page }) => {

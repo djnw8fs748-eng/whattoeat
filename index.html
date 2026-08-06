@@ -840,9 +840,16 @@ function getFilteredRecipes() {
       matchesSearch = true;
     } else if (activeSearch.includes(',')) {
       const terms = activeSearch.split(',').map(t => t.trim()).filter(Boolean);
-      matchesSearch = terms.every(term =>
-        r.ingredients.some(i => i.toLowerCase().includes(term))
-      );
+      if (terms.length <= 1) {
+        // Trailing comma or single comma-separated term — treat as single-term search
+        const term = terms[0] || '';
+        matchesSearch = term === '' || r.title.toLowerCase().includes(term) ||
+          r.ingredients.some(i => i.toLowerCase().includes(term));
+      } else {
+        matchesSearch = terms.every(term =>
+          r.ingredients.some(i => i.toLowerCase().includes(term))
+        );
+      }
     } else {
       matchesSearch = r.title.toLowerCase().includes(activeSearch) ||
         r.ingredients.some(i => i.toLowerCase().includes(activeSearch));
