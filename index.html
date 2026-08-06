@@ -449,8 +449,98 @@
 
   @media (max-width: 640px) {
     .hero { padding: 44px 0 32px; }
-    .filters-inner { flex-direction: column; align-items: stretch; }
+  }
+
+  /* Mobile filter layout */
+  .filters-btn {
+    display: none;
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    color: var(--text);
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .filters-btn:hover { border-color: var(--accent); }
+
+  @media (max-width: 767px) {
+    .filters-inner { flex-wrap: nowrap; align-items: center; gap: 8px; }
+    #searchInput { flex: 1 1 auto; min-width: 0; }
+    #catSelect, #timeChips, #allergenChips, #clearBtn { display: none !important; }
+    .filters-btn { display: block; }
     .chip-row { overflow-x: auto; padding-bottom: 4px; }
+  }
+
+  /* ============ BOTTOM SHEET ============ */
+  #filterSheetBackdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 40;
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+  #filterSheetBackdrop.visible {
+    opacity: 1;
+  }
+
+  #filterSheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border-radius: 16px 16px 0 0;
+    z-index: 50;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: none;
+  }
+  #filterSheet.open {
+    transform: translateY(0);
+  }
+
+  .sheet-handle {
+    width: 40px;
+    height: 4px;
+    background: var(--divider);
+    border-radius: 2px;
+    margin: 12px auto 0;
+  }
+
+  .sheet-content {
+    padding: 16px 20px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sheet-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sheet-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  #sheetTimeChips, #sheetAllergenChips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   /* ============ TAB BAR ============ */
@@ -698,8 +788,7 @@
   <!-- ============ FILTERS ============ -->
   <div class="filters">
     <div class="filters-inner">
-      <input type="text" class="search-input" id="searchInput" placeholder="Search by name or ingredient (e.g. 'chicken', 'pasta')...">
-      <input type="text" class="search-input" id="fridgeInput" placeholder="Fridge search: e.g. chicken, rice, spinach…" style="border-color: var(--accent-soft);">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search recipes or filter by ingredients… (use commas for AND, e.g. chicken, rice)">
       <select class="cat-select" id="catSelect">
         <option value="">All categories</option>
       </select>
@@ -720,6 +809,7 @@
         <button class="chip allergen-chip" data-allergen="sesame">Sesame</button>
         <button class="chip allergen-chip" data-allergen="mustard">Mustard</button>
       </div>
+      <button class="filters-btn" id="filtersBtn" type="button" aria-expanded="false" aria-controls="filterSheet">Filters</button>
       <button class="clear-btn" id="clearBtn" type="button">Clear filters</button>
     </div>
   </div>
@@ -769,6 +859,43 @@
 
 <footer>Pick something, cook it, eat it. That's the whole system.</footer>
 
+<!-- ============ BOTTOM SHEET (mobile filters) ============ -->
+<div id="filterSheetBackdrop" aria-hidden="true"></div>
+<div id="filterSheet" role="dialog" aria-modal="true" aria-label="Filters">
+  <div class="sheet-handle"></div>
+  <div class="sheet-content">
+    <div class="sheet-section">
+      <label class="sheet-label" for="sheetCatSelect">Category</label>
+      <select class="cat-select" id="sheetCatSelect">
+        <option value="">All categories</option>
+      </select>
+    </div>
+    <div class="sheet-section">
+      <div class="sheet-label">Time</div>
+      <div class="chip-row" id="sheetTimeChips">
+        <button class="chip sheet-time-chip" data-sheet-time="20">Under 20 min</button>
+        <button class="chip sheet-time-chip" data-sheet-time="30">Under 30 min</button>
+        <button class="chip sheet-time-chip" data-sheet-time="999">Any time</button>
+      </div>
+    </div>
+    <div class="sheet-section">
+      <div class="sheet-label">Free from</div>
+      <div class="chip-row" id="sheetAllergenChips" role="group" aria-label="Free from allergens">
+        <button class="chip sheet-allergen-chip" data-allergen="gluten">Gluten</button>
+        <button class="chip sheet-allergen-chip" data-allergen="dairy">Dairy</button>
+        <button class="chip sheet-allergen-chip" data-allergen="eggs">Eggs</button>
+        <button class="chip sheet-allergen-chip" data-allergen="fish">Fish</button>
+        <button class="chip sheet-allergen-chip" data-allergen="shellfish">Shellfish</button>
+        <button class="chip sheet-allergen-chip" data-allergen="nuts">Nuts &amp; Peanuts</button>
+        <button class="chip sheet-allergen-chip" data-allergen="soy">Soy</button>
+        <button class="chip sheet-allergen-chip" data-allergen="sesame">Sesame</button>
+        <button class="chip sheet-allergen-chip" data-allergen="mustard">Mustard</button>
+      </div>
+    </div>
+    <button class="clear-btn" id="sheetClearBtn" type="button">Clear all filters</button>
+  </div>
+</div>
+
 <script>
 /* ============================================================
    RECIPE DATA
@@ -787,8 +914,6 @@ let recipes = [];
 let activeSearch = "";
 let activeCategory = "";
 let activeMaxTime = 999;
-
-let activeFridge = "";
 
 let activeAllergens = new Set();
 
@@ -838,12 +963,25 @@ const clockIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" st
    ============================================================ */
 function getFilteredRecipes() {
   return recipes.filter(r => {
-    const matchesSearch = activeSearch === "" ||
-      r.title.toLowerCase().includes(activeSearch) ||
-      r.ingredients.some(i => i.toLowerCase().includes(activeSearch));
-    const matchesFridge = activeFridge === "" ||
-      activeFridge.split(',').map(t => t.trim()).filter(Boolean)
-        .every(term => r.ingredients.some(i => i.toLowerCase().includes(term)));
+    let matchesSearch;
+    if (activeSearch === "") {
+      matchesSearch = true;
+    } else if (activeSearch.includes(',')) {
+      const terms = activeSearch.split(',').map(t => t.trim()).filter(Boolean);
+      if (terms.length <= 1) {
+        // Trailing comma or single comma-separated term — treat as single-term search
+        const term = terms[0] || '';
+        matchesSearch = term === '' || r.title.toLowerCase().includes(term) ||
+          r.ingredients.some(i => i.toLowerCase().includes(term));
+      } else {
+        matchesSearch = terms.every(term =>
+          r.ingredients.some(i => i.toLowerCase().includes(term))
+        );
+      }
+    } else {
+      matchesSearch = r.title.toLowerCase().includes(activeSearch) ||
+        r.ingredients.some(i => i.toLowerCase().includes(activeSearch));
+    }
     const matchesCategory = activeCategory === "" || r.category === activeCategory;
     const matchesTime = r.time <= activeMaxTime;
     const matchesAllergens = activeAllergens.size === 0 ||
@@ -852,11 +990,21 @@ function getFilteredRecipes() {
           r.ingredients.some(i => i.toLowerCase().includes(kw))
         )
       );
-    return matchesSearch && matchesFridge && matchesCategory && matchesTime && matchesAllergens;
+    return matchesSearch && matchesCategory && matchesTime && matchesAllergens;
   });
 }
 
+function updateFilterBadge() {
+  const btn = document.getElementById('filtersBtn');
+  if (!btn) return;
+  const count = (activeCategory !== "" ? 1 : 0) +
+                (activeMaxTime !== 999 ? 1 : 0) +
+                activeAllergens.size;
+  btn.textContent = count > 0 ? `Filters • ${count}` : 'Filters';
+}
+
 function renderGrid() {
+  updateFilterBadge();
   const grid = document.getElementById('grid');
   const emptyState = document.getElementById('emptyState');
   const filtered = getFilteredRecipes();
@@ -910,6 +1058,11 @@ function renderGrid() {
     });
   });
 }
+
+// expose for E2E testing
+window.renderGrid = renderGrid;
+Object.defineProperty(window, 'activeCategory', { get() { return activeCategory; }, set(v) { activeCategory = v; } });
+Object.defineProperty(window, 'activeMaxTime', { get() { return activeMaxTime; }, set(v) { activeMaxTime = v; } });
 
 function renderPlanTab() {
   updatePlanBadge();
@@ -1060,19 +1213,6 @@ document.addEventListener('keydown', (e) => {
    ============================================================ */
 document.getElementById('searchInput').addEventListener('input', (e) => {
   activeSearch = e.target.value.trim().toLowerCase();
-  if (activeSearch) {
-    activeFridge = "";
-    document.getElementById('fridgeInput').value = "";
-  }
-  renderGrid();
-});
-
-document.getElementById('fridgeInput').addEventListener('input', (e) => {
-  activeFridge = e.target.value.trim().toLowerCase();
-  if (activeFridge) {
-    activeSearch = "";
-    document.getElementById('searchInput').value = "";
-  }
   renderGrid();
 });
 
@@ -1100,6 +1240,8 @@ document.querySelectorAll('.allergen-chip').forEach(chip => {
       activeAllergens.add(allergen);
       chip.classList.add('active');
     }
+    document.querySelector(`.sheet-allergen-chip[data-allergen="${allergen}"]`)
+      ?.classList.toggle('active', activeAllergens.has(allergen));
     renderGrid();
   });
 });
@@ -1108,15 +1250,134 @@ document.getElementById('clearBtn').addEventListener('click', () => {
   activeSearch = "";
   activeCategory = "";
   activeMaxTime = 999;
-  activeFridge = "";
-  activeAllergens.clear();
+  activeAllergens = new Set();
   document.getElementById('searchInput').value = "";
-  document.getElementById('fridgeInput').value = "";
   catSelect.value = "";
-  document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('.allergen-chip').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.chip[data-time], .sheet-time-chip').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(c => c.classList.remove('active'));
   renderGrid();
 });
+
+/* ============================================================
+   BOTTOM SHEET: open/close, swipe-to-dismiss, sheet controls
+   ============================================================ */
+const filterSheet = document.getElementById('filterSheet');
+const filterSheetBackdrop = document.getElementById('filterSheetBackdrop');
+const filtersBtn = document.getElementById('filtersBtn');
+
+function openSheet() {
+  filterSheet.style.display = 'block';
+  filterSheetBackdrop.style.display = 'block';
+  // Force reflow so CSS transition fires
+  filterSheet.getBoundingClientRect();
+  filterSheet.classList.add('open');
+  filterSheetBackdrop.classList.add('visible');
+  filtersBtn.setAttribute('aria-expanded', 'true');
+  syncSheetControls();
+  // Move focus inside the dialog
+  document.getElementById('sheetCatSelect').focus();
+}
+
+function closeSheet() {
+  filterSheet.classList.remove('open');
+  filterSheetBackdrop.classList.remove('visible');
+  filtersBtn.setAttribute('aria-expanded', 'false');
+  filtersBtn.focus();
+  const hide = () => {
+    filterSheet.style.display = 'none';
+    filterSheetBackdrop.style.display = 'none';
+  };
+  filterSheet.addEventListener('transitionend', hide, { once: true });
+  setTimeout(hide, 300);
+}
+
+function syncSheetControls() {
+  document.getElementById('sheetCatSelect').value = activeCategory;
+  document.querySelectorAll('.sheet-time-chip').forEach(c => {
+    c.classList.toggle('active', parseInt(c.dataset.sheetTime, 10) === activeMaxTime);
+  });
+  document.querySelectorAll('.sheet-allergen-chip').forEach(c => {
+    c.classList.toggle('active', activeAllergens.has(c.dataset.allergen));
+  });
+}
+
+filtersBtn.addEventListener('click', () => {
+  if (filterSheet.classList.contains('open')) {
+    closeSheet();
+  } else {
+    openSheet();
+  }
+});
+
+filterSheetBackdrop.addEventListener('click', closeSheet);
+
+const sheetCatSelect = document.getElementById('sheetCatSelect');
+
+function populateSheetCategories() {
+  const categories = [...new Set(recipes.map(r => r.category))].sort();
+  categories.forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = cat;
+    sheetCatSelect.appendChild(opt);
+  });
+}
+
+sheetCatSelect.addEventListener('change', (e) => {
+  activeCategory = e.target.value;
+  catSelect.value = activeCategory;
+  renderGrid();
+});
+
+document.querySelectorAll('.sheet-time-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.sheet-time-chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeMaxTime = parseInt(chip.dataset.sheetTime, 10);
+    document.querySelector(`.chip[data-time="${activeMaxTime}"]`)?.classList.add('active');
+    renderGrid();
+  });
+});
+
+document.querySelectorAll('.sheet-allergen-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    const allergen = chip.dataset.allergen;
+    if (activeAllergens.has(allergen)) {
+      activeAllergens.delete(allergen);
+      chip.classList.remove('active');
+      document.querySelector(`.allergen-chip[data-allergen="${allergen}"]`)?.classList.remove('active');
+    } else {
+      activeAllergens.add(allergen);
+      chip.classList.add('active');
+      document.querySelector(`.allergen-chip[data-allergen="${allergen}"]`)?.classList.add('active');
+    }
+    renderGrid();
+  });
+});
+
+document.getElementById('sheetClearBtn').addEventListener('click', () => {
+  activeSearch = "";
+  activeCategory = "";
+  activeMaxTime = 999;
+  activeAllergens = new Set();
+  document.getElementById('searchInput').value = "";
+  catSelect.value = "";
+  sheetCatSelect.value = "";
+  document.querySelectorAll('.chip[data-time], .sheet-time-chip').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(c => c.classList.remove('active'));
+  renderGrid();
+});
+
+// Swipe down to close
+let touchStartY = 0;
+filterSheet.addEventListener('touchstart', (e) => {
+  touchStartY = e.touches[0].clientY;
+}, { passive: true });
+filterSheet.addEventListener('touchend', (e) => {
+  const delta = e.changedTouches[0].clientY - touchStartY;
+  if (delta > 80) closeSheet();
+}, { passive: true });
 
 /* ============================================================
    SURPRISE ME: picks a random recipe from whatever is currently
@@ -1226,6 +1487,9 @@ document.getElementById('copyListBtn').addEventListener('click', () => {
   });
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDayPicker(); });
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && filterSheet.classList.contains('open')) closeSheet();
+});
 document.addEventListener('click', e => {
   if (!dayPickerEl.contains(e.target) && !e.target.classList.contains('add-plan-btn')) {
     closeDayPicker();
@@ -1286,6 +1550,7 @@ fetch('recipes.json')
   .then(data => {
     recipes = data;
     populateCategories();
+    populateSheetCategories();
     renderGrid();
     fetchPlan();
     setInterval(fetchPlan, 15000);
