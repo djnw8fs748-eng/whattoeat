@@ -698,8 +698,7 @@
   <!-- ============ FILTERS ============ -->
   <div class="filters">
     <div class="filters-inner">
-      <input type="text" class="search-input" id="searchInput" placeholder="Search by name or ingredient (e.g. 'chicken', 'pasta')...">
-      <input type="text" class="search-input" id="fridgeInput" placeholder="Fridge search: e.g. chicken, rice, spinach…" style="border-color: var(--accent-soft);">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search recipes or filter by ingredients… (use commas for AND, e.g. chicken, rice)">
       <select class="cat-select" id="catSelect">
         <option value="">All categories</option>
       </select>
@@ -788,8 +787,6 @@ let activeSearch = "";
 let activeCategory = "";
 let activeMaxTime = 999;
 
-let activeFridge = "";
-
 let activeAllergens = new Set();
 
 const ALLERGEN_KEYWORDS = {
@@ -838,12 +835,18 @@ const clockIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" st
    ============================================================ */
 function getFilteredRecipes() {
   return recipes.filter(r => {
-    const matchesSearch = activeSearch === "" ||
-      r.title.toLowerCase().includes(activeSearch) ||
-      r.ingredients.some(i => i.toLowerCase().includes(activeSearch));
-    const matchesFridge = activeFridge === "" ||
-      activeFridge.split(',').map(t => t.trim()).filter(Boolean)
-        .every(term => r.ingredients.some(i => i.toLowerCase().includes(term)));
+    let matchesSearch;
+    if (activeSearch === "") {
+      matchesSearch = true;
+    } else if (activeSearch.includes(',')) {
+      const terms = activeSearch.split(',').map(t => t.trim()).filter(Boolean);
+      matchesSearch = terms.every(term =>
+        r.ingredients.some(i => i.toLowerCase().includes(term))
+      );
+    } else {
+      matchesSearch = r.title.toLowerCase().includes(activeSearch) ||
+        r.ingredients.some(i => i.toLowerCase().includes(activeSearch));
+    }
     const matchesCategory = activeCategory === "" || r.category === activeCategory;
     const matchesTime = r.time <= activeMaxTime;
     const matchesAllergens = activeAllergens.size === 0 ||
@@ -852,7 +855,7 @@ function getFilteredRecipes() {
           r.ingredients.some(i => i.toLowerCase().includes(kw))
         )
       );
-    return matchesSearch && matchesFridge && matchesCategory && matchesTime && matchesAllergens;
+    return matchesSearch && matchesCategory && matchesTime && matchesAllergens;
   });
 }
 
@@ -1060,19 +1063,6 @@ document.addEventListener('keydown', (e) => {
    ============================================================ */
 document.getElementById('searchInput').addEventListener('input', (e) => {
   activeSearch = e.target.value.trim().toLowerCase();
-  if (activeSearch) {
-    activeFridge = "";
-    document.getElementById('fridgeInput').value = "";
-  }
-  renderGrid();
-});
-
-document.getElementById('fridgeInput').addEventListener('input', (e) => {
-  activeFridge = e.target.value.trim().toLowerCase();
-  if (activeFridge) {
-    activeSearch = "";
-    document.getElementById('searchInput').value = "";
-  }
   renderGrid();
 });
 
@@ -1108,10 +1098,8 @@ document.getElementById('clearBtn').addEventListener('click', () => {
   activeSearch = "";
   activeCategory = "";
   activeMaxTime = 999;
-  activeFridge = "";
-  activeAllergens.clear();
+  activeAllergens = new Set();
   document.getElementById('searchInput').value = "";
-  document.getElementById('fridgeInput').value = "";
   catSelect.value = "";
   document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('.allergen-chip').forEach(c => c.classList.remove('active'));
