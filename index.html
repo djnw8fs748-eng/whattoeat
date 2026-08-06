@@ -449,7 +449,30 @@
 
   @media (max-width: 640px) {
     .hero { padding: 44px 0 32px; }
-    .filters-inner { flex-direction: column; align-items: stretch; }
+  }
+
+  /* Mobile filter layout */
+  .filters-btn {
+    display: none;
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    color: var(--text);
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .filters-btn:hover { border-color: var(--accent); }
+
+  @media (max-width: 767px) {
+    .filters-inner { flex-wrap: nowrap; align-items: center; gap: 8px; }
+    #searchInput { flex: 1 1 auto; min-width: 0; }
+    #catSelect, #timeChips, #allergenChips, #clearBtn { display: none !important; }
+    .filters-btn { display: block; }
     .chip-row { overflow-x: auto; padding-bottom: 4px; }
   }
 
@@ -719,6 +742,7 @@
         <button class="chip allergen-chip" data-allergen="sesame">Sesame</button>
         <button class="chip allergen-chip" data-allergen="mustard">Mustard</button>
       </div>
+      <button class="filters-btn" id="filtersBtn" type="button" aria-expanded="false" aria-controls="filterSheet">Filters</button>
       <button class="clear-btn" id="clearBtn" type="button">Clear filters</button>
     </div>
   </div>
@@ -866,7 +890,17 @@ function getFilteredRecipes() {
   });
 }
 
+function updateFilterBadge() {
+  const btn = document.getElementById('filtersBtn');
+  if (!btn) return;
+  const count = (activeCategory !== "" ? 1 : 0) +
+                (activeMaxTime !== 999 ? 1 : 0) +
+                activeAllergens.size;
+  btn.textContent = count > 0 ? `Filters • ${count}` : 'Filters';
+}
+
 function renderGrid() {
+  updateFilterBadge();
   const grid = document.getElementById('grid');
   const emptyState = document.getElementById('emptyState');
   const filtered = getFilteredRecipes();
@@ -920,6 +954,11 @@ function renderGrid() {
     });
   });
 }
+
+// expose for E2E testing
+window.renderGrid = renderGrid;
+Object.defineProperty(window, 'activeCategory', { get() { return activeCategory; }, set(v) { activeCategory = v; } });
+Object.defineProperty(window, 'activeMaxTime', { get() { return activeMaxTime; }, set(v) { activeMaxTime = v; } });
 
 function renderPlanTab() {
   updatePlanBadge();

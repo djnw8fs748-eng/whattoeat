@@ -32,3 +32,28 @@ test.describe('Unified search input', () => {
     expect(bothCount).toBeLessThanOrEqual(chickenCount);
   });
 });
+
+test.describe('Mobile layout', () => {
+  test.beforeEach(async ({ page }) => {
+    await setupMockApi(page);
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto('/');
+    await page.waitForSelector('.card');
+  });
+
+  test('Filters button is visible on mobile, filter bar controls are hidden', async ({ page }) => {
+    await expect(page.locator('#filtersBtn')).toBeVisible();
+    await expect(page.locator('#catSelect')).toBeHidden();
+    await expect(page.locator('#timeChips')).toBeHidden();
+    await expect(page.locator('#allergenChips')).toBeHidden();
+  });
+
+  test('Filters button shows badge count when a filter is active', async ({ page }) => {
+    await page.evaluate(() => {
+      window.activeCategory = 'Pasta';
+      window.activeMaxTime = 30;
+      window.renderGrid();
+    });
+    await expect(page.locator('#filtersBtn')).toHaveText('Filters • 2');
+  });
+});
