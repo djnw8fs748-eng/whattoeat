@@ -46,6 +46,7 @@ test.describe('Mobile layout', () => {
     await expect(page.locator('#catSelect')).toBeHidden();
     await expect(page.locator('#timeChips')).toBeHidden();
     await expect(page.locator('#allergenChips')).toBeHidden();
+    await expect(page.locator('#clearBtn')).toBeHidden();
   });
 
   test('Filters button shows badge count when a filter is active', async ({ page }) => {
