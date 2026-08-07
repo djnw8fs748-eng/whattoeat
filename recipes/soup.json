@@ -120,5 +120,29 @@
       "Blend until smooth, stir in the cream if using, and season to taste.",
       "Serve with crusty bread."
     ]
+  },
+  {
+    "title": "Spicy Black Bean Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A store-cupboard soup that gets its kick from chilli and smoked paprika.",
+    "ingredients": [
+      "2 tins black beans, drained and rinsed",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "1/2 tsp chilli powder",
+      "700ml vegetable stock",
+      "Lime juice and chopped coriander to serve",
+      "Olive oil"
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and garlic for 4-5 minutes.",
+      "Add the cumin, smoked paprika, and chilli powder, and cook for 30 seconds.",
+      "Add the black beans and stock, and simmer for 15 minutes.",
+      "Blend partially for a thicker texture if you like, and season to taste.",
+      "Serve with a squeeze of lime and chopped coriander."
+    ]
   }
 ]

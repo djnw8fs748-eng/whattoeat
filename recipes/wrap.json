@@ -137,5 +137,27 @@
       "Simmer for 12-15 minutes until thickened.",
       "Split the rolls and pile the mince mixture inside."
     ]
+  },
+  {
+    "title": "Greek Chicken Pitta Wrap",
+    "category": "Wrap",
+    "time": 20,
+    "teaser": "Grilled chicken, tzatziki, and salad rolled into a warm pitta.",
+    "ingredients": [
+      "2 chicken breasts, sliced",
+      "1 tsp dried oregano",
+      "2 pittas or large tortilla wraps",
+      "4 tbsp tzatziki (or yoghurt mixed with grated cucumber and garlic)",
+      "Handful lettuce, shredded",
+      "Few slices tomato and red onion",
+      "Olive oil"
+    ],
+    "steps": [
+      "Toss the chicken with the oregano and a little oil.",
+      "Fry in a hot pan for 6-8 minutes until cooked through and lightly charred.",
+      "Warm the pittas.",
+      "Layer the lettuce, tomato, onion, and chicken into the pittas.",
+      "Drizzle with tzatziki, roll or fold, and serve."
+    ]
   }
 ]

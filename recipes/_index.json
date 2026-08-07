@@ -508,5 +508,35 @@
     "category": "Soup",
     "time": 30,
     "file": "soup.json"
+  },
+  {
+    "title": "Thai Basil Beef Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Moroccan Spiced Chicken & Chickpea Traybake",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Greek Chicken Pitta Wrap",
+    "category": "Wrap",
+    "time": 20,
+    "file": "wrap.json"
+  },
+  {
+    "title": "Spicy Black Bean Soup",
+    "category": "Soup",
+    "time": 25,
+    "file": "soup.json"
+  },
+  {
+    "title": "Prawn & Pineapple Fried Rice",
+    "category": "Rice Bowl",
+    "time": 20,
+    "file": "rice-bowl.json"
   }
 ]

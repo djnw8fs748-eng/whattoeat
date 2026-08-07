@@ -212,5 +212,30 @@
       "Divide the rice between bowls and top with the sweetcorn.",
       "Flake the salmon over the top and finish with a squeeze of lime."
     ]
+  },
+  {
+    "title": "Prawn & Pineapple Fried Rice",
+    "category": "Rice Bowl",
+    "time": 20,
+    "teaser": "A sweet-and-savoury fried rice that turns a tin of pineapple into dinner.",
+    "ingredients": [
+      "300g raw prawns",
+      "300g cooked rice (day-old is best)",
+      "1 tin pineapple chunks, drained (or fresh)",
+      "1 red pepper, diced",
+      "2 eggs, beaten",
+      "3 tbsp soy sauce",
+      "1 tsp curry powder (optional)",
+      "Spring onion to garnish",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Heat oil in a wok over high heat and stir-fry the prawns for 2-3 minutes until pink. Set aside.",
+      "Pour the eggs into the pan and scramble briefly. Remove and set aside with the prawns.",
+      "Add the red pepper to the pan and stir-fry for 2 minutes.",
+      "Add the rice, breaking up any clumps, and stir-fry for 3-4 minutes.",
+      "Return the prawns and egg to the pan with the pineapple, soy sauce, and curry powder if using.",
+      "Toss everything together for 1-2 minutes, garnish with spring onion, and serve."
+    ]
   }
 ]

@@ -132,5 +132,29 @@
       "Add the garlic, noodles, fish sauce, brown sugar, and lime juice, and toss to coat.",
       "Return the prawns to the pan with the beansprouts, toss for 1 minute, and serve."
     ]
+  },
+  {
+    "title": "Thai Basil Beef Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "A fragrant, fiery beef stir-fry built on Thai basil and chilli.",
+    "ingredients": [
+      "300g beef mince (or thin beef strips)",
+      "3 cloves garlic, minced",
+      "2 red chillies, sliced",
+      "1 red pepper, sliced",
+      "3 tbsp fish sauce",
+      "1 tbsp soy sauce",
+      "1 tsp brown sugar",
+      "Handful Thai basil leaves (or regular basil)",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Heat oil in a wok over high heat and stir-fry the garlic and chilli for 30 seconds.",
+      "Add the beef mince and cook until browned, breaking it up as it cooks.",
+      "Add the red pepper and stir-fry for 2-3 minutes.",
+      "Stir in the fish sauce, soy sauce, and brown sugar, and cook for 1-2 minutes.",
+      "Remove from the heat and stir through the basil leaves until just wilted. Serve with rice."
+    ]
   }
 ]

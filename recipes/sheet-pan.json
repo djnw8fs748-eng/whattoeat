@@ -207,5 +207,26 @@
       "Meanwhile, steam or stir-fry the greens with the sesame oil for 3-4 minutes until just wilted.",
       "Serve the salmon over the greens, scattered with sesame seeds."
     ]
+  },
+  {
+    "title": "Moroccan Spiced Chicken & Chickpea Traybake",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "teaser": "Warmly spiced chicken thighs roast with chickpeas and red onion for a fuss-free dinner.",
+    "ingredients": [
+      "4 chicken thighs, skin on",
+      "1 tin chickpeas, drained and rinsed",
+      "1 red onion, wedged",
+      "2 tsp ras el hanout (or cumin, paprika, and cinnamon mixed)",
+      "1 lemon, sliced",
+      "2 tbsp olive oil",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the chickpeas and red onion with half the oil and spread on a baking tray.",
+      "Rub the chicken thighs with the remaining oil and the spice mix, season with salt and pepper, and place among the chickpeas with the lemon slices.",
+      "Roast for 35-40 minutes until the chicken is cooked through and the skin is golden."
+    ]
   }
 ]
