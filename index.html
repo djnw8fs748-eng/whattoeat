@@ -4,33 +4,73 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What's for Dinner — Easy Evening Recipes</title>
+<script>
+  // Applied before first paint so switching tabs/reloading doesn't flash the wrong theme.
+  try {
+    if (localStorage.getItem('wte-dark') === '1') document.documentElement.setAttribute('data-theme', 'dark');
+  } catch (e) {}
+</script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   /* ============ DESIGN TOKENS ============ */
-  /* This is the "kitchen after dark" palette — a deep green
-     background like a kitchen lit only by the stove hood light,
-     with a warm yellow accent standing in for that light. */
+  /* Atlassian-style design system tokens. Light is the default
+     theme; #darkModeToggle flips a data-theme attribute on <html>
+     which the [data-theme="dark"] block below overrides. */
   :root {
-    --bg: #1B2420;
-    --surface: #233026;
-    --surface-hover: #2B3A30;
-    --surface-raised: #2E3D32;
-    --accent: #E8A33D;
-    --accent-soft: #C97F3A;
-    --text: #F3EFE6;
-    --text-muted: #9FAA9C;
-    --sage: #7FA888;
-    --divider: #34433C;
-    --danger: #D9765A;
-    --radius: 14px;
-    --radius-sm: 8px;
-    --shadow: 0 10px 30px rgba(0,0,0,0.35);
+    --bg: #FFFFFF;
+    --surface: #FFFFFF;
+    --surface-sunken: #F8F8F8;
+    --surface-hover: #F0F1F2;
+    --surface-raised: #F0F1F2;
+    --text: #292A2E;
+    --text-muted: #505258;
+    --text-subtlest: #6B6E76;
+    --accent: #1868DB;
+    --accent-soft: #1558BC;
+    --brand-subtlest: #E9F2FE;
+    --divider: #0B120E24;
+    --border-input: #8C8F97;
+    --danger: #E2483D;
+    --danger-bg: #FFECEB;
+    --danger-text: #AE2E24;
+    --success-bg: #EFFFD6;
+    --success-border: #6A9A23;
+    --success-text: #37471F;
+    --blanket: #050C1F75;
+    --surprise: #964AC0;
+    --radius: 8px;
+    --radius-sm: 6px;
+    --shadow: 0px 8px 12px #1E1F2126, 0px 0px 1px #1E1F214F;
+  }
+
+  [data-theme="dark"] {
+    --bg: #1D2125;
+    --surface: #1D2125;
+    --surface-sunken: #161A1D;
+    --surface-hover: #2C333A;
+    --surface-raised: #2C333A;
+    --text: #B6C2CF;
+    --text-muted: #9FADBC;
+    --text-subtlest: #738496;
+    --accent: #388BFF;
+    --accent-soft: #6BA6FF;
+    --brand-subtlest: #082145;
+    --divider: #A1BDD924;
+    --border-input: #738496;
+    --danger: #FD9891;
+    --danger-bg: #42221F;
+    --danger-text: #FF9C8F;
+    --success-bg: #37471F;
+    --success-border: #94C748;
+    --success-text: #D3F1A7;
+    --blanket: #0B0E1180;
+    --shadow: 0px 8px 12px #00000059, 0px 0px 1px #00000080;
   }
 
   * { box-sizing: border-box; }
@@ -42,11 +82,12 @@
     color: var(--text);
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
+    transition: background 150ms ease, color 150ms ease;
   }
 
   h1, h2, h3, .display {
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 600;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 700;
     letter-spacing: -0.01em;
   }
 
@@ -59,81 +100,115 @@
 
   /* ============ LAYOUT SHELL ============ */
   .wrap {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px 80px;
   }
 
-  /* ============ HERO ============ */
-  .hero {
-    padding: 64px 0 40px;
+  /* ============ TOP NAV ============ */
+  .topnav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 56px;
+    padding: 0 24px;
+    background: var(--surface);
     border-bottom: 1px solid var(--divider);
-    margin-bottom: 32px;
   }
+  .topnav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .topnav-mark {
+    width: 26px;
+    height: 26px;
+    border-radius: 9999px;
+    background: var(--accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+  .topnav-name {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text);
+    white-space: nowrap;
+  }
+  .topnav-tabs {
+    display: flex;
+    gap: 16px;
+    margin-left: 8px;
+  }
+  .topnav-spacer { flex: 1; }
 
-  .hero .eyebrow {
-    color: var(--sage);
-    font-size: 13px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 14px;
+  .icon-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+    background: var(--surface-hover);
+    border: 1px solid var(--divider);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
   }
-
-  .hero h1 {
-    font-size: clamp(36px, 6vw, 58px);
-    line-height: 1.05;
-    margin: 0 0 16px;
-  }
-
-  .hero h1 em {
-    font-style: italic;
-    color: var(--accent);
-  }
-
-  .hero p.sub {
-    color: var(--text-muted);
-    font-size: 17px;
-    max-width: 520px;
-    line-height: 1.5;
-    margin: 0 0 28px;
-  }
+  .icon-btn:hover { background: var(--surface-raised); }
+  .icon-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .icon-btn svg { width: 15px; height: 15px; }
 
   .surprise-btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    background: var(--accent);
-    color: #1B2420;
+    gap: 8px;
+    background: var(--surprise);
+    color: #fff;
     border: none;
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    padding: 15px 24px;
-    border-radius: 999px;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
     cursor: pointer;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-    box-shadow: 0 6px 20px rgba(232, 163, 61, 0.25);
+    white-space: nowrap;
+    transition: filter 0.15s ease;
   }
-  .surprise-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(232, 163, 61, 0.35); }
-  .surprise-btn:active { transform: translateY(0); }
-  .surprise-btn:focus-visible { outline: 3px solid var(--sage); outline-offset: 3px; }
-  .surprise-btn svg { width: 18px; height: 18px; }
+  .surprise-btn:hover { filter: brightness(1.08); }
+  .surprise-btn:focus-visible { outline: 2px solid var(--surprise); outline-offset: 2px; }
+  .surprise-btn svg { width: 14px; height: 14px; }
 
-  .hero-count {
-    color: var(--text-muted);
-    font-size: 14px;
-    margin-top: 14px;
+  /* ============ VIEW HEADINGS ============ */
+  .view-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 32px 0 4px;
+    color: var(--text);
   }
-  .hero-count strong { color: var(--text); }
+  .view-heading svg { width: 22px; height: 22px; flex-shrink: 0; }
+  .view-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin: 0 0 20px;
+  }
 
   /* ============ FILTER BAR ============ */
   .filters {
     position: sticky;
-    top: 0;
+    top: 56px;
     z-index: 20;
-    background: rgba(27, 36, 32, 0.92);
-    backdrop-filter: blur(8px);
+    background: var(--bg);
     padding: 16px 0;
     margin-bottom: 28px;
     border-bottom: 1px solid var(--divider);
@@ -191,11 +266,21 @@
     white-space: nowrap;
     transition: all 0.15s ease;
   }
-  .chip:hover { border-color: var(--sage); color: var(--text); }
+  .chip:hover { border-color: var(--accent); color: var(--text); }
   .chip.active {
-    background: var(--sage);
-    border-color: var(--sage);
-    color: #182018;
+    background: var(--brand-subtlest);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .allergen-chip {
+    border-radius: var(--radius-sm);
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+  .allergen-chip.active {
+    background: var(--danger-bg);
+    border-color: var(--danger);
+    color: var(--danger-text);
   }
 
   .chip-label {
@@ -237,7 +322,7 @@
   }
   .card:hover {
     background: var(--surface-hover);
-    border-color: var(--sage);
+    border-color: var(--accent);
     transform: translateY(-3px);
   }
   .card:focus-visible {
@@ -246,7 +331,7 @@
   }
   .card.flash {
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(232,163,61,0.25);
+    box-shadow: 0 0 0 3px var(--brand-subtlest);
   }
 
   .card-top {
@@ -257,16 +342,40 @@
   }
 
   .pill {
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--sage);
-    background: rgba(127,168,136,0.14);
-    padding: 5px 10px;
-    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    border: 1px solid;
     white-space: nowrap;
+    width: fit-content;
   }
+
+  /* ============ CATEGORY BADGE PALETTE ============ */
+  .cat-0 { background: #E9F2FE; color: #123263; border-color: #357DE8; }
+  .cat-1 { background: #DCFFF1; color: #164B35; border-color: #22A06B; }
+  .cat-2 { background: #F8EEFE; color: #48245D; border-color: #AF59E1; }
+  .cat-3 { background: #FFF5DB; color: #693200; border-color: #E06C00; }
+  .cat-4 { background: #FFECF8; color: #50253F; border-color: #CD519D; }
+  .cat-5 { background: #E7F9FF; color: #164555; border-color: #2898BD; }
+  .cat-6 { background: #EFFFD6; color: #37471F; border-color: #6A9A23; }
+  .cat-7 { background: #FFECEB; color: #5D1F1A; border-color: #E2483D; }
+  .cat-8 { background: #FEF7C8; color: #533F04; border-color: #B38600; }
+
+  [data-theme="dark"] .cat-0 { background: #09326C; color: #CFE1FD; border-color: #669DF1; }
+  [data-theme="dark"] .cat-1 { background: #164B35; color: #BAF3DB; border-color: #7EE2B8; }
+  [data-theme="dark"] .cat-2 { background: #2B2350; color: #EED7FC; border-color: #D8A0F7; }
+  [data-theme="dark"] .cat-3 { background: #5F3811; color: #FEDEC8; border-color: #FCA700; }
+  [data-theme="dark"] .cat-4 { background: #943D73; color: #FDD0EC; border-color: #F797D2; }
+  [data-theme="dark"] .cat-5 { background: #164555; color: #C6EDFB; border-color: #9DD9EE; }
+  [data-theme="dark"] .cat-6 { background: #4C6B1F; color: #D3F1A7; border-color: #94C748; }
+  [data-theme="dark"] .cat-7 { background: #5D1F1A; color: #FFD5D2; border-color: #F87168; }
+  [data-theme="dark"] .cat-8 { background: #533F04; color: #F8E6A0; border-color: #E2B203; }
 
   .card h3 {
     font-size: 20px;
@@ -302,7 +411,7 @@
   .backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(10, 14, 11, 0.6);
+    background: var(--blanket);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease;
@@ -316,8 +425,9 @@
     right: 0;
     height: 100%;
     width: min(480px, 100%);
-    background: var(--bg);
+    background: var(--surface);
     border-left: 1px solid var(--divider);
+    box-shadow: var(--shadow);
     transform: translateX(100%);
     transition: transform 0.25s ease;
     z-index: 31;
@@ -366,11 +476,11 @@
 
   .panel h4 {
     font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--sage);
-    margin: 0 0 14px;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin: 0 0 12px;
     font-weight: 700;
   }
 
@@ -445,10 +555,6 @@
     color: var(--text-muted);
     font-size: 13px;
     padding: 40px 0 10px;
-  }
-
-  @media (max-width: 640px) {
-    .hero { padding: 44px 0 32px; }
   }
 
   /* Mobile filter layout */
@@ -572,13 +678,17 @@
   .tab-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 
   .tab-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: var(--accent);
-    color: #1B2420;
+    color: #fff;
     font-size: 11px;
     font-weight: 700;
-    padding: 2px 7px;
-    border-radius: 999px;
     min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 9999px;
     text-align: center;
   }
 
@@ -601,16 +711,20 @@
     transition: border-color 0.15s, color 0.15s;
   }
   .add-plan-btn:hover { border-color: var(--accent); color: var(--accent); }
-  .add-plan-btn.planned { border-color: var(--sage); color: var(--sage); }
+  .add-plan-btn.planned {
+    background: var(--success-bg);
+    border-color: var(--success-border);
+    color: var(--success-text);
+  }
 
   .day-picker {
     position: fixed;
     background: var(--surface);
     border: 1px solid var(--divider);
     border-radius: var(--radius);
-    padding: 18px;
+    padding: 16px;
     width: 240px;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    box-shadow: var(--shadow);
     z-index: 50;
     display: none;
   }
@@ -626,10 +740,10 @@
     cursor: pointer; transition: border-color 0.15s, background 0.15s;
     font-size: 13px;
   }
-  .day-picker-row:hover { border-color: var(--sage); background: var(--surface-hover); }
+  .day-picker-row:hover { border-color: var(--accent); background: var(--surface-hover); }
   .day-picker-row.taken:hover { border-color: var(--danger); }
   .day-picker-row .day-name { font-weight: 600; }
-  .day-picker-row .day-status { font-size: 11px; color: var(--sage); }
+  .day-picker-row .day-status { font-size: 11px; color: var(--accent); }
   .day-picker-row.taken .day-status { color: var(--text-muted); }
   .day-picker-row.taken:hover .day-status { color: var(--danger); }
   .day-picker-cancel {
@@ -661,7 +775,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--sage);
+    color: var(--accent);
   }
   .day-col-recipe {
     background: var(--surface-raised);
@@ -697,7 +811,7 @@
     transition: border-color 0.15s;
     flex: 1;
   }
-  .day-col-empty:hover { border-color: var(--sage); color: var(--sage); }
+  .day-col-empty:hover { border-color: var(--accent); color: var(--accent); }
 
   @media (max-width: 640px) {
     .plan-grid { grid-template-columns: 1fr 1fr; }
@@ -729,7 +843,7 @@
     cursor: pointer;
     transition: border-color 0.15s, color 0.15s;
   }
-  .copy-list-btn:hover { border-color: var(--sage); color: var(--text); }
+  .copy-list-btn:hover { border-color: var(--accent); color: var(--text); }
   .shopping-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -760,30 +874,39 @@
 </head>
 <body>
 
-<div class="wrap">
-
-  <!-- ============ HERO ============ -->
-  <div class="hero">
-    <div class="eyebrow">A no-fuss weeknight cookbook</div>
-    <h1>What's for <em>dinner</em><br>tonight?</h1>
-    <p class="sub">70 easy recipes, mostly things you can find at any supermarket. Nothing fancy, nothing that takes all evening — just search, filter, or let the kitchen decide for you.</p>
-    <button class="surprise-btn" id="surpriseBtn" type="button">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h4l2 4-2 4H4z"/><path d="M16 4h4v4l-4 4"/><path d="M4 16h4l2 4-2-4H4z" opacity="0"/><circle cx="8" cy="8" r="0.5" fill="currentColor"/><circle cx="16" cy="16" r="0.5" fill="currentColor"/></svg>
-      Surprise me
-    </button>
-    <div class="hero-count"><strong id="resultCount">70</strong> recipes ready when you are</div>
+<!-- ============ TOP NAV ============ -->
+<div class="topnav">
+  <div class="topnav-brand">
+    <div class="topnav-mark">W</div>
+    <span class="topnav-name">What's for dinner</span>
   </div>
-
-  <!-- ============ TAB BAR ============ -->
-  <div class="tab-bar" role="tablist">
+  <div class="topnav-tabs" role="tablist">
     <button class="tab-btn active" id="browseTab" role="tab" aria-selected="true" aria-controls="browseView">Browse</button>
     <button class="tab-btn" id="planTab" role="tab" aria-selected="false" aria-controls="planView">
       Plan <span class="tab-badge" id="planBadge" style="display:none">0</span>
     </button>
   </div>
+  <div class="topnav-spacer"></div>
+  <button class="icon-btn" id="darkModeToggle" type="button" aria-label="Toggle dark mode">
+    <svg id="darkModeIconMoon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+    <svg id="darkModeIconSun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+  </button>
+  <button class="surprise-btn" id="surpriseBtn" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M3 12h4M19 12h4M12 17v4M6.34 6.34l1.42 1.42M16.24 16.24l1.42 1.42M16.24 7.76l1.42-1.42M6.34 17.66l1.42-1.42"></path></svg>
+    Surprise me
+  </button>
+</div>
+
+<div class="wrap">
 
   <!-- ============ BROWSE VIEW ============ -->
   <div class="browse-view" id="browseView" role="tabpanel" aria-labelledby="browseTab">
+
+  <h1 class="view-heading">
+    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34M18.5 10.5a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"></path></svg>
+    Browse recipes
+  </h1>
+  <p class="view-subtitle"><strong id="resultCount">70</strong> recipes match your filters</p>
 
   <!-- ============ FILTERS ============ -->
   <div class="filters">
@@ -826,6 +949,11 @@
   <!-- ============ PLAN VIEW ============ -->
   <div class="plan-view" id="planView" role="tabpanel" aria-labelledby="planTab">
     <div class="plan-tab-inner">
+      <h1 class="view-heading">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 9h18M4 4h16a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"></path></svg>
+        Meal plan
+      </h1>
+      <p class="view-subtitle">Plan your week, then build a shopping list from it.</p>
       <div class="plan-grid" id="planGrid"></div>
       <div class="shopping-section" id="shoppingSection" style="display:none">
         <div class="shopping-header">
@@ -840,7 +968,7 @@
 </div>
 
 <!-- ============ API ERROR BANNER ============ -->
-<div id="apiErrorMsg" hidden style="position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:#c0392b;color:#fff;padding:.6rem 1.2rem;border-radius:.4rem;font-size:.9rem;z-index:1000;max-width:90vw;text-align:center;"></div>
+<div id="apiErrorMsg" hidden style="position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--danger);color:#fff;padding:.6rem 1.2rem;border-radius:.4rem;font-size:.9rem;z-index:1000;max-width:90vw;text-align:center;"></div>
 
 <!-- ============ DAY PICKER ============ -->
 <div class="day-picker" id="dayPicker" role="dialog" aria-modal="true" aria-label="Pick a day for this recipe">
@@ -944,9 +1072,14 @@ const DAY_LABELS = { mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thur
    ============================================================ */
 const catSelect = document.getElementById('catSelect');
 
+/* Maps each category name to a badge color index (0-8), assigned in
+   sorted order so the same category always gets the same color. */
+let categoryColors = {};
+
 function populateCategories() {
   const categories = [...new Set(recipes.map(r => r.category))].sort();
-  categories.forEach(cat => {
+  categories.forEach((cat, i) => {
+    categoryColors[cat] = i % 9;
     const opt = document.createElement('option');
     opt.value = cat;
     opt.textContent = cat;
@@ -1021,7 +1154,7 @@ function renderGrid() {
   grid.innerHTML = filtered.map(r => `
     <div class="card" tabindex="0" data-title="${escapeAttr(r.title)}" role="button" aria-label="View recipe for ${escapeAttr(r.title)}">
       <div class="card-top">
-        <span class="pill">${r.category}</span>
+        <span class="pill cat-${categoryColors[r.category] ?? 0}">${escapeHtml(r.category)}</span>
       </div>
       <h3>${escapeHtml(r.title)}</h3>
       <p class="teaser">${escapeHtml(r.teaser)}</p>
@@ -1169,8 +1302,8 @@ function openRecipe(title) {
   if (!r) return;
 
   panelContent.innerHTML = `
-    <span class="pill">${r.category}</span>
-    <h2 id="panelTitle">${r.title}</h2>
+    <span class="pill cat-${categoryColors[r.category] ?? 0}">${escapeHtml(r.category)}</span>
+    <h2 id="panelTitle">${escapeHtml(r.title)}</h2>
     <div class="meta">
       <span>${clockIcon} ${r.time} minutes</span>
       <span>Serves about 2</span>
@@ -1378,6 +1511,33 @@ filterSheet.addEventListener('touchend', (e) => {
   const delta = e.changedTouches[0].clientY - touchStartY;
   if (delta > 80) closeSheet();
 }, { passive: true });
+
+/* ============================================================
+   DARK MODE: toggles a data-theme attribute on <html>, which the
+   [data-theme="dark"] CSS block overrides tokens for. Persisted
+   so it survives reloads (applied pre-paint by the <head> script).
+   ============================================================ */
+const darkModeToggle = document.getElementById('darkModeToggle');
+const darkModeIconMoon = document.getElementById('darkModeIconMoon');
+const darkModeIconSun = document.getElementById('darkModeIconSun');
+
+function syncDarkModeIcon() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  darkModeIconMoon.style.display = isDark ? 'none' : '';
+  darkModeIconSun.style.display = isDark ? '' : 'none';
+}
+syncDarkModeIcon();
+
+darkModeToggle.addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  try { localStorage.setItem('wte-dark', isDark ? '0' : '1'); } catch (e) {}
+  syncDarkModeIcon();
+});
 
 /* ============================================================
    SURPRISE ME: picks a random recipe from whatever is currently
