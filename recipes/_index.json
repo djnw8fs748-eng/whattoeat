@@ -538,5 +538,35 @@
     "category": "Rice Bowl",
     "time": 20,
     "file": "rice-bowl.json"
+  },
+  {
+    "title": "Lemon Garlic Shrimp Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Sticky Honey Soy Salmon Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 20,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Crispy Chicken Wrap with Sriracha Mayo",
+    "category": "Wrap",
+    "time": 20,
+    "file": "wrap.json"
+  },
+  {
+    "title": "Butternut Squash & Chickpea Curry",
+    "category": "Curry",
+    "time": 30,
+    "file": "curry.json"
+  },
+  {
+    "title": "Spicy Peanut Chicken Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
   }
 ]

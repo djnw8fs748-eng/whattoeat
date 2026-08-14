@@ -268,5 +268,28 @@
       "Toss the pasta through the sauce.",
       "Slice the chicken and serve on top."
     ]
+  },
+  {
+    "title": "Lemon Garlic Shrimp Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Prawns, lemon, and garlic tossed with pasta in a light, buttery sauce — ready before you've finished the washing up.",
+    "ingredients": [
+      "200g pasta (linguine or spaghetti)",
+      "300g raw prawns, peeled",
+      "3 cloves garlic, minced",
+      "1 lemon, zested and juiced",
+      "3 tbsp butter",
+      "1 tbsp olive oil",
+      "Handful fresh parsley, chopped",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Heat the oil and butter in a large pan and fry the garlic for 30 seconds until fragrant.",
+      "Add the prawns and cook for 2-3 minutes until pink and just cooked through.",
+      "Stir in the lemon zest and juice, then toss in the drained pasta with a splash of the reserved water.",
+      "Season with salt and pepper and scatter parsley over the top."
+    ]
   }
 ]

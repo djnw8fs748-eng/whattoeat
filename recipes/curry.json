@@ -135,5 +135,28 @@
       "Add the chickpeas and simmer for a further 8-10 minutes until thickened.",
       "Season to taste and serve with rice."
     ]
+  },
+  {
+    "title": "Butternut Squash & Chickpea Curry",
+    "category": "Curry",
+    "time": 30,
+    "teaser": "A vegetarian curry built on soft roasted squash and chickpeas simmered in coconut milk.",
+    "ingredients": [
+      "1 small butternut squash, peeled and cubed",
+      "1 tin chickpeas, drained and rinsed",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 thumb ginger, grated",
+      "2 tsp curry powder",
+      "1 tin (400ml) coconut milk",
+      "Rice to serve"
+    ],
+    "steps": [
+      "Fry the onion, garlic, and ginger in a little oil for 4-5 minutes until soft.",
+      "Stir in the curry powder and cook for 1 minute.",
+      "Add the squash and coconut milk, and simmer for 15-18 minutes until the squash is tender.",
+      "Stir in the chickpeas and simmer for a further 5 minutes.",
+      "Season to taste and serve with rice."
+    ]
   }
 ]

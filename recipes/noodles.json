@@ -67,5 +67,29 @@
       "Stir in the soy sauce, honey, and sesame oil, and simmer for 1-2 minutes until sticky.",
       "Toss the noodles through the chicken and sauce, and top with sesame seeds."
     ]
+  },
+  {
+    "title": "Spicy Peanut Chicken Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Noodles and chicken tossed in a quick peanut butter and chilli sauce.",
+    "ingredients": [
+      "2 chicken breasts, sliced",
+      "150g noodles (egg or udon)",
+      "3 tbsp peanut butter",
+      "2 tbsp soy sauce",
+      "1 tbsp rice vinegar",
+      "1 tsp chilli flakes (or to taste)",
+      "1 clove garlic, minced",
+      "Splash of hot water to loosen",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Cook the noodles according to packet instructions, drain, and set aside.",
+      "Stir-fry the chicken in a little oil until cooked through and lightly browned.",
+      "Whisk the peanut butter, soy sauce, rice vinegar, chilli flakes, and garlic together, adding hot water until pourable.",
+      "Toss the noodles and sauce through the chicken in the pan.",
+      "Serve immediately, with extra chilli flakes if you like it hotter."
+    ]
   }
 ]

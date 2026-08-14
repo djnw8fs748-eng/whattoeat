@@ -159,5 +159,29 @@
       "Layer the lettuce, tomato, onion, and chicken into the pittas.",
       "Drizzle with tzatziki, roll or fold, and serve."
     ]
+  },
+  {
+    "title": "Crispy Chicken Wrap with Sriracha Mayo",
+    "category": "Wrap",
+    "time": 20,
+    "teaser": "Golden pan-fried chicken strips with a spicy mayo, rolled up with crunchy lettuce.",
+    "ingredients": [
+      "2 chicken breasts, sliced into strips",
+      "50g flour",
+      "1 egg, beaten",
+      "80g breadcrumbs",
+      "2 large tortilla wraps",
+      "3 tbsp mayonnaise",
+      "1 tbsp sriracha (or to taste)",
+      "Handful lettuce, shredded",
+      "Vegetable oil"
+    ],
+    "steps": [
+      "Coat the chicken strips in flour, then egg, then breadcrumbs.",
+      "Fry in a little oil for 3-4 minutes per side until golden and cooked through.",
+      "Mix the mayonnaise and sriracha together.",
+      "Warm the tortillas, then spread with the sriracha mayo and layer with lettuce and chicken.",
+      "Roll up tightly and slice in half to serve."
+    ]
   }
 ]
