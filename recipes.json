@@ -18,7 +18,8 @@
       "Tip the pasta back in with a splash of the reserved water and toss well.",
       "Stir in the parmesan until it melts into a light sauce, adding more water if it looks dry.",
       "Season with salt and pepper and scatter parsley over the top."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "One-Pan Tomato & Basil Pasta",
@@ -40,7 +41,8 @@
       "Bring to a simmer and cook uncovered, stirring often, until the pasta is tender and most of the liquid has absorbed (about 12-15 minutes).",
       "Stir in most of the basil and season to taste.",
       "Serve topped with parmesan and the remaining basil."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Creamy Chicken & Bacon Pasta",
@@ -62,7 +64,8 @@
       "Add the garlic and cook for 1 more minute.",
       "Pour in the cream, season, and simmer for 2-3 minutes until slightly thickened.",
       "Drain the pasta and toss through the sauce with a little parmesan."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sausage & Pepper Pasta",
@@ -84,7 +87,8 @@
       "Pour in the tomatoes and oregano, season, and simmer for 10 minutes.",
       "Meanwhile, cook the pasta according to packet instructions and drain.",
       "Toss the pasta through the sauce and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Tuna & Sweetcorn Pasta Bake",
@@ -105,7 +109,8 @@
       "Mix the pasta with the tuna, sweetcorn, crème fraîche, and mustard in an ovenproof dish.",
       "Top with the grated cheddar.",
       "Bake for 15-20 minutes until golden and bubbling."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Pesto Pasta with Cherry Tomatoes",
@@ -124,7 +129,8 @@
       "Return the pasta to the pot off the heat and stir in the pesto and a splash of pasta water.",
       "Fold in the cherry tomatoes and rocket if using.",
       "Serve with parmesan on top."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Simple Spaghetti Bolognese",
@@ -147,7 +153,8 @@
       "Stir in the tomato purée, chopped tomatoes, and oregano, and simmer for 15-20 minutes, stirring occasionally.",
       "Meanwhile, cook the spaghetti according to packet instructions and drain.",
       "Toss the pasta through the sauce, or serve the sauce on top, with parmesan."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Creamy Salmon & Spinach Pasta",
@@ -169,7 +176,8 @@
       "In the same pan, soften the garlic for 30 seconds, then add the cream and spinach and simmer until the spinach wilts.",
       "Fold the pasta and flaked salmon through the sauce.",
       "Season to taste and serve with parmesan."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken & Broccoli Stir-Fry",
@@ -191,7 +199,8 @@
       "Add the garlic and cook for 30 seconds.",
       "Return the chicken to the pan, add the soy sauce and honey, and toss.",
       "Stir in the cornflour mixture and cook for 1 minute until the sauce thickens. Serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef & Pepper Stir-Fry",
@@ -213,7 +222,8 @@
       "Add the garlic and cook for 30 seconds.",
       "Return the beef to the pan along with the oyster sauce and soy sauce.",
       "Toss everything together for 1-2 minutes and serve with rice or noodles."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Tofu & Vegetable Stir-Fry",
@@ -235,7 +245,8 @@
       "Add the garlic and ginger and cook for 30 seconds.",
       "Return the tofu to the pan, add the soy sauce and sesame oil, and toss to coat.",
       "Serve over rice or noodles."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sweet Chilli Prawn Stir-Fry",
@@ -256,7 +267,8 @@
       "Add the garlic and prawns and cook for 2-3 minutes until the prawns turn pink and opaque.",
       "Stir in the sweet chilli sauce and soy sauce and toss to coat.",
       "Cook for 1 more minute, then garnish with spring onion and serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Egg Fried Rice",
@@ -278,7 +290,8 @@
       "Add the rice, breaking up any clumps, and stir-fry for 3-4 minutes.",
       "Return the egg to the pan along with the soy sauce and sesame oil.",
       "Toss everything together, top with spring onion, and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sheet-Pan Chicken Fajitas",
@@ -298,7 +311,8 @@
       "Toss the chicken, peppers, and onion with the oil and seasoning on a baking tray.",
       "Spread everything into a single layer and roast for 20-25 minutes, stirring halfway, until the chicken is cooked through.",
       "Warm the tortillas and serve everything alongside soured cream."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sheet-Pan Sausages & Roast Veg",
@@ -318,7 +332,8 @@
       "Toss the potatoes with half the oil and roast for 10 minutes to get a head start.",
       "Add the sausages, onion, and courgette to the tray, drizzle with the rest of the oil and the herbs.",
       "Roast for 25-30 minutes, turning once, until the sausages are browned and the veg is tender."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Honey Garlic Salmon with Broccoli",
@@ -338,7 +353,8 @@
       "Toss the broccoli with the olive oil and spread on a baking tray. Nestle the salmon among it.",
       "Mix the honey, soy sauce, and garlic, and spoon over the salmon.",
       "Roast for 12-15 minutes until the salmon is cooked through and the broccoli is tender."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Roasted Veg & Halloumi Tray Bake",
@@ -359,7 +375,8 @@
       "Toss the vegetables with the oil and paprika on a baking tray and roast for 15 minutes.",
       "Add the halloumi slices and cherry tomatoes to the tray.",
       "Roast for a further 10 minutes until the halloumi is golden and the veg is soft."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Lemon Herb Chicken Thighs & Potatoes",
@@ -379,7 +396,8 @@
       "Toss the potatoes with half the oil and season, and spread on a baking tray.",
       "Rub the chicken thighs with the remaining oil, herbs, salt, and pepper, and place among the potatoes with the lemon slices.",
       "Roast for 35-40 minutes until the chicken is cooked through and the skin is crisp."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Tomato & Lentil Soup",
@@ -400,7 +418,8 @@
       "Add the cumin, tomatoes, lentils, and stock.",
       "Bring to a simmer and cook for 20-25 minutes, stirring occasionally, until the lentils are soft.",
       "Blend if you'd like it smooth, or leave as is. Season to taste and serve with bread."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Noodle Soup",
@@ -420,7 +439,8 @@
       "Add the carrot and celery and cook for 5 minutes.",
       "Add the chicken (raw or cooked) and thyme, and simmer for 8-10 minutes until the chicken is cooked through.",
       "Add the noodles for the last 3-4 minutes of cooking, until tender. Season and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Creamy Broccoli & Potato Soup",
@@ -440,7 +460,8 @@
       "Add the potatoes and stock, bring to a simmer, and cook for 10 minutes.",
       "Add the broccoli and cook for a further 8-10 minutes until everything is tender.",
       "Blend until smooth, stir in the cream if using, and season to taste."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Spiced Carrot & Ginger Soup",
@@ -460,7 +481,8 @@
       "Add the carrots, coriander, and stock.",
       "Simmer for 20 minutes until the carrots are soft.",
       "Blend until smooth and season to taste."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken & Rice Bowl with Peanut Sauce",
@@ -482,7 +504,8 @@
       "Whisk the peanut butter, soy sauce, lime juice, and honey together, adding hot water until pourable.",
       "Serve the chicken over rice, drizzled with the peanut sauce.",
       "Add sliced cucumber on the side."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Teriyaki Chicken Rice Bowl",
@@ -503,7 +526,8 @@
       "Mix the soy sauce, honey, vinegar, and garlic in a small bowl.",
       "Pour the sauce over the chicken and simmer for 2-3 minutes until it thickens and coats the chicken.",
       "Serve over rice with sesame seeds scattered on top."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Black Bean & Rice Burrito Bowl",
@@ -524,7 +548,8 @@
       "Divide the rice between bowls.",
       "Top with the beans, sweetcorn, tomatoes, and avocado.",
       "Squeeze lime juice over everything before serving."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chickpea & Spinach Curry Rice Bowl",
@@ -545,7 +570,8 @@
       "Add the curry powder and cook for 30 seconds, then add the tomatoes and chickpeas.",
       "Simmer for 10-12 minutes until slightly thickened.",
       "Stir in the spinach until wilted, and serve over rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Fried Egg & Avocado Toast",
@@ -565,7 +591,8 @@
       "Mash the avocado with a little salt, pepper, and olive oil, and spread onto the toast.",
       "Fry the eggs to your liking in a little oil.",
       "Top the toast with the eggs and a pinch of chilli flakes if you like."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Cheesy Baked Beans on Toast",
@@ -583,7 +610,8 @@
       "Toast and butter the bread.",
       "Pile the beans onto the toast.",
       "Top with grated cheddar and grill for 1-2 minutes if you'd like it melted, or serve as is."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Veggie Omelette",
@@ -602,7 +630,8 @@
       "Melt butter in a frying pan over medium heat and add the vegetables, cooking for 2-3 minutes until softened.",
       "Pour in the eggs and let them set around the edges, then gently push the cooked edges towards the centre.",
       "Sprinkle the cheese over one half, fold the omelette over, and slide onto a plate."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Halloumi Wrap with Sweet Chilli",
@@ -621,7 +650,8 @@
       "Warm the tortillas briefly if you like.",
       "Layer the lettuce and halloumi onto the wraps.",
       "Drizzle with sweet chilli sauce, roll up, and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Caesar Wrap",
@@ -640,7 +670,8 @@
       "Lay the chicken over each wrap.",
       "Top with the dressed lettuce.",
       "Roll up tightly and slice in half to serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Falafel Wrap with Hummus",
@@ -659,7 +690,8 @@
       "Spread hummus over the wraps.",
       "Layer in the lettuce, cucumber, tomato, and falafel.",
       "Roll up and serve, or wrap in foil to eat on the go."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "BLT Sandwich",
@@ -678,7 +710,8 @@
       "Toast the bread if you like.",
       "Spread mayonnaise on the bread.",
       "Layer the bacon, lettuce, and tomato, then close the sandwich and slice in half."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Greek-Style Salad with Feta",
@@ -699,7 +732,8 @@
       "Scatter the feta and olives over the top.",
       "Whisk the olive oil and vinegar together and drizzle over the salad.",
       "Toss gently and serve with warm pitta or bread."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Caesar Salad",
@@ -718,7 +752,8 @@
       "Toss the lettuce with the caesar dressing in a large bowl.",
       "Top with the sliced chicken, parmesan, and croutons.",
       "Serve immediately while the croutons are still crisp."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Warm Potato & Bacon Salad",
@@ -738,7 +773,8 @@
       "Fry the bacon until crisp.",
       "Whisk the mustard, oil, and vinegar together.",
       "Toss the warm potatoes with the bacon, spring onions, and dressing."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Tacos",
@@ -759,7 +795,8 @@
       "Add the beef mince and spices and cook, breaking it up, until browned through.",
       "Warm the tortillas or taco shells.",
       "Fill with the mince and top with lettuce, cheese, and salsa."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Bean & Cheese Quesadillas",
@@ -778,7 +815,8 @@
       "Spread the bean mixture and cheese over half of each tortilla, then fold over.",
       "Dry-fry each quesadilla in a pan over medium heat for 2-3 minutes per side, until golden and the cheese has melted.",
       "Slice into wedges and serve with salsa and soured cream."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Simple Chilli Con Carne",
@@ -801,7 +839,8 @@
       "Stir in the chilli powder and cumin, then add the tomatoes and kidney beans.",
       "Simmer for 20-25 minutes, stirring occasionally, until thickened.",
       "Serve over rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sausage & Bean Casserole",
@@ -821,7 +860,8 @@
       "Add the onion to the pan and soften for 4 minutes.",
       "Return the sausages to the pan with the tomatoes, beans, and herbs.",
       "Simmer for 20-25 minutes until the sausages are cooked through and the sauce has thickened. Serve with crusty bread or mash."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chipotle Beef & Pork Rigatoni",
@@ -852,7 +892,8 @@
       "Add the spinach a handful at a time until wilted.",
       "Fold the drained pasta and most of the cheddar through the sauce, adding a splash of water if it's too thick.",
       "Serve topped with the remaining cheddar, the rocket, and a drizzle of olive oil."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Tikka Masala",
@@ -874,7 +915,8 @@
       "Stir in the curry paste and cook for 1 minute.",
       "Add the chopped tomatoes and simmer for 12-15 minutes until the chicken is cooked through.",
       "Stir in the cream, warm through, and serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon Teriyaki Noodles",
@@ -897,7 +939,8 @@
       "Whisk the soy sauce, honey, vinegar, and garlic together in the pan and simmer for 1-2 minutes until slightly sticky.",
       "Toss the noodles through the sauce, then fold in the salmon.",
       "Drizzle with sesame oil and top with spring onion and sesame seeds."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Mince Cottage Pie",
@@ -922,7 +965,8 @@
       "Stir in the tomatoes and Worcestershire sauce and simmer for 10 minutes.",
       "Preheat the oven to 200°C (fan 180°C). Spoon the mince into an ovenproof dish, top with the mash, and scatter with cheese if using.",
       "Bake for 20 minutes until golden on top."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Katsu Curry",
@@ -947,7 +991,8 @@
       "Stir in the curry powder and flour and cook for 1 minute.",
       "Gradually whisk in the stock, then simmer for 8-10 minutes until thickened. Stir in the honey.",
       "Serve the sliced chicken over rice with the curry sauce poured over."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon & New Potato Salad",
@@ -969,7 +1014,8 @@
       "Whisk the mustard, olive oil, and lemon juice together.",
       "Toss the warm potatoes and beans with the dressing.",
       "Top with the flaked salmon and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Mince & Potato Hash",
@@ -991,7 +1037,8 @@
       "Push the potatoes to one side, add the mince and onion, and cook until the mince is browned.",
       "Stir everything together with the paprika and season to taste.",
       "Top with a fried or poached egg if you like."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Shawarma Wrap",
@@ -1013,7 +1060,8 @@
       "Mix the yoghurt with the garlic to make a quick sauce.",
       "Warm the tortillas and layer with lettuce, tomato, and chicken.",
       "Drizzle with the yoghurt sauce, roll up, and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon Fishcakes",
@@ -1034,7 +1082,8 @@
       "Shape into 4-6 patties.",
       "Dip each patty in the beaten egg, then coat in breadcrumbs.",
       "Fry in a little oil for 3-4 minutes per side until golden and heated through."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken & Chorizo Rice",
@@ -1055,7 +1104,8 @@
       "Add the chicken and onion and cook for 5 minutes.",
       "Stir in the pepper, rice, and paprika.",
       "Pour in the stock, bring to a simmer, cover, and cook for 18-20 minutes until the rice is tender and the liquid absorbed."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Mince Stuffed Peppers",
@@ -1077,7 +1127,8 @@
       "Stir in the rice, half the tomatoes, and the oregano.",
       "Spoon the mixture into the peppers and place in an ovenproof dish. Pour the remaining tomatoes around them.",
       "Top with cheese and bake for 25-30 minutes until the peppers are tender."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken & Sweetcorn Chowder",
@@ -1098,7 +1149,8 @@
       "Add the chicken and potatoes and cook for 3-4 minutes.",
       "Pour in the stock, bring to a simmer, and cook for 15 minutes until the potatoes and chicken are cooked through.",
       "Stir in the sweetcorn and cream, warm through, and season to taste."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon & Lemon Pasta",
@@ -1120,7 +1172,8 @@
       "In the same pan, soften the garlic for 30 seconds, then add the cream, lemon zest, and juice.",
       "Simmer for 1-2 minutes, then toss the pasta and flaked salmon through the sauce.",
       "Season to taste and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Noodle Stir-Fry",
@@ -1143,7 +1196,8 @@
       "Add the pepper and carrot and stir-fry for 3-4 minutes.",
       "Add the garlic, then return the chicken and noodles to the pan with the soy sauce and sesame oil.",
       "Toss everything together for 1-2 minutes and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Honey Mustard Salmon Tray Bake",
@@ -1164,7 +1218,8 @@
       "Mix the honey and mustard together.",
       "Add the salmon and green beans to the tray and brush the salmon with the honey mustard mix.",
       "Roast for a further 10-12 minutes until the salmon is cooked through."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Fried Rice",
@@ -1186,7 +1241,8 @@
       "Add the frozen veg and stir-fry for 2-3 minutes.",
       "Add the rice, breaking up any clumps, and stir-fry for 3-4 minutes.",
       "Return the chicken and egg to the pan with the soy sauce, toss together, and top with spring onion."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Mince & Onion Pasta Bake",
@@ -1207,7 +1263,8 @@
       "Fry the onion and mince until browned, breaking it up as it cooks.",
       "Stir in the tomatoes and herbs and simmer for 10 minutes.",
       "Mix the pasta through the sauce, transfer to an ovenproof dish, top with cheese, and bake for 15-20 minutes until golden."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon Poke-Style Rice Bowl",
@@ -1229,7 +1286,8 @@
       "Divide the rice between bowls.",
       "Top with the salmon, avocado, and cucumber.",
       "Scatter with sesame seeds and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Parmesan Bake",
@@ -1251,7 +1309,8 @@
       "Fry in a little oil for 3-4 minutes per side until golden (it doesn't need to be fully cooked through yet).",
       "Place in an ovenproof dish, spoon over the tomatoes and oregano, and top with mozzarella and parmesan.",
       "Bake for 15-20 minutes until the chicken is cooked through and the cheese is bubbling."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Meatballs in Tomato Sauce",
@@ -1274,7 +1333,8 @@
       "Add the garlic to the pan, then the tomatoes and oregano.",
       "Return the meatballs to the sauce and simmer for 15 minutes until cooked through.",
       "Meanwhile, cook the pasta, drain, and serve with the meatballs and sauce on top, finished with parmesan."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Fajita Rice Bowl",
@@ -1294,7 +1354,8 @@
       "Fry the chicken, pepper, and onion together in a little oil for 8-10 minutes until the chicken is cooked through and everything is lightly charred.",
       "Divide the rice between bowls.",
       "Top with the chicken and vegetables, and finish with soured cream and a squeeze of lime."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon & Asparagus Sheet Pan",
@@ -1315,7 +1376,8 @@
       "Nestle the salmon among the asparagus and top with the garlic and lemon slices.",
       "Drizzle with the remaining oil and season.",
       "Roast for 12-15 minutes until the salmon is cooked through."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "BBQ Chicken Wraps",
@@ -1334,7 +1396,8 @@
       "Warm the tortillas briefly if you like.",
       "Layer the lettuce, chicken, and cheese onto the wraps.",
       "Roll up tightly and slice in half to serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Lamb Mince Shepherd's Pie",
@@ -1357,7 +1420,8 @@
       "Add the lamb mince and brown, breaking it up as it cooks.",
       "Stir in the tomato purée and stock and simmer for 12-15 minutes until thickened.",
       "Preheat the oven to 200°C (fan 180°C). Spoon the mince into an ovenproof dish, top with the mash, and bake for 20 minutes until golden."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Caesar Pasta Salad",
@@ -1377,7 +1441,8 @@
       "Toss the pasta with the caesar dressing.",
       "Fold in the lettuce, chicken, and parmesan.",
       "Top with croutons just before serving."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Mince & Butter Bean Stew",
@@ -1398,7 +1463,8 @@
       "Add the mince and brown, breaking it up as it cooks.",
       "Stir in the paprika, tomatoes, and butter beans, adding a splash of stock if it looks dry.",
       "Simmer for 20-25 minutes until the carrots are tender and the stew has thickened. Serve with bread or mash."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Mince Lasagne",
@@ -1420,7 +1486,8 @@
       "Stir in the tomatoes and oregano and simmer for 10 minutes.",
       "In an ovenproof dish, layer mince sauce, lasagne sheets, and cheese sauce, repeating until you run out, finishing with cheese sauce on top.",
       "Scatter with the grated cheddar and bake for 30-35 minutes until golden and the pasta is tender."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Mince Keema Curry",
@@ -1443,7 +1510,8 @@
       "Stir in the curry powder and cook for 1 minute.",
       "Add the tomatoes and simmer for 12-15 minutes.",
       "Stir in the peas for the last 3 minutes of cooking, and serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon & Spinach Curry",
@@ -1465,7 +1533,8 @@
       "Add the coconut milk and simmer for 5 minutes.",
       "Add the salmon cubes and cook gently for 4-5 minutes until just cooked through.",
       "Stir in the spinach until wilted, and serve over rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Alfredo Pasta",
@@ -1487,7 +1556,8 @@
       "In the same pan, soften the garlic for 30 seconds, then add the cream and parmesan and stir until melted into a sauce.",
       "Toss the pasta through the sauce.",
       "Slice the chicken and serve on top."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sticky Chicken Drumsticks with Sweet Potato Wedges",
@@ -1509,7 +1579,8 @@
       "Mix the honey, soy sauce, and garlic, and brush over the drumsticks.",
       "Add the drumsticks to the tray among the wedges.",
       "Roast for 35-40 minutes, turning once, until the chicken is cooked through and the skin is sticky and golden."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Cajun Salmon Rice Bowl with Sweetcorn",
@@ -1531,7 +1602,8 @@
       "Warm the sweetcorn in a small pan for 2-3 minutes.",
       "Divide the rice between bowls and top with the sweetcorn.",
       "Flake the salmon over the top and finish with a squeeze of lime."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sloppy Joe Rolls",
@@ -1553,7 +1625,8 @@
       "Stir in the tomatoes, Worcestershire sauce, brown sugar, and mustard.",
       "Simmer for 12-15 minutes until thickened.",
       "Split the rolls and pile the mince mixture inside."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "One-Pot Chicken & Chickpea Stew",
@@ -1574,7 +1647,8 @@
       "Add the chicken and cook for 3-4 minutes until lightly browned.",
       "Stir in the paprika, tomatoes, and chickpeas, adding a splash of stock if it looks dry.",
       "Simmer for 20-25 minutes until the chicken is cooked through and the stew has thickened. Serve with bread or rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Mince Nachos",
@@ -1596,7 +1670,8 @@
       "Spread the tortilla chips on a baking tray and scatter over the mince.",
       "Top with the grated cheddar and jalapeños if using.",
       "Bake or grill for 5-8 minutes until the cheese has melted. Serve with salsa and soured cream."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sticky Sesame Chicken Noodles",
@@ -1620,7 +1695,8 @@
       "Add the garlic and ginger and cook for 1 minute.",
       "Stir in the soy sauce and honey and let it bubble into a sticky glaze, coating the chicken.",
       "Toss through the noodles until well coated, then scatter with sesame seeds and spring onions to serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Blackened Salmon Tacos",
@@ -1644,7 +1720,8 @@
       "Toss the cabbage with half the lime juice and a pinch of salt.",
       "Warm the tortillas in a dry pan or microwave.",
       "Fill with the slaw and flaked salmon, top with soured cream, coriander, and a squeeze of the remaining lime."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Creamy Beef Mince Stroganoff",
@@ -1667,7 +1744,8 @@
       "Stir in the paprika and tomato purée and cook for 1 minute.",
       "Pour in the stock, bring to a simmer, and cook for 8-10 minutes until slightly reduced.",
       "Take off the heat and stir through the soured cream. Season to taste and serve over rice or pasta."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Enchiladas",
@@ -1690,7 +1768,8 @@
       "Mix the shredded chicken with a few spoonfuls of the sauce, then roll into the tortillas and place in an ovenproof dish.",
       "Pour the remaining sauce over the top and scatter with cheddar.",
       "Bake for 15 minutes until the cheese is melted and bubbling. Scatter with coriander to serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Miso Salmon with Sesame Greens",
@@ -1712,6 +1791,7 @@
       "Place the salmon on a lined tray with the greens tossed in sesame oil alongside.",
       "Roast for 12-15 minutes until the salmon is cooked through and the greens are tender.",
       "Scatter with sesame seeds and serve."
-    ]
+    ],
+    "servings": 2
   }
 ]

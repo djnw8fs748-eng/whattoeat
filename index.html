@@ -756,7 +756,7 @@
   .plan-tab-inner { padding: 28px 0; }
   .plan-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 12px;
     margin-bottom: 32px;
   }
@@ -1061,9 +1061,12 @@ const ALLERGEN_KEYWORDS = {
   mustard:   ['mustard'],
 };
 
-let plan = { mon: null, tue: null, wed: null, thu: null, fri: null };
-const DAY_KEYS = ['mon', 'tue', 'wed', 'thu', 'fri'];
-const DAY_LABELS = { mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday', fri: 'Friday' };
+let plan = { mon: null, tue: null, wed: null, thu: null, fri: null, sat: null, sun: null };
+const DAY_KEYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+const DAY_LABELS = {
+  mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday',
+  fri: 'Friday', sat: 'Saturday', sun: 'Sunday'
+};
 
 /* ============================================================
    SETUP: build the category dropdown from the data itself,
@@ -1162,9 +1165,9 @@ function renderGrid() {
         <span>${clockIcon} ${r.time} min</span>
         <span>${r.ingredients.length} ingredients</span>
       </div>
-      <button class="add-plan-btn ${DAY_KEYS.some(d => plan[d] === r.title) ? 'planned' : ''}"
+      <button class="add-plan-btn ${DAY_KEYS.some(d => plan[d]?.recipe === r.title) ? 'planned' : ''}"
         data-recipe="${escapeAttr(r.title)}">
-        ${DAY_KEYS.some(d => plan[d] === r.title) ? '✓ In plan' : '+ Add to plan'}
+        ${DAY_KEYS.some(d => plan[d]?.recipe === r.title) ? '✓ In plan' : '+ Add to plan'}
       </button>
     </div>
   `).join('');
@@ -1204,14 +1207,14 @@ function renderPlanTab() {
   if (!grid) return;
 
   grid.innerHTML = DAY_KEYS.map(d => {
-    const recipe = plan[d];
+    const entry = plan[d];
     return `
       <div class="day-col">
         <div class="day-col-label">${DAY_LABELS[d].slice(0, 3)}</div>
-        ${recipe
+        ${entry
           ? `<div class="day-col-recipe">
-               <span>${escapeHtml(recipe)}</span>
-               <button class="day-col-remove" data-day="${d}" aria-label="Remove ${escapeHtml(recipe)} from ${DAY_LABELS[d]}">×</button>
+               <span>${escapeHtml(entry.recipe)} · ${entry.servings}</span>
+               <button class="day-col-remove" data-day="${d}" aria-label="Remove ${escapeHtml(entry.recipe)} from ${DAY_LABELS[d]}">×</button>
              </div>`
           : `<div class="day-col-empty" data-day="${d}">+ Add recipe</div>`
         }
@@ -1580,7 +1583,7 @@ function openDayPicker(recipeTitle, anchorEl) {
     return `
       <div class="day-picker-row ${taken ? 'taken' : ''}" data-day="${d}">
         <span class="day-name">${DAY_LABELS[d]}</span>
-        <span class="day-status">${taken ? escapeHtml(current) : 'Free'}</span>
+        <span class="day-status">${taken ? escapeHtml(current.recipe) : 'Free'}</span>
       </div>`;
   }).join('');
 
@@ -1610,10 +1613,12 @@ function closeDayPicker() {
 
 function selectDay(day) {
   if (!dayPickerRecipe) return;
+  const recipe = recipes.find(r => r.title === dayPickerRecipe);
+  const servings = recipe ? recipe.servings : 1;
   fetch(`/api/plan/${day}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ recipe: dayPickerRecipe })
+    body: JSON.stringify({ recipe: dayPickerRecipe, servings })
   })
     .then(res => {
       if (!res.ok) throw new Error(`${res.status}`);

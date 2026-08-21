@@ -16,13 +16,13 @@ test.beforeEach(async ({ page }) => {
   await page.waitForSelector('.card');
 });
 
-test('Add to plan button opens day picker with 5 day rows', async ({ page }) => {
+test('Add to plan button opens day picker with 7 day rows', async ({ page }) => {
   // Scroll down to simulate a real user who has scrolled past the hero — this is what
   // exposed the scrollY positioning bug where the picker appeared below the viewport.
   await page.evaluate(() => window.scrollBy(0, 300));
   await page.locator('.card').first().locator('.add-plan-btn').click();
   await expect(page.locator('#dayPicker')).toBeVisible();
-  await expect(page.locator('#dayPickerList .day-picker-row')).toHaveCount(5);
+  await expect(page.locator('#dayPickerList .day-picker-row')).toHaveCount(7);
   await page.locator('#dayPickerCancel').dispatchEvent('click');
 });
 
@@ -84,4 +84,11 @@ test('clicking an empty day slot in the plan tab switches to Browse', async ({ p
   await expect(page.locator('#browseView')).toBeVisible();
   await expect(page.locator('#planView')).toBeHidden();
   await expect(page.locator('#browseTab')).toHaveClass(/active/);
+});
+
+test('planned day shows the recipe base servings by default', async ({ page }) => {
+  await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
+
+  await page.click('#planTab');
+  await expect(page.locator('.day-col-recipe')).toContainText('2');
 });
