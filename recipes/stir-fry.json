@@ -5,13 +5,41 @@
     "time": 20,
     "teaser": "A reliable, veg-forward stir-fry with a simple soy-garlic sauce.",
     "ingredients": [
-      "2 chicken breasts, sliced thin",
-      "1 head broccoli, cut into florets",
-      "3 cloves garlic, minced",
-      "3 tbsp soy sauce",
-      "1 tbsp honey",
-      "1 tsp cornflour mixed with 2 tbsp water",
-      "Vegetable oil"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced thin"
+      },
+      {
+        "qty": 1,
+        "unit": "head",
+        "item": "broccoli, cut into florets"
+      },
+      {
+        "qty": 3,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cornflour mixed with 2 tbsp water"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Heat oil in a wok or large frying pan over high heat and stir-fry the chicken until cooked through, then set aside.",
@@ -19,7 +47,8 @@
       "Add the garlic and cook for 30 seconds.",
       "Return the chicken to the pan, add the soy sauce and honey, and toss.",
       "Stir in the cornflour mixture and cook for 1 minute until the sauce thickens. Serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef & Pepper Stir-Fry",
@@ -27,13 +56,41 @@
     "time": 20,
     "teaser": "Quick strips of beef with peppers in a glossy oyster sauce.",
     "ingredients": [
-      "300g beef strips (or sliced sirloin)",
-      "2 bell peppers, sliced",
-      "1 onion, sliced",
-      "3 tbsp oyster sauce",
-      "1 tbsp soy sauce",
-      "2 cloves garlic, minced",
-      "Vegetable oil"
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "beef strips (or sliced sirloin)"
+      },
+      {
+        "qty": 2,
+        "unit": "bell",
+        "item": "peppers, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, sliced"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "oyster sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Heat oil in a wok over high heat and sear the beef quickly in batches until browned. Set aside.",
@@ -41,7 +98,8 @@
       "Add the garlic and cook for 30 seconds.",
       "Return the beef to the pan along with the oyster sauce and soy sauce.",
       "Toss everything together for 1-2 minutes and serve with rice or noodles."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Tofu & Vegetable Stir-Fry",
@@ -49,13 +107,41 @@
     "time": 20,
     "teaser": "Crispy tofu cubes with whatever vegetables you have to hand.",
     "ingredients": [
-      "1 block firm tofu, cubed and patted dry",
-      "2 cups mixed vegetables (carrot, pepper, mangetout, etc.)",
-      "3 tbsp soy sauce",
-      "1 tbsp sesame oil",
-      "2 cloves garlic, minced",
-      "1 tsp grated ginger",
-      "Cornflour for dusting"
+      {
+        "qty": 1,
+        "unit": "block",
+        "item": "firm tofu, cubed and patted dry"
+      },
+      {
+        "qty": 2,
+        "unit": "cups",
+        "item": "mixed vegetables (carrot, pepper, mangetout, etc.)"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "grated ginger"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Cornflour for dusting"
+      }
     ],
     "steps": [
       "Dust the tofu cubes lightly in cornflour and fry in oil until golden and crisp on most sides. Remove and set aside.",
@@ -63,7 +149,8 @@
       "Add the garlic and ginger and cook for 30 seconds.",
       "Return the tofu to the pan, add the soy sauce and sesame oil, and toss to coat.",
       "Serve over rice or noodles."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sweet Chilli Prawn Stir-Fry",
@@ -71,20 +158,49 @@
     "time": 15,
     "teaser": "Prawns cook in minutes, making this one of the fastest dinners here.",
     "ingredients": [
-      "300g raw prawns",
-      "1 red pepper, sliced",
-      "3 tbsp sweet chilli sauce",
-      "1 tbsp soy sauce",
-      "2 cloves garlic, minced",
-      "Vegetable oil",
-      "Spring onion to garnish"
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "raw prawns"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "sweet chilli sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Spring onion to garnish"
+      }
     ],
     "steps": [
       "Heat oil in a pan over high heat and stir-fry the pepper for 2-3 minutes.",
       "Add the garlic and prawns and cook for 2-3 minutes until the prawns turn pink and opaque.",
       "Stir in the sweet chilli sauce and soy sauce and toss to coat.",
       "Cook for 1 more minute, then garnish with spring onion and serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Cashew Chicken Stir-Fry",
@@ -92,14 +208,46 @@
     "time": 20,
     "teaser": "A takeaway favourite you can put together with pantry staples and a bag of cashews.",
     "ingredients": [
-      "2 chicken breasts, diced",
-      "1 red pepper, sliced",
-      "60g roasted cashews",
-      "3 tbsp soy sauce",
-      "1 tbsp rice vinegar",
-      "1 tbsp honey",
-      "2 cloves garlic, minced",
-      "Vegetable oil"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": 60,
+        "unit": "g",
+        "item": "roasted cashews"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "rice vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Heat oil in a wok over high heat and stir-fry the chicken until browned and cooked through. Set aside.",
@@ -107,7 +255,8 @@
       "Add the garlic and cashews and cook for 30 seconds.",
       "Return the chicken to the pan, add the soy sauce, rice vinegar, and honey, and toss to coat.",
       "Cook for 1-2 minutes until glossy, then serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Prawn Pad Thai Stir-Fry",
@@ -115,15 +264,51 @@
     "time": 20,
     "teaser": "A simplified, weeknight take on pad thai using flat rice noodles and a quick tangy sauce.",
     "ingredients": [
-      "200g flat rice noodles",
-      "300g raw prawns",
-      "2 eggs, beaten",
-      "2 tbsp fish sauce",
-      "1 tbsp brown sugar",
-      "1 tbsp lime juice",
-      "2 cloves garlic, minced",
-      "Handful beansprouts",
-      "Vegetable oil"
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "flat rice noodles"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "raw prawns"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "eggs, beaten"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "fish sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "brown sugar"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "lime juice"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful beansprouts"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Soak the rice noodles in boiling water according to packet instructions, then drain.",
@@ -131,7 +316,8 @@
       "Push everything aside, pour in the beaten eggs, and scramble until just set.",
       "Add the garlic, noodles, fish sauce, brown sugar, and lime juice, and toss to coat.",
       "Return the prawns to the pan with the beansprouts, toss for 1 minute, and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Thai Basil Beef Stir-Fry",
@@ -139,15 +325,51 @@
     "time": 20,
     "teaser": "A fragrant, fiery beef stir-fry built on Thai basil and chilli.",
     "ingredients": [
-      "300g beef mince (or thin beef strips)",
-      "3 cloves garlic, minced",
-      "2 red chillies, sliced",
-      "1 red pepper, sliced",
-      "3 tbsp fish sauce",
-      "1 tbsp soy sauce",
-      "1 tsp brown sugar",
-      "Handful Thai basil leaves (or regular basil)",
-      "Vegetable oil"
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "beef mince (or thin beef strips)"
+      },
+      {
+        "qty": 3,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 2,
+        "unit": "red",
+        "item": "chillies, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "fish sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "brown sugar"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful Thai basil leaves (or regular basil)"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Heat oil in a wok over high heat and stir-fry the garlic and chilli for 30 seconds.",
@@ -155,6 +377,7 @@
       "Add the red pepper and stir-fry for 2-3 minutes.",
       "Stir in the fish sauce, soy sauce, and brown sugar, and cook for 1-2 minutes.",
       "Remove from the heat and stir through the basil leaves until just wilted. Serve with rice."
-    ]
+    ],
+    "servings": 2
   }
 ]

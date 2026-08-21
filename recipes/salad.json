@@ -5,20 +5,49 @@
     "time": 15,
     "teaser": "A fresh, no-cook option for a hot evening.",
     "ingredients": [
-      "1 cucumber, chopped",
-      "3 tomatoes, chopped",
-      "1 red onion, thinly sliced",
-      "100g feta, cubed",
-      "Handful olives",
-      "2 tbsp olive oil",
-      "1 tbsp red wine vinegar"
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "cucumber, chopped"
+      },
+      {
+        "qty": 3,
+        "unit": null,
+        "item": "tomatoes, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "onion, thinly sliced"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "feta, cubed"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful olives"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "red wine vinegar"
+      }
     ],
     "steps": [
       "Combine the cucumber, tomatoes, and onion in a large bowl.",
       "Scatter the feta and olives over the top.",
       "Whisk the olive oil and vinegar together and drizzle over the salad.",
       "Toss gently and serve with warm pitta or bread."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Caesar Salad",
@@ -26,18 +55,39 @@
     "time": 20,
     "teaser": "A heartier, main-course version of the classic side salad.",
     "ingredients": [
-      "2 chicken breasts",
-      "1 romaine or cos lettuce, chopped",
-      "4 tbsp caesar dressing",
-      "3 tbsp parmesan, grated",
-      "Handful croutons"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts"
+      },
+      {
+        "qty": 1,
+        "unit": "romaine",
+        "item": "or cos lettuce, chopped"
+      },
+      {
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "caesar dressing"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "parmesan, grated"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful croutons"
+      }
     ],
     "steps": [
       "Season the chicken and pan-fry or grill until cooked through, then slice.",
       "Toss the lettuce with the caesar dressing in a large bowl.",
       "Top with the sliced chicken, parmesan, and croutons.",
       "Serve immediately while the croutons are still crisp."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Warm Potato & Bacon Salad",
@@ -45,19 +95,44 @@
     "time": 25,
     "teaser": "New potatoes and crispy bacon in a light mustard dressing, best served warm.",
     "ingredients": [
-      "500g new potatoes, halved",
-      "6 rashers bacon, chopped",
-      "2 spring onions, sliced",
-      "1 tbsp mustard",
-      "2 tbsp olive oil",
-      "1 tbsp red wine vinegar"
+      {
+        "qty": 500,
+        "unit": "g",
+        "item": "new potatoes, halved"
+      },
+      {
+        "qty": 6,
+        "unit": "rashers",
+        "item": "bacon, chopped"
+      },
+      {
+        "qty": 2,
+        "unit": "spring",
+        "item": "onions, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "mustard"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "red wine vinegar"
+      }
     ],
     "steps": [
       "Boil the potatoes until tender, about 15 minutes, then drain.",
       "Fry the bacon until crisp.",
       "Whisk the mustard, oil, and vinegar together.",
       "Toss the warm potatoes with the bacon, spring onions, and dressing."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon & New Potato Salad",
@@ -65,13 +140,41 @@
     "time": 25,
     "teaser": "Warm new potatoes, flaked salmon, and a light mustard dressing.",
     "ingredients": [
-      "2 salmon fillets",
-      "400g new potatoes, halved",
-      "Handful green beans",
-      "1 tbsp mustard",
-      "2 tbsp olive oil",
-      "1 tbsp lemon juice",
-      "Salt and pepper"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets"
+      },
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "new potatoes, halved"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful green beans"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "mustard"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "lemon juice"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
     ],
     "steps": [
       "Boil the potatoes for 12-15 minutes until tender, adding the green beans for the last 3 minutes. Drain.",
@@ -79,7 +182,8 @@
       "Whisk the mustard, olive oil, and lemon juice together.",
       "Toss the warm potatoes and beans with the dressing.",
       "Top with the flaked salmon and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Caesar Pasta Salad",
@@ -87,18 +191,43 @@
     "time": 20,
     "teaser": "A pasta twist on the classic Caesar, good served warm or chilled.",
     "ingredients": [
-      "200g pasta (fusilli or penne)",
-      "2 chicken breasts, cooked and sliced",
-      "Handful cos lettuce, shredded",
-      "4 tbsp caesar dressing",
-      "3 tbsp parmesan, grated",
-      "Handful croutons"
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "pasta (fusilli or penne)"
+      },
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, cooked and sliced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful cos lettuce, shredded"
+      },
+      {
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "caesar dressing"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "parmesan, grated"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful croutons"
+      }
     ],
     "steps": [
       "Cook the pasta according to packet instructions, drain, and cool slightly.",
       "Toss the pasta with the caesar dressing.",
       "Fold in the lettuce, chicken, and parmesan.",
       "Top with croutons just before serving."
-    ]
+    ],
+    "servings": 2
   }
 ]

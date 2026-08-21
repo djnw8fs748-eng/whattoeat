@@ -5,14 +5,46 @@
     "time": 20,
     "teaser": "Pan-fried salmon and noodles tossed in a sticky homemade teriyaki sauce.",
     "ingredients": [
-      "2 salmon fillets",
-      "150g noodles (egg or udon)",
-      "3 tbsp soy sauce",
-      "2 tbsp honey",
-      "1 tbsp rice vinegar",
-      "1 clove garlic, minced",
-      "1 tsp sesame oil",
-      "Spring onion and sesame seeds to garnish"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "noodles (egg or udon)"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "rice vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Spring onion and sesame seeds to garnish"
+      }
     ],
     "steps": [
       "Cook the noodles according to packet instructions and drain.",
@@ -20,7 +52,8 @@
       "Whisk the soy sauce, honey, vinegar, and garlic together in the pan and simmer for 1-2 minutes until slightly sticky.",
       "Toss the noodles through the sauce, then fold in the salmon.",
       "Drizzle with sesame oil and top with spring onion and sesame seeds."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Noodle Stir-Fry",
@@ -28,14 +61,46 @@
     "time": 20,
     "teaser": "Chicken and vegetables stir-fried with noodles in a simple soy sauce.",
     "ingredients": [
-      "2 chicken breasts, sliced",
-      "150g noodles",
-      "1 bell pepper, sliced",
-      "1 carrot, julienned",
-      "3 tbsp soy sauce",
-      "1 tbsp sesame oil",
-      "2 cloves garlic, minced",
-      "Vegetable oil"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "noodles"
+      },
+      {
+        "qty": 1,
+        "unit": "bell",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "carrot, julienned"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Cook the noodles according to packet instructions, drain, and set aside.",
@@ -43,7 +108,8 @@
       "Add the pepper and carrot and stir-fry for 3-4 minutes.",
       "Add the garlic, then return the chicken and noodles to the pan with the soy sauce and sesame oil.",
       "Toss everything together for 1-2 minutes and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sticky Sesame Chicken Noodles",
@@ -51,14 +117,46 @@
     "time": 20,
     "teaser": "Chicken and egg noodles tossed in a sticky sesame-soy glaze.",
     "ingredients": [
-      "2 chicken breasts, sliced",
-      "150g egg noodles",
-      "3 tbsp soy sauce",
-      "2 tbsp honey",
-      "1 tbsp sesame oil",
-      "2 cloves garlic, minced",
-      "1 tsp sesame seeds",
-      "Vegetable oil"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "egg noodles"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame seeds"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Cook the noodles according to packet instructions, drain, and set aside.",
@@ -66,7 +164,8 @@
       "Add the garlic and cook for 30 seconds.",
       "Stir in the soy sauce, honey, and sesame oil, and simmer for 1-2 minutes until sticky.",
       "Toss the noodles through the chicken and sauce, and top with sesame seeds."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Spicy Peanut Chicken Noodles",
@@ -74,15 +173,51 @@
     "time": 20,
     "teaser": "Noodles and chicken tossed in a quick peanut butter and chilli sauce.",
     "ingredients": [
-      "2 chicken breasts, sliced",
-      "150g noodles (egg or udon)",
-      "3 tbsp peanut butter",
-      "2 tbsp soy sauce",
-      "1 tbsp rice vinegar",
-      "1 tsp chilli flakes (or to taste)",
-      "1 clove garlic, minced",
-      "Splash of hot water to loosen",
-      "Vegetable oil"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "noodles (egg or udon)"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "peanut butter"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "rice vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "chilli flakes (or to taste)"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Splash of hot water to loosen"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Cook the noodles according to packet instructions, drain, and set aside.",
@@ -90,6 +225,7 @@
       "Whisk the peanut butter, soy sauce, rice vinegar, chilli flakes, and garlic together, adding hot water until pourable.",
       "Toss the noodles and sauce through the chicken in the pan.",
       "Serve immediately, with extra chilli flakes if you like it hotter."
-    ]
+    ],
+    "servings": 2
   }
 ]

@@ -5,20 +5,49 @@
     "time": 30,
     "teaser": "A filling, budget-friendly soup that mostly looks after itself on the stove.",
     "ingredients": [
-      "1 tin (400g) chopped tomatoes",
-      "150g red lentils, rinsed",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "800ml vegetable stock",
-      "1 tsp cumin",
-      "Olive oil"
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "red lentils, rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 800,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Heat oil in a pot and soften the onion and garlic for 4-5 minutes.",
       "Add the cumin, tomatoes, lentils, and stock.",
       "Bring to a simmer and cook for 20-25 minutes, stirring occasionally, until the lentils are soft.",
       "Blend if you'd like it smooth, or leave as is. Season to taste and serve with bread."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Noodle Soup",
@@ -26,19 +55,44 @@
     "time": 25,
     "teaser": "A comforting classic that comes together with shop-bought stock and leftover or quick-cooked chicken.",
     "ingredients": [
-      "1 litre chicken stock",
-      "150g cooked chicken, shredded (or 1 raw breast, sliced thin)",
-      "100g dried noodles or vermicelli",
-      "1 carrot, sliced",
-      "1 stick celery, sliced",
-      "1 tsp dried thyme"
+      {
+        "qty": 1,
+        "unit": "litre",
+        "item": "chicken stock"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "cooked chicken, shredded (or 1 raw breast, sliced thin)"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "dried noodles or vermicelli"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "carrot, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "stick",
+        "item": "celery, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried thyme"
+      }
     ],
     "steps": [
       "Bring the stock to a simmer in a large pot.",
       "Add the carrot and celery and cook for 5 minutes.",
       "Add the chicken (raw or cooked) and thyme, and simmer for 8-10 minutes until the chicken is cooked through.",
       "Add the noodles for the last 3-4 minutes of cooking, until tender. Season and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Creamy Broccoli & Potato Soup",
@@ -46,19 +100,44 @@
     "time": 30,
     "teaser": "Blended into velvety smoothness — good for using up an ageing head of broccoli.",
     "ingredients": [
-      "1 head broccoli, chopped",
-      "2 potatoes, peeled and chopped",
-      "1 onion, diced",
-      "800ml vegetable stock",
-      "100ml cream (optional)",
-      "Olive oil"
+      {
+        "qty": 1,
+        "unit": "head",
+        "item": "broccoli, chopped"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "potatoes, peeled and chopped"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 800,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": 100,
+        "unit": "ml",
+        "item": "cream (optional)"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Heat oil in a pot and soften the onion for 4 minutes.",
       "Add the potatoes and stock, bring to a simmer, and cook for 10 minutes.",
       "Add the broccoli and cook for a further 8-10 minutes until everything is tender.",
       "Blend until smooth, stir in the cream if using, and season to taste."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Spiced Carrot & Ginger Soup",
@@ -66,19 +145,44 @@
     "time": 30,
     "teaser": "Naturally sweet and warming, with just a handful of ingredients.",
     "ingredients": [
-      "500g carrots, chopped",
-      "1 onion, diced",
-      "1 thumb ginger, grated",
-      "800ml vegetable stock",
-      "1 tsp ground coriander",
-      "Olive oil"
+      {
+        "qty": 500,
+        "unit": "g",
+        "item": "carrots, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 800,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground coriander"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Heat oil in a pot and soften the onion and ginger for 4-5 minutes.",
       "Add the carrots, coriander, and stock.",
       "Simmer for 20 minutes until the carrots are soft.",
       "Blend until smooth and season to taste."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken & Sweetcorn Chowder",
@@ -86,20 +190,49 @@
     "time": 30,
     "teaser": "A creamy, filling soup that's closer to a stew — good on a cold evening.",
     "ingredients": [
-      "2 chicken breasts, diced",
-      "1 tin sweetcorn, drained",
-      "2 potatoes, diced small",
-      "1 onion, diced",
-      "700ml chicken stock",
-      "100ml single cream",
-      "Olive oil"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "sweetcorn, drained"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "potatoes, diced small"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 700,
+        "unit": "ml",
+        "item": "chicken stock"
+      },
+      {
+        "qty": 100,
+        "unit": "ml",
+        "item": "single cream"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Fry the onion in a little oil for 4 minutes.",
       "Add the chicken and potatoes and cook for 3-4 minutes.",
       "Pour in the stock, bring to a simmer, and cook for 15 minutes until the potatoes and chicken are cooked through.",
       "Stir in the sweetcorn and cream, warm through, and season to taste."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Leek & Potato Soup",
@@ -107,19 +240,44 @@
     "time": 30,
     "teaser": "A classic, gently flavoured soup that blends into something silky with barely any effort.",
     "ingredients": [
-      "2 leeks, sliced",
-      "3 potatoes, peeled and chopped",
-      "1 onion, diced",
-      "800ml vegetable stock",
-      "100ml cream (optional)",
-      "Olive oil"
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "leeks, sliced"
+      },
+      {
+        "qty": 3,
+        "unit": null,
+        "item": "potatoes, peeled and chopped"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 800,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": 100,
+        "unit": "ml",
+        "item": "cream (optional)"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Heat oil in a pot and soften the onion and leeks for 5 minutes.",
       "Add the potatoes and stock, bring to a simmer, and cook for 15-18 minutes until the potatoes are soft.",
       "Blend until smooth, stir in the cream if using, and season to taste.",
       "Serve with crusty bread."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Spicy Black Bean Soup",
@@ -127,15 +285,51 @@
     "time": 25,
     "teaser": "A store-cupboard soup that gets its kick from chilli and smoked paprika.",
     "ingredients": [
-      "2 tins black beans, drained and rinsed",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "1 tsp ground cumin",
-      "1 tsp smoked paprika",
-      "1/2 tsp chilli powder",
-      "700ml vegetable stock",
-      "Lime juice and chopped coriander to serve",
-      "Olive oil"
+      {
+        "qty": 2,
+        "unit": "tins",
+        "item": "black beans, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "chilli powder"
+      },
+      {
+        "qty": 700,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Lime juice and chopped coriander to serve"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Heat oil in a pot and soften the onion and garlic for 4-5 minutes.",
@@ -143,6 +337,7 @@
       "Add the black beans and stock, and simmer for 15 minutes.",
       "Blend partially for a thicker texture if you like, and season to taste.",
       "Serve with a squeeze of lime and chopped coriander."
-    ]
+    ],
+    "servings": 2
   }
 ]

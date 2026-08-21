@@ -5,20 +5,49 @@
     "time": 20,
     "teaser": "Mince and a simple spice mix, spooned into tortillas with your favourite toppings.",
     "ingredients": [
-      "400g beef mince",
-      "8 small tortillas or taco shells",
-      "1 tsp cumin",
-      "1 tsp paprika",
-      "1/2 tsp chilli powder",
-      "1 onion, diced",
-      "Lettuce, cheese, and salsa to serve"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 8,
+        "unit": "small",
+        "item": "tortillas or taco shells"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "chilli powder"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Lettuce, cheese, and salsa to serve"
+      }
     ],
     "steps": [
       "Fry the onion in a little oil for 3-4 minutes until soft.",
       "Add the beef mince and spices and cook, breaking it up, until browned through.",
       "Warm the tortillas or taco shells.",
       "Fill with the mince and top with lettuce, cheese, and salsa."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Bean & Cheese Quesadillas",
@@ -26,18 +55,39 @@
     "time": 15,
     "teaser": "A crisp, cheesy vegetarian option that's ready in one pan.",
     "ingredients": [
-      "4 large tortillas",
-      "1 tin black beans or kidney beans, drained and mashed lightly",
-      "150g cheddar, grated",
-      "1 tsp cumin",
-      "Salsa and soured cream to serve"
+      {
+        "qty": 4,
+        "unit": "large",
+        "item": "tortillas"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "black beans or kidney beans, drained and mashed lightly"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "cheddar, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salsa and soured cream to serve"
+      }
     ],
     "steps": [
       "Mix the mashed beans with the cumin.",
       "Spread the bean mixture and cheese over half of each tortilla, then fold over.",
       "Dry-fry each quesadilla in a pan over medium heat for 2-3 minutes per side, until golden and the cheese has melted.",
       "Slice into wedges and serve with salsa and soured cream."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Simple Chilli Con Carne",
@@ -45,14 +95,46 @@
     "time": 35,
     "teaser": "A weeknight-sized batch of chilli that also reheats well the next day.",
     "ingredients": [
-      "400g beef mince",
-      "1 tin (400g) chopped tomatoes",
-      "1 tin kidney beans, drained",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "1 tbsp chilli powder",
-      "1 tsp cumin",
-      "Rice to serve"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "kidney beans, drained"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "chilli powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice to serve"
+      }
     ],
     "steps": [
       "Fry the onion and garlic in a little oil for 4 minutes.",
@@ -60,7 +142,8 @@
       "Stir in the chilli powder and cumin, then add the tomatoes and kidney beans.",
       "Simmer for 20-25 minutes, stirring occasionally, until thickened.",
       "Serve over rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Mince Nachos",
@@ -68,13 +151,41 @@
     "time": 20,
     "teaser": "A tray of nachos loaded with spiced mince and melted cheese, ready to share.",
     "ingredients": [
-      "300g beef mince",
-      "1 tsp cumin",
-      "1 tsp paprika",
-      "150g tortilla chips",
-      "100g cheddar, grated",
-      "Salsa and soured cream to serve",
-      "Sliced jalapeños (optional)"
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "tortilla chips"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "cheddar, grated"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salsa and soured cream to serve"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Sliced jalapeños (optional)"
+      }
     ],
     "steps": [
       "Fry the mince with the cumin and paprika until browned, breaking it up as it cooks.",
@@ -82,7 +193,8 @@
       "Spread the tortilla chips on a baking tray and scatter over the mince.",
       "Top with the grated cheddar and jalapeños if using.",
       "Bake or grill for 5-8 minutes until the cheese has melted. Serve with salsa and soured cream."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Blackened Salmon Tacos",
@@ -90,13 +202,41 @@
     "time": 20,
     "teaser": "Spiced salmon and a quick lime slaw, piled into warm tortillas.",
     "ingredients": [
-      "2 salmon fillets",
-      "2 tsp blackening or cajun seasoning",
-      "1/4 red cabbage, shredded",
-      "1 lime, juiced",
-      "2 tbsp soured cream or yoghurt",
-      "6 small tortillas",
-      "1 tbsp olive oil"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "blackening or cajun seasoning"
+      },
+      {
+        "qty": 0.25,
+        "unit": "red",
+        "item": "cabbage, shredded"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lime, juiced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soured cream or yoghurt"
+      },
+      {
+        "qty": 6,
+        "unit": "small",
+        "item": "tortillas"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      }
     ],
     "steps": [
       "Rub the salmon with the blackening seasoning.",
@@ -104,7 +244,8 @@
       "Toss the cabbage with the lime juice and soured cream to make a quick slaw.",
       "Warm the tortillas.",
       "Fill with the salmon and slaw and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Enchiladas",
@@ -112,13 +253,41 @@
     "time": 35,
     "teaser": "Shredded chicken rolled in tortillas, smothered in a smoky tomato sauce, and baked with cheese.",
     "ingredients": [
-      "300g cooked chicken, shredded (or 2 chicken breasts, cooked and shredded)",
-      "8 small tortillas",
-      "1 tin (400g) chopped tomatoes",
-      "1 tbsp chipotle paste or smoked paprika",
-      "1 onion, diced",
-      "150g cheddar, grated",
-      "1 clove garlic, minced"
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked chicken, shredded (or 2 chicken breasts, cooked and shredded)"
+      },
+      {
+        "qty": 8,
+        "unit": "small",
+        "item": "tortillas"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "chipotle paste or smoked paprika"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "cheddar, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -126,6 +295,7 @@
       "Mix a few spoonfuls of the sauce through the shredded chicken.",
       "Divide the chicken between the tortillas, roll up, and place in an ovenproof dish.",
       "Pour the remaining sauce over the top, scatter with cheese, and bake for 15-20 minutes until bubbling."
-    ]
+    ],
+    "servings": 2
   }
 ]
