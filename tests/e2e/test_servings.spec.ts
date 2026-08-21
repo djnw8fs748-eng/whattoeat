@@ -31,3 +31,24 @@ test('day picker servings stepper cannot go below 1', async ({ page }) => {
   }
   await expect(page.locator('#dayPickerServingsValue')).toHaveText('1');
 });
+
+test('recipe panel servings stepper scales ingredient quantities', async ({ page }) => {
+  await page.locator('.card[data-title="Garlic Butter Pasta with Parmesan"]').click();
+
+  await expect(page.locator('#panelServingsValue')).toHaveText('2');
+  const spaghettiLine = page.locator('.ingredient-list li', { hasText: 'spaghetti or linguine' });
+  await expect(spaghettiLine).toContainText('200g');
+
+  await page.locator('#panelServingsPlus').click();
+  await expect(page.locator('#panelServingsValue')).toHaveText('3');
+  await expect(spaghettiLine).toContainText('300g');
+});
+
+test('recipe panel ingredients with no quantity render unscaled', async ({ page }) => {
+  await page.locator('.card[data-title="Garlic Butter Pasta with Parmesan"]').click();
+  const saltLine = page.locator('.ingredient-list li', { hasText: 'Salt and black pepper' });
+  await expect(saltLine).toBeVisible();
+
+  await page.locator('#panelServingsPlus').click();
+  await expect(saltLine).toContainText('Salt and black pepper');
+});

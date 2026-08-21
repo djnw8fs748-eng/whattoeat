@@ -467,6 +467,22 @@
   .panel .meta span { display: flex; align-items: center; gap: 6px; }
   .panel .meta svg { width: 15px; height: 15px; }
 
+  .panel-servings {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .panel-servings button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1;
+  }
+
   .panel .teaser {
     color: var(--text-muted);
     font-size: 15px;
@@ -1331,6 +1347,25 @@ function escapeHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// Units that read naturally glued to the number ("200g", "500ml").
+// Everything else (including words the ingredient parser mistakenly put
+// in the unit field, e.g. "chicken" for "4 chicken thighs, skin on")
+// gets a space so the rendered line stays readable.
+const GLUED_UNITS = new Set(['g', 'kg', 'mg', 'ml', 'l', 'cl']);
+
+function formatQty(n) {
+  const rounded = Math.round(n * 10) / 10;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+}
+
+function scaleIngredient(entry, ratio) {
+  if (entry.qty === null) return entry.item;
+  const scaledQty = formatQty(entry.qty * ratio);
+  if (!entry.unit) return `${scaledQty} ${entry.item}`;
+  const separator = GLUED_UNITS.has(entry.unit.toLowerCase()) ? '' : ' ';
+  return `${scaledQty}${separator}${entry.unit} ${entry.item}`;
+}
+
 /* ============================================================
    DETAIL PANEL: opens the slide-over panel with full ingredients
    and steps for one recipe.
@@ -1339,32 +1374,54 @@ const panel = document.getElementById('panel');
 const backdrop = document.getElementById('backdrop');
 const panelContent = document.getElementById('panelContent');
 
+let panelRecipe = null;
+let panelServings = 1;
+
+function renderPanelIngredients() {
+  const ratio = panelServings / panelRecipe.servings;
+  document.getElementById('panelIngredientList').innerHTML = panelRecipe.ingredients.map((ing, i) => `
+    <li>
+      <input type="checkbox" id="ing-${i}">
+      <label for="ing-${i}">${escapeHtml(scaleIngredient(ing, ratio))}</label>
+    </li>
+  `).join('');
+}
+
+function setPanelServings(value) {
+  panelServings = Math.max(1, value);
+  document.getElementById('panelServingsValue').textContent = panelServings;
+  renderPanelIngredients();
+}
+
 function openRecipe(title) {
   const r = recipes.find(x => x.title === title);
   if (!r) return;
+  panelRecipe = r;
 
   panelContent.innerHTML = `
     <span class="pill cat-${categoryColors[r.category] ?? 0}">${escapeHtml(r.category)}</span>
     <h2 id="panelTitle">${escapeHtml(r.title)}</h2>
     <div class="meta">
       <span>${clockIcon} ${r.time} minutes</span>
-      <span>Serves about 2</span>
+      <span class="panel-servings">
+        Serves
+        <button type="button" id="panelServingsMinus" aria-label="Decrease servings">−</button>
+        <span id="panelServingsValue">${r.servings}</span>
+        <button type="button" id="panelServingsPlus" aria-label="Increase servings">+</button>
+      </span>
     </div>
     <p class="teaser">${r.teaser}</p>
     <h4>Ingredients</h4>
-    <ul class="ingredient-list">
-      ${r.ingredients.map((ing, i) => `
-        <li>
-          <input type="checkbox" id="ing-${i}">
-          <label for="ing-${i}">${ing}</label>
-        </li>
-      `).join('')}
-    </ul>
+    <ul class="ingredient-list" id="panelIngredientList"></ul>
     <h4>Method</h4>
     <ol class="steps-list">
       ${r.steps.map(step => `<li>${step}</li>`).join('')}
     </ol>
   `;
+
+  document.getElementById('panelServingsMinus').addEventListener('click', () => setPanelServings(panelServings - 1));
+  document.getElementById('panelServingsPlus').addEventListener('click', () => setPanelServings(panelServings + 1));
+  setPanelServings(r.servings);
 
   panel.classList.add('open');
   backdrop.classList.add('open');
