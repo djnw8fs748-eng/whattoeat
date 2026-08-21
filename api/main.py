@@ -124,3 +124,68 @@ def copy_history_week(week_key: str):
         store["weeks"][current_week_key()] = dict(store["weeks"][week_key])
         _write_store(store)
         return store["weeks"][current_week_key()]
+
+
+class DayPlanEntry(BaseModel):
+    recipe: str
+    servings: int
+
+    @field_validator('servings')
+    @classmethod
+    def positive_servings(cls, v: int) -> int:
+        if v < 1:
+            raise ValueError('servings must be a positive integer')
+        return v
+
+
+class TemplateCreate(BaseModel):
+    name: str
+    plan: dict[str, Optional[DayPlanEntry]]
+
+    @field_validator('plan')
+    @classmethod
+    def exact_day_keys(cls, v: dict) -> dict:
+        if set(v.keys()) != set(VALID_DAYS):
+            raise ValueError(f'plan must have exactly these day keys: {list(VALID_DAYS)}')
+        return v
+
+
+@app.get("/api/templates")
+def list_templates():
+    with _lock:
+        store = _read_store()
+        return sorted(store["templates"].keys())
+
+
+@app.post("/api/templates")
+def save_template(body: TemplateCreate):
+    with _lock:
+        store = _read_store()
+        store["templates"][body.name] = {
+            day: (entry.model_dump() if entry else None)
+            for day, entry in body.plan.items()
+        }
+        _write_store(store)
+        return {"name": body.name}
+
+
+@app.post("/api/templates/{name}/apply")
+def apply_template(name: str):
+    with _lock:
+        store = _read_store()
+        if name not in store["templates"]:
+            raise HTTPException(status_code=404, detail=f"No template named '{name}'")
+        store["weeks"][current_week_key()] = dict(store["templates"][name])
+        _write_store(store)
+        return store["weeks"][current_week_key()]
+
+
+@app.delete("/api/templates/{name}")
+def delete_template(name: str):
+    with _lock:
+        store = _read_store()
+        if name not in store["templates"]:
+            raise HTTPException(status_code=404, detail=f"No template named '{name}'")
+        del store["templates"][name]
+        _write_store(store)
+        return {"deleted": name}
