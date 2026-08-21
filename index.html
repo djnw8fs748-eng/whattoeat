@@ -1307,34 +1307,53 @@ function renderShoppingList() {
   const grid = document.getElementById('shoppingGrid');
   if (!section || !grid) return;
 
-  const planned = DAY_KEYS.map(d => plan[d]).filter(Boolean);
-  if (planned.length === 0) {
+  const plannedEntries = DAY_KEYS.map(d => plan[d]).filter(Boolean);
+  if (plannedEntries.length === 0) {
     section.style.display = 'none';
     return;
   }
 
-  // Gather all ingredients from planned recipes, deduplicate case-insensitively
-  const seen = new Set();
-  const ingredients = [];
-  planned.forEach(title => {
+  // key -> { qty: number|null, unit: string|null, item: string, sortKey: string }
+  const merged = new Map();
+
+  plannedEntries.forEach(({ recipe: title, servings }) => {
     const r = recipes.find(x => x.title === title);
     if (!r) return;
+    const ratio = servings / r.servings;
+
     r.ingredients.forEach(ing => {
-      const key = ing.trim().toLowerCase();
-      if (!seen.has(key)) {
-        seen.add(key);
-        ingredients.push(ing.trim());
+      const normalizedItem = ing.item.trim().toLowerCase();
+
+      if (ing.qty === null) {
+        // Unparsed/no-quantity ingredients: dedupe by exact original text, never summed.
+        const key = `unparsed|${normalizedItem}`;
+        if (!merged.has(key)) {
+          merged.set(key, { qty: null, unit: null, item: ing.item.trim(), sortKey: normalizedItem });
+        }
+        return;
+      }
+
+      const key = `${ing.unit || ''}|${normalizedItem}`;
+      const scaledQty = ing.qty * ratio;
+      if (merged.has(key)) {
+        merged.get(key).qty += scaledQty;
+      } else {
+        merged.set(key, { qty: scaledQty, unit: ing.unit, item: ing.item.trim(), sortKey: normalizedItem });
       }
     });
   });
-  ingredients.sort((a, b) => a.localeCompare(b));
 
-  grid.innerHTML = ingredients.map((ing, i) => `
-    <div class="shopping-item">
-      <input type="checkbox" id="shop-${i}">
-      <label for="shop-${i}">${escapeHtml(ing)}</label>
-    </div>
-  `).join('');
+  const rows = [...merged.values()].sort((a, b) => a.sortKey.localeCompare(b.sortKey));
+
+  grid.innerHTML = rows.map((row, i) => {
+    const label = scaleIngredient({ qty: row.qty, unit: row.unit, item: row.item }, 1);
+    return `
+      <div class="shopping-item" data-sort-key="${escapeAttr(row.sortKey)}">
+        <input type="checkbox" id="shop-${i}">
+        <label for="shop-${i}">${escapeHtml(label)}</label>
+      </div>
+    `;
+  }).join('');
 
   section.style.display = '';
 }
