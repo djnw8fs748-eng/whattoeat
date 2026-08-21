@@ -19,9 +19,11 @@ These three are grouped together because 2 and 3 both extend the same plan data 
 
 ## Data Model
 
-### `recipes.json`
+### `recipes/*.json` (per-category files)
 
-Every recipe gains:
+Recipe data now lives in `recipes/_index.json` (title/category/time/file lookup) plus one file per category (`recipes/pasta.json`, `recipes/curry.json`, etc.) — the source of truth. A CI step in `.github/workflows/docker-publish.yml` already flattens these into the root `recipes.json` consumed by `index.html` at build time; that generation step needs no changes here since it's a plain concatenation.
+
+Every recipe (in every category file) gains:
 - `servings: <int>` — base serving count.
 - `ingredients` restructured from freeform strings to structured objects:
 
@@ -38,7 +40,7 @@ Every recipe gains:
 
 Lines a migration script can't confidently parse (no leading quantity, ranges like "2-3 cloves", "to taste") fall back to `qty: null, unit: null, item: <full original text>`. These render and behave exactly as today — unscaled, shown as-is. No recipe is dropped or blocked on an unparseable line.
 
-Migration is a one-time script run over all 80 recipes, followed by a manual spot-check of the output (not every line can be trusted to a regex).
+Migration is a one-time script run over all 95 recipes across the `recipes/*.json` category files, followed by a manual spot-check of the output (not every line can be trusted to a regex).
 
 ### Plan storage (`api/`)
 
@@ -121,7 +123,7 @@ No auth, consistent with the rest of the app (trusted network, no accounts, one 
 
 ## Testing
 
-- **Migration script** — unit tests against a sample of tricky ingredient strings (fractions, "to taste", ranges, multi-word items) to confirm parse/fallback behavior. Full output spot-checked manually across all 80 recipes.
+- **Migration script** — unit tests against a sample of tricky ingredient strings (fractions, "to taste", ranges, multi-word items) to confirm parse/fallback behavior. Full output spot-checked manually across all 95 recipes.
 - **Backend (`api/tests`)** — extends the existing pytest suite: 7-day validation, per-day servings validation, week-key computation (Monday-start rollover), template CRUD, history list/get/copy, atomic-write behavior preserved.
 - **Frontend (`tests/e2e`)** — extends the existing Playwright suite: 7-day grid renders correctly, servings stepper scales both the recipe panel and shopping list correctly, save/load template round-trip, history navigation + copy-forward, shopping list merge produces correct summed lines and leaves mismatched-unit items separate.
 
