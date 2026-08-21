@@ -1097,6 +1097,14 @@ const clockIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" st
    RENDER: takes the current filters, works out which recipes
    match, and rewrites the grid's HTML to match.
    ============================================================ */
+// Structured ingredients ({qty, unit, item}) are matched on their descriptive
+// text. `unit` is included alongside `item` because the qty/unit/item parser
+// (Task 1's migration) sometimes captures descriptive words — e.g. "chicken"
+// in "4 chicken thighs, skin on" — into `unit` rather than `item`.
+function ingredientText(i) {
+  return `${i.unit ?? ''} ${i.item}`.toLowerCase();
+}
+
 function getFilteredRecipes() {
   return recipes.filter(r => {
     let matchesSearch;
@@ -1108,22 +1116,22 @@ function getFilteredRecipes() {
         // Trailing comma or single comma-separated term — treat as single-term search
         const term = terms[0] || '';
         matchesSearch = term === '' || r.title.toLowerCase().includes(term) ||
-          r.ingredients.some(i => i.toLowerCase().includes(term));
+          r.ingredients.some(i => ingredientText(i).includes(term));
       } else {
         matchesSearch = terms.every(term =>
-          r.ingredients.some(i => i.toLowerCase().includes(term))
+          r.ingredients.some(i => ingredientText(i).includes(term))
         );
       }
     } else {
       matchesSearch = r.title.toLowerCase().includes(activeSearch) ||
-        r.ingredients.some(i => i.toLowerCase().includes(activeSearch));
+        r.ingredients.some(i => ingredientText(i).includes(activeSearch));
     }
     const matchesCategory = activeCategory === "" || r.category === activeCategory;
     const matchesTime = r.time <= activeMaxTime;
     const matchesAllergens = activeAllergens.size === 0 ||
       [...activeAllergens].every(allergen =>
         !(ALLERGEN_KEYWORDS[allergen] || []).some(kw =>
-          r.ingredients.some(i => i.toLowerCase().includes(kw))
+          r.ingredients.some(i => ingredientText(i).includes(kw))
         )
       );
     return matchesSearch && matchesCategory && matchesTime && matchesAllergens;
