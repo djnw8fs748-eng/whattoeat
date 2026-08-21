@@ -746,6 +746,31 @@
   .day-picker-row .day-status { font-size: 11px; color: var(--accent); }
   .day-picker-row.taken .day-status { color: var(--text-muted); }
   .day-picker-row.taken:hover .day-status { color: var(--danger); }
+  .day-picker-servings {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 4px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .day-picker-servings button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .day-picker-servings #dayPickerServingsValue {
+    min-width: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text);
+  }
+
   .day-picker-cancel {
     margin-top: 12px; width: 100%; background: none; border: none;
     color: var(--text-muted); font-size: 13px; cursor: pointer;
@@ -975,6 +1000,12 @@
   <h4>Add to which day?</h4>
   <div class="day-picker-recipe" id="dayPickerTitle"></div>
   <div class="day-picker-list" id="dayPickerList"></div>
+  <div class="day-picker-servings">
+    <span>Servings:</span>
+    <button type="button" id="dayPickerServingsMinus" aria-label="Decrease servings">−</button>
+    <span id="dayPickerServingsValue">1</span>
+    <button type="button" id="dayPickerServingsPlus" aria-label="Increase servings">+</button>
+  </div>
   <button class="day-picker-cancel" id="dayPickerCancel">Cancel</button>
 </div>
 
@@ -1578,11 +1609,26 @@ document.getElementById('surpriseBtn').addEventListener('click', () => {
    DAY PICKER: open/close and day selection
    ============================================================ */
 let dayPickerRecipe = null;
+let dayPickerServings = 1;
 const dayPickerEl = document.getElementById('dayPicker');
+
+function setDayPickerServings(value) {
+  dayPickerServings = Math.max(1, value);
+  document.getElementById('dayPickerServingsValue').textContent = dayPickerServings;
+}
+
+document.getElementById('dayPickerServingsMinus').addEventListener('click', () => {
+  setDayPickerServings(dayPickerServings - 1);
+});
+document.getElementById('dayPickerServingsPlus').addEventListener('click', () => {
+  setDayPickerServings(dayPickerServings + 1);
+});
 
 function openDayPicker(recipeTitle, anchorEl) {
   dayPickerRecipe = recipeTitle;
   document.getElementById('dayPickerTitle').textContent = recipeTitle;
+  const recipe = recipes.find(r => r.title === recipeTitle);
+  setDayPickerServings(recipe ? recipe.servings : 1);
 
   const list = document.getElementById('dayPickerList');
   list.innerHTML = DAY_KEYS.map(d => {
@@ -1621,12 +1667,10 @@ function closeDayPicker() {
 
 function selectDay(day) {
   if (!dayPickerRecipe) return;
-  const recipe = recipes.find(r => r.title === dayPickerRecipe);
-  const servings = recipe ? recipe.servings : 1;
   fetch(`/api/plan/${day}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ recipe: dayPickerRecipe, servings })
+    body: JSON.stringify({ recipe: dayPickerRecipe, servings: dayPickerServings })
   })
     .then(res => {
       if (!res.ok) throw new Error(`${res.status}`);
