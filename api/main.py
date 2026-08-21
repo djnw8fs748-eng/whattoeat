@@ -2,6 +2,7 @@ import json
 import os
 import tempfile
 import threading
+from datetime import date, timedelta
 from pathlib import Path
 from typing import Optional
 
@@ -10,42 +11,54 @@ from pydantic import BaseModel, field_validator
 
 app = FastAPI()
 
-PLAN_FILE = Path("/data/plan.json")
+STORE_FILE = Path("/data/store.json")
 _lock = threading.Lock()
 
-VALID_DAYS = ("mon", "tue", "wed", "thu", "fri")
-EMPTY_PLAN: dict = {d: None for d in VALID_DAYS}
+VALID_DAYS = ("mon", "tue", "wed", "thu", "fri", "sat", "sun")
+EMPTY_DAY_PLAN: dict = {d: None for d in VALID_DAYS}
 
 
-def _read_plan() -> dict:
-    if not PLAN_FILE.exists():
-        return dict(EMPTY_PLAN)
+def current_week_key(today: Optional[date] = None) -> str:
+    today = today or date.today()
+    monday = today - timedelta(days=today.weekday())
+    return monday.isoformat()
+
+
+def _read_store() -> dict:
+    if not STORE_FILE.exists():
+        return {"weeks": {}, "templates": {}}
     try:
-        return json.loads(PLAN_FILE.read_text())
+        return json.loads(STORE_FILE.read_text())
     except json.JSONDecodeError:
-        return dict(EMPTY_PLAN)
+        return {"weeks": {}, "templates": {}}
 
 
-def _write_plan(plan: dict) -> None:
-    PLAN_FILE.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(dir=PLAN_FILE.parent)
+def _write_store(store: dict) -> None:
+    STORE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(dir=STORE_FILE.parent)
     try:
         with os.fdopen(fd, 'w') as f:
-            json.dump(plan, f)
-        os.replace(tmp, PLAN_FILE)
+            json.dump(store, f)
+        os.replace(tmp, STORE_FILE)
     except Exception:
         os.unlink(tmp)
         raise
 
 
+def _get_week(store: dict, week_key: str) -> dict:
+    return store["weeks"].get(week_key, dict(EMPTY_DAY_PLAN))
+
+
 @app.get("/api/plan")
 def get_plan():
     with _lock:
-        return _read_plan()
+        store = _read_store()
+        return _get_week(store, current_week_key())
 
 
 class DayUpdate(BaseModel):
     recipe: Optional[str] = None
+    servings: Optional[int] = None
 
     @field_validator('recipe')
     @classmethod
@@ -62,8 +75,17 @@ def patch_day(day: str, body: DayUpdate):
             status_code=400,
             detail=f"Invalid day '{day}'. Must be one of: {list(VALID_DAYS)}"
         )
+    if body.recipe is not None and (body.servings is None or body.servings < 1):
+        raise HTTPException(
+            status_code=400,
+            detail="servings must be a positive integer when setting a recipe"
+        )
+
     with _lock:
-        plan = _read_plan()
-        plan[day] = body.recipe
-        _write_plan(plan)
-    return plan
+        store = _read_store()
+        week_key = current_week_key()
+        week = _get_week(store, week_key)
+        week[day] = None if body.recipe is None else {"recipe": body.recipe, "servings": body.servings}
+        store["weeks"][week_key] = week
+        _write_store(store)
+        return week
