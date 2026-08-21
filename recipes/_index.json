@@ -568,5 +568,35 @@
     "category": "Noodles",
     "time": 20,
     "file": "noodles.json"
+  },
+  {
+    "title": "Sweet Potato & Black Bean Tacos",
+    "category": "Mexican",
+    "time": 25,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Shrimp Tacos with Mango Salsa",
+    "category": "Mexican",
+    "time": 20,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Garlic Butter Shrimp Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
+  },
+  {
+    "title": "Moroccan Lamb & Apricot Stew",
+    "category": "Casserole",
+    "time": 35,
+    "file": "casserole.json"
+  },
+  {
+    "title": "Roasted Red Pepper & Tomato Soup",
+    "category": "Soup",
+    "time": 30,
+    "file": "soup.json"
   }
 ]

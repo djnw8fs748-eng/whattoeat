@@ -91,5 +91,27 @@
       "Toss the noodles and sauce through the chicken in the pan.",
       "Serve immediately, with extra chilli flakes if you like it hotter."
     ]
+  },
+  {
+    "title": "Garlic Butter Shrimp Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Shrimp and noodles tossed in a quick garlic butter sauce — simple and fast.",
+    "ingredients": [
+      "300g raw shrimp or prawns, peeled",
+      "150g noodles (egg or udon)",
+      "3 tbsp butter",
+      "3 cloves garlic, minced",
+      "2 tbsp soy sauce",
+      "1/2 lemon, juiced",
+      "Chopped parsley to garnish"
+    ],
+    "steps": [
+      "Cook the noodles according to packet instructions and drain.",
+      "Melt the butter in a pan and fry the garlic for 30 seconds until fragrant.",
+      "Add the shrimp and cook for 2-3 minutes per side until pink and cooked through.",
+      "Stir in the soy sauce and lemon juice, then toss the noodles through.",
+      "Garnish with parsley and serve."
+    ]
   }
 ]

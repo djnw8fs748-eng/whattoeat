@@ -144,5 +144,27 @@
       "Blend partially for a thicker texture if you like, and season to taste.",
       "Serve with a squeeze of lime and chopped coriander."
     ]
+  },
+  {
+    "title": "Roasted Red Pepper & Tomato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Roasted peppers and tomatoes blended into a smoky, comforting soup.",
+    "ingredients": [
+      "3 red peppers, halved and deseeded",
+      "1 tin (400g) chopped tomatoes",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "700ml vegetable stock",
+      "1 tsp smoked paprika",
+      "Olive oil"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Roast the peppers, cut-side down, with a drizzle of oil for 20 minutes until softened and lightly charred. Roughly chop.",
+      "Meanwhile, soften the onion and garlic in a pot for 4-5 minutes.",
+      "Add the roasted peppers, tomatoes, smoked paprika, and stock.",
+      "Simmer for 10-15 minutes, then blend until smooth. Season to taste."
+    ]
   }
 ]
