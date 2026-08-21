@@ -89,3 +89,38 @@ def patch_day(day: str, body: DayUpdate):
         store["weeks"][week_key] = week
         _write_store(store)
         return week
+
+
+@app.get("/api/plan/history")
+def list_history(limit: int = 8):
+    with _lock:
+        store = _read_store()
+        current = current_week_key()
+        past_keys = sorted(
+            (k for k in store["weeks"] if k < current),
+            reverse=True,
+        )[:limit]
+        return [
+            {"week_key": k, "days_filled": sum(1 for v in store["weeks"][k].values() if v)}
+            for k in past_keys
+        ]
+
+
+@app.get("/api/plan/history/{week_key}")
+def get_history_week(week_key: str):
+    with _lock:
+        store = _read_store()
+        if week_key not in store["weeks"]:
+            raise HTTPException(status_code=404, detail=f"No plan found for week '{week_key}'")
+        return store["weeks"][week_key]
+
+
+@app.post("/api/plan/history/{week_key}/copy")
+def copy_history_week(week_key: str):
+    with _lock:
+        store = _read_store()
+        if week_key not in store["weeks"]:
+            raise HTTPException(status_code=404, detail=f"No plan found for week '{week_key}'")
+        store["weeks"][current_week_key()] = dict(store["weeks"][week_key])
+        _write_store(store)
+        return store["weeks"][current_week_key()]
