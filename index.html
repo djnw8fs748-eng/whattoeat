@@ -1333,7 +1333,7 @@ function renderShoppingList() {
         return;
       }
 
-      const key = `${ing.unit || ''}|${normalizedItem}`;
+      const key = `${(ing.unit || '').trim().toLowerCase()}|${normalizedItem}`;
       const scaledQty = ing.qty * ratio;
       if (merged.has(key)) {
         merged.get(key).qty += scaledQty;
