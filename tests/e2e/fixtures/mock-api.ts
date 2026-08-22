@@ -32,4 +32,30 @@ export async function setupMockApi(page: Page, initialPlan: Partial<Plan> = {}):
       await route.continue();
     }
   });
+
+  const templates: Record<string, Plan> = {};
+
+  await page.route(/\/api\/templates/, async (route) => {
+    const url = new URL(route.request().url());
+    const segments = url.pathname.split('/').filter(Boolean);
+    const method = route.request().method();
+
+    if (segments.length === 2 && method === 'GET') {
+      await route.fulfill({ json: Object.keys(templates) });
+    } else if (segments.length === 2 && method === 'POST') {
+      const body = JSON.parse(route.request().postData() ?? '{}') as { name: string; plan: Plan };
+      templates[body.name] = body.plan;
+      await route.fulfill({ json: { name: body.name } });
+    } else if (segments.length === 4 && segments[3] === 'apply' && method === 'POST') {
+      const name = decodeURIComponent(segments[2]);
+      if (!(name in templates)) {
+        await route.fulfill({ status: 404, json: { detail: 'not found' } });
+        return;
+      }
+      Object.assign(plan, templates[name]);
+      await route.fulfill({ json: { ...plan } });
+    } else {
+      await route.continue();
+    }
+  });
 }

@@ -795,6 +795,20 @@
 
   /* ============ PLAN TAB ============ */
   .plan-tab-inner { padding: 28px 0; }
+  .template-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .template-controls button, .template-controls select {
+    padding: 6px 12px;
+    border: 1px solid var(--divider);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 13px;
+  }
   .plan-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -996,6 +1010,11 @@
       </h1>
       <p class="view-subtitle">Plan your week, then build a shopping list from it.</p>
       <div class="plan-grid" id="planGrid"></div>
+      <div class="template-controls">
+        <button type="button" id="saveTemplateBtn">Save as template</button>
+        <select id="loadTemplateSelect"><option value="">Load template…</option></select>
+        <button type="button" id="loadTemplateBtn">Load</button>
+      </div>
       <div class="shopping-section" id="shoppingSection" style="display:none">
         <div class="shopping-header">
           <h3>Shopping list</h3>
@@ -1830,6 +1849,46 @@ function fetchPlan() {
 }
 
 /* ============================================================
+   TEMPLATES: save the current week's plan under a name, and
+   load a saved template back (overwriting the current week).
+   ============================================================ */
+function fetchTemplateNames() {
+  fetch('/api/templates')
+    .then(res => res.json())
+    .then(names => {
+      const select = document.getElementById('loadTemplateSelect');
+      select.innerHTML = '<option value="">Load template…</option>' +
+        names.map(n => `<option value="${escapeAttr(n)}">${escapeHtml(n)}</option>`).join('');
+    })
+    .catch(() => {});
+}
+
+document.getElementById('saveTemplateBtn').addEventListener('click', () => {
+  const name = prompt('Save current plan as:');
+  if (!name) return;
+  fetch('/api/templates', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, plan })
+  })
+    .then(res => res.json())
+    .then(() => fetchTemplateNames());
+});
+
+document.getElementById('loadTemplateBtn').addEventListener('click', () => {
+  const name = document.getElementById('loadTemplateSelect').value;
+  if (!name) return;
+  if (!confirm(`Load "${name}"? This will overwrite the current week's plan.`)) return;
+  fetch(`/api/templates/${encodeURIComponent(name)}/apply`, { method: 'POST' })
+    .then(res => res.json())
+    .then(data => {
+      plan = data;
+      renderGrid();
+      renderPlanTab();
+    });
+});
+
+/* ============================================================
    LOAD DATA: fetch recipes.json (sitting alongside this page)
    and only render the page once it's arrived. If it fails to
    load — e.g. the file's missing or malformed — show a plain
@@ -1846,6 +1905,7 @@ fetch('recipes.json')
     populateSheetCategories();
     renderGrid();
     fetchPlan();
+    fetchTemplateNames();
     setInterval(fetchPlan, 15000);
   })
   .catch(err => {
