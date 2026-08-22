@@ -809,6 +809,22 @@
     cursor: pointer;
     font-size: 13px;
   }
+  .history-controls { margin-bottom: 20px; }
+  .history-controls button, .history-controls select {
+    padding: 6px 12px;
+    border: 1px solid var(--divider);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 13px;
+  }
+  #historyPanel {
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid var(--divider);
+    border-radius: var(--radius);
+  }
+  #historyGrid { margin: 10px 0; font-size: 13px; }
   .plan-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -1014,6 +1030,14 @@
         <button type="button" id="saveTemplateBtn">Save as template</button>
         <select id="loadTemplateSelect"><option value="">Load template…</option></select>
         <button type="button" id="loadTemplateBtn">Load</button>
+      </div>
+      <div class="history-controls">
+        <button type="button" id="historyBtn">History</button>
+        <div id="historyPanel" style="display: none;">
+          <select id="historyWeekList"><option value="">Select a past week…</option></select>
+          <div id="historyGrid"></div>
+          <button type="button" id="historyCopyBtn">Copy to current week</button>
+        </div>
       </div>
       <div class="shopping-section" id="shoppingSection" style="display:none">
         <div class="shopping-header">
@@ -1885,6 +1909,60 @@ document.getElementById('loadTemplateBtn').addEventListener('click', () => {
       plan = data;
       renderGrid();
       renderPlanTab();
+    });
+});
+
+/* ============================================================
+   HISTORY: browse past weeks' plans read-only, and copy a past
+   week's plan into the current week (overwriting it).
+   ============================================================ */
+let selectedHistoryWeek = null;
+
+function fetchHistoryWeeks() {
+  fetch('/api/plan/history')
+    .then(res => res.json())
+    .then(weeks => {
+      const select = document.getElementById('historyWeekList');
+      select.innerHTML = '<option value="">Select a past week…</option>' +
+        weeks.map(w => `<option value="${w.week_key}">${w.week_key} (${w.days_filled} planned)</option>`).join('');
+    })
+    .catch(() => {});
+}
+
+document.getElementById('historyBtn').addEventListener('click', () => {
+  const panel = document.getElementById('historyPanel');
+  const isOpen = panel.style.display !== 'none';
+  panel.style.display = isOpen ? 'none' : 'block';
+  if (!isOpen) fetchHistoryWeeks();
+});
+
+document.getElementById('historyWeekList').addEventListener('change', (e) => {
+  selectedHistoryWeek = e.target.value || null;
+  const historyGrid = document.getElementById('historyGrid');
+  if (!selectedHistoryWeek) {
+    historyGrid.innerHTML = '';
+    return;
+  }
+  fetch(`/api/plan/history/${selectedHistoryWeek}`)
+    .then(res => res.json())
+    .then(weekPlan => {
+      historyGrid.innerHTML = DAY_KEYS
+        .filter(d => weekPlan[d])
+        .map(d => `<div>${DAY_LABELS[d]}: ${escapeHtml(weekPlan[d].recipe)} · ${weekPlan[d].servings}</div>`)
+        .join('') || '<div>No recipes planned that week.</div>';
+    });
+});
+
+document.getElementById('historyCopyBtn').addEventListener('click', () => {
+  if (!selectedHistoryWeek) return;
+  if (!confirm('Copy this week into the current week? This will overwrite the current plan.')) return;
+  fetch(`/api/plan/history/${selectedHistoryWeek}/copy`, { method: 'POST' })
+    .then(res => res.json())
+    .then(data => {
+      plan = data;
+      renderGrid();
+      renderPlanTab();
+      document.getElementById('historyPanel').style.display = 'none';
     });
 });
 
