@@ -29,6 +29,19 @@ def test_patch_all_valid_days_roundtrip():
         assert data[day] == {"recipe": f"Recipe {i}", "servings": i + 1}
 
 
+def test_get_plan_when_store_missing_weeks_and_templates_keys(tmp_path):
+    main_module.STORE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    main_module.STORE_FILE.write_text("{}")
+
+    response = client.get("/api/plan")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "mon": None, "tue": None, "wed": None, "thu": None,
+        "fri": None, "sat": None, "sun": None,
+    }
+
+
 def test_concurrent_writes_all_persist():
     days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
     barrier = threading.Barrier(len(days))

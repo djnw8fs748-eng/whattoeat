@@ -1887,6 +1887,15 @@ function fetchTemplateNames() {
     .catch(() => {});
 }
 
+function showApiError(message) {
+  const msg = document.getElementById('apiErrorMsg');
+  if (msg) {
+    msg.textContent = message;
+    msg.hidden = false;
+    setTimeout(() => { msg.hidden = true; }, 5000);
+  }
+}
+
 document.getElementById('saveTemplateBtn').addEventListener('click', () => {
   const name = prompt('Save current plan as:');
   if (!name) return;
@@ -1895,8 +1904,14 @@ document.getElementById('saveTemplateBtn').addEventListener('click', () => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name, plan })
   })
-    .then(res => res.json())
-    .then(() => fetchTemplateNames());
+    .then(res => {
+      if (!res.ok) throw new Error(`${res.status}`);
+      return res.json();
+    })
+    .then(() => fetchTemplateNames())
+    .catch((err) => {
+      showApiError(`Could not save template — is the API running? (${err.message})`);
+    });
 });
 
 document.getElementById('loadTemplateBtn').addEventListener('click', () => {
@@ -1904,11 +1919,17 @@ document.getElementById('loadTemplateBtn').addEventListener('click', () => {
   if (!name) return;
   if (!confirm(`Load "${name}"? This will overwrite the current week's plan.`)) return;
   fetch(`/api/templates/${encodeURIComponent(name)}/apply`, { method: 'POST' })
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) throw new Error(`${res.status}`);
+      return res.json();
+    })
     .then(data => {
       plan = data;
       renderGrid();
       renderPlanTab();
+    })
+    .catch((err) => {
+      showApiError(`Could not load template — is the API running? (${err.message})`);
     });
 });
 
@@ -1957,12 +1978,18 @@ document.getElementById('historyCopyBtn').addEventListener('click', () => {
   if (!selectedHistoryWeek) return;
   if (!confirm('Copy this week into the current week? This will overwrite the current plan.')) return;
   fetch(`/api/plan/history/${selectedHistoryWeek}/copy`, { method: 'POST' })
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) throw new Error(`${res.status}`);
+      return res.json();
+    })
     .then(data => {
       plan = data;
       renderGrid();
       renderPlanTab();
       document.getElementById('historyPanel').style.display = 'none';
+    })
+    .catch((err) => {
+      showApiError(`Could not copy week — is the API running? (${err.message})`);
     });
 });
 
