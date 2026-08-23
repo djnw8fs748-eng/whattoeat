@@ -194,5 +194,60 @@
       "Serve over rice or pasta."
     ],
     "servings": 2
+  },
+  {
+    "title": "Moroccan Lamb & Apricot Stew",
+    "category": "Casserole",
+    "time": 35,
+    "teaser": "Lamb mince simmered with dried apricots and warm spices for a sweet-savoury weeknight stew.",
+    "ingredients": [
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "lamb mince"
+      },
+      {
+        "qty": 8,
+        "unit": "dried",
+        "item": "apricots, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cinnamon"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Lamb or vegetable stock as needed"
+      }
+    ],
+    "steps": [
+      "Fry the onion and garlic in a little oil for 4-5 minutes.",
+      "Add the lamb mince and brown, breaking it up as it cooks.",
+      "Stir in the cumin and cinnamon, then add the tomatoes and apricots, with a splash of stock if it looks dry.",
+      "Simmer for 20-25 minutes until thickened. Serve with couscous or flatbread."
+    ],
+    "servings": 2
   }
 ]

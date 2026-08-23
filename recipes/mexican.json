@@ -297,5 +297,123 @@
       "Pour the remaining sauce over the top, scatter with cheese, and bake for 15-20 minutes until bubbling."
     ],
     "servings": 2
+  },
+  {
+    "title": "Sweet Potato & Black Bean Tacos",
+    "category": "Mexican",
+    "time": 25,
+    "teaser": "Roasted sweet potato and black beans spiced and piled into tortillas — a hearty vegetarian taco night.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "sweet",
+        "item": "potatoes, peeled and diced small"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "black beans, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 8,
+        "unit": "small",
+        "item": "tortillas"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lime, juiced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soured cream or yoghurt"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Chopped coriander, to serve"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the sweet potato with a little oil, cumin, and smoked paprika, then roast for 20-25 minutes until tender, stirring halfway.",
+      "Warm the black beans in a small pan for a few minutes.",
+      "Mix the lime juice through the soured cream.",
+      "Warm the tortillas, then fill with the sweet potato and black beans.",
+      "Drizzle with the lime crema and scatter with coriander."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Shrimp Tacos with Mango Salsa",
+    "category": "Mexican",
+    "time": 20,
+    "teaser": "Quick-fried shrimp with a fresh mango salsa — light, bright, and ready in 20 minutes.",
+    "ingredients": [
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "raw shrimp or prawns, peeled"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "chilli powder"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "mango, diced"
+      },
+      {
+        "qty": 0.25,
+        "unit": "red",
+        "item": "onion, finely diced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lime, juiced"
+      },
+      {
+        "qty": 6,
+        "unit": "small",
+        "item": "tortillas"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
+    ],
+    "steps": [
+      "Toss the shrimp with the chilli powder and cumin.",
+      "Mix the mango, red onion, and half the lime juice together to make the salsa.",
+      "Heat a little oil in a pan and cook the shrimp for 2-3 minutes per side until pink and cooked through.",
+      "Warm the tortillas.",
+      "Fill with the shrimp and top with the mango salsa and remaining lime juice."
+    ],
+    "servings": 2
   }
 ]

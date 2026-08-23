@@ -2563,6 +2563,57 @@
     "servings": 2
   },
   {
+    "title": "Roasted Red Pepper & Tomato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Roasted peppers and tomatoes blended into a smoky, comforting soup.",
+    "ingredients": [
+      {
+        "qty": 3,
+        "unit": "red",
+        "item": "peppers, halved and deseeded"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 700,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Roast the peppers, cut-side down, with a drizzle of oil for 20 minutes until softened and lightly charred. Roughly chop.",
+      "Meanwhile, soften the onion and garlic in a pot for 4-5 minutes.",
+      "Add the roasted peppers, tomatoes, smoked paprika, and stock.",
+      "Simmer for 10-15 minutes, then blend until smooth. Season to taste."
+    ],
+    "servings": 2
+  },
+  {
     "title": "Fried Egg & Avocado Toast",
     "category": "Breakfast-for-Dinner",
     "time": 10,
@@ -3627,6 +3678,124 @@
     "servings": 2
   },
   {
+    "title": "Sweet Potato & Black Bean Tacos",
+    "category": "Mexican",
+    "time": 25,
+    "teaser": "Roasted sweet potato and black beans spiced and piled into tortillas — a hearty vegetarian taco night.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "sweet",
+        "item": "potatoes, peeled and diced small"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "black beans, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 8,
+        "unit": "small",
+        "item": "tortillas"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lime, juiced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soured cream or yoghurt"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Chopped coriander, to serve"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the sweet potato with a little oil, cumin, and smoked paprika, then roast for 20-25 minutes until tender, stirring halfway.",
+      "Warm the black beans in a small pan for a few minutes.",
+      "Mix the lime juice through the soured cream.",
+      "Warm the tortillas, then fill with the sweet potato and black beans.",
+      "Drizzle with the lime crema and scatter with coriander."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Shrimp Tacos with Mango Salsa",
+    "category": "Mexican",
+    "time": 20,
+    "teaser": "Quick-fried shrimp with a fresh mango salsa — light, bright, and ready in 20 minutes.",
+    "ingredients": [
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "raw shrimp or prawns, peeled"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "chilli powder"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "mango, diced"
+      },
+      {
+        "qty": 0.25,
+        "unit": "red",
+        "item": "onion, finely diced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lime, juiced"
+      },
+      {
+        "qty": 6,
+        "unit": "small",
+        "item": "tortillas"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
+    ],
+    "steps": [
+      "Toss the shrimp with the chilli powder and cumin.",
+      "Mix the mango, red onion, and half the lime juice together to make the salsa.",
+      "Heat a little oil in a pan and cook the shrimp for 2-3 minutes per side until pink and cooked through.",
+      "Warm the tortillas.",
+      "Fill with the shrimp and top with the mango salsa and remaining lime juice."
+    ],
+    "servings": 2
+  },
+  {
     "title": "Sausage & Bean Casserole",
     "category": "Casserole",
     "time": 35,
@@ -3819,6 +3988,61 @@
       "Stir in the paprika and beef stock and simmer for 8-10 minutes.",
       "Take off the heat and stir in the soured cream.",
       "Serve over rice or pasta."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Moroccan Lamb & Apricot Stew",
+    "category": "Casserole",
+    "time": 35,
+    "teaser": "Lamb mince simmered with dried apricots and warm spices for a sweet-savoury weeknight stew.",
+    "ingredients": [
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "lamb mince"
+      },
+      {
+        "qty": 8,
+        "unit": "dried",
+        "item": "apricots, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cinnamon"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Lamb or vegetable stock as needed"
+      }
+    ],
+    "steps": [
+      "Fry the onion and garlic in a little oil for 4-5 minutes.",
+      "Add the lamb mince and brown, breaking it up as it cooks.",
+      "Stir in the cumin and cinnamon, then add the tomatoes and apricots, with a splash of stock if it looks dry.",
+      "Simmer for 20-25 minutes until thickened. Serve with couscous or flatbread."
     ],
     "servings": 2
   },
@@ -4435,6 +4659,57 @@
       "Whisk the peanut butter, soy sauce, rice vinegar, chilli flakes, and garlic together, adding hot water until pourable.",
       "Toss the noodles and sauce through the chicken in the pan.",
       "Serve immediately, with extra chilli flakes if you like it hotter."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Garlic Butter Shrimp Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Shrimp and noodles tossed in a quick garlic butter sauce — simple and fast.",
+    "ingredients": [
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "raw shrimp or prawns, peeled"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "noodles (egg or udon)"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 3,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 0.5,
+        "unit": null,
+        "item": "lemon, juiced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Chopped parsley to garnish"
+      }
+    ],
+    "steps": [
+      "Cook the noodles according to packet instructions and drain.",
+      "Melt the butter in a pan and fry the garlic for 30 seconds until fragrant.",
+      "Add the shrimp and cook for 2-3 minutes per side until pink and cooked through.",
+      "Stir in the soy sauce and lemon juice, then toss the noodles through.",
+      "Garnish with parsley and serve."
     ],
     "servings": 2
   },
