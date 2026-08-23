@@ -55,6 +55,8 @@ def _read_store() -> dict:
         store = json.loads(STORE_FILE.read_text())
     except json.JSONDecodeError:
         return {"weeks": {}, "templates": {}}
+    if not isinstance(store, dict):
+        return {"weeks": {}, "templates": {}}
     store.setdefault("weeks", {})
     store.setdefault("templates", {})
     return store
@@ -156,6 +158,13 @@ def copy_history_week(week_key: str):
 class DayPlanEntry(BaseModel):
     recipe: str
     servings: int
+
+    @field_validator('recipe')
+    @classmethod
+    def cap_length(cls, v: str) -> str:
+        if len(v) > 200:
+            raise ValueError('recipe name too long (max 200 chars)')
+        return v
 
     @field_validator('servings')
     @classmethod

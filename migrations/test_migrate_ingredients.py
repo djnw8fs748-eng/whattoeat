@@ -37,6 +37,12 @@ def test_range_quantity_falls_back():
     }
 
 
+def test_spaced_range_quantity_falls_back():
+    assert parse_ingredient("2 - 3 cloves garlic") == {
+        "qty": None, "unit": None, "item": "2 - 3 cloves garlic"
+    }
+
+
 def test_to_taste_falls_back():
     assert parse_ingredient("Chilli flakes, to taste") == {
         "qty": None, "unit": None, "item": "Chilli flakes, to taste"

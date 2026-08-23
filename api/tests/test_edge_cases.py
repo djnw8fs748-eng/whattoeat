@@ -42,6 +42,28 @@ def test_get_plan_when_store_missing_weeks_and_templates_keys(tmp_path):
     }
 
 
+@pytest.mark.parametrize("contents", ["null", "[]", "42", '"a string"'])
+def test_get_plan_when_store_is_valid_json_but_not_an_object(contents):
+    main_module.STORE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    main_module.STORE_FILE.write_text(contents)
+
+    response = client.get("/api/plan")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "mon": None, "tue": None, "wed": None, "thu": None,
+        "fri": None, "sat": None, "sun": None,
+    }
+
+
+def test_save_template_rejects_recipe_name_too_long():
+    name = "A" * 201
+    plan = {d: None for d in ("mon", "tue", "wed", "thu", "fri", "sat", "sun")}
+    plan["mon"] = {"recipe": name, "servings": 2}
+    response = client.post("/api/templates", json={"name": "Long Recipe", "plan": plan})
+    assert response.status_code == 422
+
+
 def test_concurrent_writes_all_persist():
     days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
     barrier = threading.Barrier(len(days))

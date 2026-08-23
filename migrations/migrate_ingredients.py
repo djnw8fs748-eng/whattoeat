@@ -26,8 +26,9 @@ def parse_ingredient(line: str) -> dict:
 
     item = match.group("item").strip()
     # Check if we've partially matched a range quantity (e.g., "2-3 cloves garlic"
-    # parsed as qty="2", item="-3 cloves garlic"). Fall back to unparsed.
-    if item and item[0] == "-" and len(item) > 1 and item[1].isdigit():
+    # or "2 - 3 cloves garlic", parsed as qty="2", item="-3 ..." / "- 3 ...").
+    # Fall back to unparsed.
+    if re.match(r"^-\s*\d", item):
         return {"qty": None, "unit": None, "item": line.strip()}
 
     qty = _to_number(match.group("qty"))
