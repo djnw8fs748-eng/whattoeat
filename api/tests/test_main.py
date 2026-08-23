@@ -5,59 +5,66 @@ from api.main import app
 
 client = TestClient(app)
 
+EMPTY_WEEK = {"mon": None, "tue": None, "wed": None, "thu": None, "fri": None, "sat": None, "sun": None}
+
 
 @pytest.fixture(autouse=True)
-def isolate_plan_file(tmp_path, monkeypatch):
-    monkeypatch.setattr(main_module, "PLAN_FILE", tmp_path / "plan.json")
+def isolate_store(tmp_path, monkeypatch):
+    monkeypatch.setattr(main_module, "STORE_FILE", tmp_path / "store.json")
 
 
-def test_get_plan_returns_empty_when_no_file():
+def test_get_plan_returns_empty_week_when_no_file():
     response = client.get("/api/plan")
     assert response.status_code == 200
-    assert response.json() == {
-        "mon": None, "tue": None, "wed": None, "thu": None, "fri": None
-    }
+    assert response.json() == EMPTY_WEEK
 
 
-def test_get_plan_returns_saved_plan(tmp_path, monkeypatch):
-    plan_file = tmp_path / "plan.json"
-    plan_file.write_text('{"mon":"Garlic Butter Pasta","tue":null,"wed":null,"thu":null,"fri":null}')
-    monkeypatch.setattr(main_module, "PLAN_FILE", plan_file)
-    response = client.get("/api/plan")
+def test_patch_day_sets_recipe_and_servings():
+    response = client.patch("/api/plan/mon", json={"recipe": "Garlic Butter Pasta", "servings": 4})
     assert response.status_code == 200
-    assert response.json()["mon"] == "Garlic Butter Pasta"
-
-
-def test_patch_day_sets_recipe():
-    response = client.patch("/api/plan/mon", json={"recipe": "Garlic Butter Pasta"})
-    assert response.status_code == 200
-    assert response.json()["mon"] == "Garlic Butter Pasta"
+    assert response.json()["mon"] == {"recipe": "Garlic Butter Pasta", "servings": 4}
 
 
 def test_patch_day_clears_recipe():
-    client.patch("/api/plan/mon", json={"recipe": "Garlic Butter Pasta"})
+    client.patch("/api/plan/mon", json={"recipe": "Garlic Butter Pasta", "servings": 4})
     response = client.patch("/api/plan/mon", json={"recipe": None})
     assert response.status_code == 200
     assert response.json()["mon"] is None
 
 
 def test_patch_preserves_other_days():
-    client.patch("/api/plan/mon", json={"recipe": "Pasta"})
-    client.patch("/api/plan/wed", json={"recipe": "Curry"})
+    client.patch("/api/plan/mon", json={"recipe": "Pasta", "servings": 2})
+    client.patch("/api/plan/wed", json={"recipe": "Curry", "servings": 3})
     response = client.get("/api/plan")
     data = response.json()
-    assert data["mon"] == "Pasta"
-    assert data["wed"] == "Curry"
+    assert data["mon"] == {"recipe": "Pasta", "servings": 2}
+    assert data["wed"] == {"recipe": "Curry", "servings": 3}
     assert data["tue"] is None
 
 
+def test_patch_weekend_day_is_valid():
+    response = client.patch("/api/plan/sat", json={"recipe": "Pancakes", "servings": 2})
+    assert response.status_code == 200
+    assert response.json()["sat"] == {"recipe": "Pancakes", "servings": 2}
+
+
 def test_patch_invalid_day_returns_400():
-    response = client.patch("/api/plan/saturday", json={"recipe": "Something"})
+    response = client.patch("/api/plan/someday", json={"recipe": "Something", "servings": 2})
+    assert response.status_code == 400
+
+
+def test_patch_recipe_without_servings_returns_400():
+    response = client.patch("/api/plan/mon", json={"recipe": "Pasta"})
+    assert response.status_code == 400
+
+
+def test_patch_servings_below_one_returns_400():
+    response = client.patch("/api/plan/mon", json={"recipe": "Pasta", "servings": 0})
     assert response.status_code == 400
 
 
 def test_patch_replaces_existing_recipe():
-    client.patch("/api/plan/fri", json={"recipe": "Old Recipe"})
-    response = client.patch("/api/plan/fri", json={"recipe": "New Recipe"})
+    client.patch("/api/plan/fri", json={"recipe": "Old Recipe", "servings": 2})
+    response = client.patch("/api/plan/fri", json={"recipe": "New Recipe", "servings": 5})
     assert response.status_code == 200
-    assert response.json()["fri"] == "New Recipe"
+    assert response.json()["fri"] == {"recipe": "New Recipe", "servings": 5}

@@ -467,6 +467,22 @@
   .panel .meta span { display: flex; align-items: center; gap: 6px; }
   .panel .meta svg { width: 15px; height: 15px; }
 
+  .panel-servings {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .panel-servings button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1;
+  }
+
   .panel .teaser {
     color: var(--text-muted);
     font-size: 15px;
@@ -746,6 +762,31 @@
   .day-picker-row .day-status { font-size: 11px; color: var(--accent); }
   .day-picker-row.taken .day-status { color: var(--text-muted); }
   .day-picker-row.taken:hover .day-status { color: var(--danger); }
+  .day-picker-servings {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 4px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .day-picker-servings button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .day-picker-servings #dayPickerServingsValue {
+    min-width: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text);
+  }
+
   .day-picker-cancel {
     margin-top: 12px; width: 100%; background: none; border: none;
     color: var(--text-muted); font-size: 13px; cursor: pointer;
@@ -754,9 +795,39 @@
 
   /* ============ PLAN TAB ============ */
   .plan-tab-inner { padding: 28px 0; }
+  .template-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .template-controls button, .template-controls select {
+    padding: 6px 12px;
+    border: 1px solid var(--divider);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .history-controls { margin-bottom: 20px; }
+  .history-controls button, .history-controls select {
+    padding: 6px 12px;
+    border: 1px solid var(--divider);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 13px;
+  }
+  #historyPanel {
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid var(--divider);
+    border-radius: var(--radius);
+  }
+  #historyGrid { margin: 10px 0; font-size: 13px; }
   .plan-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 12px;
     margin-bottom: 32px;
   }
@@ -955,6 +1026,19 @@
       </h1>
       <p class="view-subtitle">Plan your week, then build a shopping list from it.</p>
       <div class="plan-grid" id="planGrid"></div>
+      <div class="template-controls">
+        <button type="button" id="saveTemplateBtn">Save as template</button>
+        <select id="loadTemplateSelect"><option value="">Load template…</option></select>
+        <button type="button" id="loadTemplateBtn">Load</button>
+      </div>
+      <div class="history-controls">
+        <button type="button" id="historyBtn">History</button>
+        <div id="historyPanel" style="display: none;">
+          <select id="historyWeekList"><option value="">Select a past week…</option></select>
+          <div id="historyGrid"></div>
+          <button type="button" id="historyCopyBtn">Copy to current week</button>
+        </div>
+      </div>
       <div class="shopping-section" id="shoppingSection" style="display:none">
         <div class="shopping-header">
           <h3>Shopping list</h3>
@@ -975,6 +1059,12 @@
   <h4>Add to which day?</h4>
   <div class="day-picker-recipe" id="dayPickerTitle"></div>
   <div class="day-picker-list" id="dayPickerList"></div>
+  <div class="day-picker-servings">
+    <span>Servings:</span>
+    <button type="button" id="dayPickerServingsMinus" aria-label="Decrease servings">−</button>
+    <span id="dayPickerServingsValue">1</span>
+    <button type="button" id="dayPickerServingsPlus" aria-label="Increase servings">+</button>
+  </div>
   <button class="day-picker-cancel" id="dayPickerCancel">Cancel</button>
 </div>
 
@@ -1061,9 +1151,12 @@ const ALLERGEN_KEYWORDS = {
   mustard:   ['mustard'],
 };
 
-let plan = { mon: null, tue: null, wed: null, thu: null, fri: null };
-const DAY_KEYS = ['mon', 'tue', 'wed', 'thu', 'fri'];
-const DAY_LABELS = { mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday', fri: 'Friday' };
+let plan = { mon: null, tue: null, wed: null, thu: null, fri: null, sat: null, sun: null };
+const DAY_KEYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+const DAY_LABELS = {
+  mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday',
+  fri: 'Friday', sat: 'Saturday', sun: 'Sunday'
+};
 
 /* ============================================================
    SETUP: build the category dropdown from the data itself,
@@ -1094,6 +1187,14 @@ const clockIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" st
    RENDER: takes the current filters, works out which recipes
    match, and rewrites the grid's HTML to match.
    ============================================================ */
+// Structured ingredients ({qty, unit, item}) are matched on their descriptive
+// text. `unit` is included alongside `item` because the qty/unit/item parser
+// (Task 1's migration) sometimes captures descriptive words — e.g. "chicken"
+// in "4 chicken thighs, skin on" — into `unit` rather than `item`.
+function ingredientText(i) {
+  return `${i.unit ?? ''} ${i.item}`.toLowerCase();
+}
+
 function getFilteredRecipes() {
   return recipes.filter(r => {
     let matchesSearch;
@@ -1105,22 +1206,22 @@ function getFilteredRecipes() {
         // Trailing comma or single comma-separated term — treat as single-term search
         const term = terms[0] || '';
         matchesSearch = term === '' || r.title.toLowerCase().includes(term) ||
-          r.ingredients.some(i => i.toLowerCase().includes(term));
+          r.ingredients.some(i => ingredientText(i).includes(term));
       } else {
         matchesSearch = terms.every(term =>
-          r.ingredients.some(i => i.toLowerCase().includes(term))
+          r.ingredients.some(i => ingredientText(i).includes(term))
         );
       }
     } else {
       matchesSearch = r.title.toLowerCase().includes(activeSearch) ||
-        r.ingredients.some(i => i.toLowerCase().includes(activeSearch));
+        r.ingredients.some(i => ingredientText(i).includes(activeSearch));
     }
     const matchesCategory = activeCategory === "" || r.category === activeCategory;
     const matchesTime = r.time <= activeMaxTime;
     const matchesAllergens = activeAllergens.size === 0 ||
       [...activeAllergens].every(allergen =>
         !(ALLERGEN_KEYWORDS[allergen] || []).some(kw =>
-          r.ingredients.some(i => i.toLowerCase().includes(kw))
+          r.ingredients.some(i => ingredientText(i).includes(kw))
         )
       );
     return matchesSearch && matchesCategory && matchesTime && matchesAllergens;
@@ -1162,9 +1263,9 @@ function renderGrid() {
         <span>${clockIcon} ${r.time} min</span>
         <span>${r.ingredients.length} ingredients</span>
       </div>
-      <button class="add-plan-btn ${DAY_KEYS.some(d => plan[d] === r.title) ? 'planned' : ''}"
+      <button class="add-plan-btn ${DAY_KEYS.some(d => plan[d]?.recipe === r.title) ? 'planned' : ''}"
         data-recipe="${escapeAttr(r.title)}">
-        ${DAY_KEYS.some(d => plan[d] === r.title) ? '✓ In plan' : '+ Add to plan'}
+        ${DAY_KEYS.some(d => plan[d]?.recipe === r.title) ? '✓ In plan' : '+ Add to plan'}
       </button>
     </div>
   `).join('');
@@ -1204,14 +1305,14 @@ function renderPlanTab() {
   if (!grid) return;
 
   grid.innerHTML = DAY_KEYS.map(d => {
-    const recipe = plan[d];
+    const entry = plan[d];
     return `
       <div class="day-col">
         <div class="day-col-label">${DAY_LABELS[d].slice(0, 3)}</div>
-        ${recipe
+        ${entry
           ? `<div class="day-col-recipe">
-               <span>${escapeHtml(recipe)}</span>
-               <button class="day-col-remove" data-day="${d}" aria-label="Remove ${escapeHtml(recipe)} from ${DAY_LABELS[d]}">×</button>
+               <span>${escapeHtml(entry.recipe)} · ${entry.servings}</span>
+               <button class="day-col-remove" data-day="${d}" aria-label="Remove ${escapeHtml(entry.recipe)} from ${DAY_LABELS[d]}">×</button>
              </div>`
           : `<div class="day-col-empty" data-day="${d}">+ Add recipe</div>`
         }
@@ -1249,34 +1350,53 @@ function renderShoppingList() {
   const grid = document.getElementById('shoppingGrid');
   if (!section || !grid) return;
 
-  const planned = DAY_KEYS.map(d => plan[d]).filter(Boolean);
-  if (planned.length === 0) {
+  const plannedEntries = DAY_KEYS.map(d => plan[d]).filter(Boolean);
+  if (plannedEntries.length === 0) {
     section.style.display = 'none';
     return;
   }
 
-  // Gather all ingredients from planned recipes, deduplicate case-insensitively
-  const seen = new Set();
-  const ingredients = [];
-  planned.forEach(title => {
+  // key -> { qty: number|null, unit: string|null, item: string, sortKey: string }
+  const merged = new Map();
+
+  plannedEntries.forEach(({ recipe: title, servings }) => {
     const r = recipes.find(x => x.title === title);
     if (!r) return;
+    const ratio = servings / r.servings;
+
     r.ingredients.forEach(ing => {
-      const key = ing.trim().toLowerCase();
-      if (!seen.has(key)) {
-        seen.add(key);
-        ingredients.push(ing.trim());
+      const normalizedItem = ing.item.trim().toLowerCase();
+
+      if (ing.qty === null) {
+        // Unparsed/no-quantity ingredients: dedupe by exact original text, never summed.
+        const key = `unparsed|${normalizedItem}`;
+        if (!merged.has(key)) {
+          merged.set(key, { qty: null, unit: null, item: ing.item.trim(), sortKey: normalizedItem });
+        }
+        return;
+      }
+
+      const key = `${(ing.unit || '').trim().toLowerCase()}|${normalizedItem}`;
+      const scaledQty = ing.qty * ratio;
+      if (merged.has(key)) {
+        merged.get(key).qty += scaledQty;
+      } else {
+        merged.set(key, { qty: scaledQty, unit: ing.unit, item: ing.item.trim(), sortKey: normalizedItem });
       }
     });
   });
-  ingredients.sort((a, b) => a.localeCompare(b));
 
-  grid.innerHTML = ingredients.map((ing, i) => `
-    <div class="shopping-item">
-      <input type="checkbox" id="shop-${i}">
-      <label for="shop-${i}">${escapeHtml(ing)}</label>
-    </div>
-  `).join('');
+  const rows = [...merged.values()].sort((a, b) => a.sortKey.localeCompare(b.sortKey));
+
+  grid.innerHTML = rows.map((row, i) => {
+    const label = scaleIngredient({ qty: row.qty, unit: row.unit, item: row.item }, 1);
+    return `
+      <div class="shopping-item" data-sort-key="${escapeAttr(row.sortKey)}">
+        <input type="checkbox" id="shop-${i}">
+        <label for="shop-${i}">${escapeHtml(label)}</label>
+      </div>
+    `;
+  }).join('');
 
   section.style.display = '';
 }
@@ -1289,6 +1409,25 @@ function escapeHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// Units that read naturally glued to the number ("200g", "500ml").
+// Everything else (including words the ingredient parser mistakenly put
+// in the unit field, e.g. "chicken" for "4 chicken thighs, skin on")
+// gets a space so the rendered line stays readable.
+const GLUED_UNITS = new Set(['g', 'kg', 'mg', 'ml', 'l', 'cl']);
+
+function formatQty(n) {
+  const rounded = Math.round(n * 10) / 10;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+}
+
+function scaleIngredient(entry, ratio) {
+  if (entry.qty === null) return entry.item;
+  const scaledQty = formatQty(entry.qty * ratio);
+  if (!entry.unit) return `${scaledQty} ${entry.item}`;
+  const separator = GLUED_UNITS.has(entry.unit.toLowerCase()) ? '' : ' ';
+  return `${scaledQty}${separator}${entry.unit} ${entry.item}`;
+}
+
 /* ============================================================
    DETAIL PANEL: opens the slide-over panel with full ingredients
    and steps for one recipe.
@@ -1297,32 +1436,54 @@ const panel = document.getElementById('panel');
 const backdrop = document.getElementById('backdrop');
 const panelContent = document.getElementById('panelContent');
 
+let panelRecipe = null;
+let panelServings = 1;
+
+function renderPanelIngredients() {
+  const ratio = panelServings / panelRecipe.servings;
+  document.getElementById('panelIngredientList').innerHTML = panelRecipe.ingredients.map((ing, i) => `
+    <li>
+      <input type="checkbox" id="ing-${i}">
+      <label for="ing-${i}">${escapeHtml(scaleIngredient(ing, ratio))}</label>
+    </li>
+  `).join('');
+}
+
+function setPanelServings(value) {
+  panelServings = Math.max(1, value);
+  document.getElementById('panelServingsValue').textContent = panelServings;
+  renderPanelIngredients();
+}
+
 function openRecipe(title) {
   const r = recipes.find(x => x.title === title);
   if (!r) return;
+  panelRecipe = r;
 
   panelContent.innerHTML = `
     <span class="pill cat-${categoryColors[r.category] ?? 0}">${escapeHtml(r.category)}</span>
     <h2 id="panelTitle">${escapeHtml(r.title)}</h2>
     <div class="meta">
       <span>${clockIcon} ${r.time} minutes</span>
-      <span>Serves about 2</span>
+      <span class="panel-servings">
+        Serves
+        <button type="button" id="panelServingsMinus" aria-label="Decrease servings">−</button>
+        <span id="panelServingsValue">${r.servings}</span>
+        <button type="button" id="panelServingsPlus" aria-label="Increase servings">+</button>
+      </span>
     </div>
     <p class="teaser">${r.teaser}</p>
     <h4>Ingredients</h4>
-    <ul class="ingredient-list">
-      ${r.ingredients.map((ing, i) => `
-        <li>
-          <input type="checkbox" id="ing-${i}">
-          <label for="ing-${i}">${ing}</label>
-        </li>
-      `).join('')}
-    </ul>
+    <ul class="ingredient-list" id="panelIngredientList"></ul>
     <h4>Method</h4>
     <ol class="steps-list">
       ${r.steps.map(step => `<li>${step}</li>`).join('')}
     </ol>
   `;
+
+  document.getElementById('panelServingsMinus').addEventListener('click', () => setPanelServings(panelServings - 1));
+  document.getElementById('panelServingsPlus').addEventListener('click', () => setPanelServings(panelServings + 1));
+  setPanelServings(r.servings);
 
   panel.classList.add('open');
   backdrop.classList.add('open');
@@ -1567,11 +1728,26 @@ document.getElementById('surpriseBtn').addEventListener('click', () => {
    DAY PICKER: open/close and day selection
    ============================================================ */
 let dayPickerRecipe = null;
+let dayPickerServings = 1;
 const dayPickerEl = document.getElementById('dayPicker');
+
+function setDayPickerServings(value) {
+  dayPickerServings = Math.max(1, value);
+  document.getElementById('dayPickerServingsValue').textContent = dayPickerServings;
+}
+
+document.getElementById('dayPickerServingsMinus').addEventListener('click', () => {
+  setDayPickerServings(dayPickerServings - 1);
+});
+document.getElementById('dayPickerServingsPlus').addEventListener('click', () => {
+  setDayPickerServings(dayPickerServings + 1);
+});
 
 function openDayPicker(recipeTitle, anchorEl) {
   dayPickerRecipe = recipeTitle;
   document.getElementById('dayPickerTitle').textContent = recipeTitle;
+  const recipe = recipes.find(r => r.title === recipeTitle);
+  setDayPickerServings(recipe ? recipe.servings : 1);
 
   const list = document.getElementById('dayPickerList');
   list.innerHTML = DAY_KEYS.map(d => {
@@ -1580,7 +1756,7 @@ function openDayPicker(recipeTitle, anchorEl) {
     return `
       <div class="day-picker-row ${taken ? 'taken' : ''}" data-day="${d}">
         <span class="day-name">${DAY_LABELS[d]}</span>
-        <span class="day-status">${taken ? escapeHtml(current) : 'Free'}</span>
+        <span class="day-status">${taken ? escapeHtml(current.recipe) : 'Free'}</span>
       </div>`;
   }).join('');
 
@@ -1613,7 +1789,7 @@ function selectDay(day) {
   fetch(`/api/plan/${day}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ recipe: dayPickerRecipe })
+    body: JSON.stringify({ recipe: dayPickerRecipe, servings: dayPickerServings })
   })
     .then(res => {
       if (!res.ok) throw new Error(`${res.status}`);
@@ -1697,6 +1873,127 @@ function fetchPlan() {
 }
 
 /* ============================================================
+   TEMPLATES: save the current week's plan under a name, and
+   load a saved template back (overwriting the current week).
+   ============================================================ */
+function fetchTemplateNames() {
+  fetch('/api/templates')
+    .then(res => res.json())
+    .then(names => {
+      const select = document.getElementById('loadTemplateSelect');
+      select.innerHTML = '<option value="">Load template…</option>' +
+        names.map(n => `<option value="${escapeAttr(n)}">${escapeHtml(n)}</option>`).join('');
+    })
+    .catch(() => {});
+}
+
+function showApiError(message) {
+  const msg = document.getElementById('apiErrorMsg');
+  if (msg) {
+    msg.textContent = message;
+    msg.hidden = false;
+    setTimeout(() => { msg.hidden = true; }, 5000);
+  }
+}
+
+document.getElementById('saveTemplateBtn').addEventListener('click', () => {
+  const name = prompt('Save current plan as:');
+  if (!name) return;
+  fetch('/api/templates', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, plan })
+  })
+    .then(res => {
+      if (!res.ok) throw new Error(`${res.status}`);
+      return res.json();
+    })
+    .then(() => fetchTemplateNames())
+    .catch((err) => {
+      showApiError(`Could not save template — is the API running? (${err.message})`);
+    });
+});
+
+document.getElementById('loadTemplateBtn').addEventListener('click', () => {
+  const name = document.getElementById('loadTemplateSelect').value;
+  if (!name) return;
+  if (!confirm(`Load "${name}"? This will overwrite the current week's plan.`)) return;
+  fetch(`/api/templates/${encodeURIComponent(name)}/apply`, { method: 'POST' })
+    .then(res => {
+      if (!res.ok) throw new Error(`${res.status}`);
+      return res.json();
+    })
+    .then(data => {
+      plan = data;
+      renderGrid();
+      renderPlanTab();
+    })
+    .catch((err) => {
+      showApiError(`Could not load template — is the API running? (${err.message})`);
+    });
+});
+
+/* ============================================================
+   HISTORY: browse past weeks' plans read-only, and copy a past
+   week's plan into the current week (overwriting it).
+   ============================================================ */
+let selectedHistoryWeek = null;
+
+function fetchHistoryWeeks() {
+  fetch('/api/plan/history')
+    .then(res => res.json())
+    .then(weeks => {
+      const select = document.getElementById('historyWeekList');
+      select.innerHTML = '<option value="">Select a past week…</option>' +
+        weeks.map(w => `<option value="${w.week_key}">${w.week_key} (${w.days_filled} planned)</option>`).join('');
+    })
+    .catch(() => {});
+}
+
+document.getElementById('historyBtn').addEventListener('click', () => {
+  const panel = document.getElementById('historyPanel');
+  const isOpen = panel.style.display !== 'none';
+  panel.style.display = isOpen ? 'none' : 'block';
+  if (!isOpen) fetchHistoryWeeks();
+});
+
+document.getElementById('historyWeekList').addEventListener('change', (e) => {
+  selectedHistoryWeek = e.target.value || null;
+  const historyGrid = document.getElementById('historyGrid');
+  if (!selectedHistoryWeek) {
+    historyGrid.innerHTML = '';
+    return;
+  }
+  fetch(`/api/plan/history/${selectedHistoryWeek}`)
+    .then(res => res.json())
+    .then(weekPlan => {
+      historyGrid.innerHTML = DAY_KEYS
+        .filter(d => weekPlan[d])
+        .map(d => `<div>${DAY_LABELS[d]}: ${escapeHtml(weekPlan[d].recipe)} · ${weekPlan[d].servings}</div>`)
+        .join('') || '<div>No recipes planned that week.</div>';
+    });
+});
+
+document.getElementById('historyCopyBtn').addEventListener('click', () => {
+  if (!selectedHistoryWeek) return;
+  if (!confirm('Copy this week into the current week? This will overwrite the current plan.')) return;
+  fetch(`/api/plan/history/${selectedHistoryWeek}/copy`, { method: 'POST' })
+    .then(res => {
+      if (!res.ok) throw new Error(`${res.status}`);
+      return res.json();
+    })
+    .then(data => {
+      plan = data;
+      renderGrid();
+      renderPlanTab();
+      document.getElementById('historyPanel').style.display = 'none';
+    })
+    .catch((err) => {
+      showApiError(`Could not copy week — is the API running? (${err.message})`);
+    });
+});
+
+/* ============================================================
    LOAD DATA: fetch recipes.json (sitting alongside this page)
    and only render the page once it's arrived. If it fails to
    load — e.g. the file's missing or malformed — show a plain
@@ -1713,6 +2010,7 @@ fetch('recipes.json')
     populateSheetCategories();
     renderGrid();
     fetchPlan();
+    fetchTemplateNames();
     setInterval(fetchPlan, 15000);
   })
   .catch(err => {

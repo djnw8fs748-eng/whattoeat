@@ -5,18 +5,39 @@
     "time": 15,
     "teaser": "Fried halloumi, salad, and sweet chilli sauce rolled into a wrap.",
     "ingredients": [
-      "1 block halloumi, sliced",
-      "2 large tortilla wraps",
-      "Handful lettuce, shredded",
-      "Sweet chilli sauce",
-      "Olive oil"
+      {
+        "qty": 1,
+        "unit": "block",
+        "item": "halloumi, sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "large",
+        "item": "tortilla wraps"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful lettuce, shredded"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Sweet chilli sauce"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Fry the halloumi slices in a little oil until golden on both sides, about 2 minutes per side.",
       "Warm the tortillas briefly if you like.",
       "Layer the lettuce and halloumi onto the wraps.",
       "Drizzle with sweet chilli sauce, roll up, and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Caesar Wrap",
@@ -24,18 +45,39 @@
     "time": 15,
     "teaser": "A lunch-counter classic that works just as well for dinner.",
     "ingredients": [
-      "1 cooked chicken breast, sliced (or leftover roast chicken)",
-      "2 large tortilla wraps",
-      "Handful romaine or cos lettuce, shredded",
-      "3 tbsp caesar dressing",
-      "2 tbsp parmesan, grated"
+      {
+        "qty": 1,
+        "unit": "cooked",
+        "item": "chicken breast, sliced (or leftover roast chicken)"
+      },
+      {
+        "qty": 2,
+        "unit": "large",
+        "item": "tortilla wraps"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful romaine or cos lettuce, shredded"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "caesar dressing"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "parmesan, grated"
+      }
     ],
     "steps": [
       "Toss the lettuce with the caesar dressing and parmesan.",
       "Lay the chicken over each wrap.",
       "Top with the dressed lettuce.",
       "Roll up tightly and slice in half to serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Falafel Wrap with Hummus",
@@ -43,18 +85,39 @@
     "time": 15,
     "teaser": "Shop-bought falafel and hummus make this a five-minute assembly job.",
     "ingredients": [
-      "6-8 falafel (shop-bought or homemade)",
-      "2 large tortilla wraps or pitta",
-      "3 tbsp hummus",
-      "Handful lettuce, shredded",
-      "Few slices cucumber and tomato"
+      {
+        "qty": null,
+        "unit": null,
+        "item": "6-8 falafel (shop-bought or homemade)"
+      },
+      {
+        "qty": 2,
+        "unit": "large",
+        "item": "tortilla wraps or pitta"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "hummus"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful lettuce, shredded"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Few slices cucumber and tomato"
+      }
     ],
     "steps": [
       "Warm the falafel according to packet instructions.",
       "Spread hummus over the wraps.",
       "Layer in the lettuce, cucumber, tomato, and falafel.",
       "Roll up and serve, or wrap in foil to eat on the go."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "BLT Sandwich",
@@ -62,18 +125,39 @@
     "time": 15,
     "teaser": "Bacon, lettuce, and tomato — a sandwich that never needs improving.",
     "ingredients": [
-      "6 rashers bacon",
-      "4 slices bread",
-      "Handful lettuce",
-      "1 tomato, sliced",
-      "Mayonnaise"
+      {
+        "qty": 6,
+        "unit": "rashers",
+        "item": "bacon"
+      },
+      {
+        "qty": 4,
+        "unit": "slices",
+        "item": "bread"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful lettuce"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "tomato, sliced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Mayonnaise"
+      }
     ],
     "steps": [
       "Fry or grill the bacon until crisp.",
       "Toast the bread if you like.",
       "Spread mayonnaise on the bread.",
       "Layer the bacon, lettuce, and tomato, then close the sandwich and slice in half."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Shawarma Wrap",
@@ -81,13 +165,41 @@
     "time": 25,
     "teaser": "Spiced chicken strips with a garlic yoghurt sauce, rolled into a warm wrap.",
     "ingredients": [
-      "2 chicken breasts, sliced",
-      "2 tsp shawarma or mixed spice (cumin, paprika, turmeric)",
-      "2 large tortilla wraps",
-      "3 tbsp yoghurt",
-      "1 clove garlic, minced",
-      "Shredded lettuce and sliced tomato",
-      "Olive oil"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "shawarma or mixed spice (cumin, paprika, turmeric)"
+      },
+      {
+        "qty": 2,
+        "unit": "large",
+        "item": "tortilla wraps"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "yoghurt"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Shredded lettuce and sliced tomato"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Toss the chicken with the spices and a little oil.",
@@ -95,7 +207,8 @@
       "Mix the yoghurt with the garlic to make a quick sauce.",
       "Warm the tortillas and layer with lettuce, tomato, and chicken.",
       "Drizzle with the yoghurt sauce, roll up, and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "BBQ Chicken Wraps",
@@ -103,18 +216,39 @@
     "time": 15,
     "teaser": "Shredded or sliced chicken tossed in barbecue sauce and rolled into a wrap.",
     "ingredients": [
-      "1 cooked chicken breast, shredded (or leftover roast chicken)",
-      "3 tbsp barbecue sauce",
-      "2 large tortilla wraps",
-      "Handful lettuce, shredded",
-      "30g cheddar, grated"
+      {
+        "qty": 1,
+        "unit": "cooked",
+        "item": "chicken breast, shredded (or leftover roast chicken)"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "barbecue sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "large",
+        "item": "tortilla wraps"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful lettuce, shredded"
+      },
+      {
+        "qty": 30,
+        "unit": "g",
+        "item": "cheddar, grated"
+      }
     ],
     "steps": [
       "Toss the shredded chicken with the barbecue sauce.",
       "Warm the tortillas briefly if you like.",
       "Layer the lettuce, chicken, and cheese onto the wraps.",
       "Roll up tightly and slice in half to serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sloppy Joe Rolls",
@@ -122,13 +256,41 @@
     "time": 25,
     "teaser": "A messy, saucy mince filling piled into soft bread rolls.",
     "ingredients": [
-      "400g beef mince",
-      "1 onion, diced",
-      "1 tin (400g) chopped tomatoes",
-      "1 tbsp Worcestershire sauce",
-      "1 tbsp brown sugar",
-      "1 tsp mustard",
-      "4 soft bread rolls"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "brown sugar"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "mustard"
+      },
+      {
+        "qty": 4,
+        "unit": "soft",
+        "item": "bread rolls"
+      }
     ],
     "steps": [
       "Fry the onion in a little oil for 4 minutes until soft.",
@@ -136,7 +298,8 @@
       "Stir in the tomatoes, Worcestershire sauce, brown sugar, and mustard.",
       "Simmer for 12-15 minutes until thickened.",
       "Split the rolls and pile the mince mixture inside."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Greek Chicken Pitta Wrap",
@@ -144,13 +307,41 @@
     "time": 20,
     "teaser": "Grilled chicken, tzatziki, and salad rolled into a warm pitta.",
     "ingredients": [
-      "2 chicken breasts, sliced",
-      "1 tsp dried oregano",
-      "2 pittas or large tortilla wraps",
-      "4 tbsp tzatziki (or yoghurt mixed with grated cucumber and garlic)",
-      "Handful lettuce, shredded",
-      "Few slices tomato and red onion",
-      "Olive oil"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried oregano"
+      },
+      {
+        "qty": 2,
+        "unit": "pittas",
+        "item": "or large tortilla wraps"
+      },
+      {
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "tzatziki (or yoghurt mixed with grated cucumber and garlic)"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful lettuce, shredded"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Few slices tomato and red onion"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Toss the chicken with the oregano and a little oil.",
@@ -158,7 +349,8 @@
       "Warm the pittas.",
       "Layer the lettuce, tomato, onion, and chicken into the pittas.",
       "Drizzle with tzatziki, roll or fold, and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Crispy Chicken Wrap with Sriracha Mayo",
@@ -166,15 +358,51 @@
     "time": 20,
     "teaser": "Golden pan-fried chicken strips with a spicy mayo, rolled up with crunchy lettuce.",
     "ingredients": [
-      "2 chicken breasts, sliced into strips",
-      "50g flour",
-      "1 egg, beaten",
-      "80g breadcrumbs",
-      "2 large tortilla wraps",
-      "3 tbsp mayonnaise",
-      "1 tbsp sriracha (or to taste)",
-      "Handful lettuce, shredded",
-      "Vegetable oil"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced into strips"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "flour"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "egg, beaten"
+      },
+      {
+        "qty": 80,
+        "unit": "g",
+        "item": "breadcrumbs"
+      },
+      {
+        "qty": 2,
+        "unit": "large",
+        "item": "tortilla wraps"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "mayonnaise"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sriracha (or to taste)"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful lettuce, shredded"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Coat the chicken strips in flour, then egg, then breadcrumbs.",
@@ -182,6 +410,7 @@
       "Mix the mayonnaise and sriracha together.",
       "Warm the tortillas, then spread with the sriracha mayo and layer with lettuce and chicken.",
       "Roll up tightly and slice in half to serve."
-    ]
+    ],
+    "servings": 2
   }
 ]

@@ -5,15 +5,51 @@
     "time": 45,
     "teaser": "A comforting mince and mashed potato bake that's mostly hands-off in the oven.",
     "ingredients": [
-      "400g beef mince",
-      "4 potatoes, peeled and chopped",
-      "1 onion, diced",
-      "2 carrots, diced",
-      "1 tin (400g) chopped tomatoes",
-      "1 tbsp Worcestershire sauce",
-      "50g butter",
-      "50ml milk",
-      "Cheddar, grated (optional)"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 4,
+        "unit": null,
+        "item": "potatoes, peeled and chopped"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "carrots, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "butter"
+      },
+      {
+        "qty": 50,
+        "unit": "ml",
+        "item": "milk"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Cheddar, grated (optional)"
+      }
     ],
     "steps": [
       "Boil the potatoes until soft, about 15 minutes, then drain and mash with the butter and milk.",
@@ -22,7 +58,8 @@
       "Stir in the tomatoes and Worcestershire sauce and simmer for 10 minutes.",
       "Preheat the oven to 200°C (fan 180°C). Spoon the mince into an ovenproof dish, top with the mash, and scatter with cheese if using.",
       "Bake for 20 minutes until golden on top."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Mince Stuffed Peppers",
@@ -30,13 +67,41 @@
     "time": 40,
     "teaser": "Bell peppers filled with a savoury mince and rice mixture, baked until tender.",
     "ingredients": [
-      "4 bell peppers, tops cut and deseeded",
-      "300g beef mince",
-      "100g cooked rice",
-      "1 onion, diced",
-      "1 tin (400g) chopped tomatoes",
-      "50g cheddar, grated",
-      "1 tsp dried oregano"
+      {
+        "qty": 4,
+        "unit": "bell",
+        "item": "peppers, tops cut and deseeded"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "cheddar, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried oregano"
+      }
     ],
     "steps": [
       "Preheat the oven to 190°C (fan 170°C).",
@@ -44,7 +109,8 @@
       "Stir in the rice, half the tomatoes, and the oregano.",
       "Spoon the mixture into the peppers and place in an ovenproof dish. Pour the remaining tomatoes around them.",
       "Top with cheese and bake for 25-30 minutes until the peppers are tender."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Mince & Onion Pasta Bake",
@@ -52,12 +118,36 @@
     "time": 40,
     "teaser": "A baked pasta dish with a rich mince sauce and melted cheese on top.",
     "ingredients": [
-      "250g pasta (penne works well)",
-      "400g beef mince",
-      "1 onion, diced",
-      "1 tin (400g) chopped tomatoes",
-      "100g cheddar or mozzarella, grated",
-      "1 tsp dried mixed herbs"
+      {
+        "qty": 250,
+        "unit": "g",
+        "item": "pasta (penne works well)"
+      },
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "cheddar or mozzarella, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried mixed herbs"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -65,7 +155,8 @@
       "Fry the onion and mince until browned, breaking it up as it cooks.",
       "Stir in the tomatoes and herbs and simmer for 10 minutes.",
       "Mix the pasta through the sauce, transfer to an ovenproof dish, top with cheese, and bake for 15-20 minutes until golden."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Parmesan Bake",
@@ -73,13 +164,41 @@
     "time": 35,
     "teaser": "Breaded chicken baked under tomato sauce and melted cheese.",
     "ingredients": [
-      "2 chicken breasts",
-      "50g breadcrumbs",
-      "1 egg, beaten",
-      "1 tin (400g) chopped tomatoes",
-      "100g mozzarella, sliced",
-      "2 tbsp parmesan, grated",
-      "1 tsp dried oregano"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "breadcrumbs"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "egg, beaten"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "mozzarella, sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "parmesan, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried oregano"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -87,7 +206,8 @@
       "Fry in a little oil for 3-4 minutes per side until golden (it doesn't need to be fully cooked through yet).",
       "Place in an ovenproof dish, spoon over the tomatoes and oregano, and top with mozzarella and parmesan.",
       "Bake for 15-20 minutes until the chicken is cooked through and the cheese is bubbling."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Lamb Mince Shepherd's Pie",
@@ -95,14 +215,46 @@
     "time": 45,
     "teaser": "The classic mashed-potato-topped bake, made with lamb mince for a slightly richer flavour.",
     "ingredients": [
-      "400g lamb mince",
-      "4 potatoes, peeled and chopped",
-      "1 onion, diced",
-      "2 carrots, diced",
-      "1 tbsp tomato purée",
-      "300ml beef or lamb stock",
-      "50g butter",
-      "50ml milk"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "lamb mince"
+      },
+      {
+        "qty": 4,
+        "unit": null,
+        "item": "potatoes, peeled and chopped"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "carrots, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "tomato purée"
+      },
+      {
+        "qty": 300,
+        "unit": "ml",
+        "item": "beef or lamb stock"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "butter"
+      },
+      {
+        "qty": 50,
+        "unit": "ml",
+        "item": "milk"
+      }
     ],
     "steps": [
       "Boil the potatoes until soft, about 15 minutes, then drain and mash with the butter and milk.",
@@ -110,7 +262,8 @@
       "Add the lamb mince and brown, breaking it up as it cooks.",
       "Stir in the tomato purée and stock and simmer for 12-15 minutes until thickened.",
       "Preheat the oven to 200°C (fan 180°C). Spoon the mince into an ovenproof dish, top with the mash, and bake for 20 minutes until golden."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Mince Lasagne",
@@ -118,13 +271,41 @@
     "time": 50,
     "teaser": "A weeknight-sized lasagne — not quick, but mostly hands-off once it's in the oven.",
     "ingredients": [
-      "400g beef mince",
-      "1 onion, diced",
-      "1 tin (400g) chopped tomatoes",
-      "6-8 lasagne sheets",
-      "300ml cheese sauce (from a jar, or butter, flour, and milk with cheddar stirred through)",
-      "50g cheddar, grated",
-      "1 tsp dried oregano"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "6-8 lasagne sheets"
+      },
+      {
+        "qty": 300,
+        "unit": "ml",
+        "item": "cheese sauce (from a jar, or butter, flour, and milk with cheddar stirred through)"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "cheddar, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried oregano"
+      }
     ],
     "steps": [
       "Preheat the oven to 190°C (fan 170°C).",
@@ -132,6 +313,7 @@
       "Stir in the tomatoes and oregano and simmer for 10 minutes.",
       "In an ovenproof dish, layer mince sauce, lasagne sheets, and cheese sauce, repeating until you run out, finishing with cheese sauce on top.",
       "Scatter with the grated cheddar and bake for 30-35 minutes until golden and the pasta is tender."
-    ]
+    ],
+    "servings": 2
   }
 ]

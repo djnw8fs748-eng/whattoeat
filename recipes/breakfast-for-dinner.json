@@ -5,19 +5,44 @@
     "time": 10,
     "teaser": "Breakfast food is fair game for dinner, and this one takes ten minutes.",
     "ingredients": [
-      "2 slices sourdough or thick bread",
-      "1 avocado",
-      "2 eggs",
-      "Chilli flakes (optional)",
-      "Salt and pepper",
-      "Olive oil"
+      {
+        "qty": 2,
+        "unit": "slices",
+        "item": "sourdough or thick bread"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "avocado"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "eggs"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Chilli flakes (optional)"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Toast the bread.",
       "Mash the avocado with a little salt, pepper, and olive oil, and spread onto the toast.",
       "Fry the eggs to your liking in a little oil.",
       "Top the toast with the eggs and a pinch of chilli flakes if you like."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Cheesy Baked Beans on Toast",
@@ -25,17 +50,34 @@
     "time": 10,
     "teaser": "About as low-effort as dinner can get, and genuinely satisfying.",
     "ingredients": [
-      "1 tin baked beans",
-      "2-4 slices bread",
-      "50g cheddar, grated",
-      "Butter"
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "baked beans"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "2-4 slices bread"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "cheddar, grated"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Butter"
+      }
     ],
     "steps": [
       "Warm the baked beans in a small pan over medium heat.",
       "Toast and butter the bread.",
       "Pile the beans onto the toast.",
       "Top with grated cheddar and grill for 1-2 minutes if you'd like it melted, or serve as is."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Veggie Omelette",
@@ -43,17 +85,38 @@
     "time": 12,
     "teaser": "A flexible way to use up whatever vegetables are left in the fridge.",
     "ingredients": [
-      "3 eggs",
-      "Handful spinach or mixed vegetables, chopped small",
-      "30g cheese, grated",
-      "Butter",
-      "Salt and pepper"
+      {
+        "qty": 3,
+        "unit": null,
+        "item": "eggs"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful spinach or mixed vegetables, chopped small"
+      },
+      {
+        "qty": 30,
+        "unit": "g",
+        "item": "cheese, grated"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Butter"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
     ],
     "steps": [
       "Whisk the eggs with salt and pepper.",
       "Melt butter in a frying pan over medium heat and add the vegetables, cooking for 2-3 minutes until softened.",
       "Pour in the eggs and let them set around the edges, then gently push the cooked edges towards the centre.",
       "Sprinkle the cheese over one half, fold the omelette over, and slide onto a plate."
-    ]
+    ],
+    "servings": 2
   }
 ]

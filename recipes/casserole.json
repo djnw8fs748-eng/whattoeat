@@ -5,19 +5,44 @@
     "time": 35,
     "teaser": "Sausages simmered with beans in a tomato sauce — a filling one-pot dinner.",
     "ingredients": [
-      "6 sausages",
-      "1 tin (400g) chopped tomatoes",
-      "1 tin butter beans or cannellini beans, drained",
-      "1 onion, diced",
-      "1 tsp dried mixed herbs",
-      "Olive oil"
+      {
+        "qty": 6,
+        "unit": null,
+        "item": "sausages"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "butter beans or cannellini beans, drained"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried mixed herbs"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Brown the sausages in a little oil in a large pan, then remove and set aside.",
       "Add the onion to the pan and soften for 4 minutes.",
       "Return the sausages to the pan with the tomatoes, beans, and herbs.",
       "Simmer for 20-25 minutes until the sausages are cooked through and the sauce has thickened. Serve with crusty bread or mash."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Beef Mince & Butter Bean Stew",
@@ -25,20 +50,49 @@
     "time": 35,
     "teaser": "A simple, filling stew that mostly looks after itself once it's simmering.",
     "ingredients": [
-      "400g beef mince",
-      "1 tin butter beans, drained",
-      "1 tin (400g) chopped tomatoes",
-      "1 onion, diced",
-      "2 carrots, sliced",
-      "1 tsp smoked paprika",
-      "Beef stock as needed"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "butter beans, drained"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "carrots, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Beef stock as needed"
+      }
     ],
     "steps": [
       "Fry the onion and carrots in a little oil for 5 minutes.",
       "Add the mince and brown, breaking it up as it cooks.",
       "Stir in the paprika, tomatoes, and butter beans, adding a splash of stock if it looks dry.",
       "Simmer for 20-25 minutes until the carrots are tender and the stew has thickened. Serve with bread or mash."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "One-Pot Chicken & Chickpea Stew",
@@ -46,20 +100,49 @@
     "time": 35,
     "teaser": "A simple, warming stew that leans on tinned chickpeas and tomatoes.",
     "ingredients": [
-      "2 chicken thighs, diced",
-      "1 tin chickpeas, drained and rinsed",
-      "1 tin (400g) chopped tomatoes",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "1 tsp smoked paprika",
-      "Chicken stock as needed"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "thighs, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "chickpeas, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Chicken stock as needed"
+      }
     ],
     "steps": [
       "Fry the onion and garlic in a little oil for 4-5 minutes.",
       "Add the chicken and cook for 3-4 minutes until lightly browned.",
       "Stir in the paprika, tomatoes, and chickpeas, adding a splash of stock if it looks dry.",
       "Simmer for 20-25 minutes until the chicken is cooked through and the stew has thickened. Serve with bread or rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Creamy Beef Mince Stroganoff",
@@ -67,13 +150,41 @@
     "time": 25,
     "teaser": "A quicker mince twist on stroganoff, finished with a paprika soured cream sauce.",
     "ingredients": [
-      "400g beef mince",
-      "1 onion, diced",
-      "1 bell pepper, sliced",
-      "1 tbsp smoked paprika",
-      "150ml soured cream",
-      "200ml beef stock",
-      "Rice or pasta to serve"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "bell",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 150,
+        "unit": "ml",
+        "item": "soured cream"
+      },
+      {
+        "qty": 200,
+        "unit": "ml",
+        "item": "beef stock"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice or pasta to serve"
+      }
     ],
     "steps": [
       "Fry the onion and pepper in a little oil for 4-5 minutes until softened.",
@@ -81,7 +192,8 @@
       "Stir in the paprika and beef stock and simmer for 8-10 minutes.",
       "Take off the heat and stir in the soured cream.",
       "Serve over rice or pasta."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Moroccan Lamb & Apricot Stew",
@@ -89,20 +201,53 @@
     "time": 35,
     "teaser": "Lamb mince simmered with dried apricots and warm spices for a sweet-savoury weeknight stew.",
     "ingredients": [
-      "400g lamb mince",
-      "8 dried apricots, chopped",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "1 tsp ground cumin",
-      "1 tsp ground cinnamon",
-      "1 tin (400g) chopped tomatoes",
-      "Lamb or vegetable stock as needed"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "lamb mince"
+      },
+      {
+        "qty": 8,
+        "unit": "dried",
+        "item": "apricots, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cinnamon"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Lamb or vegetable stock as needed"
+      }
     ],
     "steps": [
       "Fry the onion and garlic in a little oil for 4-5 minutes.",
       "Add the lamb mince and brown, breaking it up as it cooks.",
       "Stir in the cumin and cinnamon, then add the tomatoes and apricots, with a splash of stock if it looks dry.",
       "Simmer for 20-25 minutes until thickened. Serve with couscous or flatbread."
-    ]
+    ],
+    "servings": 2
   }
 ]

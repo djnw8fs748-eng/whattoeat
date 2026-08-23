@@ -5,13 +5,41 @@
     "time": 30,
     "teaser": "A creamy, mildly spiced curry using shop-bought tikka paste to keep things fast.",
     "ingredients": [
-      "2 chicken breasts, diced",
-      "2 tbsp tikka curry paste",
-      "1 onion, diced",
-      "1 tin (400g) chopped tomatoes",
-      "100ml single cream or yoghurt",
-      "2 cloves garlic, minced",
-      "Rice to serve"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "tikka curry paste"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 100,
+        "unit": "ml",
+        "item": "single cream or yoghurt"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice to serve"
+      }
     ],
     "steps": [
       "Fry the onion and garlic in a little oil for 4-5 minutes until soft.",
@@ -19,7 +47,8 @@
       "Stir in the curry paste and cook for 1 minute.",
       "Add the chopped tomatoes and simmer for 12-15 minutes until the chicken is cooked through.",
       "Stir in the cream, warm through, and serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Katsu Curry",
@@ -27,16 +56,56 @@
     "time": 30,
     "teaser": "Crispy breaded chicken with a mild, slightly sweet Japanese-style curry sauce.",
     "ingredients": [
-      "2 chicken breasts",
-      "50g flour",
-      "1 egg, beaten",
-      "100g breadcrumbs",
-      "1 onion, diced",
-      "2 tsp curry powder",
-      "1 tbsp flour",
-      "400ml chicken stock",
-      "1 tsp honey",
-      "Rice to serve"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "flour"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "egg, beaten"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "breadcrumbs"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "curry powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "flour"
+      },
+      {
+        "qty": 400,
+        "unit": "ml",
+        "item": "chicken stock"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "honey"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice to serve"
+      }
     ],
     "steps": [
       "Coat the chicken in flour, then egg, then breadcrumbs, and fry in oil for 4-5 minutes per side until golden and cooked through. Slice.",
@@ -44,7 +113,8 @@
       "Stir in the curry powder and flour and cook for 1 minute.",
       "Gradually whisk in the stock, then simmer for 8-10 minutes until thickened. Stir in the honey.",
       "Serve the sliced chicken over rice with the curry sauce poured over."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Mince Keema Curry",
@@ -52,14 +122,46 @@
     "time": 30,
     "teaser": "A spiced mince curry that's quicker to make than most curries since there's no meat to cut up.",
     "ingredients": [
-      "400g beef or lamb mince",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "1 thumb ginger, grated",
-      "2 tsp curry powder",
-      "1 tin (400g) chopped tomatoes",
-      "Handful frozen peas",
-      "Rice to serve"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef or lamb mince"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "curry powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful frozen peas"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice to serve"
+      }
     ],
     "steps": [
       "Fry the onion, garlic, and ginger in a little oil for 4-5 minutes.",
@@ -67,7 +169,8 @@
       "Stir in the curry powder and cook for 1 minute.",
       "Add the tomatoes and simmer for 12-15 minutes.",
       "Stir in the peas for the last 3 minutes of cooking, and serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon & Spinach Curry",
@@ -75,13 +178,41 @@
     "time": 20,
     "teaser": "A milder, quicker curry that keeps the salmon in large flakes rather than breaking it up.",
     "ingredients": [
-      "2 salmon fillets, cubed",
-      "2 handfuls spinach",
-      "1 onion, diced",
-      "2 tsp curry powder",
-      "1 tin (400ml) coconut milk",
-      "1 clove garlic, minced",
-      "Rice to serve"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets, cubed"
+      },
+      {
+        "qty": 2,
+        "unit": "handfuls",
+        "item": "spinach"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "curry powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400ml) coconut milk"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice to serve"
+      }
     ],
     "steps": [
       "Fry the onion and garlic in a little oil for 4-5 minutes.",
@@ -89,7 +220,8 @@
       "Add the coconut milk and simmer for 5 minutes.",
       "Add the salmon cubes and cook gently for 4-5 minutes until just cooked through.",
       "Stir in the spinach until wilted, and serve over rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Thai Green Chicken Curry",
@@ -97,13 +229,41 @@
     "time": 25,
     "teaser": "A fragrant, coconut-based curry that comes together fast using shop-bought green curry paste.",
     "ingredients": [
-      "2 chicken breasts, sliced",
-      "3 tbsp Thai green curry paste",
-      "1 tin (400ml) coconut milk",
-      "1 red pepper, sliced",
-      "1 tbsp fish sauce",
-      "Handful Thai basil or regular basil",
-      "Rice to serve"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "Thai green curry paste"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400ml) coconut milk"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "fish sauce"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful Thai basil or regular basil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice to serve"
+      }
     ],
     "steps": [
       "Fry the curry paste in a little oil for 1 minute until fragrant.",
@@ -111,7 +271,8 @@
       "Pour in the coconut milk and simmer for 10 minutes.",
       "Add the pepper and fish sauce, and simmer for a further 5 minutes until the chicken is cooked through.",
       "Stir in the basil and serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Coconut Chickpea Curry",
@@ -119,14 +280,46 @@
     "time": 30,
     "teaser": "A vegetarian curry that's mostly tinned and store-cupboard ingredients.",
     "ingredients": [
-      "2 tins (400g each) chickpeas, drained",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "1 thumb ginger, grated",
-      "2 tsp curry powder",
-      "1 tin (400ml) coconut milk",
-      "1 tin (400g) chopped tomatoes",
-      "Rice to serve"
+      {
+        "qty": 2,
+        "unit": "tins",
+        "item": "(400g each) chickpeas, drained"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "curry powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400ml) coconut milk"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice to serve"
+      }
     ],
     "steps": [
       "Fry the onion, garlic, and ginger in a little oil for 4-5 minutes.",
@@ -134,7 +327,8 @@
       "Add the chopped tomatoes and coconut milk, and simmer for 10 minutes.",
       "Add the chickpeas and simmer for a further 8-10 minutes until thickened.",
       "Season to taste and serve with rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Butternut Squash & Chickpea Curry",
@@ -142,14 +336,46 @@
     "time": 30,
     "teaser": "A vegetarian curry built on soft roasted squash and chickpeas simmered in coconut milk.",
     "ingredients": [
-      "1 small butternut squash, peeled and cubed",
-      "1 tin chickpeas, drained and rinsed",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "1 thumb ginger, grated",
-      "2 tsp curry powder",
-      "1 tin (400ml) coconut milk",
-      "Rice to serve"
+      {
+        "qty": 1,
+        "unit": "small",
+        "item": "butternut squash, peeled and cubed"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "chickpeas, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "curry powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400ml) coconut milk"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice to serve"
+      }
     ],
     "steps": [
       "Fry the onion, garlic, and ginger in a little oil for 4-5 minutes until soft.",
@@ -157,6 +383,7 @@
       "Add the squash and coconut milk, and simmer for 15-18 minutes until the squash is tender.",
       "Stir in the chickpeas and simmer for a further 5 minutes.",
       "Season to taste and serve with rice."
-    ]
+    ],
+    "servings": 2
   }
 ]

@@ -5,13 +5,41 @@
     "time": 15,
     "teaser": "The best use for leftover rice — fast, cheap, and endlessly adaptable.",
     "ingredients": [
-      "300g cooked rice (day-old is best)",
-      "2 eggs, beaten",
-      "1 cup frozen peas and carrots",
-      "2 spring onions, sliced",
-      "3 tbsp soy sauce",
-      "1 tsp sesame oil",
-      "Vegetable oil"
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice (day-old is best)"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "eggs, beaten"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "frozen peas and carrots"
+      },
+      {
+        "qty": 2,
+        "unit": "spring",
+        "item": "onions, sliced"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Heat oil in a wok over high heat, pour in the eggs, and scramble briefly. Remove and set aside.",
@@ -19,7 +47,8 @@
       "Add the rice, breaking up any clumps, and stir-fry for 3-4 minutes.",
       "Return the egg to the pan along with the soy sauce and sesame oil.",
       "Toss everything together, top with spring onion, and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken & Rice Bowl with Peanut Sauce",
@@ -27,21 +56,54 @@
     "time": 25,
     "teaser": "Grilled chicken and rice tied together with a quick peanut butter sauce.",
     "ingredients": [
-      "2 chicken breasts",
-      "300g cooked rice",
-      "3 tbsp peanut butter",
-      "2 tbsp soy sauce",
-      "1 tbsp lime juice",
-      "1 tsp honey",
-      "Splash of hot water to loosen",
-      "Cucumber, sliced, to serve"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "peanut butter"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "lime juice"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "honey"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Splash of hot water to loosen"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Cucumber, sliced, to serve"
+      }
     ],
     "steps": [
       "Season the chicken and grill or pan-fry until cooked through, then slice.",
       "Whisk the peanut butter, soy sauce, lime juice, and honey together, adding hot water until pourable.",
       "Serve the chicken over rice, drizzled with the peanut sauce.",
       "Add sliced cucumber on the side."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Teriyaki Chicken Rice Bowl",
@@ -49,20 +111,49 @@
     "time": 20,
     "teaser": "A sticky homemade teriyaki glaze over chicken and rice.",
     "ingredients": [
-      "2 chicken thighs or breasts, sliced",
-      "300g cooked rice",
-      "3 tbsp soy sauce",
-      "2 tbsp honey",
-      "1 tbsp rice vinegar (or any vinegar)",
-      "1 clove garlic, minced",
-      "Sesame seeds to garnish"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "thighs or breasts, sliced"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "rice vinegar (or any vinegar)"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Sesame seeds to garnish"
+      }
     ],
     "steps": [
       "Pan-fry the chicken in a little oil until cooked through and lightly browned.",
       "Mix the soy sauce, honey, vinegar, and garlic in a small bowl.",
       "Pour the sauce over the chicken and simmer for 2-3 minutes until it thickens and coats the chicken.",
       "Serve over rice with sesame seeds scattered on top."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Black Bean & Rice Burrito Bowl",
@@ -70,20 +161,49 @@
     "time": 20,
     "teaser": "A vegetarian bowl built from tinned staples and whatever fresh veg you have.",
     "ingredients": [
-      "300g cooked rice",
-      "1 tin black beans, drained and rinsed",
-      "1 tin sweetcorn, drained",
-      "1 avocado, sliced",
-      "Handful cherry tomatoes, halved",
-      "Lime juice",
-      "1 tsp cumin"
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "black beans, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "sweetcorn, drained"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "avocado, sliced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful cherry tomatoes, halved"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Lime juice"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
+      }
     ],
     "steps": [
       "Warm the black beans with the cumin in a small pan for 3-4 minutes.",
       "Divide the rice between bowls.",
       "Top with the beans, sweetcorn, tomatoes, and avocado.",
       "Squeeze lime juice over everything before serving."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chickpea & Spinach Curry Rice Bowl",
@@ -91,20 +211,49 @@
     "time": 25,
     "teaser": "A mild, quick curry that leans entirely on tinned and frozen basics.",
     "ingredients": [
-      "1 tin chickpeas, drained and rinsed",
-      "2 handfuls spinach",
-      "1 tin (400g) chopped tomatoes",
-      "1 onion, diced",
-      "2 tsp curry powder",
-      "300g cooked rice",
-      "Olive oil"
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "chickpeas, drained and rinsed"
+      },
+      {
+        "qty": 2,
+        "unit": "handfuls",
+        "item": "spinach"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "curry powder"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
     ],
     "steps": [
       "Heat oil in a pan and soften the onion for 4-5 minutes.",
       "Add the curry powder and cook for 30 seconds, then add the tomatoes and chickpeas.",
       "Simmer for 10-12 minutes until slightly thickened.",
       "Stir in the spinach until wilted, and serve over rice."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken & Chorizo Rice",
@@ -112,20 +261,49 @@
     "time": 30,
     "teaser": "A one-pot Spanish-inspired rice dish with chicken and smoky chorizo.",
     "ingredients": [
-      "2 chicken thighs, diced",
-      "100g chorizo, diced",
-      "1 onion, diced",
-      "1 red pepper, sliced",
-      "200g rice",
-      "500ml chicken stock",
-      "1 tsp smoked paprika"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "thighs, diced"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "chorizo, diced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "rice"
+      },
+      {
+        "qty": 500,
+        "unit": "ml",
+        "item": "chicken stock"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      }
     ],
     "steps": [
       "Fry the chorizo in a dry pan for 2-3 minutes until it releases its oil.",
       "Add the chicken and onion and cook for 5 minutes.",
       "Stir in the pepper, rice, and paprika.",
       "Pour in the stock, bring to a simmer, cover, and cook for 18-20 minutes until the rice is tender and the liquid absorbed."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Fried Rice",
@@ -133,13 +311,41 @@
     "time": 20,
     "teaser": "A heartier take on egg fried rice with strips of chicken added in.",
     "ingredients": [
-      "1 chicken breast, diced small",
-      "300g cooked rice (day-old is best)",
-      "2 eggs, beaten",
-      "1 cup frozen peas and carrots",
-      "3 tbsp soy sauce",
-      "2 spring onions, sliced",
-      "Vegetable oil"
+      {
+        "qty": 1,
+        "unit": "chicken",
+        "item": "breast, diced small"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice (day-old is best)"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "eggs, beaten"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "frozen peas and carrots"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "spring",
+        "item": "onions, sliced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Stir-fry the chicken in a hot wok until cooked through, then set aside.",
@@ -147,7 +353,8 @@
       "Add the frozen veg and stir-fry for 2-3 minutes.",
       "Add the rice, breaking up any clumps, and stir-fry for 3-4 minutes.",
       "Return the chicken and egg to the pan with the soy sauce, toss together, and top with spring onion."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon Poke-Style Rice Bowl",
@@ -155,13 +362,41 @@
     "time": 20,
     "teaser": "A fresh, no-cook-required bowl if you use sushi-grade salmon, or lightly seared if you'd rather cook it through.",
     "ingredients": [
-      "2 salmon fillets, cubed (sushi-grade if eating raw, or seared)",
-      "300g cooked rice",
-      "1 avocado, sliced",
-      "1 cucumber, diced",
-      "3 tbsp soy sauce",
-      "1 tsp sesame oil",
-      "Sesame seeds to garnish"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets, cubed (sushi-grade if eating raw, or seared)"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "avocado, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "cucumber, diced"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Sesame seeds to garnish"
+      }
     ],
     "steps": [
       "If searing, cook the salmon cubes in a hot pan for 2-3 minutes until just cooked through. If using sushi-grade salmon, this step can be skipped.",
@@ -169,7 +404,8 @@
       "Divide the rice between bowls.",
       "Top with the salmon, avocado, and cucumber.",
       "Scatter with sesame seeds and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Chicken Fajita Rice Bowl",
@@ -177,19 +413,44 @@
     "time": 25,
     "teaser": "All the flavours of fajitas, served over rice instead of in a wrap.",
     "ingredients": [
-      "2 chicken breasts, sliced",
-      "1 bell pepper, sliced",
-      "1 onion, sliced",
-      "2 tsp fajita seasoning",
-      "300g cooked rice",
-      "Soured cream and lime to serve"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "bell",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "fajita seasoning"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Soured cream and lime to serve"
+      }
     ],
     "steps": [
       "Toss the chicken with the fajita seasoning.",
       "Fry the chicken, pepper, and onion together in a little oil for 8-10 minutes until the chicken is cooked through and everything is lightly charred.",
       "Divide the rice between bowls.",
       "Top with the chicken and vegetables, and finish with soured cream and a squeeze of lime."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Cajun Salmon Rice Bowl with Sweetcorn",
@@ -197,13 +458,41 @@
     "time": 20,
     "teaser": "Blackened cajun salmon over rice with sweetcorn and a squeeze of lime.",
     "ingredients": [
-      "2 salmon fillets",
-      "2 tsp cajun seasoning",
-      "300g cooked rice",
-      "1 tin sweetcorn, drained",
-      "1 lime",
-      "1 tbsp olive oil",
-      "Salt and pepper"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "cajun seasoning"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "sweetcorn, drained"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lime"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
     ],
     "steps": [
       "Rub the salmon with the cajun seasoning.",
@@ -211,7 +500,8 @@
       "Warm the sweetcorn in a small pan for 2-3 minutes.",
       "Divide the rice between bowls and top with the sweetcorn.",
       "Flake the salmon over the top and finish with a squeeze of lime."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Prawn & Pineapple Fried Rice",
@@ -219,15 +509,51 @@
     "time": 20,
     "teaser": "A sweet-and-savoury fried rice that turns a tin of pineapple into dinner.",
     "ingredients": [
-      "300g raw prawns",
-      "300g cooked rice (day-old is best)",
-      "1 tin pineapple chunks, drained (or fresh)",
-      "1 red pepper, diced",
-      "2 eggs, beaten",
-      "3 tbsp soy sauce",
-      "1 tsp curry powder (optional)",
-      "Spring onion to garnish",
-      "Vegetable oil"
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "raw prawns"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice (day-old is best)"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "pineapple chunks, drained (or fresh)"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, diced"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "eggs, beaten"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "curry powder (optional)"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Spring onion to garnish"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
     ],
     "steps": [
       "Heat oil in a wok over high heat and stir-fry the prawns for 2-3 minutes until pink. Set aside.",
@@ -236,7 +562,8 @@
       "Add the rice, breaking up any clumps, and stir-fry for 3-4 minutes.",
       "Return the prawns and egg to the pan with the pineapple, soy sauce, and curry powder if using.",
       "Toss everything together for 1-2 minutes, garnish with spring onion, and serve."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sticky Honey Soy Salmon Rice Bowl",
@@ -244,14 +571,46 @@
     "time": 20,
     "teaser": "Pan-fried salmon glazed in honey and soy, served over rice with a quick garnish.",
     "ingredients": [
-      "2 salmon fillets",
-      "300g cooked rice",
-      "3 tbsp soy sauce",
-      "2 tbsp honey",
-      "1 clove garlic, minced",
-      "1 tsp sesame oil",
-      "1 tbsp vegetable oil",
-      "Sliced spring onion and sesame seeds to garnish"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Sliced spring onion and sesame seeds to garnish"
+      }
     ],
     "steps": [
       "Heat the vegetable oil in a pan and pan-fry the salmon skin-side down for 4-5 minutes, then flip and cook for 2-3 minutes more.",
@@ -259,6 +618,7 @@
       "Pour the sauce over the salmon and let it bubble for 1-2 minutes, spooning it over the fillets until sticky.",
       "Divide the rice between bowls and top with the salmon and any sauce left in the pan.",
       "Drizzle with sesame oil and scatter with spring onion and sesame seeds."
-    ]
+    ],
+    "servings": 2
   }
 ]

@@ -5,19 +5,44 @@
     "time": 30,
     "teaser": "Everything roasts on one tray, so prep and cleanup both take minutes.",
     "ingredients": [
-      "2 chicken breasts, sliced into strips",
-      "2 bell peppers, sliced",
-      "1 onion, sliced",
-      "2 tsp fajita seasoning (or chilli powder, cumin, paprika)",
-      "2 tbsp olive oil",
-      "Tortillas and soured cream to serve"
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced into strips"
+      },
+      {
+        "qty": 2,
+        "unit": "bell",
+        "item": "peppers, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "fajita seasoning (or chilli powder, cumin, paprika)"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Tortillas and soured cream to serve"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
       "Toss the chicken, peppers, and onion with the oil and seasoning on a baking tray.",
       "Spread everything into a single layer and roast for 20-25 minutes, stirring halfway, until the chicken is cooked through.",
       "Warm the tortillas and serve everything alongside soured cream."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sheet-Pan Sausages & Roast Veg",
@@ -25,19 +50,44 @@
     "time": 35,
     "teaser": "Sausages and vegetables roast together for an almost effortless dinner.",
     "ingredients": [
-      "6 sausages",
-      "2 potatoes, chopped into chunks",
-      "1 red onion, wedged",
-      "1 courgette, sliced thick",
-      "2 tbsp olive oil",
-      "1 tsp dried herbs (mixed or rosemary)"
+      {
+        "qty": 6,
+        "unit": null,
+        "item": "sausages"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "potatoes, chopped into chunks"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "onion, wedged"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "courgette, sliced thick"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried herbs (mixed or rosemary)"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
       "Toss the potatoes with half the oil and roast for 10 minutes to get a head start.",
       "Add the sausages, onion, and courgette to the tray, drizzle with the rest of the oil and the herbs.",
       "Roast for 25-30 minutes, turning once, until the sausages are browned and the veg is tender."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Honey Garlic Salmon with Broccoli",
@@ -45,19 +95,44 @@
     "time": 20,
     "teaser": "Salmon fillets glazed with honey and garlic, roasted alongside broccoli.",
     "ingredients": [
-      "2 salmon fillets",
-      "1 head broccoli, cut into florets",
-      "2 tbsp honey",
-      "2 tbsp soy sauce",
-      "2 cloves garlic, minced",
-      "1 tbsp olive oil"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets"
+      },
+      {
+        "qty": 1,
+        "unit": "head",
+        "item": "broccoli, cut into florets"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
       "Toss the broccoli with the olive oil and spread on a baking tray. Nestle the salmon among it.",
       "Mix the honey, soy sauce, and garlic, and spoon over the salmon.",
       "Roast for 12-15 minutes until the salmon is cooked through and the broccoli is tender."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Roasted Veg & Halloumi Tray Bake",
@@ -65,20 +140,49 @@
     "time": 30,
     "teaser": "A vegetarian tray bake where salty halloumi does most of the work.",
     "ingredients": [
-      "1 block halloumi, sliced",
-      "1 courgette, chopped",
-      "1 red pepper, chopped",
-      "1 red onion, wedged",
-      "2 tbsp olive oil",
-      "1 tsp smoked paprika",
-      "Handful cherry tomatoes"
+      {
+        "qty": 1,
+        "unit": "block",
+        "item": "halloumi, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "courgette, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "onion, wedged"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful cherry tomatoes"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
       "Toss the vegetables with the oil and paprika on a baking tray and roast for 15 minutes.",
       "Add the halloumi slices and cherry tomatoes to the tray.",
       "Roast for a further 10 minutes until the halloumi is golden and the veg is soft."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Lemon Herb Chicken Thighs & Potatoes",
@@ -86,19 +190,44 @@
     "time": 40,
     "teaser": "Skin-on chicken thighs roast with baby potatoes for a Sunday-dinner feel on a weeknight.",
     "ingredients": [
-      "4 chicken thighs, skin on",
-      "400g baby potatoes, halved",
-      "1 lemon, sliced",
-      "2 tbsp olive oil",
-      "1 tsp dried thyme or mixed herbs",
-      "Salt and pepper"
+      {
+        "qty": 4,
+        "unit": "chicken",
+        "item": "thighs, skin on"
+      },
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "baby potatoes, halved"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lemon, sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried thyme or mixed herbs"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
       "Toss the potatoes with half the oil and season, and spread on a baking tray.",
       "Rub the chicken thighs with the remaining oil, herbs, salt, and pepper, and place among the potatoes with the lemon slices.",
       "Roast for 35-40 minutes until the chicken is cooked through and the skin is crisp."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Mince & Potato Hash",
@@ -106,13 +235,41 @@
     "time": 30,
     "teaser": "A one-pan skillet hash of mince, potatoes, and onion that needs almost no watching.",
     "ingredients": [
-      "400g beef mince",
-      "3 potatoes, diced small",
-      "1 onion, diced",
-      "1 tsp paprika",
-      "2 tbsp olive oil",
-      "Salt and pepper",
-      "Fried or poached egg to top (optional)"
+      {
+        "qty": 400,
+        "unit": "g",
+        "item": "beef mince"
+      },
+      {
+        "qty": 3,
+        "unit": null,
+        "item": "potatoes, diced small"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Fried or poached egg to top (optional)"
+      }
     ],
     "steps": [
       "Parboil the diced potatoes for 5 minutes, then drain well.",
@@ -120,7 +277,8 @@
       "Push the potatoes to one side, add the mince and onion, and cook until the mince is browned.",
       "Stir everything together with the paprika and season to taste.",
       "Top with a fried or poached egg if you like."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Honey Mustard Salmon Tray Bake",
@@ -128,12 +286,36 @@
     "time": 25,
     "teaser": "Salmon glazed with honey and mustard, roasted alongside potatoes and greens.",
     "ingredients": [
-      "2 salmon fillets",
-      "300g baby potatoes, halved",
-      "Handful green beans",
-      "2 tbsp honey",
-      "1 tbsp wholegrain mustard",
-      "1 tbsp olive oil"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "baby potatoes, halved"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful green beans"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "wholegrain mustard"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -141,7 +323,8 @@
       "Mix the honey and mustard together.",
       "Add the salmon and green beans to the tray and brush the salmon with the honey mustard mix.",
       "Roast for a further 10-12 minutes until the salmon is cooked through."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Salmon & Asparagus Sheet Pan",
@@ -149,12 +332,36 @@
     "time": 20,
     "teaser": "A quick, light dinner that roasts in one tray with minimal washing up.",
     "ingredients": [
-      "2 salmon fillets",
-      "1 bunch asparagus, trimmed",
-      "1 lemon, sliced",
-      "2 tbsp olive oil",
-      "2 cloves garlic, minced",
-      "Salt and pepper"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets"
+      },
+      {
+        "qty": 1,
+        "unit": "bunch",
+        "item": "asparagus, trimmed"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lemon, sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -162,7 +369,8 @@
       "Nestle the salmon among the asparagus and top with the garlic and lemon slices.",
       "Drizzle with the remaining oil and season.",
       "Roast for 12-15 minutes until the salmon is cooked through."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Sticky Chicken Drumsticks with Sweet Potato Wedges",
@@ -170,13 +378,41 @@
     "time": 40,
     "teaser": "Honey-glazed drumsticks and sweet potato wedges roast together on one tray.",
     "ingredients": [
-      "6 chicken drumsticks",
-      "2 sweet potatoes, cut into wedges",
-      "2 tbsp honey",
-      "2 tbsp soy sauce",
-      "1 clove garlic, minced",
-      "1 tbsp olive oil",
-      "Salt and pepper"
+      {
+        "qty": 6,
+        "unit": "chicken",
+        "item": "drumsticks"
+      },
+      {
+        "qty": 2,
+        "unit": "sweet",
+        "item": "potatoes, cut into wedges"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -184,7 +420,8 @@
       "Mix the honey, soy sauce, and garlic, and brush over the drumsticks.",
       "Add the drumsticks to the tray among the wedges.",
       "Roast for 35-40 minutes, turning once, until the chicken is cooked through and the skin is sticky and golden."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Miso Salmon with Sesame Greens",
@@ -192,13 +429,41 @@
     "time": 20,
     "teaser": "Salmon glazed with miso, roasted alongside quick sesame greens.",
     "ingredients": [
-      "2 salmon fillets",
-      "2 tbsp miso paste",
-      "1 tbsp honey",
-      "1 tbsp soy sauce",
-      "2 heads pak choi (or a bag of greens)",
-      "1 tsp sesame oil",
-      "1 tsp sesame seeds"
+      {
+        "qty": 2,
+        "unit": "salmon",
+        "item": "fillets"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "miso paste"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "heads",
+        "item": "pak choi (or a bag of greens)"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame seeds"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -206,7 +471,8 @@
       "Place the salmon on a baking tray and roast for 10-12 minutes until cooked through.",
       "Meanwhile, steam or stir-fry the greens with the sesame oil for 3-4 minutes until just wilted.",
       "Serve the salmon over the greens, scattered with sesame seeds."
-    ]
+    ],
+    "servings": 2
   },
   {
     "title": "Moroccan Spiced Chicken & Chickpea Traybake",
@@ -214,19 +480,48 @@
     "time": 35,
     "teaser": "Warmly spiced chicken thighs roast with chickpeas and red onion for a fuss-free dinner.",
     "ingredients": [
-      "4 chicken thighs, skin on",
-      "1 tin chickpeas, drained and rinsed",
-      "1 red onion, wedged",
-      "2 tsp ras el hanout (or cumin, paprika, and cinnamon mixed)",
-      "1 lemon, sliced",
-      "2 tbsp olive oil",
-      "Salt and pepper"
+      {
+        "qty": 4,
+        "unit": "chicken",
+        "item": "thighs, skin on"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "chickpeas, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "onion, wedged"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "ras el hanout (or cumin, paprika, and cinnamon mixed)"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lemon, sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
       "Toss the chickpeas and red onion with half the oil and spread on a baking tray.",
       "Rub the chicken thighs with the remaining oil and the spice mix, season with salt and pepper, and place among the chickpeas with the lemon slices.",
       "Roast for 35-40 minutes until the chicken is cooked through and the skin is golden."
-    ]
+    ],
+    "servings": 2
   }
 ]
