@@ -692,5 +692,62 @@
       "Season with salt and pepper and scatter parsley over the top."
     ],
     "servings": 2
+  },
+  {
+    "title": "Creamy Tomato & Spinach Gnocchi",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Soft potato gnocchi in a quick creamy tomato sauce — barely any chopping required.",
+    "ingredients": [
+      {
+        "qty": 500,
+        "unit": "g",
+        "item": "fresh gnocchi"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "cherry tomatoes, halved"
+      },
+      {
+        "qty": 2,
+        "unit": "handfuls",
+        "item": "spinach"
+      },
+      {
+        "qty": 100,
+        "unit": "ml",
+        "item": "single cream"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Grated parmesan"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
+    ],
+    "steps": [
+      "Cook the gnocchi in salted boiling water according to packet instructions (it's ready when it floats), then drain.",
+      "Heat the oil in a large pan and soften the garlic for 30 seconds.",
+      "Add the cherry tomatoes and cook for 3-4 minutes until they start to burst.",
+      "Stir in the cream and simmer for 1-2 minutes.",
+      "Add the spinach and stir until wilted, then fold the gnocchi through the sauce.",
+      "Season to taste and serve with parmesan."
+    ],
+    "servings": 2
   }
 ]

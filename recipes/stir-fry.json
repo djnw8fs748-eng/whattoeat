@@ -379,5 +379,76 @@
       "Remove from the heat and stir through the basil leaves until just wilted. Serve with rice."
     ],
     "servings": 2
+  },
+  {
+    "title": "Chicken Teriyaki Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "A speedy stir-fry with a glossy homemade teriyaki sauce, faster than the takeaway.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced thin"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful mangetout"
+      },
+      {
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "mirin (or rice vinegar with a pinch of sugar)"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "brown sugar"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "grated ginger"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame seeds, to serve"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Spring onion, sliced, to serve"
+      }
+    ],
+    "steps": [
+      "Mix the soy sauce, mirin, brown sugar, garlic, and ginger together to make the teriyaki sauce.",
+      "Heat oil in a wok over high heat and stir-fry the chicken until browned and cooked through. Set aside.",
+      "Add the pepper and mangetout to the pan and stir-fry for 2-3 minutes.",
+      "Return the chicken to the pan, pour in the sauce, and simmer for 1-2 minutes until glossy and slightly thickened.",
+      "Scatter with sesame seeds and spring onion and serve with rice."
+    ],
+    "servings": 2
   }
 ]

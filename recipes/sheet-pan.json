@@ -523,5 +523,56 @@
       "Roast for 35-40 minutes until the chicken is cooked through and the skin is golden."
     ],
     "servings": 2
+  },
+  {
+    "title": "Sheet-Pan Lemon Chicken & Green Beans",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "teaser": "Chicken and green beans roast together with lemon and garlic for a light, fuss-free tray bake.",
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "chicken",
+        "item": "thighs, boneless and skinless"
+      },
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "green beans, trimmed"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lemon, zested, juiced, and the shell sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried oregano"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the chicken thighs with half the oil, the garlic, oregano, lemon zest, salt, and pepper, and spread on a baking tray.",
+      "Roast for 15 minutes.",
+      "Add the green beans and lemon slices to the tray, toss with the remaining oil, and roast for a further 12-15 minutes until the chicken is cooked through.",
+      "Squeeze the lemon juice over the top before serving."
+    ],
+    "servings": 2
   }
 ]

@@ -390,5 +390,76 @@
       "Simmer for 10-15 minutes, then blend until smooth. Season to taste."
     ],
     "servings": 2
+  },
+  {
+    "title": "Spicy Chickpea & Coconut Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A warming, spiced soup that comes together almost entirely from the store cupboard.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "tins",
+        "item": "chickpeas, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "coconut milk"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "curry powder"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "chilli flakes"
+      },
+      {
+        "qty": 500,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": 2,
+        "unit": "handfuls",
+        "item": "spinach"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Lime wedges, to serve"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion, garlic, and ginger for 4-5 minutes.",
+      "Stir in the curry powder and chilli flakes and cook for 30 seconds.",
+      "Add the chickpeas, coconut milk, and stock, and simmer for 12-15 minutes.",
+      "Stir in the spinach until wilted.",
+      "Season to taste and serve with a squeeze of lime."
+    ],
+    "servings": 2
   }
 ]

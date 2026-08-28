@@ -415,5 +415,56 @@
       "Fill with the shrimp and top with the mango salsa and remaining lime juice."
     ],
     "servings": 2
+  },
+  {
+    "title": "Turkey & Black Bean Quesadillas",
+    "category": "Mexican",
+    "time": 15,
+    "teaser": "A lighter take on quesadillas using turkey mince and black beans, ready in 15 minutes.",
+    "ingredients": [
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "turkey mince"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "black beans, drained and rinsed"
+      },
+      {
+        "qty": 4,
+        "unit": "large",
+        "item": "tortillas"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "cheddar, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salsa and soured cream to serve"
+      }
+    ],
+    "steps": [
+      "Fry the turkey mince with the cumin and smoked paprika until browned, about 5-6 minutes.",
+      "Stir in the black beans, warm through, and lightly mash some of the beans with the back of a spoon.",
+      "Spread the turkey and bean mixture and the cheese over half of each tortilla, then fold over.",
+      "Dry-fry each quesadilla in a pan over medium heat for 2-3 minutes per side, until golden and the cheese has melted.",
+      "Slice into wedges and serve with salsa and soured cream."
+    ],
+    "servings": 2
   }
 ]

@@ -598,5 +598,35 @@
     "category": "Soup",
     "time": 30,
     "file": "soup.json"
+  },
+  {
+    "title": "Chicken Teriyaki Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Creamy Tomato & Spinach Gnocchi",
+    "category": "Pasta",
+    "time": 20,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Sheet-Pan Lemon Chicken & Green Beans",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Spicy Chickpea & Coconut Soup",
+    "category": "Soup",
+    "time": 25,
+    "file": "soup.json"
+  },
+  {
+    "title": "Turkey & Black Bean Quesadillas",
+    "category": "Mexican",
+    "time": 15,
+    "file": "mexican.json"
   }
 ]
