@@ -1,1 +1,662 @@
-PLACEHOLDER
+[
+  {
+    "title": "Garlic Butter Pasta with Parmesan",
+    "category": "Pasta",
+    "time": 15,
+    "file": "pasta.json"
+  },
+  {
+    "title": "One-Pan Tomato & Basil Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Creamy Chicken & Bacon Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Sausage & Pepper Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Tuna & Sweetcorn Pasta Bake",
+    "category": "Pasta",
+    "time": 35,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Pesto Pasta with Cherry Tomatoes",
+    "category": "Pasta",
+    "time": 12,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Simple Spaghetti Bolognese",
+    "category": "Pasta",
+    "time": 30,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Creamy Salmon & Spinach Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Chipotle Beef & Pork Rigatoni",
+    "category": "Pasta",
+    "time": 30,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Salmon & Lemon Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Beef Meatballs in Tomato Sauce",
+    "category": "Pasta",
+    "time": 30,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Chicken Alfredo Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Chicken & Broccoli Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Beef & Pepper Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Tofu & Vegetable Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Sweet Chilli Prawn Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 15,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Egg Fried Rice",
+    "category": "Rice Bowl",
+    "time": 15,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Chicken & Rice Bowl with Peanut Sauce",
+    "category": "Rice Bowl",
+    "time": 25,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Teriyaki Chicken Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 20,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Black Bean & Rice Burrito Bowl",
+    "category": "Rice Bowl",
+    "time": 20,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Chickpea & Spinach Curry Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 25,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Chicken & Chorizo Rice",
+    "category": "Rice Bowl",
+    "time": 30,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Chicken Fried Rice",
+    "category": "Rice Bowl",
+    "time": 20,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Salmon Poke-Style Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 20,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Chicken Fajita Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 25,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Cajun Salmon Rice Bowl with Sweetcorn",
+    "category": "Rice Bowl",
+    "time": 20,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Sheet-Pan Chicken Fajitas",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Sheet-Pan Sausages & Roast Veg",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Honey Garlic Salmon with Broccoli",
+    "category": "Sheet-Pan",
+    "time": 20,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Roasted Veg & Halloumi Tray Bake",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Lemon Herb Chicken Thighs & Potatoes",
+    "category": "Sheet-Pan",
+    "time": 40,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Mince & Potato Hash",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Honey Mustard Salmon Tray Bake",
+    "category": "Sheet-Pan",
+    "time": 25,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Salmon & Asparagus Sheet Pan",
+    "category": "Sheet-Pan",
+    "time": 20,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Sticky Chicken Drumsticks with Sweet Potato Wedges",
+    "category": "Sheet-Pan",
+    "time": 40,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Miso Salmon with Sesame Greens",
+    "category": "Sheet-Pan",
+    "time": 20,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Tomato & Lentil Soup",
+    "category": "Soup",
+    "time": 30,
+    "file": "soup.json"
+  },
+  {
+    "title": "Chicken Noodle Soup",
+    "category": "Soup",
+    "time": 25,
+    "file": "soup.json"
+  },
+  {
+    "title": "Creamy Broccoli & Potato Soup",
+    "category": "Soup",
+    "time": 30,
+    "file": "soup.json"
+  },
+  {
+    "title": "Spiced Carrot & Ginger Soup",
+    "category": "Soup",
+    "time": 30,
+    "file": "soup.json"
+  },
+  {
+    "title": "Chicken & Sweetcorn Chowder",
+    "category": "Soup",
+    "time": 30,
+    "file": "soup.json"
+  },
+  {
+    "title": "Fried Egg & Avocado Toast",
+    "category": "Breakfast-for-Dinner",
+    "time": 10,
+    "file": "breakfast-for-dinner.json"
+  },
+  {
+    "title": "Cheesy Baked Beans on Toast",
+    "category": "Breakfast-for-Dinner",
+    "time": 10,
+    "file": "breakfast-for-dinner.json"
+  },
+  {
+    "title": "Veggie Omelette",
+    "category": "Breakfast-for-Dinner",
+    "time": 12,
+    "file": "breakfast-for-dinner.json"
+  },
+  {
+    "title": "Halloumi Wrap with Sweet Chilli",
+    "category": "Wrap",
+    "time": 15,
+    "file": "wrap.json"
+  },
+  {
+    "title": "Chicken Caesar Wrap",
+    "category": "Wrap",
+    "time": 15,
+    "file": "wrap.json"
+  },
+  {
+    "title": "Falafel Wrap with Hummus",
+    "category": "Wrap",
+    "time": 15,
+    "file": "wrap.json"
+  },
+  {
+    "title": "BLT Sandwich",
+    "category": "Wrap",
+    "time": 15,
+    "file": "wrap.json"
+  },
+  {
+    "title": "Chicken Shawarma Wrap",
+    "category": "Wrap",
+    "time": 25,
+    "file": "wrap.json"
+  },
+  {
+    "title": "BBQ Chicken Wraps",
+    "category": "Wrap",
+    "time": 15,
+    "file": "wrap.json"
+  },
+  {
+    "title": "Sloppy Joe Rolls",
+    "category": "Wrap",
+    "time": 25,
+    "file": "wrap.json"
+  },
+  {
+    "title": "Greek-Style Salad with Feta",
+    "category": "Salad",
+    "time": 15,
+    "file": "salad.json"
+  },
+  {
+    "title": "Chicken Caesar Salad",
+    "category": "Salad",
+    "time": 20,
+    "file": "salad.json"
+  },
+  {
+    "title": "Warm Potato & Bacon Salad",
+    "category": "Salad",
+    "time": 25,
+    "file": "salad.json"
+  },
+  {
+    "title": "Salmon & New Potato Salad",
+    "category": "Salad",
+    "time": 25,
+    "file": "salad.json"
+  },
+  {
+    "title": "Chicken Caesar Pasta Salad",
+    "category": "Salad",
+    "time": 20,
+    "file": "salad.json"
+  },
+  {
+    "title": "Beef Tacos",
+    "category": "Mexican",
+    "time": 20,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Bean & Cheese Quesadillas",
+    "category": "Mexican",
+    "time": 15,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Simple Chilli Con Carne",
+    "category": "Mexican",
+    "time": 35,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Beef Mince Nachos",
+    "category": "Mexican",
+    "time": 20,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Blackened Salmon Tacos",
+    "category": "Mexican",
+    "time": 20,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Chicken Enchiladas",
+    "category": "Mexican",
+    "time": 35,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Sausage & Bean Casserole",
+    "category": "Casserole",
+    "time": 35,
+    "file": "casserole.json"
+  },
+  {
+    "title": "Beef Mince & Butter Bean Stew",
+    "category": "Casserole",
+    "time": 35,
+    "file": "casserole.json"
+  },
+  {
+    "title": "One-Pot Chicken & Chickpea Stew",
+    "category": "Casserole",
+    "time": 35,
+    "file": "casserole.json"
+  },
+  {
+    "title": "Creamy Beef Mince Stroganoff",
+    "category": "Casserole",
+    "time": 25,
+    "file": "casserole.json"
+  },
+  {
+    "title": "Chicken Tikka Masala",
+    "category": "Curry",
+    "time": 30,
+    "file": "curry.json"
+  },
+  {
+    "title": "Chicken Katsu Curry",
+    "category": "Curry",
+    "time": 30,
+    "file": "curry.json"
+  },
+  {
+    "title": "Mince Keema Curry",
+    "category": "Curry",
+    "time": 30,
+    "file": "curry.json"
+  },
+  {
+    "title": "Salmon & Spinach Curry",
+    "category": "Curry",
+    "time": 20,
+    "file": "curry.json"
+  },
+  {
+    "title": "Salmon Teriyaki Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
+  },
+  {
+    "title": "Chicken Noodle Stir-Fry",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
+  },
+  {
+    "title": "Sticky Sesame Chicken Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
+  },
+  {
+    "title": "Beef Mince Cottage Pie",
+    "category": "Bake",
+    "time": 45,
+    "file": "bake.json"
+  },
+  {
+    "title": "Beef Mince Stuffed Peppers",
+    "category": "Bake",
+    "time": 40,
+    "file": "bake.json"
+  },
+  {
+    "title": "Mince & Onion Pasta Bake",
+    "category": "Bake",
+    "time": 40,
+    "file": "bake.json"
+  },
+  {
+    "title": "Chicken Parmesan Bake",
+    "category": "Bake",
+    "time": 35,
+    "file": "bake.json"
+  },
+  {
+    "title": "Lamb Mince Shepherd's Pie",
+    "category": "Bake",
+    "time": 45,
+    "file": "bake.json"
+  },
+  {
+    "title": "Beef Mince Lasagne",
+    "category": "Bake",
+    "time": 50,
+    "file": "bake.json"
+  },
+  {
+    "title": "Salmon Fishcakes",
+    "category": "Other",
+    "time": 30,
+    "file": "other.json"
+  },
+  {
+    "title": "Cashew Chicken Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Prawn Pad Thai Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Thai Green Chicken Curry",
+    "category": "Curry",
+    "time": 25,
+    "file": "curry.json"
+  },
+  {
+    "title": "Coconut Chickpea Curry",
+    "category": "Curry",
+    "time": 30,
+    "file": "curry.json"
+  },
+  {
+    "title": "Leek & Potato Soup",
+    "category": "Soup",
+    "time": 30,
+    "file": "soup.json"
+  },
+  {
+    "title": "Thai Basil Beef Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Moroccan Spiced Chicken & Chickpea Traybake",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Greek Chicken Pitta Wrap",
+    "category": "Wrap",
+    "time": 20,
+    "file": "wrap.json"
+  },
+  {
+    "title": "Spicy Black Bean Soup",
+    "category": "Soup",
+    "time": 25,
+    "file": "soup.json"
+  },
+  {
+    "title": "Prawn & Pineapple Fried Rice",
+    "category": "Rice Bowl",
+    "time": 20,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Lemon Garlic Shrimp Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Sticky Honey Soy Salmon Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 20,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Crispy Chicken Wrap with Sriracha Mayo",
+    "category": "Wrap",
+    "time": 20,
+    "file": "wrap.json"
+  },
+  {
+    "title": "Butternut Squash & Chickpea Curry",
+    "category": "Curry",
+    "time": 30,
+    "file": "curry.json"
+  },
+  {
+    "title": "Spicy Peanut Chicken Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
+  },
+  {
+    "title": "Sweet Potato & Black Bean Tacos",
+    "category": "Mexican",
+    "time": 25,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Shrimp Tacos with Mango Salsa",
+    "category": "Mexican",
+    "time": 20,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Garlic Butter Shrimp Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
+  },
+  {
+    "title": "Moroccan Lamb & Apricot Stew",
+    "category": "Casserole",
+    "time": 35,
+    "file": "casserole.json"
+  },
+  {
+    "title": "Roasted Red Pepper & Tomato Soup",
+    "category": "Soup",
+    "time": 30,
+    "file": "soup.json"
+  },
+  {
+    "title": "Chicken Teriyaki Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Creamy Tomato & Spinach Gnocchi",
+    "category": "Pasta",
+    "time": 20,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Sheet-Pan Lemon Chicken & Green Beans",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Spicy Chickpea & Coconut Soup",
+    "category": "Soup",
+    "time": 25,
+    "file": "soup.json"
+  },
+  {
+    "title": "Turkey & Black Bean Quesadillas",
+    "category": "Mexican",
+    "time": 15,
+    "file": "mexican.json"
+  },
+  {
+    "title": "Creamy Tuscan Chicken Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Korean Beef Bibimbap Bowl",
+    "category": "Rice Bowl",
+    "time": 30,
+    "file": "rice-bowl.json"
+  },
+  {
+    "title": "Harissa Chicken Traybake",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Spicy Shrimp Noodle Soup",
+    "category": "Soup",
+    "time": 25,
+    "file": "soup.json"
+  },
+  {
+    "title": "Butter Chicken Curry",
+    "category": "Curry",
+    "time": 35,
+    "file": "curry.json"
+  }
+]
