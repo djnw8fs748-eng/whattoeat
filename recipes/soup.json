@@ -1,1 +1,230 @@
-PLACEHOLDER
+[
+  {
+    "title": "Tomato & Lentil Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A filling, budget-friendly soup that mostly looks after itself on the stove.",
+    "ingredients": [
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 150, "unit": "g", "item": "red lentils, rinsed" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 800, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 1, "unit": "tsp", "item": "cumin" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and garlic for 4-5 minutes.",
+      "Add the cumin, tomatoes, lentils, and stock.",
+      "Bring to a simmer and cook for 20-25 minutes, stirring occasionally, until the lentils are soft.",
+      "Blend if you'd like it smooth, or leave as is. Season to taste and serve with bread."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Noodle Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A comforting classic that comes together with shop-bought stock and leftover or quick-cooked chicken.",
+    "ingredients": [
+      { "qty": 1, "unit": "litre", "item": "chicken stock" },
+      { "qty": 150, "unit": "g", "item": "cooked chicken, shredded (or 1 raw breast, sliced thin)" },
+      { "qty": 100, "unit": "g", "item": "dried noodles or vermicelli" },
+      { "qty": 1, "unit": null, "item": "carrot, sliced" },
+      { "qty": 1, "unit": "stick", "item": "celery, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "dried thyme" }
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot.",
+      "Add the carrot and celery and cook for 5 minutes.",
+      "Add the chicken (raw or cooked) and thyme, and simmer for 8-10 minutes until the chicken is cooked through.",
+      "Add the noodles for the last 3-4 minutes of cooking, until tender. Season and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Broccoli & Potato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Blended into velvety smoothness — good for using up an ageing head of broccoli.",
+    "ingredients": [
+      { "qty": 1, "unit": "head", "item": "broccoli, chopped" },
+      { "qty": 2, "unit": null, "item": "potatoes, peeled and chopped" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 800, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 100, "unit": "ml", "item": "cream (optional)" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion for 4 minutes.",
+      "Add the potatoes and stock, bring to a simmer, and cook for 10 minutes.",
+      "Add the broccoli and cook for a further 8-10 minutes until everything is tender.",
+      "Blend until smooth, stir in the cream if using, and season to taste."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spiced Carrot & Ginger Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Naturally sweet and warming, with just a handful of ingredients.",
+    "ingredients": [
+      { "qty": 500, "unit": "g", "item": "carrots, chopped" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 800, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 1, "unit": "tsp", "item": "ground coriander" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and ginger for 4-5 minutes.",
+      "Add the carrots, coriander, and stock.",
+      "Simmer for 20 minutes until the carrots are soft.",
+      "Blend until smooth and season to taste."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken & Sweetcorn Chowder",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A creamy, filling soup that's closer to a stew — good on a cold evening.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, diced" },
+      { "qty": 1, "unit": "tin", "item": "sweetcorn, drained" },
+      { "qty": 2, "unit": null, "item": "potatoes, diced small" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 700, "unit": "ml", "item": "chicken stock" },
+      { "qty": 100, "unit": "ml", "item": "single cream" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Fry the onion in a little oil for 4 minutes.",
+      "Add the chicken and potatoes and cook for 3-4 minutes.",
+      "Pour in the stock, bring to a simmer, and cook for 15 minutes until the potatoes and chicken are cooked through.",
+      "Stir in the sweetcorn and cream, warm through, and season to taste."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Leek & Potato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A classic, gently flavoured soup that blends into something silky with barely any effort.",
+    "ingredients": [
+      { "qty": 2, "unit": null, "item": "leeks, sliced" },
+      { "qty": 3, "unit": null, "item": "potatoes, peeled and chopped" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 800, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 100, "unit": "ml", "item": "cream (optional)" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and leeks for 5 minutes.",
+      "Add the potatoes and stock, bring to a simmer, and cook for 15-18 minutes until the potatoes are soft.",
+      "Blend until smooth, stir in the cream if using, and season to taste.",
+      "Serve with crusty bread."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Black Bean Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A store-cupboard soup that gets its kick from chilli and smoked paprika.",
+    "ingredients": [
+      { "qty": 2, "unit": "tins", "item": "black beans, drained and rinsed" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "ground cumin" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 0.5, "unit": "tsp", "item": "chilli powder" },
+      { "qty": 700, "unit": "ml", "item": "vegetable stock" },
+      { "qty": null, "unit": null, "item": "Lime juice and chopped coriander to serve" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and garlic for 4-5 minutes.",
+      "Add the cumin, smoked paprika, and chilli powder, and cook for 30 seconds.",
+      "Add the black beans and stock, and simmer for 15 minutes.",
+      "Blend partially for a thicker texture if you like, and season to taste.",
+      "Serve with a squeeze of lime and chopped coriander."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Roasted Red Pepper & Tomato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Roasted peppers and tomatoes blended into a smoky, comforting soup.",
+    "ingredients": [
+      { "qty": 3, "unit": "red", "item": "peppers, halved and deseeded" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 700, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Roast the peppers, cut-side down, with a drizzle of oil for 20 minutes until softened and lightly charred. Roughly chop.",
+      "Meanwhile, soften the onion and garlic in a pot for 4-5 minutes.",
+      "Add the roasted peppers, tomatoes, smoked paprika, and stock.",
+      "Simmer for 10-15 minutes, then blend until smooth. Season to taste."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Chickpea & Coconut Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A warming, spiced soup that comes together almost entirely from the store cupboard.",
+    "ingredients": [
+      { "qty": 2, "unit": "tins", "item": "chickpeas, drained and rinsed" },
+      { "qty": 1, "unit": "tin", "item": "coconut milk" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 2, "unit": "tsp", "item": "curry powder" },
+      { "qty": 0.5, "unit": "tsp", "item": "chilli flakes" },
+      { "qty": 500, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 2, "unit": "handfuls", "item": "spinach" },
+      { "qty": null, "unit": null, "item": "Lime wedges, to serve" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion, garlic, and ginger for 4-5 minutes.",
+      "Stir in the curry powder and chilli flakes and cook for 30 seconds.",
+      "Add the chickpeas, coconut milk, and stock, and simmer for 12-15 minutes.",
+      "Stir in the spinach until wilted.",
+      "Season to taste and serve with a squeeze of lime."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Shrimp Noodle Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A punchy, gingery broth with prawns, noodles, and greens — ready in one pot.",
+    "ingredients": [
+      { "qty": 300, "unit": "g", "item": "raw prawns, peeled" },
+      { "qty": 100, "unit": "g", "item": "rice noodles" },
+      { "qty": 1, "unit": "litre", "item": "chicken or vegetable stock" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 1, "unit": "tsp", "item": "chilli flakes (or 1 tbsp sriracha)" },
+      { "qty": 2, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 2, "unit": "heads", "item": "pak choi, halved (or a handful of spinach)" },
+      { "qty": 2, "unit": "spring", "item": "onions, sliced" },
+      { "qty": 1, "unit": null, "item": "lime, cut into wedges" }
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot with the garlic, ginger, chilli flakes, and soy sauce.",
+      "Add the rice noodles and cook according to packet instructions.",
+      "Add the prawns and pak choi, and simmer for 3-4 minutes until the prawns are pink and cooked through.",
+      "Ladle into bowls and top with spring onion and a squeeze of lime."
+    ],
+    "servings": 2
+  }
+]
