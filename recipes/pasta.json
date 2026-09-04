@@ -1,1 +1,358 @@
-PLACEHOLDER
+[
+  {
+    "title": "Garlic Butter Pasta with Parmesan",
+    "category": "Pasta",
+    "time": 15,
+    "teaser": "A five-ingredient pantry pasta that tastes far fancier than the effort involved.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "spaghetti or linguine" },
+      { "qty": 3, "unit": "tbsp", "item": "butter" },
+      { "qty": 4, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 50, "unit": "g", "item": "parmesan, grated" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" },
+      { "qty": null, "unit": null, "item": "Fresh parsley, chopped (optional)" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Melt the butter in the same pot over low heat and add the garlic. Cook for 1 minute until fragrant, not browned.",
+      "Tip the pasta back in with a splash of the reserved water and toss well.",
+      "Stir in the parmesan until it melts into a light sauce, adding more water if it looks dry.",
+      "Season with salt and pepper and scatter parsley over the top."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "One-Pan Tomato & Basil Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "teaser": "The pasta cooks straight in the sauce, so there's only one pot to wash.",
+    "ingredients": [
+      { "qty": 250, "unit": "g", "item": "short pasta (penne or fusilli)" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 500, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Handful fresh basil, torn" },
+      { "qty": null, "unit": null, "item": "Grated parmesan to serve" }
+    ],
+    "steps": [
+      "Heat the oil in a large pot and soften the garlic for 30 seconds.",
+      "Add the tomatoes, stock, and pasta, and stir well.",
+      "Bring to a simmer and cook uncovered, stirring often, until the pasta is tender and most of the liquid has absorbed (about 12-15 minutes).",
+      "Stir in most of the basil and season to taste.",
+      "Serve topped with parmesan and the remaining basil."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Chicken & Bacon Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Chicken, bacon, and a light cream sauce — a firm favourite for a reason.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (tagliatelle or penne)" },
+      { "qty": 1, "unit": "chicken", "item": "breast, diced" },
+      { "qty": 3, "unit": "rashers", "item": "bacon, chopped" },
+      { "qty": 150, "unit": "ml", "item": "single cream" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": null, "unit": null, "item": "Grated parmesan" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions.",
+      "Meanwhile, fry the bacon in a pan until starting to crisp, then add the chicken and cook until golden and cooked through.",
+      "Add the garlic and cook for 1 more minute.",
+      "Pour in the cream, season, and simmer for 2-3 minutes until slightly thickened.",
+      "Drain the pasta and toss through the sauce with a little parmesan."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Sausage & Pepper Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "teaser": "Sausages, peppers, and a tomato sauce — hearty and simple.",
+    "ingredients": [
+      { "qty": 4, "unit": "pork", "item": "sausages" },
+      { "qty": 1, "unit": "bell", "item": "pepper, sliced" },
+      { "qty": 1, "unit": null, "item": "onion, sliced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 250, "unit": "g", "item": "pasta" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Squeeze the sausage meat out of the skins into small chunks and fry in a little oil until browned.",
+      "Add the onion and pepper and cook for 5 minutes until softened.",
+      "Pour in the tomatoes and oregano, season, and simmer for 10 minutes.",
+      "Meanwhile, cook the pasta according to packet instructions and drain.",
+      "Toss the pasta through the sauce and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Tuna & Sweetcorn Pasta Bake",
+    "category": "Pasta",
+    "time": 35,
+    "teaser": "A store-cupboard bake that kids and adults both tend to like.",
+    "ingredients": [
+      { "qty": 250, "unit": "g", "item": "pasta" },
+      { "qty": 2, "unit": "tins", "item": "tuna, drained" },
+      { "qty": 1, "unit": "tin", "item": "sweetcorn, drained" },
+      { "qty": 200, "unit": "ml", "item": "crème fraîche or cream" },
+      { "qty": 100, "unit": "g", "item": "cheddar, grated" },
+      { "qty": 1, "unit": "tsp", "item": "mustard (optional)" }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Cook the pasta until just tender, then drain.",
+      "Mix the pasta with the tuna, sweetcorn, crème fraîche, and mustard in an ovenproof dish.",
+      "Top with the grated cheddar.",
+      "Bake for 15-20 minutes until golden and bubbling."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Pesto Pasta with Cherry Tomatoes",
+    "category": "Pasta",
+    "time": 12,
+    "teaser": "About as fast as dinner gets — jarred pesto, pasta, and fresh tomatoes.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta" },
+      { "qty": null, "unit": null, "item": "3-4 tbsp basil pesto (jarred or homemade)" },
+      { "qty": 150, "unit": "g", "item": "cherry tomatoes, halved" },
+      { "qty": null, "unit": null, "item": "Handful of rocket or spinach (optional)" },
+      { "qty": null, "unit": null, "item": "Grated parmesan" }
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain, keeping a splash of the water.",
+      "Return the pasta to the pot off the heat and stir in the pesto and a splash of pasta water.",
+      "Fold in the cherry tomatoes and rocket if using.",
+      "Serve with parmesan on top."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Simple Spaghetti Bolognese",
+    "category": "Pasta",
+    "time": 30,
+    "teaser": "The classic mince-and-tomato sauce that's always worth having in your back pocket.",
+    "ingredients": [
+      { "qty": 400, "unit": "g", "item": "beef mince" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "tbsp", "item": "tomato purée" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" },
+      { "qty": 250, "unit": "g", "item": "spaghetti" },
+      { "qty": null, "unit": null, "item": "Grated parmesan" }
+    ],
+    "steps": [
+      "Fry the onion and garlic in a little oil for 4 minutes until soft.",
+      "Add the mince and cook, breaking it up, until browned all over.",
+      "Stir in the tomato purée, chopped tomatoes, and oregano, and simmer for 15-20 minutes, stirring occasionally.",
+      "Meanwhile, cook the spaghetti according to packet instructions and drain.",
+      "Toss the pasta through the sauce, or serve the sauce on top, with parmesan."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Salmon & Spinach Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Pan-fried salmon flaked through a light cream and spinach sauce.",
+    "ingredients": [
+      { "qty": 2, "unit": "salmon", "item": "fillets" },
+      { "qty": 200, "unit": "g", "item": "pasta (tagliatelle or penne)" },
+      { "qty": 2, "unit": "handfuls", "item": "spinach" },
+      { "qty": 150, "unit": "ml", "item": "single cream" },
+      { "qty": 1, "unit": "clove", "item": "garlic, minced" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" },
+      { "qty": null, "unit": null, "item": "Grated parmesan" }
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain.",
+      "Meanwhile, season the salmon and pan-fry skin-side down for 4-5 minutes, then flip and cook for 2-3 minutes more until just cooked through. Flake into large chunks.",
+      "In the same pan, soften the garlic for 30 seconds, then add the cream and spinach and simmer until the spinach wilts.",
+      "Fold the pasta and flaked salmon through the sauce.",
+      "Season to taste and serve with parmesan."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chipotle Beef & Pork Rigatoni",
+    "category": "Pasta",
+    "time": 30,
+    "teaser": "A smoky, chipotle-spiked mince and tomato sauce tossed through rigatoni, with wilted spinach and a peppery rocket topping.",
+    "ingredients": [
+      { "qty": 180, "unit": "g", "item": "rigatoni pasta" },
+      { "qty": 240, "unit": "g", "item": "beef and pork mince" },
+      { "qty": 1, "unit": "garlic", "item": "clove, grated or crushed" },
+      { "qty": 20, "unit": "g", "item": "chipotle paste (use less for a milder version)" },
+      { "qty": 1, "unit": "cup", "item": "tomato passata" },
+      { "qty": 10, "unit": "g", "item": "beef stock paste (or 1 stock cube)" },
+      { "qty": 1, "unit": "tsp", "item": "sugar" },
+      { "qty": 100, "unit": "ml", "item": "water" },
+      { "qty": 40, "unit": "g", "item": "baby spinach" },
+      { "qty": 30, "unit": "g", "item": "mature cheddar, grated" },
+      { "qty": 20, "unit": "g", "item": "wild rocket" },
+      { "qty": 1, "unit": "tsp", "item": "olive oil, to finish" },
+      { "qty": 90, "unit": "g", "item": "diced chorizo (optional)" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the rigatoni in salted boiling water until tender, then drain, drizzle with a little oil, and set aside.",
+      "In a dry frying pan over medium-high heat, fry the mince (and chorizo, if using) until browned all over, breaking it up as it cooks.",
+      "Stir in the garlic and chipotle paste and cook for 1 minute.",
+      "Add the passata, stock paste, sugar, and water, and simmer for 5-6 minutes until thickened.",
+      "Add the spinach a handful at a time until wilted.",
+      "Fold the drained pasta and most of the cheddar through the sauce, adding a splash of water if it's too thick.",
+      "Serve topped with the remaining cheddar, the rocket, and a drizzle of olive oil."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Salmon & Lemon Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "A lighter salmon pasta with lemon, garlic, and a splash of cream.",
+    "ingredients": [
+      { "qty": 2, "unit": "salmon", "item": "fillets" },
+      { "qty": 200, "unit": "g", "item": "pasta (linguine or tagliatelle)" },
+      { "qty": 1, "unit": null, "item": "lemon, zested and juiced" },
+      { "qty": 100, "unit": "ml", "item": "single cream" },
+      { "qty": 1, "unit": "clove", "item": "garlic, minced" },
+      { "qty": null, "unit": null, "item": "Olive oil" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain.",
+      "Season the salmon and pan-fry for 4-5 minutes per side until cooked through. Flake into chunks.",
+      "In the same pan, soften the garlic for 30 seconds, then add the cream, lemon zest, and juice.",
+      "Simmer for 1-2 minutes, then toss the pasta and flaked salmon through the sauce.",
+      "Season to taste and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Beef Meatballs in Tomato Sauce",
+    "category": "Pasta",
+    "time": 30,
+    "teaser": "Simple homemade meatballs simmered in a tomato sauce, served over pasta.",
+    "ingredients": [
+      { "qty": 400, "unit": "g", "item": "beef mince" },
+      { "qty": 1, "unit": null, "item": "egg" },
+      { "qty": 30, "unit": "g", "item": "breadcrumbs" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "clove", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" },
+      { "qty": 250, "unit": "g", "item": "spaghetti" },
+      { "qty": null, "unit": null, "item": "Grated parmesan" }
+    ],
+    "steps": [
+      "Mix the mince, egg, and breadcrumbs together and season well. Shape into small balls.",
+      "Fry the meatballs in a little oil until browned all over, then remove.",
+      "Add the garlic to the pan, then the tomatoes and oregano.",
+      "Return the meatballs to the sauce and simmer for 15 minutes until cooked through.",
+      "Meanwhile, cook the pasta, drain, and serve with the meatballs and sauce on top, finished with parmesan."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Alfredo Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "A simple, creamy parmesan sauce tossed with pasta and pan-fried chicken.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 200, "unit": "g", "item": "pasta (fettuccine or tagliatelle)" },
+      { "qty": 150, "unit": "ml", "item": "single cream" },
+      { "qty": 50, "unit": "g", "item": "parmesan, grated" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": null, "unit": null, "item": "Butter" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain.",
+      "Season the chicken and pan-fry in a little butter until golden and cooked through. Set aside.",
+      "In the same pan, soften the garlic for 30 seconds, then add the cream and parmesan and stir until melted into a sauce.",
+      "Toss the pasta through the sauce.",
+      "Slice the chicken and serve on top."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Lemon Garlic Shrimp Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Prawns, lemon, and garlic tossed with pasta in a light, buttery sauce — ready before you've finished the washing up.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (linguine or spaghetti)" },
+      { "qty": 300, "unit": "g", "item": "raw prawns, peeled" },
+      { "qty": 3, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": null, "item": "lemon, zested and juiced" },
+      { "qty": 3, "unit": "tbsp", "item": "butter" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Handful fresh parsley, chopped" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Heat the oil and butter in a large pan and fry the garlic for 30 seconds until fragrant.",
+      "Add the prawns and cook for 2-3 minutes until pink and just cooked through.",
+      "Stir in the lemon zest and juice, then toss in the drained pasta with a splash of the reserved water.",
+      "Season with salt and pepper and scatter parsley over the top."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Tomato & Spinach Gnocchi",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Soft potato gnocchi in a quick creamy tomato sauce — barely any chopping required.",
+    "ingredients": [
+      { "qty": 500, "unit": "g", "item": "fresh gnocchi" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 200, "unit": "g", "item": "cherry tomatoes, halved" },
+      { "qty": 2, "unit": "handfuls", "item": "spinach" },
+      { "qty": 100, "unit": "ml", "item": "single cream" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Grated parmesan" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the gnocchi in salted boiling water according to packet instructions (it's ready when it floats), then drain.",
+      "Heat the oil in a large pan and soften the garlic for 30 seconds.",
+      "Add the cherry tomatoes and cook for 3-4 minutes until they start to burst.",
+      "Stir in the cream and simmer for 1-2 minutes.",
+      "Add the spinach and stir until wilted, then fold the gnocchi through the sauce.",
+      "Season to taste and serve with parmesan."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Tuscan Chicken Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "teaser": "Pan-fried chicken in a sun-dried tomato and spinach cream sauce — restaurant-style comfort food, one pan.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 200, "unit": "g", "item": "pasta (penne or fusilli)" },
+      { "qty": 60, "unit": "g", "item": "sun-dried tomatoes, chopped" },
+      { "qty": 2, "unit": "handfuls", "item": "spinach" },
+      { "qty": 150, "unit": "ml", "item": "single cream" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 30, "unit": "g", "item": "parmesan, grated" },
+      { "qty": null, "unit": null, "item": "Olive oil" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain.",
+      "Season the chicken and pan-fry in a little oil until golden and cooked through. Set aside.",
+      "In the same pan, soften the garlic for 30 seconds, then add the sun-dried tomatoes and cream.",
+      "Simmer for 2 minutes, then stir in the spinach until wilted.",
+      "Return the chicken to the pan, toss through the pasta and parmesan, and season to taste."
+    ],
+    "servings": 2
+  }
+]
