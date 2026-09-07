@@ -30,7 +30,7 @@ test('text search by ingredient filters cards', async ({ page }) => {
 
 test('category filter shows only matching category', async ({ page }) => {
   await page.selectOption('#catSelect', 'Pasta');
-  const pills = page.locator('.card .pill');
+  const pills = page.locator('.card .category-pill');
   const count = await pills.count();
   expect(count).toBeGreaterThan(0);
   for (let i = 0; i < count; i++) {

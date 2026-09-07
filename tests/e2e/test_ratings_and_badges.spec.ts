@@ -1,16 +1,32 @@
 import { test, expect } from '@playwright/test';
 import { setupMockApi } from './fixtures/mock-api';
+import fs from 'fs';
+import path from 'path';
 
 test('the most recently added recipes show a "New" badge, older ones don\'t', async ({ page }) => {
+  // recipes.json is built by concatenating whole category files together, so
+  // its array order does NOT reflect true add order (a new recipe added to
+  // an existing category doesn't land at the end of the array). The badge
+  // must be driven by recipes/_index.json — the file the automation actually
+  // appends to — not by recipes.json's own order.
+  const indexEntries = JSON.parse(
+    fs.readFileSync(path.resolve(__dirname, '../../recipes/_index.json'), 'utf-8')
+  );
+  const trulyNewestTitle = indexEntries[indexEntries.length - 1].title;
+
   await setupMockApi(page);
   await page.goto('/');
   await page.waitForSelector('.card');
 
   const firstCard = page.locator('.card').first();
-  const lastCard = page.locator('.card').last();
+  const newestCard = page.locator(`.card[data-title="${trulyNewestTitle}"]`);
+  const lastCardByArrayOrder = page.locator('.card').last();
 
   await expect(firstCard.locator('.new-badge')).toHaveCount(0);
-  await expect(lastCard.locator('.new-badge')).toHaveCount(1);
+  await expect(newestCard.locator('.new-badge')).toHaveCount(1);
+  // Regression guard: recipes.json's own last entry is a stale recipe once
+  // category-file concatenation is accounted for, so it must NOT get the badge.
+  await expect(lastCardByArrayOrder).not.toHaveAttribute('data-title', trulyNewestTitle);
 });
 
 test('rating a recipe up from the detail panel shows a thumbs-up on its card', async ({ page }) => {

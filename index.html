@@ -1183,6 +1183,12 @@ let activeAllergens = new Set();
 let activeLikedOnly = false;
 let ratings = {};
 const RECENT_BADGE_COUNT = 10;
+// True chronological add order (oldest first), from recipes/_index.json.
+// recipes.json itself can't be used for this: its build step concatenates
+// whole category files together in the order each category first appeared,
+// so a new recipe added to an existing category lands wherever that
+// category's block sits, not at the end of the array.
+let recipeAddOrder = [];
 
 const ALLERGEN_KEYWORDS = {
   gluten:    ['flour','bread','pasta','spaghetti','linguine','penne','fettuccine',
@@ -1278,12 +1284,12 @@ function getFilteredRecipes() {
   });
 }
 
-// Recipes are appended to recipes.json in the order they were added
-// (the weekly automation always adds new entries at the end), so the
-// last N titles in load order are simply the most recently added ones —
-// no separate "date added" field needed.
+// The last N titles in recipeAddOrder (from recipes/_index.json, which the
+// weekly automation always appends to) are simply the most recently added
+// recipes — no separate "date added" field needed.
 function getRecentTitles() {
-  return new Set(recipes.slice(-RECENT_BADGE_COUNT).map(r => r.title));
+  const source = recipeAddOrder.length > 0 ? recipeAddOrder : recipes.map(r => r.title);
+  return new Set(source.slice(-RECENT_BADGE_COUNT));
 }
 
 function updateFilterBadge() {
@@ -1319,7 +1325,7 @@ function renderGrid() {
     <div class="card" tabindex="0" data-title="${escapeAttr(r.title)}" role="button" aria-label="View recipe for ${escapeAttr(r.title)}">
       <div class="card-top">
         <span class="card-badges">
-          <span class="pill cat-${categoryColors[r.category] ?? 0}">${escapeHtml(r.category)}</span>
+          <span class="pill category-pill cat-${categoryColors[r.category] ?? 0}">${escapeHtml(r.category)}</span>
           ${recentTitles.has(r.title) ? '<span class="pill new-badge">New</span>' : ''}
         </span>
         ${rating === 'up' ? '<span class="rating-indicator" title="Liked">👍</span>' : rating === 'down' ? '<span class="rating-indicator" title="Disliked">👎</span>' : ''}
@@ -1503,8 +1509,19 @@ const AISLE_KEYWORDS = [
 ];
 const AISLE_ORDER = [...AISLE_KEYWORDS.map(([name]) => name), 'Other'];
 
+// Checked before AISLE_KEYWORDS: some Pantry items contain a substring that
+// would otherwise match a Produce keyword first (e.g. "chilli flakes"
+// contains "chilli", "salt and pepper" contains "pepper"), which is only
+// correct for the fresh version of that ingredient. These more specific
+// phrases take priority so the dried/jarred/ground form lands in Pantry.
+const PANTRY_OVERRIDES = [
+  'salt and pepper', 'salt and black pepper', 'chilli flakes', 'chilli powder',
+  'chilli paste', 'chilli sauce', 'chilli oil', 'ground coriander', 'coriander seeds',
+];
+
 function categorizeItem(item) {
   const text = item.toLowerCase();
+  if (PANTRY_OVERRIDES.some(kw => text.includes(kw))) return 'Pantry';
   const match = AISLE_KEYWORDS.find(([, keywords]) => keywords.some(kw => text.includes(kw)));
   return match ? match[0] : 'Other';
 }
@@ -2193,6 +2210,17 @@ fetch('recipes.json')
     fetchTemplateNames();
     setInterval(fetchPlan, 15000);
     setInterval(fetchRatings, 15000);
+
+    // Best-effort: used only to correctly order the "New" badge. If it's
+    // missing or fails to load, the badge just falls back to recipes.json's
+    // own (category-grouped, not chronological) order — never fatal.
+    fetch('recipes/_index.json')
+      .then(res => res.ok ? res.json() : [])
+      .then(entries => {
+        recipeAddOrder = entries.map(e => e.title);
+        renderGrid();
+      })
+      .catch(() => {});
   })
   .catch(err => {
     console.error('Could not load recipes.json:', err);

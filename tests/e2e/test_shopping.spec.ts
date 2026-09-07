@@ -93,3 +93,22 @@ test('copy list button briefly shows "Copied!" text', async ({ page }) => {
   // Text resets after 1800ms
   await expect(page.locator('#copyListBtn')).toHaveText('Copy list', { timeout: 3000 });
 });
+
+test('pantry seasonings land in Pantry, not Produce, despite containing a produce word', async ({ page }) => {
+  // "chilli flakes" and "salt and pepper" both contain a Produce keyword
+  // ("chilli", "pepper") as a substring, but as dried/jarred seasonings they
+  // belong in Pantry — regression test for that keyword-collision bug.
+  await addRecipeToDay(page, 'Fried Egg & Avocado Toast', 'mon');
+  await page.click('#planTab');
+
+  const pantryGroup = page.locator('.shopping-group', { has: page.locator('.shopping-group-heading', { hasText: 'Pantry' }) });
+  const produceGroup = page.locator('.shopping-group', { has: page.locator('.shopping-group-heading', { hasText: 'Produce' }) });
+
+  await expect(pantryGroup.locator('.shopping-item label', { hasText: 'chilli flakes' })).toHaveCount(1);
+  await expect(pantryGroup.locator('.shopping-item label', { hasText: 'salt and pepper' })).toHaveCount(1);
+  await expect(produceGroup.locator('.shopping-item label', { hasText: 'chilli flakes' })).toHaveCount(0);
+  await expect(produceGroup.locator('.shopping-item label', { hasText: 'salt and pepper' })).toHaveCount(0);
+
+  // Fresh avocado should still land in Produce.
+  await expect(produceGroup.locator('.shopping-item label', { hasText: 'avocado' })).toHaveCount(1);
+});
