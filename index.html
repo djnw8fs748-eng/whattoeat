@@ -291,6 +291,31 @@
     align-self: center;
   }
 
+  .card-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .new-badge {
+    background: var(--success-bg);
+    border-color: var(--success-border);
+    color: var(--success-text);
+  }
+  .rating-indicator { font-size: 15px; line-height: 1; }
+
+  .rating-btn {
+    background: var(--surface-raised);
+    border: 1px solid var(--divider);
+    border-radius: var(--radius-sm);
+    font-size: 18px;
+    line-height: 1;
+    padding: 6px 10px;
+    cursor: pointer;
+    opacity: 0.55;
+    transition: opacity 0.15s, border-color 0.15s;
+  }
+  .rating-btn:hover { opacity: 1; border-color: var(--accent); }
+  .rating-btn.active { opacity: 1; }
+  .rating-btn.active[aria-label="Mark as liked"] { border-color: var(--success-border); background: var(--success-bg); }
+  .rating-btn.active[aria-label="Mark as disliked"] { border-color: var(--danger); background: var(--danger-bg); }
+  .panel-rating { display: flex; gap: 8px; margin: 4px 0 12px; }
+
   .clear-btn {
     background: none;
     border: none;
@@ -919,6 +944,15 @@
     transition: border-color 0.15s, color 0.15s;
   }
   .copy-list-btn:hover { border-color: var(--accent); color: var(--text); }
+  .shopping-group + .shopping-group { margin-top: 20px; }
+  .shopping-group-heading {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    margin: 0 0 8px;
+  }
   .shopping-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -1007,6 +1041,9 @@
         <button class="chip allergen-chip" data-allergen="sesame">Sesame</button>
         <button class="chip allergen-chip" data-allergen="mustard">Mustard</button>
       </div>
+      <div class="chip-row" id="likedChipRow">
+        <button class="chip" id="likedChip" type="button" aria-pressed="false">👍 Liked only</button>
+      </div>
       <button class="filters-btn" id="filtersBtn" type="button" aria-expanded="false" aria-controls="filterSheet">Filters</button>
       <button class="clear-btn" id="clearBtn" type="button">Clear filters</button>
     </div>
@@ -1048,7 +1085,7 @@
           <h3>Shopping list</h3>
           <button class="copy-list-btn" id="copyListBtn">Copy list</button>
         </div>
-        <div class="shopping-grid" id="shoppingGrid"></div>
+        <div id="shoppingGrid"></div>
       </div>
     </div>
   </div>
@@ -1114,6 +1151,11 @@
         <button class="chip sheet-allergen-chip" data-allergen="mustard">Mustard</button>
       </div>
     </div>
+    <div class="sheet-section">
+      <div class="chip-row" id="sheetLikedChipRow">
+        <button class="chip sheet-liked-chip" id="sheetLikedChip" type="button" aria-pressed="false">👍 Liked only</button>
+      </div>
+    </div>
     <button class="clear-btn" id="sheetClearBtn" type="button">Clear all filters</button>
   </div>
 </div>
@@ -1138,6 +1180,9 @@ let activeCategory = "";
 let activeMaxTime = 999;
 
 let activeAllergens = new Set();
+let activeLikedOnly = false;
+let ratings = {};
+const RECENT_BADGE_COUNT = 10;
 
 const ALLERGEN_KEYWORDS = {
   gluten:    ['flour','bread','pasta','spaghetti','linguine','penne','fettuccine',
@@ -1228,8 +1273,17 @@ function getFilteredRecipes() {
           r.ingredients.some(i => ingredientText(i).includes(kw))
         )
       );
-    return matchesSearch && matchesCategory && matchesTime && matchesAllergens;
+    const matchesLiked = !activeLikedOnly || ratings[r.title] === 'up';
+    return matchesSearch && matchesCategory && matchesTime && matchesAllergens && matchesLiked;
   });
+}
+
+// Recipes are appended to recipes.json in the order they were added
+// (the weekly automation always adds new entries at the end), so the
+// last N titles in load order are simply the most recently added ones —
+// no separate "date added" field needed.
+function getRecentTitles() {
+  return new Set(recipes.slice(-RECENT_BADGE_COUNT).map(r => r.title));
 }
 
 function updateFilterBadge() {
@@ -1237,7 +1291,8 @@ function updateFilterBadge() {
   if (!btn) return;
   const count = (activeCategory !== "" ? 1 : 0) +
                 (activeMaxTime !== 999 ? 1 : 0) +
-                activeAllergens.size;
+                activeAllergens.size +
+                (activeLikedOnly ? 1 : 0);
   btn.textContent = count > 0 ? `Filters • ${count}` : 'Filters';
 }
 
@@ -1256,10 +1311,18 @@ function renderGrid() {
   }
   emptyState.style.display = "none";
 
-  grid.innerHTML = filtered.map(r => `
+  const recentTitles = getRecentTitles();
+
+  grid.innerHTML = filtered.map(r => {
+    const rating = ratings[r.title];
+    return `
     <div class="card" tabindex="0" data-title="${escapeAttr(r.title)}" role="button" aria-label="View recipe for ${escapeAttr(r.title)}">
       <div class="card-top">
-        <span class="pill cat-${categoryColors[r.category] ?? 0}">${escapeHtml(r.category)}</span>
+        <span class="card-badges">
+          <span class="pill cat-${categoryColors[r.category] ?? 0}">${escapeHtml(r.category)}</span>
+          ${recentTitles.has(r.title) ? '<span class="pill new-badge">New</span>' : ''}
+        </span>
+        ${rating === 'up' ? '<span class="rating-indicator" title="Liked">👍</span>' : rating === 'down' ? '<span class="rating-indicator" title="Disliked">👎</span>' : ''}
       </div>
       <h3>${escapeHtml(r.title)}</h3>
       <p class="teaser">${escapeHtml(r.teaser)}</p>
@@ -1272,7 +1335,8 @@ function renderGrid() {
         ${DAY_KEYS.some(d => plan[d]?.recipe === r.title) ? '✓ In plan' : '+ Add to plan'}
       </button>
     </div>
-  `).join('');
+  `;
+  }).join('');
 
   // Every card needs a click (mouse) and keydown (keyboard) handler
   // so the catalogue works for people navigating with Tab + Enter too.
@@ -1392,17 +1456,57 @@ function renderShoppingList() {
 
   const rows = [...merged.values()].sort((a, b) => a.sortKey.localeCompare(b.sortKey));
 
-  grid.innerHTML = rows.map((row, i) => {
-    const label = scaleIngredient({ qty: row.qty, unit: row.unit, item: row.item }, 1);
-    return `
-      <div class="shopping-item" data-sort-key="${escapeAttr(row.sortKey)}">
-        <input type="checkbox" id="shop-${i}">
-        <label for="shop-${i}">${escapeHtml(label)}</label>
+  const groups = new Map(AISLE_ORDER.map(name => [name, []]));
+  rows.forEach(row => groups.get(categorizeItem(row.item)).push(row));
+
+  grid.innerHTML = AISLE_ORDER
+    .map((name, groupIndex) => ({ name, groupIndex, items: groups.get(name) }))
+    .filter(g => g.items.length > 0)
+    .map(g => `
+      <div class="shopping-group">
+        <h4 class="shopping-group-heading">${escapeHtml(g.name)}</h4>
+        <div class="shopping-grid">
+          ${g.items.map((row, i) => {
+            const label = scaleIngredient({ qty: row.qty, unit: row.unit, item: row.item }, 1);
+            return `
+              <div class="shopping-item" data-sort-key="${escapeAttr(row.sortKey)}">
+                <input type="checkbox" id="shop-${g.groupIndex}-${i}">
+                <label for="shop-${g.groupIndex}-${i}">${escapeHtml(label)}</label>
+              </div>
+            `;
+          }).join('')}
+        </div>
       </div>
-    `;
-  }).join('');
+    `).join('');
 
   section.style.display = '';
+}
+
+// Keyword -> aisle mapping for grouping the shopping list. First match
+// wins, so check order matters (e.g. "prawn" before a generic fallback).
+// Anything unmatched lands in "Other" rather than being dropped.
+const AISLE_KEYWORDS = [
+  ['Produce', ['onion', 'garlic', 'tomato', 'pepper', 'carrot', 'potato', 'spinach',
+    'lettuce', 'cucumber', 'avocado', 'lime', 'lemon', 'ginger', 'chilli', 'chili',
+    'coriander', 'parsley', 'basil', 'courgette', 'broccoli', 'cauliflower', 'apple',
+    'banana', 'celery', 'kale', 'spring onion', 'leek', 'aubergine', 'sweet potato',
+    'apricot', 'mango']],
+  ['Meat & Fish', ['chicken', 'beef', 'pork', 'lamb', 'turkey', 'bacon', 'sausage',
+    'mince', 'salmon', 'tuna', 'cod', 'shrimp', 'prawn', 'fish', 'haddock']],
+  ['Dairy & Eggs', ['milk', 'cream', 'butter', 'cheese', 'parmesan', 'mozzarella',
+    'cheddar', 'feta', 'yogurt', 'yoghurt', 'egg']],
+  ['Bakery', ['bread', 'tortilla', 'wrap', 'pitta', 'pita', 'naan', 'bun']],
+  ['Frozen', ['frozen']],
+  ['Pantry', ['rice', 'pasta', 'noodle', 'flour', 'sugar', 'oil', 'vinegar', 'sauce',
+    'stock', 'spice', 'curry powder', 'cumin', 'paprika', 'salt', 'herb', 'tin',
+    'canned', 'chickpea', 'lentil', 'bean', 'coconut milk', 'honey', 'soy sauce']],
+];
+const AISLE_ORDER = [...AISLE_KEYWORDS.map(([name]) => name), 'Other'];
+
+function categorizeItem(item) {
+  const text = item.toLowerCase();
+  const match = AISLE_KEYWORDS.find(([, keywords]) => keywords.some(kw => text.includes(kw)));
+  return match ? match[0] : 'Other';
 }
 
 function escapeAttr(str) {
@@ -1476,6 +1580,7 @@ function openRecipe(title) {
         <button type="button" id="panelServingsPlus" aria-label="Increase servings">+</button>
       </span>
     </div>
+    <div class="panel-rating" id="panelRatingButtons"></div>
     <p class="teaser">${r.teaser}</p>
     <h4>Ingredients</h4>
     <ul class="ingredient-list" id="panelIngredientList"></ul>
@@ -1488,10 +1593,39 @@ function openRecipe(title) {
   document.getElementById('panelServingsMinus').addEventListener('click', () => setPanelServings(panelServings - 1));
   document.getElementById('panelServingsPlus').addEventListener('click', () => setPanelServings(panelServings + 1));
   setPanelServings(r.servings);
+  renderPanelRating();
 
   panel.classList.add('open');
   backdrop.classList.add('open');
   document.getElementById('panelClose').focus();
+}
+
+function renderPanelRating() {
+  const el = document.getElementById('panelRatingButtons');
+  if (!el || !panelRecipe) return;
+  const current = ratings[panelRecipe.title];
+  el.innerHTML = `
+    <button type="button" class="rating-btn ${current === 'up' ? 'active' : ''}" id="ratingUpBtn" aria-label="Mark as liked" aria-pressed="${current === 'up'}">👍</button>
+    <button type="button" class="rating-btn ${current === 'down' ? 'active' : ''}" id="ratingDownBtn" aria-label="Mark as disliked" aria-pressed="${current === 'down'}">👎</button>
+  `;
+  document.getElementById('ratingUpBtn').addEventListener('click', () => setRating(panelRecipe.title, 'up'));
+  document.getElementById('ratingDownBtn').addEventListener('click', () => setRating(panelRecipe.title, 'down'));
+}
+
+function setRating(title, rating) {
+  const next = ratings[title] === rating ? null : rating;
+  fetch(`/api/ratings/${encodeURIComponent(title)}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ rating: next })
+  })
+    .then(res => res.json())
+    .then(data => {
+      ratings = data;
+      renderPanelRating();
+      renderGrid();
+    })
+    .catch((err) => showApiError(`Could not save rating — is the API running? (${err.message})`));
 }
 
 function closeRecipe() {
@@ -1544,15 +1678,29 @@ document.querySelectorAll('.allergen-chip').forEach(chip => {
   });
 });
 
+document.getElementById('likedChip').addEventListener('click', () => {
+  activeLikedOnly = !activeLikedOnly;
+  document.getElementById('likedChip').classList.toggle('active', activeLikedOnly);
+  document.getElementById('likedChip').setAttribute('aria-pressed', String(activeLikedOnly));
+  document.getElementById('sheetLikedChip').classList.toggle('active', activeLikedOnly);
+  document.getElementById('sheetLikedChip').setAttribute('aria-pressed', String(activeLikedOnly));
+  renderGrid();
+});
+
 document.getElementById('clearBtn').addEventListener('click', () => {
   activeSearch = "";
   activeCategory = "";
   activeMaxTime = 999;
   activeAllergens = new Set();
+  activeLikedOnly = false;
   document.getElementById('searchInput').value = "";
   catSelect.value = "";
   document.querySelectorAll('.chip[data-time], .sheet-time-chip').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('#likedChip, #sheetLikedChip').forEach(c => {
+    c.classList.remove('active');
+    c.setAttribute('aria-pressed', 'false');
+  });
   renderGrid();
 });
 
@@ -1597,6 +1745,8 @@ function syncSheetControls() {
   document.querySelectorAll('.sheet-allergen-chip').forEach(c => {
     c.classList.toggle('active', activeAllergens.has(c.dataset.allergen));
   });
+  document.getElementById('sheetLikedChip').classList.toggle('active', activeLikedOnly);
+  document.getElementById('sheetLikedChip').setAttribute('aria-pressed', String(activeLikedOnly));
 }
 
 filtersBtn.addEventListener('click', () => {
@@ -1654,16 +1804,30 @@ document.querySelectorAll('.sheet-allergen-chip').forEach(chip => {
   });
 });
 
+document.getElementById('sheetLikedChip').addEventListener('click', () => {
+  activeLikedOnly = !activeLikedOnly;
+  document.getElementById('sheetLikedChip').classList.toggle('active', activeLikedOnly);
+  document.getElementById('sheetLikedChip').setAttribute('aria-pressed', String(activeLikedOnly));
+  document.getElementById('likedChip').classList.toggle('active', activeLikedOnly);
+  document.getElementById('likedChip').setAttribute('aria-pressed', String(activeLikedOnly));
+  renderGrid();
+});
+
 document.getElementById('sheetClearBtn').addEventListener('click', () => {
   activeSearch = "";
   activeCategory = "";
   activeMaxTime = 999;
   activeAllergens = new Set();
+  activeLikedOnly = false;
   document.getElementById('searchInput').value = "";
   catSelect.value = "";
   sheetCatSelect.value = "";
   document.querySelectorAll('.chip[data-time], .sheet-time-chip').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('#likedChip, #sheetLikedChip').forEach(c => {
+    c.classList.remove('active');
+    c.setAttribute('aria-pressed', 'false');
+  });
   renderGrid();
 });
 
@@ -1876,6 +2040,17 @@ function fetchPlan() {
     .catch(() => {}); // silent — don't break the page if api is down
 }
 
+function fetchRatings() {
+  fetch('/api/ratings')
+    .then(res => res.json())
+    .then(data => {
+      ratings = data;
+      renderGrid();
+      renderPanelRating();
+    })
+    .catch(() => {}); // silent — don't break the page if api is down
+}
+
 /* ============================================================
    TEMPLATES: save the current week's plan under a name, and
    load a saved template back (overwriting the current week).
@@ -2014,8 +2189,10 @@ fetch('recipes.json')
     populateSheetCategories();
     renderGrid();
     fetchPlan();
+    fetchRatings();
     fetchTemplateNames();
     setInterval(fetchPlan, 15000);
+    setInterval(fetchRatings, 15000);
   })
   .catch(err => {
     console.error('Could not load recipes.json:', err);
