@@ -7,13 +7,38 @@ type Plan = Record<Day, DayEntry>;
 const VALID_DAYS: Day[] = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 const EMPTY_PLAN: Plan = { mon: null, tue: null, wed: null, thu: null, fri: null, sat: null, sun: null };
 
+type Ratings = Record<string, 'up' | 'down'>;
+
 export async function setupMockApi(
   page: Page,
   initialPlan: Partial<Plan> = {},
-  historyWeeks: Record<string, Plan> = {}
+  historyWeeks: Record<string, Plan> = {},
+  initialRatings: Ratings = {}
 ): Promise<void> {
   const plan: Plan = { ...EMPTY_PLAN, ...initialPlan };
   const history: Record<string, Plan> = { ...historyWeeks };
+  const ratings: Ratings = { ...initialRatings };
+
+  await page.route(/\/api\/ratings/, async (route) => {
+    const url = new URL(route.request().url());
+    const segments = url.pathname.split('/').filter(Boolean);
+    const method = route.request().method();
+
+    if (segments.length === 2 && method === 'GET') {
+      await route.fulfill({ json: { ...ratings } });
+    } else if (segments.length === 3 && method === 'PUT') {
+      const title = decodeURIComponent(segments[2]);
+      const body = JSON.parse(route.request().postData() ?? '{}') as { rating: 'up' | 'down' | null };
+      if (body.rating === null) {
+        delete ratings[title];
+      } else {
+        ratings[title] = body.rating;
+      }
+      await route.fulfill({ json: { ...ratings } });
+    } else {
+      await route.continue();
+    }
+  });
 
   // Registered first = lowest priority relative to routes registered later
   // (Playwright gives matching priority to the MOST RECENTLY registered route).

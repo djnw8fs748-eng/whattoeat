@@ -694,6 +694,124 @@
     "servings": 2
   },
   {
+    "title": "Creamy Tomato & Spinach Gnocchi",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Soft potato gnocchi in a quick creamy tomato sauce — barely any chopping required.",
+    "ingredients": [
+      {
+        "qty": 500,
+        "unit": "g",
+        "item": "fresh gnocchi"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "cherry tomatoes, halved"
+      },
+      {
+        "qty": 2,
+        "unit": "handfuls",
+        "item": "spinach"
+      },
+      {
+        "qty": 100,
+        "unit": "ml",
+        "item": "single cream"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Grated parmesan"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
+    ],
+    "steps": [
+      "Cook the gnocchi in salted boiling water according to packet instructions (it's ready when it floats), then drain.",
+      "Heat the oil in a large pan and soften the garlic for 30 seconds.",
+      "Add the cherry tomatoes and cook for 3-4 minutes until they start to burst.",
+      "Stir in the cream and simmer for 1-2 minutes.",
+      "Add the spinach and stir until wilted, then fold the gnocchi through the sauce.",
+      "Season to taste and serve with parmesan."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Tuscan Chicken Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "teaser": "Pan-fried chicken in a sun-dried tomato and spinach cream sauce — restaurant-style comfort food, one pan.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced"
+      },
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "pasta (penne or fusilli)"
+      },
+      {
+        "qty": 60,
+        "unit": "g",
+        "item": "sun-dried tomatoes, chopped"
+      },
+      {
+        "qty": 2,
+        "unit": "handfuls",
+        "item": "spinach"
+      },
+      {
+        "qty": 150,
+        "unit": "ml",
+        "item": "single cream"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 30,
+        "unit": "g",
+        "item": "parmesan, grated"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions and drain.",
+      "Season the chicken and pan-fry in a little oil until golden and cooked through. Set aside.",
+      "In the same pan, soften the garlic for 30 seconds, then add the sun-dried tomatoes and cream.",
+      "Simmer for 2 minutes, then stir in the spinach until wilted.",
+      "Return the chicken to the pan, toss through the pasta and parmesan, and season to taste."
+    ],
+    "servings": 2
+  },
+  {
     "title": "Chicken & Broccoli Stir-Fry",
     "category": "Stir-Fry",
     "time": 20,
@@ -1071,6 +1189,77 @@
       "Add the red pepper and stir-fry for 2-3 minutes.",
       "Stir in the fish sauce, soy sauce, and brown sugar, and cook for 1-2 minutes.",
       "Remove from the heat and stir through the basil leaves until just wilted. Serve with rice."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Teriyaki Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "A speedy stir-fry with a glossy homemade teriyaki sauce, faster than the takeaway.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, sliced thin"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful mangetout"
+      },
+      {
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "mirin (or rice vinegar with a pinch of sugar)"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "brown sugar"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "grated ginger"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame seeds, to serve"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Spring onion, sliced, to serve"
+      }
+    ],
+    "steps": [
+      "Mix the soy sauce, mirin, brown sugar, garlic, and ginger together to make the teriyaki sauce.",
+      "Heat oil in a wok over high heat and stir-fry the chicken until browned and cooked through. Set aside.",
+      "Add the pepper and mangetout to the pan and stir-fry for 2-3 minutes.",
+      "Return the chicken to the pan, pour in the sauce, and simmer for 1-2 minutes until glossy and slightly thickened.",
+      "Scatter with sesame seeds and spring onion and serve with rice."
     ],
     "servings": 2
   },
@@ -1697,6 +1886,82 @@
     "servings": 2
   },
   {
+    "title": "Korean Beef Bibimbap Bowl",
+    "category": "Rice Bowl",
+    "time": 30,
+    "teaser": "Sizzled soy-marinated beef over rice with quick-cooked vegetables and a spoonful of gochujang.",
+    "ingredients": [
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "beef mince or sliced sirloin"
+      },
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "carrot, cut into matchsticks"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "courgette, cut into matchsticks"
+      },
+      {
+        "qty": 2,
+        "unit": "handfuls",
+        "item": "spinach"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "eggs"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "gochujang (Korean chilli paste)"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Sesame seeds to garnish"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
+    ],
+    "steps": [
+      "Mix the beef with the garlic, soy sauce, and sesame oil, and set aside to marinate for a few minutes.",
+      "Stir-fry the carrot and courgette separately in a little oil for 2-3 minutes each until just tender, then set aside. Quickly wilt the spinach in the same pan.",
+      "Fry the beef in the pan for 3-4 minutes until browned and cooked through.",
+      "Fry the eggs in a separate pan until the whites are set but the yolks are still runny.",
+      "Divide the rice between bowls, arrange the beef and vegetables on top, and finish with a fried egg, a spoonful of gochujang, and sesame seeds."
+    ],
+    "servings": 2
+  },
+  {
     "title": "Sheet-Pan Chicken Fajitas",
     "category": "Sheet-Pan",
     "time": 30,
@@ -2222,6 +2487,118 @@
     "servings": 2
   },
   {
+    "title": "Sheet-Pan Lemon Chicken & Green Beans",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "teaser": "Chicken and green beans roast together with lemon and garlic for a light, fuss-free tray bake.",
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "chicken",
+        "item": "thighs, boneless and skinless"
+      },
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "green beans, trimmed"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lemon, zested, juiced, and the shell sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried oregano"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the chicken thighs with half the oil, the garlic, oregano, lemon zest, salt, and pepper, and spread on a baking tray.",
+      "Roast for 15 minutes.",
+      "Add the green beans and lemon slices to the tray, toss with the remaining oil, and roast for a further 12-15 minutes until the chicken is cooked through.",
+      "Squeeze the lemon juice over the top before serving."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Harissa Chicken Traybake",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "teaser": "Smoky, spicy harissa chicken roasted with chickpeas and peppers — cooling yoghurt on the side.",
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "chicken",
+        "item": "thighs, skin on"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "chickpeas, drained and rinsed"
+      },
+      {
+        "qty": 2,
+        "unit": "red",
+        "item": "peppers, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "red onion, wedged"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "harissa paste"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lemon, sliced"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Yoghurt to serve"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the chickpeas, peppers, and red onion with half the harissa and half the oil, and spread on a baking tray.",
+      "Rub the chicken thighs with the remaining harissa and oil, season, and place among the vegetables with the lemon slices.",
+      "Roast for 35-40 minutes until the chicken is cooked through and the skin is browned.",
+      "Serve with a spoonful of yoghurt on the side."
+    ],
+    "servings": 2
+  },
+  {
     "title": "Tomato & Lentil Soup",
     "category": "Soup",
     "time": 30,
@@ -2610,6 +2987,142 @@
       "Meanwhile, soften the onion and garlic in a pot for 4-5 minutes.",
       "Add the roasted peppers, tomatoes, smoked paprika, and stock.",
       "Simmer for 10-15 minutes, then blend until smooth. Season to taste."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Chickpea & Coconut Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A warming, spiced soup that comes together almost entirely from the store cupboard.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "tins",
+        "item": "chickpeas, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "coconut milk"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "curry powder"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "chilli flakes"
+      },
+      {
+        "qty": 500,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": 2,
+        "unit": "handfuls",
+        "item": "spinach"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Lime wedges, to serve"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion, garlic, and ginger for 4-5 minutes.",
+      "Stir in the curry powder and chilli flakes and cook for 30 seconds.",
+      "Add the chickpeas, coconut milk, and stock, and simmer for 12-15 minutes.",
+      "Stir in the spinach until wilted.",
+      "Season to taste and serve with a squeeze of lime."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Shrimp Noodle Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A punchy, gingery broth with prawns, noodles, and greens — ready in one pot.",
+    "ingredients": [
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "raw prawns, peeled"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "rice noodles"
+      },
+      {
+        "qty": 1,
+        "unit": "litre",
+        "item": "chicken or vegetable stock"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "chilli flakes (or 1 tbsp sriracha)"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "heads",
+        "item": "pak choi, halved (or a handful of spinach)"
+      },
+      {
+        "qty": 2,
+        "unit": "spring",
+        "item": "onions, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lime, cut into wedges"
+      }
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot with the garlic, ginger, chilli flakes, and soy sauce.",
+      "Add the rice noodles and cook according to packet instructions.",
+      "Add the prawns and pak choi, and simmer for 3-4 minutes until the prawns are pink and cooked through.",
+      "Ladle into bowls and top with spring onion and a squeeze of lime."
     ],
     "servings": 2
   },
@@ -3796,6 +4309,57 @@
     "servings": 2
   },
   {
+    "title": "Turkey & Black Bean Quesadillas",
+    "category": "Mexican",
+    "time": 15,
+    "teaser": "A lighter take on quesadillas using turkey mince and black beans, ready in 15 minutes.",
+    "ingredients": [
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "turkey mince"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "black beans, drained and rinsed"
+      },
+      {
+        "qty": 4,
+        "unit": "large",
+        "item": "tortillas"
+      },
+      {
+        "qty": 150,
+        "unit": "g",
+        "item": "cheddar, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salsa and soured cream to serve"
+      }
+    ],
+    "steps": [
+      "Fry the turkey mince with the cumin and smoked paprika until browned, about 5-6 minutes.",
+      "Stir in the black beans, warm through, and lightly mash some of the beans with the back of a spoon.",
+      "Spread the turkey and bean mixture and the cheese over half of each tortilla, then fold over.",
+      "Dry-fry each quesadilla in a pan over medium heat for 2-3 minutes per side, until golden and the cheese has melted.",
+      "Slice into wedges and serve with salsa and soured cream."
+    ],
+    "servings": 2
+  },
+  {
     "title": "Sausage & Bean Casserole",
     "category": "Casserole",
     "time": 35,
@@ -4430,6 +4994,72 @@
       "Add the squash and coconut milk, and simmer for 15-18 minutes until the squash is tender.",
       "Stir in the chickpeas and simmer for a further 5 minutes.",
       "Season to taste and serve with rice."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Butter Chicken Curry",
+    "category": "Curry",
+    "time": 35,
+    "teaser": "A rich, buttery tomato curry that's milder and creamier than a tikka masala.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "chicken",
+        "item": "breasts, diced"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "garam masala"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "chilli powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) tomato passata"
+      },
+      {
+        "qty": 100,
+        "unit": "ml",
+        "item": "single cream"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Rice to serve"
+      }
+    ],
+    "steps": [
+      "Melt half the butter in a pan and fry the onion, garlic, and ginger for 4-5 minutes until soft.",
+      "Stir in the garam masala and chilli powder, and cook for 30 seconds.",
+      "Add the chicken and cook for 3-4 minutes until lightly coloured.",
+      "Pour in the passata and simmer for 12-15 minutes until the chicken is cooked through.",
+      "Stir in the cream and remaining butter, warm through, and serve with rice."
     ],
     "servings": 2
   },

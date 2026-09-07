@@ -34,18 +34,18 @@ def _migrate_legacy_plan() -> dict:
     inert backup. Returns a normal empty store if plan.json is absent or
     unreadable."""
     if not PLAN_FILE.exists():
-        return {"weeks": {}, "templates": {}}
+        return {"weeks": {}, "templates": {}, "ratings": {}}
     try:
         legacy = json.loads(PLAN_FILE.read_text())
     except json.JSONDecodeError:
-        return {"weeks": {}, "templates": {}}
+        return {"weeks": {}, "templates": {}, "ratings": {}}
 
     week = dict(EMPTY_DAY_PLAN)
     for day in LEGACY_DAYS:
         title = legacy.get(day) if isinstance(legacy, dict) else None
         if title:
             week[day] = {"recipe": title, "servings": LEGACY_DEFAULT_SERVINGS}
-    return {"weeks": {current_week_key(): week}, "templates": {}}
+    return {"weeks": {current_week_key(): week}, "templates": {}, "ratings": {}}
 
 
 def _read_store() -> dict:
@@ -54,11 +54,12 @@ def _read_store() -> dict:
     try:
         store = json.loads(STORE_FILE.read_text())
     except json.JSONDecodeError:
-        return {"weeks": {}, "templates": {}}
+        return {"weeks": {}, "templates": {}, "ratings": {}}
     if not isinstance(store, dict):
-        return {"weeks": {}, "templates": {}}
+        return {"weeks": {}, "templates": {}, "ratings": {}}
     store.setdefault("weeks", {})
     store.setdefault("templates", {})
+    store.setdefault("ratings", {})
     return store
 
 
@@ -225,3 +226,32 @@ def delete_template(name: str):
         del store["templates"][name]
         _write_store(store)
         return {"deleted": name}
+
+
+class RatingUpdate(BaseModel):
+    rating: Optional[str] = None
+
+    @field_validator('rating')
+    @classmethod
+    def valid_rating(cls, v: Optional[str]) -> Optional[str]:
+        if v is not None and v not in ("up", "down"):
+            raise ValueError('rating must be "up", "down", or null')
+        return v
+
+
+@app.get("/api/ratings")
+def get_ratings():
+    with _lock:
+        return _read_store()["ratings"]
+
+
+@app.put("/api/ratings/{title}")
+def put_rating(title: str, body: RatingUpdate):
+    with _lock:
+        store = _read_store()
+        if body.rating is None:
+            store["ratings"].pop(title, None)
+        else:
+            store["ratings"][title] = body.rating
+        _write_store(store)
+        return store["ratings"]

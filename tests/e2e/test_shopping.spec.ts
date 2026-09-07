@@ -51,7 +51,7 @@ test('shopping list quantities scale with a day\'s servings', async ({ page }) =
   await expect(spaghettiItem).toContainText('300g');
 });
 
-test('shopping list items are in alphabetical order by ingredient name', async ({ page }) => {
+test('shopping list items are grouped by aisle, alphabetical within each group', async ({ page }) => {
   await addRecipeToDay(page, 'One-Pan Tomato & Basil Pasta', 'mon');
   await addRecipeToDay(page, 'Creamy Chicken & Bacon Pasta', 'tue');
 
@@ -59,11 +59,19 @@ test('shopping list items are in alphabetical order by ingredient name', async (
 
   // Rendered labels lead with quantity ("300g spaghetti"), so ordering is
   // driven by each row's normalized ingredient name, exposed via data-sort-key
-  // for testability, rather than by the full displayed string.
-  const items = page.locator('#shoppingGrid .shopping-item');
-  const sortKeys = await items.evaluateAll(els => els.map(el => el.getAttribute('data-sort-key')));
-  const sorted = [...sortKeys].sort((a, b) => (a ?? '').localeCompare(b ?? ''));
-  expect(sortKeys).toEqual(sorted);
+  // for testability, rather than by the full displayed string. Items are
+  // grouped by aisle (Produce, Meat & Fish, ...), so sort order only holds
+  // within each group, not across the whole list.
+  const groups = page.locator('.shopping-group');
+  await expect(groups).not.toHaveCount(0);
+
+  const groupCount = await groups.count();
+  for (let i = 0; i < groupCount; i++) {
+    const sortKeys = await groups.nth(i).locator('.shopping-item')
+      .evaluateAll(els => els.map(el => el.getAttribute('data-sort-key')));
+    const sorted = [...sortKeys].sort((a, b) => (a ?? '').localeCompare(b ?? ''));
+    expect(sortKeys).toEqual(sorted);
+  }
 });
 
 test('copy list button briefly shows "Copied!" text', async ({ page }) => {
@@ -84,4 +92,23 @@ test('copy list button briefly shows "Copied!" text', async ({ page }) => {
 
   // Text resets after 1800ms
   await expect(page.locator('#copyListBtn')).toHaveText('Copy list', { timeout: 3000 });
+});
+
+test('pantry seasonings land in Pantry, not Produce, despite containing a produce word', async ({ page }) => {
+  // "chilli flakes" and "salt and pepper" both contain a Produce keyword
+  // ("chilli", "pepper") as a substring, but as dried/jarred seasonings they
+  // belong in Pantry — regression test for that keyword-collision bug.
+  await addRecipeToDay(page, 'Fried Egg & Avocado Toast', 'mon');
+  await page.click('#planTab');
+
+  const pantryGroup = page.locator('.shopping-group', { has: page.locator('.shopping-group-heading', { hasText: 'Pantry' }) });
+  const produceGroup = page.locator('.shopping-group', { has: page.locator('.shopping-group-heading', { hasText: 'Produce' }) });
+
+  await expect(pantryGroup.locator('.shopping-item label', { hasText: 'chilli flakes' })).toHaveCount(1);
+  await expect(pantryGroup.locator('.shopping-item label', { hasText: 'salt and pepper' })).toHaveCount(1);
+  await expect(produceGroup.locator('.shopping-item label', { hasText: 'chilli flakes' })).toHaveCount(0);
+  await expect(produceGroup.locator('.shopping-item label', { hasText: 'salt and pepper' })).toHaveCount(0);
+
+  // Fresh avocado should still land in Produce.
+  await expect(produceGroup.locator('.shopping-item label', { hasText: 'avocado' })).toHaveCount(1);
 });
