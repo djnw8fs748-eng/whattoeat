@@ -812,6 +812,57 @@
     "servings": 2
   },
   {
+    "title": "Spicy Nduja & Tomato Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "A spicy, spreadable Italian sausage melts into a simple tomato sauce for a pasta with big flavour and barely any effort.",
+    "ingredients": [
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "pasta (rigatoni or penne)"
+      },
+      {
+        "qty": 80,
+        "unit": "g",
+        "item": "nduja"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Grated parmesan"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Heat the oil in a pan and fry the nduja for 1-2 minutes until it starts to break down and release its oil.",
+      "Add the garlic and cook for 30 seconds.",
+      "Stir in the chopped tomatoes and simmer for 8-10 minutes until slightly thickened.",
+      "Toss the pasta through the sauce with a splash of the reserved water, season, and serve with parmesan."
+    ],
+    "servings": 2
+  },
+  {
     "title": "Chicken & Broccoli Stir-Fry",
     "category": "Stir-Fry",
     "time": 20,
@@ -1260,6 +1311,57 @@
       "Add the pepper and mangetout to the pan and stir-fry for 2-3 minutes.",
       "Return the chicken to the pan, pour in the sauce, and simmer for 1-2 minutes until glossy and slightly thickened.",
       "Scatter with sesame seeds and spring onion and serve with rice."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Beef & Broccoli Stir-Fry with Black Bean Sauce",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "Seared beef and crisp broccoli tossed in a rich black bean sauce — a faster take on a Chinese takeaway favourite.",
+    "ingredients": [
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "beef strips (or sliced sirloin)"
+      },
+      {
+        "qty": 1,
+        "unit": "head",
+        "item": "broccoli, cut into florets"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "black bean sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "grated ginger"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Vegetable oil"
+      }
+    ],
+    "steps": [
+      "Heat oil in a wok over high heat and sear the beef quickly in batches until browned. Set aside.",
+      "Add the broccoli to the pan with a splash of water, cover, and steam-fry for 3-4 minutes until just tender.",
+      "Add the garlic and ginger and cook for 30 seconds.",
+      "Return the beef to the pan along with the black bean sauce and soy sauce.",
+      "Toss everything together for 1-2 minutes and serve with rice."
     ],
     "servings": 2
   },
@@ -2599,6 +2701,56 @@
     "servings": 2
   },
   {
+    "title": "Sheet-Pan Sausage, Pepper & Sweet Potato Bake",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "teaser": "Sausages roast alongside sweet potato and peppers for a colourful, mostly hands-off tray bake.",
+    "ingredients": [
+      {
+        "qty": 6,
+        "unit": null,
+        "item": "sausages"
+      },
+      {
+        "qty": 2,
+        "unit": "sweet",
+        "item": "potatoes, cut into chunks"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "pepper, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "red",
+        "item": "onion, wedged"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and pepper"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the sweet potato chunks with half the oil and roast for 10 minutes to get a head start.",
+      "Add the sausages, pepper, and red onion to the tray, drizzle with the remaining oil and the paprika, and season.",
+      "Roast for 25-30 minutes, turning once, until the sausages are browned and cooked through and the vegetables are tender."
+    ],
+    "servings": 2
+  },
+  {
     "title": "Tomato & Lentil Soup",
     "category": "Soup",
     "time": 30,
@@ -3127,6 +3279,143 @@
     "servings": 2
   },
   {
+    "title": "Spicy Chickpea & Coconut Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A warming, spiced soup that comes together almost entirely from the store cupboard.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "tins",
+        "item": "chickpeas, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "coconut milk"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "curry powder"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "chilli flakes"
+      },
+      {
+        "qty": 500,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": 2,
+        "unit": "handfuls",
+        "item": "spinach"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Lime wedges, to serve"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Olive oil"
+      }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion, garlic, and ginger for 4-5 minutes.",
+      "Stir in the curry powder and chilli flakes and cook for 30 seconds.",
+      "Add the chickpeas, coconut milk, and stock, and simmer for 12-15 minutes.",
+      "Stir in the spinach until wilted.",
+      "Season to taste and serve with a squeeze of lime."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Shrimp Noodle Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A punchy, gingery broth with prawns, noodles, and greens — ready in one pot.",
+    "ingredients": [
+      {
+        "qty": 300,
+        "unit": "g",
+        "item": "raw prawns, peeled"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "rice noodles"
+      },
+      {
+        "qty": 1,
+        "unit": "litre",
+        "item": "chicken or vegetable stock"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "thumb",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "chilli flakes (or 1 tbsp sriracha)"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "heads",
+        "item": "pak choi, halved (or a handful of spinach)"
+      },
+      {
+        "qty": 2,
+        "unit": "spring",
+        "item": "onions, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "lime, cut into wedges"
+      }
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot with the garlic, ginger, chilli flakes, and soy sauce.",
+      "Add the rice noodles and cook according to packet instructions.",
+      "Add the rice noodles and cook according to packet instructions.",
+      "Add the prawns and pak choi, and simmer for 3-4 minutes until the prawns are pink and cooked through.",
+      "Ladle into bowls and top with spring onion and a squeeze of lime."
+    ],
+    "servings": 2
+  },
+  {
     "title": "Fried Egg & Avocado Toast",
     "category": "Breakfast-for-Dinner",
     "time": 10,
@@ -3239,166 +3528,6 @@
       }
     ],
     "steps": [
-      "Whisk the eggs with salt and pepper.",
-      "Melt butter in a frying pan over medium heat and add the vegetables, cooking for 2-3 minutes until softened.",
-      "Pour in the eggs and let them set around the edges, then gently push the cooked edges towards the centre.",
-      "Sprinkle the cheese over one half, fold the omelette over, and slide onto a plate."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Halloumi Wrap with Sweet Chilli",
-    "category": "Wrap",
-    "time": 15,
-    "teaser": "Fried halloumi, salad, and sweet chilli sauce rolled into a wrap.",
-    "ingredients": [
-      {
-        "qty": 1,
-        "unit": "block",
-        "item": "halloumi, sliced"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Sweet chilli sauce"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Olive oil"
-      }
-    ],
-    "steps": [
-      "Fry the halloumi slices in a little oil until golden on both sides, about 2 minutes per side.",
-      "Warm the tortillas briefly if you like.",
-      "Layer the lettuce and halloumi onto the wraps.",
-      "Drizzle with sweet chilli sauce, roll up, and serve."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Chicken Caesar Wrap",
-    "category": "Wrap",
-    "time": 15,
-    "teaser": "A lunch-counter classic that works just as well for dinner.",
-    "ingredients": [
-      {
-        "qty": 1,
-        "unit": "cooked",
-        "item": "chicken breast, sliced (or leftover roast chicken)"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful romaine or cos lettuce, shredded"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "caesar dressing"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "parmesan, grated"
-      }
-    ],
-    "steps": [
-      "Toss the lettuce with the caesar dressing and parmesan.",
-      "Lay the chicken over each wrap.",
-      "Top with the dressed lettuce.",
-      "Roll up tightly and slice in half to serve."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Falafel Wrap with Hummus",
-    "category": "Wrap",
-    "time": 15,
-    "teaser": "Shop-bought falafel and hummus make this a five-minute assembly job.",
-    "ingredients": [
-      {
-        "qty": null,
-        "unit": null,
-        "item": "6-8 falafel (shop-bought or homemade)"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps or pitta"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "hummus"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Few slices cucumber and tomato"
-      }
-    ],
-    "steps": [
-      "Warm the falafel according to packet instructions.",
-      "Spread hummus over the wraps.",
-      "Layer in the lettuce, cucumber, tomato, and falafel.",
-      "Roll up and serve, or wrap in foil to eat on the go."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "BLT Sandwich",
-    "category": "Wrap",
-    "time": 15,
-    "teaser": "Bacon, lettuce, and tomato — a sandwich that never needs improving.",
-    "ingredients": [
-      {
-        "qty": 6,
-        "unit": "rashers",
-        "item": "bacon"
-      },
-      {
-        "qty": 4,
-        "unit": "slices",
-        "item": "bread"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "tomato, sliced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Mayonnaise"
-      }
-    ],
-    "steps": [
       "Fry or grill the bacon until crisp.",
       "Toast the bread if you like.",
       "Spread mayonnaise on the bread.",
@@ -3454,1892 +3583,6 @@
       "Mix the yoghurt with the garlic to make a quick sauce.",
       "Warm the tortillas and layer with lettuce, tomato, and chicken.",
       "Drizzle with the yoghurt sauce, roll up, and serve."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "BBQ Chicken Wraps",
-    "category": "Wrap",
-    "time": 15,
-    "teaser": "Shredded or sliced chicken tossed in barbecue sauce and rolled into a wrap.",
-    "ingredients": [
-      {
-        "qty": 1,
-        "unit": "cooked",
-        "item": "chicken breast, shredded (or leftover roast chicken)"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "barbecue sauce"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": 30,
-        "unit": "g",
-        "item": "cheddar, grated"
-      }
-    ],
-    "steps": [
-      "Toss the shredded chicken with the barbecue sauce.",
-      "Warm the tortillas briefly if you like.",
-      "Layer the lettuce, chicken, and cheese onto the wraps.",
-      "Roll up tightly and slice in half to serve."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Sloppy Joe Rolls",
-    "category": "Wrap",
-    "time": 25,
-    "teaser": "A messy, saucy mince filling piled into soft bread rolls.",
-    "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "Worcestershire sauce"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "brown sugar"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "mustard"
-      },
-      {
-        "qty": 4,
-        "unit": "soft",
-        "item": "bread rolls"
-      }
-    ],
-    "steps": [
-      "Fry the onion in a little oil for 4 minutes until soft.",
-      "Add the mince and brown, breaking it up as it cooks.",
-      "Stir in the tomatoes, Worcestershire sauce, brown sugar, and mustard.",
-      "Simmer for 12-15 minutes until thickened.",
-      "Split the rolls and pile the mince mixture inside."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Greek Chicken Pitta Wrap",
-    "category": "Wrap",
-    "time": 20,
-    "teaser": "Grilled chicken, tzatziki, and salad rolled into a warm pitta.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried oregano"
-      },
-      {
-        "qty": 2,
-        "unit": "pittas",
-        "item": "or large tortilla wraps"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "tzatziki (or yoghurt mixed with grated cucumber and garlic)"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Few slices tomato and red onion"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Olive oil"
-      }
-    ],
-    "steps": [
-      "Toss the chicken with the oregano and a little oil.",
-      "Fry in a hot pan for 6-8 minutes until cooked through and lightly charred.",
-      "Warm the pittas.",
-      "Layer the lettuce, tomato, onion, and chicken into the pittas.",
-      "Drizzle with tzatziki, roll or fold, and serve."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Crispy Chicken Wrap with Sriracha Mayo",
-    "category": "Wrap",
-    "time": 20,
-    "teaser": "Golden pan-fried chicken strips with a spicy mayo, rolled up with crunchy lettuce.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced into strips"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "flour"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "egg, beaten"
-      },
-      {
-        "qty": 80,
-        "unit": "g",
-        "item": "breadcrumbs"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "mayonnaise"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sriracha (or to taste)"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Vegetable oil"
-      }
-    ],
-    "steps": [
-      "Coat the chicken strips in flour, then egg, then breadcrumbs.",
-      "Fry in a little oil for 3-4 minutes per side until golden and cooked through.",
-      "Mix the mayonnaise and sriracha together.",
-      "Warm the tortillas, then spread with the sriracha mayo and layer with lettuce and chicken.",
-      "Roll up tightly and slice in half to serve."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Greek-Style Salad with Feta",
-    "category": "Salad",
-    "time": 15,
-    "teaser": "A fresh, no-cook option for a hot evening.",
-    "ingredients": [
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "cucumber, chopped"
-      },
-      {
-        "qty": 3,
-        "unit": null,
-        "item": "tomatoes, chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "red",
-        "item": "onion, thinly sliced"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "feta, cubed"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful olives"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "red wine vinegar"
-      }
-    ],
-    "steps": [
-      "Combine the cucumber, tomatoes, and onion in a large bowl.",
-      "Scatter the feta and olives over the top.",
-      "Whisk the olive oil and vinegar together and drizzle over the salad.",
-      "Toss gently and serve with warm pitta or bread."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Chicken Caesar Salad",
-    "category": "Salad",
-    "time": 20,
-    "teaser": "A heartier, main-course version of the classic side salad.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts"
-      },
-      {
-        "qty": 1,
-        "unit": "romaine",
-        "item": "or cos lettuce, chopped"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "caesar dressing"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "parmesan, grated"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful croutons"
-      }
-    ],
-    "steps": [
-      "Season the chicken and pan-fry or grill until cooked through, then slice.",
-      "Toss the lettuce with the caesar dressing in a large bowl.",
-      "Top with the sliced chicken, parmesan, and croutons.",
-      "Serve immediately while the croutons are still crisp."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Warm Potato & Bacon Salad",
-    "category": "Salad",
-    "time": 25,
-    "teaser": "New potatoes and crispy bacon in a light mustard dressing, best served warm.",
-    "ingredients": [
-      {
-        "qty": 500,
-        "unit": "g",
-        "item": "new potatoes, halved"
-      },
-      {
-        "qty": 6,
-        "unit": "rashers",
-        "item": "bacon, chopped"
-      },
-      {
-        "qty": 2,
-        "unit": "spring",
-        "item": "onions, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "mustard"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "red wine vinegar"
-      }
-    ],
-    "steps": [
-      "Boil the potatoes until tender, about 15 minutes, then drain.",
-      "Fry the bacon until crisp.",
-      "Whisk the mustard, oil, and vinegar together.",
-      "Toss the warm potatoes with the bacon, spring onions, and dressing."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Salmon & New Potato Salad",
-    "category": "Salad",
-    "time": 25,
-    "teaser": "Warm new potatoes, flaked salmon, and a light mustard dressing.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "salmon",
-        "item": "fillets"
-      },
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "new potatoes, halved"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful green beans"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "mustard"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "lemon juice"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Salt and pepper"
-      }
-    ],
-    "steps": [
-      "Boil the potatoes for 12-15 minutes until tender, adding the green beans for the last 3 minutes. Drain.",
-      "Meanwhile, season the salmon and pan-fry or grill for 4-5 minutes per side until cooked through. Flake into chunks.",
-      "Whisk the mustard, olive oil, and lemon juice together.",
-      "Toss the warm potatoes and beans with the dressing.",
-      "Top with the flaked salmon and serve."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Chicken Caesar Pasta Salad",
-    "category": "Salad",
-    "time": 20,
-    "teaser": "A pasta twist on the classic Caesar, good served warm or chilled.",
-    "ingredients": [
-      {
-        "qty": 200,
-        "unit": "g",
-        "item": "pasta (fusilli or penne)"
-      },
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, cooked and sliced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful cos lettuce, shredded"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "caesar dressing"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "parmesan, grated"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful croutons"
-      }
-    ],
-    "steps": [
-      "Cook the pasta according to packet instructions, drain, and cool slightly.",
-      "Toss the pasta with the caesar dressing.",
-      "Fold in the lettuce, chicken, and parmesan.",
-      "Top with croutons just before serving."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Beef Tacos",
-    "category": "Mexican",
-    "time": 20,
-    "teaser": "Mince and a simple spice mix, spooned into tortillas with your favourite toppings.",
-    "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 8,
-        "unit": "small",
-        "item": "tortillas or taco shells"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "paprika"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "chilli powder"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Lettuce, cheese, and salsa to serve"
-      }
-    ],
-    "steps": [
-      "Fry the onion in a little oil for 3-4 minutes until soft.",
-      "Add the beef mince and spices and cook, breaking it up, until browned through.",
-      "Warm the tortillas or taco shells.",
-      "Fill with the mince and top with lettuce, cheese, and salsa."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Bean & Cheese Quesadillas",
-    "category": "Mexican",
-    "time": 15,
-    "teaser": "A crisp, cheesy vegetarian option that's ready in one pan.",
-    "ingredients": [
-      {
-        "qty": 4,
-        "unit": "large",
-        "item": "tortillas"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "black beans or kidney beans, drained and mashed lightly"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "cheddar, grated"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Salsa and soured cream to serve"
-      }
-    ],
-    "steps": [
-      "Mix the mashed beans with the cumin.",
-      "Spread the bean mixture and cheese over half of each tortilla, then fold over.",
-      "Dry-fry each quesadilla in a pan over medium heat for 2-3 minutes per side, until golden and the cheese has melted.",
-      "Slice into wedges and serve with salsa and soured cream."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Simple Chilli Con Carne",
-    "category": "Mexican",
-    "time": 35,
-    "teaser": "A weeknight-sized batch of chilli that also reheats well the next day.",
-    "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "kidney beans, drained"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "chilli powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice to serve"
-      }
-    ],
-    "steps": [
-      "Fry the onion and garlic in a little oil for 4 minutes.",
-      "Add the beef mince and brown, breaking it up as it cooks.",
-      "Stir in the chilli powder and cumin, then add the tomatoes and kidney beans.",
-      "Simmer for 20-25 minutes, stirring occasionally, until thickened.",
-      "Serve over rice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Beef Mince Nachos",
-    "category": "Mexican",
-    "time": 20,
-    "teaser": "A tray of nachos loaded with spiced mince and melted cheese, ready to share.",
-    "ingredients": [
-      {
-        "qty": 300,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "paprika"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "tortilla chips"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "cheddar, grated"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Salsa and soured cream to serve"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Sliced jalapeños (optional)"
-      }
-    ],
-    "steps": [
-      "Fry the mince with the cumin and paprika until browned, breaking it up as it cooks.",
-      "Preheat the oven to 200°C (fan 180°C) or use the grill.",
-      "Spread the tortilla chips on a baking tray and scatter over the mince.",
-      "Top with the grated cheddar and jalapeños if using.",
-      "Bake or grill for 5-8 minutes until the cheese has melted. Serve with salsa and soured cream."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Blackened Salmon Tacos",
-    "category": "Mexican",
-    "time": 20,
-    "teaser": "Spiced salmon and a quick lime slaw, piled into warm tortillas.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "salmon",
-        "item": "fillets"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "blackening or cajun seasoning"
-      },
-      {
-        "qty": 0.25,
-        "unit": "red",
-        "item": "cabbage, shredded"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "lime, juiced"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "soured cream or yoghurt"
-      },
-      {
-        "qty": 6,
-        "unit": "small",
-        "item": "tortillas"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "olive oil"
-      }
-    ],
-    "steps": [
-      "Rub the salmon with the blackening seasoning.",
-      "Heat the oil in a pan and pan-fry the salmon for 4-5 minutes per side until cooked through and blackened at the edges. Flake into chunks.",
-      "Toss the cabbage with the lime juice and soured cream to make a quick slaw.",
-      "Warm the tortillas.",
-      "Fill with the salmon and slaw and serve."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Chicken Enchiladas",
-    "category": "Mexican",
-    "time": 35,
-    "teaser": "Shredded chicken rolled in tortillas, smothered in a smoky tomato sauce, and baked with cheese.",
-    "ingredients": [
-      {
-        "qty": 300,
-        "unit": "g",
-        "item": "cooked chicken, shredded (or 2 chicken breasts, cooked and shredded)"
-      },
-      {
-        "qty": 8,
-        "unit": "small",
-        "item": "tortillas"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "chipotle paste or smoked paprika"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "cheddar, grated"
-      },
-      {
-        "qty": 1,
-        "unit": "clove",
-        "item": "garlic, minced"
-      }
-    ],
-    "steps": [
-      "Preheat the oven to 200°C (fan 180°C).",
-      "Fry the onion and garlic in a little oil for 4 minutes, then add the tomatoes and chipotle paste or paprika. Simmer for 8-10 minutes to make the sauce.",
-      "Mix a few spoonfuls of the sauce through the shredded chicken.",
-      "Divide the chicken between the tortillas, roll up, and place in an ovenproof dish.",
-      "Pour the remaining sauce over the top, scatter with cheese, and bake for 15-20 minutes until bubbling."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Sweet Potato & Black Bean Tacos",
-    "category": "Mexican",
-    "time": 25,
-    "teaser": "Roasted sweet potato and black beans spiced and piled into tortillas — a hearty vegetarian taco night.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "sweet",
-        "item": "potatoes, peeled and diced small"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "black beans, drained and rinsed"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": 8,
-        "unit": "small",
-        "item": "tortillas"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "lime, juiced"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "soured cream or yoghurt"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Chopped coriander, to serve"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Olive oil"
-      }
-    ],
-    "steps": [
-      "Preheat the oven to 200°C (fan 180°C).",
-      "Toss the sweet potato with a little oil, cumin, and smoked paprika, then roast for 20-25 minutes until tender, stirring halfway.",
-      "Warm the black beans in a small pan for a few minutes.",
-      "Mix the lime juice through the soured cream.",
-      "Warm the tortillas, then fill with the sweet potato and black beans.",
-      "Drizzle with the lime crema and scatter with coriander."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Shrimp Tacos with Mango Salsa",
-    "category": "Mexican",
-    "time": 20,
-    "teaser": "Quick-fried shrimp with a fresh mango salsa — light, bright, and ready in 20 minutes.",
-    "ingredients": [
-      {
-        "qty": 300,
-        "unit": "g",
-        "item": "raw shrimp or prawns, peeled"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "chilli powder"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "cumin"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "mango, diced"
-      },
-      {
-        "qty": 0.25,
-        "unit": "red",
-        "item": "onion, finely diced"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "lime, juiced"
-      },
-      {
-        "qty": 6,
-        "unit": "small",
-        "item": "tortillas"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Olive oil"
-      }
-    ],
-    "steps": [
-      "Toss the shrimp with the chilli powder and cumin.",
-      "Mix the mango, red onion, and half the lime juice together to make the salsa.",
-      "Heat a little oil in a pan and cook the shrimp for 2-3 minutes per side until pink and cooked through.",
-      "Warm the tortillas.",
-      "Fill with the shrimp and top with the mango salsa and remaining lime juice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Turkey & Black Bean Quesadillas",
-    "category": "Mexican",
-    "time": 15,
-    "teaser": "A lighter take on quesadillas using turkey mince and black beans, ready in 15 minutes.",
-    "ingredients": [
-      {
-        "qty": 300,
-        "unit": "g",
-        "item": "turkey mince"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "black beans, drained and rinsed"
-      },
-      {
-        "qty": 4,
-        "unit": "large",
-        "item": "tortillas"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "cheddar, grated"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground cumin"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Salsa and soured cream to serve"
-      }
-    ],
-    "steps": [
-      "Fry the turkey mince with the cumin and smoked paprika until browned, about 5-6 minutes.",
-      "Stir in the black beans, warm through, and lightly mash some of the beans with the back of a spoon.",
-      "Spread the turkey and bean mixture and the cheese over half of each tortilla, then fold over.",
-      "Dry-fry each quesadilla in a pan over medium heat for 2-3 minutes per side, until golden and the cheese has melted.",
-      "Slice into wedges and serve with salsa and soured cream."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Sausage & Bean Casserole",
-    "category": "Casserole",
-    "time": 35,
-    "teaser": "Sausages simmered with beans in a tomato sauce — a filling one-pot dinner.",
-    "ingredients": [
-      {
-        "qty": 6,
-        "unit": null,
-        "item": "sausages"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "butter beans or cannellini beans, drained"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried mixed herbs"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Olive oil"
-      }
-    ],
-    "steps": [
-      "Brown the sausages in a little oil in a large pan, then remove and set aside.",
-      "Add the onion to the pan and soften for 4 minutes.",
-      "Return the sausages to the pan with the tomatoes, beans, and herbs.",
-      "Simmer for 20-25 minutes until the sausages are cooked through and the sauce has thickened. Serve with crusty bread or mash."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Beef Mince & Butter Bean Stew",
-    "category": "Casserole",
-    "time": 35,
-    "teaser": "A simple, filling stew that mostly looks after itself once it's simmering.",
-    "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "butter beans, drained"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": null,
-        "item": "carrots, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Beef stock as needed"
-      }
-    ],
-    "steps": [
-      "Fry the onion and carrots in a little oil for 5 minutes.",
-      "Add the mince and brown, breaking it up as it cooks.",
-      "Stir in the paprika, tomatoes, and butter beans, adding a splash of stock if it looks dry.",
-      "Simmer for 20-25 minutes until the carrots are tender and the stew has thickened. Serve with bread or mash."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "One-Pot Chicken & Chickpea Stew",
-    "category": "Casserole",
-    "time": 35,
-    "teaser": "A simple, warming stew that leans on tinned chickpeas and tomatoes.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "thighs, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "chickpeas, drained and rinsed"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Chicken stock as needed"
-      }
-    ],
-    "steps": [
-      "Fry the onion and garlic in a little oil for 4-5 minutes.",
-      "Add the chicken and cook for 3-4 minutes until lightly browned.",
-      "Stir in the paprika, tomatoes, and chickpeas, adding a splash of stock if it looks dry.",
-      "Simmer for 20-25 minutes until the chicken is cooked through and the stew has thickened. Serve with bread or rice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Creamy Beef Mince Stroganoff",
-    "category": "Casserole",
-    "time": 25,
-    "teaser": "A quicker mince twist on stroganoff, finished with a paprika soured cream sauce.",
-    "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "bell",
-        "item": "pepper, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": 150,
-        "unit": "ml",
-        "item": "soured cream"
-      },
-      {
-        "qty": 200,
-        "unit": "ml",
-        "item": "beef stock"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice or pasta to serve"
-      }
-    ],
-    "steps": [
-      "Fry the onion and pepper in a little oil for 4-5 minutes until softened.",
-      "Add the mince and brown, breaking it up as it cooks.",
-      "Stir in the paprika and beef stock and simmer for 8-10 minutes.",
-      "Take off the heat and stir in the soured cream.",
-      "Serve over rice or pasta."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Moroccan Lamb & Apricot Stew",
-    "category": "Casserole",
-    "time": 35,
-    "teaser": "Lamb mince simmered with dried apricots and warm spices for a sweet-savoury weeknight stew.",
-    "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "lamb mince"
-      },
-      {
-        "qty": 8,
-        "unit": "dried",
-        "item": "apricots, chopped"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground cumin"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground cinnamon"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Lamb or vegetable stock as needed"
-      }
-    ],
-    "steps": [
-      "Fry the onion and garlic in a little oil for 4-5 minutes.",
-      "Add the lamb mince and brown, breaking it up as it cooks.",
-      "Stir in the cumin and cinnamon, then add the tomatoes and apricots, with a splash of stock if it looks dry.",
-      "Simmer for 20-25 minutes until thickened. Serve with couscous or flatbread."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Chicken Tikka Masala",
-    "category": "Curry",
-    "time": 30,
-    "teaser": "A creamy, mildly spiced curry using shop-bought tikka paste to keep things fast.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "tikka curry paste"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 100,
-        "unit": "ml",
-        "item": "single cream or yoghurt"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice to serve"
-      }
-    ],
-    "steps": [
-      "Fry the onion and garlic in a little oil for 4-5 minutes until soft.",
-      "Add the chicken and cook for 5 minutes until lightly browned.",
-      "Stir in the curry paste and cook for 1 minute.",
-      "Add the chopped tomatoes and simmer for 12-15 minutes until the chicken is cooked through.",
-      "Stir in the cream, warm through, and serve with rice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Chicken Katsu Curry",
-    "category": "Curry",
-    "time": 30,
-    "teaser": "Crispy breaded chicken with a mild, slightly sweet Japanese-style curry sauce.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "flour"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "egg, beaten"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "breadcrumbs"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "curry powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "flour"
-      },
-      {
-        "qty": 400,
-        "unit": "ml",
-        "item": "chicken stock"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "honey"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice to serve"
-      }
-    ],
-    "steps": [
-      "Coat the chicken in flour, then egg, then breadcrumbs, and fry in oil for 4-5 minutes per side until golden and cooked through. Slice.",
-      "Meanwhile, soften the onion in a little oil for 4 minutes.",
-      "Stir in the curry powder and flour and cook for 1 minute.",
-      "Gradually whisk in the stock, then simmer for 8-10 minutes until thickened. Stir in the honey.",
-      "Serve the sliced chicken over rice with the curry sauce poured over."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Mince Keema Curry",
-    "category": "Curry",
-    "time": 30,
-    "teaser": "A spiced mince curry that's quicker to make than most curries since there's no meat to cut up.",
-    "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef or lamb mince"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "thumb",
-        "item": "ginger, grated"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "curry powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful frozen peas"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice to serve"
-      }
-    ],
-    "steps": [
-      "Fry the onion, garlic, and ginger in a little oil for 4-5 minutes.",
-      "Add the mince and brown, breaking it up as it cooks.",
-      "Stir in the curry powder and cook for 1 minute.",
-      "Add the tomatoes and simmer for 12-15 minutes.",
-      "Stir in the peas for the last 3 minutes of cooking, and serve with rice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Salmon & Spinach Curry",
-    "category": "Curry",
-    "time": 20,
-    "teaser": "A milder, quicker curry that keeps the salmon in large flakes rather than breaking it up.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "salmon",
-        "item": "fillets, cubed"
-      },
-      {
-        "qty": 2,
-        "unit": "handfuls",
-        "item": "spinach"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "curry powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400ml) coconut milk"
-      },
-      {
-        "qty": 1,
-        "unit": "clove",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice to serve"
-      }
-    ],
-    "steps": [
-      "Fry the onion and garlic in a little oil for 4-5 minutes.",
-      "Stir in the curry powder and cook for 1 minute.",
-      "Add the coconut milk and simmer for 5 minutes.",
-      "Add the salmon cubes and cook gently for 4-5 minutes until just cooked through.",
-      "Stir in the spinach until wilted, and serve over rice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Thai Green Chicken Curry",
-    "category": "Curry",
-    "time": 25,
-    "teaser": "A fragrant, coconut-based curry that comes together fast using shop-bought green curry paste.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "Thai green curry paste"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400ml) coconut milk"
-      },
-      {
-        "qty": 1,
-        "unit": "red",
-        "item": "pepper, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "fish sauce"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful Thai basil or regular basil"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice to serve"
-      }
-    ],
-    "steps": [
-      "Fry the curry paste in a little oil for 1 minute until fragrant.",
-      "Add the chicken and cook for 3-4 minutes until lightly coloured.",
-      "Pour in the coconut milk and simmer for 10 minutes.",
-      "Add the pepper and fish sauce, and simmer for a further 5 minutes until the chicken is cooked through.",
-      "Stir in the basil and serve with rice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Coconut Chickpea Curry",
-    "category": "Curry",
-    "time": 30,
-    "teaser": "A vegetarian curry that's mostly tinned and store-cupboard ingredients.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "tins",
-        "item": "(400g each) chickpeas, drained"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "thumb",
-        "item": "ginger, grated"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "curry powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400ml) coconut milk"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice to serve"
-      }
-    ],
-    "steps": [
-      "Fry the onion, garlic, and ginger in a little oil for 4-5 minutes.",
-      "Stir in the curry powder and cook for 1 minute.",
-      "Add the chopped tomatoes and coconut milk, and simmer for 10 minutes.",
-      "Add the chickpeas and simmer for a further 8-10 minutes until thickened.",
-      "Season to taste and serve with rice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Butternut Squash & Chickpea Curry",
-    "category": "Curry",
-    "time": 30,
-    "teaser": "A vegetarian curry built on soft roasted squash and chickpeas simmered in coconut milk.",
-    "ingredients": [
-      {
-        "qty": 1,
-        "unit": "small",
-        "item": "butternut squash, peeled and cubed"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "chickpeas, drained and rinsed"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "thumb",
-        "item": "ginger, grated"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "curry powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400ml) coconut milk"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice to serve"
-      }
-    ],
-    "steps": [
-      "Fry the onion, garlic, and ginger in a little oil for 4-5 minutes until soft.",
-      "Stir in the curry powder and cook for 1 minute.",
-      "Add the squash and coconut milk, and simmer for 15-18 minutes until the squash is tender.",
-      "Stir in the chickpeas and simmer for a further 5 minutes.",
-      "Season to taste and serve with rice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Butter Chicken Curry",
-    "category": "Curry",
-    "time": 35,
-    "teaser": "A rich, buttery tomato curry that's milder and creamier than a tikka masala.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, diced"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "thumb",
-        "item": "ginger, grated"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "garam masala"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "chilli powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) tomato passata"
-      },
-      {
-        "qty": 100,
-        "unit": "ml",
-        "item": "single cream"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice to serve"
-      }
-    ],
-    "steps": [
-      "Melt half the butter in a pan and fry the onion, garlic, and ginger for 4-5 minutes until soft.",
-      "Stir in the garam masala and chilli powder, and cook for 30 seconds.",
-      "Add the chicken and cook for 3-4 minutes until lightly coloured.",
-      "Pour in the passata and simmer for 12-15 minutes until the chicken is cooked through.",
-      "Stir in the cream and remaining butter, warm through, and serve with rice."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Salmon Teriyaki Noodles",
-    "category": "Noodles",
-    "time": 20,
-    "teaser": "Pan-fried salmon and noodles tossed in a sticky homemade teriyaki sauce.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "salmon",
-        "item": "fillets"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "noodles (egg or udon)"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "honey"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "rice vinegar"
-      },
-      {
-        "qty": 1,
-        "unit": "clove",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "sesame oil"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Spring onion and sesame seeds to garnish"
-      }
-    ],
-    "steps": [
-      "Cook the noodles according to packet instructions and drain.",
-      "Season the salmon and pan-fry skin-side down for 4-5 minutes, then flip and cook for 2-3 minutes more. Flake into chunks.",
-      "Whisk the soy sauce, honey, vinegar, and garlic together in the pan and simmer for 1-2 minutes until slightly sticky.",
-      "Toss the noodles through the sauce, then fold in the salmon.",
-      "Drizzle with sesame oil and top with spring onion and sesame seeds."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Chicken Noodle Stir-Fry",
-    "category": "Noodles",
-    "time": 20,
-    "teaser": "Chicken and vegetables stir-fried with noodles in a simple soy sauce.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "noodles"
-      },
-      {
-        "qty": 1,
-        "unit": "bell",
-        "item": "pepper, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "carrot, julienned"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sesame oil"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Vegetable oil"
-      }
-    ],
-    "steps": [
-      "Cook the noodles according to packet instructions, drain, and set aside.",
-      "Stir-fry the chicken in a hot wok until cooked through, then set aside.",
-      "Add the pepper and carrot and stir-fry for 3-4 minutes.",
-      "Add the garlic, then return the chicken and noodles to the pan with the soy sauce and sesame oil.",
-      "Toss everything together for 1-2 minutes and serve."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Sticky Sesame Chicken Noodles",
-    "category": "Noodles",
-    "time": 20,
-    "teaser": "Chicken and egg noodles tossed in a sticky sesame-soy glaze.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "egg noodles"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "honey"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sesame oil"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "sesame seeds"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Vegetable oil"
-      }
-    ],
-    "steps": [
-      "Cook the noodles according to packet instructions, drain, and set aside.",
-      "Stir-fry the chicken in a little vegetable oil over high heat until cooked through and lightly browned.",
-      "Add the garlic and cook for 30 seconds.",
-      "Stir in the soy sauce, honey, and sesame oil, and simmer for 1-2 minutes until sticky.",
-      "Toss the noodles through the chicken and sauce, and top with sesame seeds."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Spicy Peanut Chicken Noodles",
-    "category": "Noodles",
-    "time": 20,
-    "teaser": "Noodles and chicken tossed in a quick peanut butter and chilli sauce.",
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "noodles (egg or udon)"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "peanut butter"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "rice vinegar"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "chilli flakes (or to taste)"
-      },
-      {
-        "qty": 1,
-        "unit": "clove",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Splash of hot water to loosen"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Vegetable oil"
-      }
-    ],
-    "steps": [
-      "Cook the noodles according to packet instructions, drain, and set aside.",
-      "Stir-fry the chicken in a little oil until cooked through and lightly browned.",
-      "Whisk the peanut butter, soy sauce, rice vinegar, chilli flakes, and garlic together, adding hot water until pourable.",
-      "Toss the noodles and sauce through the chicken in the pan.",
-      "Serve immediately, with extra chilli flakes if you like it hotter."
-    ],
-    "servings": 2
-  },
-  {
-    "title": "Garlic Butter Shrimp Noodles",
-    "category": "Noodles",
-    "time": 20,
-    "teaser": "Shrimp and noodles tossed in a quick garlic butter sauce — simple and fast.",
-    "ingredients": [
-      {
-        "qty": 300,
-        "unit": "g",
-        "item": "raw shrimp or prawns, peeled"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "noodles (egg or udon)"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": 3,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 0.5,
-        "unit": null,
-        "item": "lemon, juiced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Chopped parsley to garnish"
-      }
-    ],
-    "steps": [
-      "Cook the noodles according to packet instructions and drain.",
-      "Melt the butter in a pan and fry the garlic for 30 seconds until fragrant.",
-      "Add the shrimp and cook for 2-3 minutes per side until pink and cooked through.",
-      "Stir in the soy sauce and lemon juice, then toss the noodles through.",
-      "Garnish with parsley and serve."
     ],
     "servings": 2
   },
