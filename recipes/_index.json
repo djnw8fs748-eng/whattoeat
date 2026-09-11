@@ -658,5 +658,35 @@
     "category": "Curry",
     "time": 35,
     "file": "curry.json"
+  },
+  {
+    "title": "Beef & Broccoli Stir-Fry with Black Bean Sauce",
+    "category": "Stir-Fry",
+    "time": 20,
+    "file": "stir-fry.json"
+  },
+  {
+    "title": "Spicy Nduja & Tomato Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "file": "pasta.json"
+  },
+  {
+    "title": "Sheet-Pan Sausage, Pepper & Sweet Potato Bake",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "file": "sheet-pan.json"
+  },
+  {
+    "title": "Singapore-Style Curry Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
+  },
+  {
+    "title": "Chorizo & Black Bean Tacos",
+    "category": "Mexican",
+    "time": 20,
+    "file": "mexican.json"
   }
 ]

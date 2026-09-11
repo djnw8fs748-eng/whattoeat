@@ -354,5 +354,28 @@
       "Return the chicken to the pan, toss through the pasta and parmesan, and season to taste."
     ],
     "servings": 2
+  },
+  {
+    "title": "Spicy Nduja & Tomato Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "A spicy, spreadable Italian sausage melts into a simple tomato sauce for a pasta with big flavour and barely any effort.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (rigatoni or penne)" },
+      { "qty": 80, "unit": "g", "item": "nduja" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Grated parmesan" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Heat the oil in a pan and fry the nduja for 1-2 minutes until it starts to break down and release its oil.",
+      "Add the garlic and cook for 30 seconds.",
+      "Stir in the chopped tomatoes and simmer for 8-10 minutes until slightly thickened.",
+      "Toss the pasta through the sauce with a splash of the reserved water, season, and serve with parmesan."
+    ],
+    "servings": 2
   }
 ]

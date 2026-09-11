@@ -287,5 +287,27 @@
       "Serve with a spoonful of yoghurt on the side."
     ],
     "servings": 2
+  },
+  {
+    "title": "Sheet-Pan Sausage, Pepper & Sweet Potato Bake",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "teaser": "Sausages roast alongside sweet potato and peppers for a colourful, mostly hands-off tray bake.",
+    "ingredients": [
+      { "qty": 6, "unit": null, "item": "sausages" },
+      { "qty": 2, "unit": "sweet", "item": "potatoes, cut into chunks" },
+      { "qty": 1, "unit": "red", "item": "pepper, sliced" },
+      { "qty": 1, "unit": "red", "item": "onion, wedged" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the sweet potato chunks with half the oil and roast for 10 minutes to get a head start.",
+      "Add the sausages, pepper, and red onion to the tray, drizzle with the remaining oil and the paprika, and season.",
+      "Roast for 25-30 minutes, turning once, until the sausages are browned and cooked through and the vegetables are tender."
+    ],
+    "servings": 2
   }
 ]
