@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Sheet-Pan Chicken Fajitas",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "teaser": "Everything roasts on one tray, so prep and cleanup both take minutes.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced into strips" },
+      { "qty": 2, "unit": "bell", "item": "peppers, sliced" },
+      { "qty": 1, "unit": null, "item": "onion, sliced" },
+      { "qty": 2, "unit": "tsp", "item": "fajita seasoning (or chilli powder, cumin, paprika)" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Tortillas and soured cream to serve" }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the chicken, peppers, and onion with the oil and seasoning on a baking tray.",
+      "Spread everything into a single layer and roast for 20-25 minutes, stirring halfway, until the chicken is cooked through.",
+      "Warm the tortillas and serve everything alongside soured cream."
+    ],
+    "servings": 2
+  }
+]
