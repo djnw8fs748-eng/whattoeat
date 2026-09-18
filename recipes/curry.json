@@ -191,5 +191,31 @@
       "Stir in the cream and remaining butter, warm through, and serve with rice."
     ],
     "servings": 2
+  },
+  {
+    "title": "Thai Red Curry with Prawns",
+    "category": "Curry",
+    "time": 25,
+    "teaser": "A fragrant, quick curry that brings big Thai flavour to a weeknight table.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 3, "unit": "tbsp", "item": "Thai red curry paste" },
+      { "qty": 400, "unit": "ml", "item": "coconut milk" },
+      { "qty": 300, "unit": "g", "item": "raw king prawns" },
+      { "qty": 1, "unit": null, "item": "red bell pepper, sliced" },
+      { "qty": 100, "unit": "g", "item": "sugar snap peas" },
+      { "qty": 1, "unit": "tbsp", "item": "fish sauce" },
+      { "qty": 1, "unit": null, "item": "lime, juiced" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, to serve" },
+      { "qty": 300, "unit": "g", "item": "jasmine rice, to serve" }
+    ],
+    "steps": [
+      "Heat the oil in a large pan or wok over medium heat and fry the curry paste for 1 minute until fragrant.",
+      "Pour in the coconut milk and bring to a gentle simmer.",
+      "Add the bell pepper and sugar snap peas and cook for 4-5 minutes until just tender.",
+      "Add the prawns and cook for 3-4 minutes until pink and cooked through.",
+      "Stir in the fish sauce and lime juice, then serve over jasmine rice, topped with coriander."
+    ],
+    "servings": 2
   }
 ]

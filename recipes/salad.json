@@ -229,5 +229,70 @@
       "Top with croutons just before serving."
     ],
     "servings": 2
+  },
+  {
+    "title": "Mediterranean Chickpea Salad",
+    "category": "Salad",
+    "time": 15,
+    "teaser": "A crunchy, no-cook salad packed with Mediterranean flavours, ready in 15 minutes.",
+    "ingredients": [
+      {
+        "qty": 800,
+        "unit": "g",
+        "item": "chickpeas, drained and rinsed"
+      },
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "cherry tomatoes, halved"
+      },
+      {
+        "qty": 1,
+        "unit": null,
+        "item": "cucumber, diced"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "feta cheese, crumbled"
+      },
+      {
+        "qty": 80,
+        "unit": "g",
+        "item": "kalamata olives"
+      },
+      {
+        "qty": 0.5,
+        "unit": null,
+        "item": "red onion, thinly sliced"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "red wine vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried oregano"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and black pepper"
+      }
+    ],
+    "steps": [
+      "Combine the chickpeas, cherry tomatoes, cucumber, feta, olives, and red onion in a large bowl.",
+      "Whisk together the olive oil, red wine vinegar, and dried oregano in a small bowl.",
+      "Pour the dressing over the salad and toss to combine.",
+      "Season with salt and pepper to taste and serve."
+    ],
+    "servings": 2
   }
 ]
