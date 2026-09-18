@@ -226,5 +226,29 @@
       "Ladle into bowls and top with spring onion and a squeeze of lime."
     ],
     "servings": 2
+  },
+  {
+    "title": "Butternut Squash & Sage Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A silky, warming soup that's ready in half an hour with just a handful of ingredients.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 600, "unit": "g", "item": "butternut squash, peeled and cubed" },
+      { "qty": 750, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 6, "unit": null, "item": "fresh sage leaves" },
+      { "qty": 100, "unit": "ml", "item": "double cream" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the olive oil in a large pot over medium heat and cook the onion until soft, about 5 minutes.",
+      "Add the garlic and sage leaves and cook for 1 minute until fragrant.",
+      "Add the butternut squash and vegetable stock, bring to a boil, then simmer for 18-20 minutes until the squash is tender.",
+      "Blend the soup until smooth using a stick blender.",
+      "Stir in the cream, season with salt and pepper, and serve warm."
+    ],
+    "servings": 2
   }
 ]
