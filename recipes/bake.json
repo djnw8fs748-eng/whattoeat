@@ -315,5 +315,73 @@
       "Scatter with the grated cheddar and bake for 30-35 minutes until golden and the pasta is tender."
     ],
     "servings": 2
+  },
+  {
+    "title": "Chicken & Leek Filo Pie",
+    "category": "Bake",
+    "time": 45,
+    "teaser": "A comforting pie with a creamy chicken and leek filling wrapped in crisp filo pastry.",
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 2,
+        "unit": null,
+        "item": "leeks, sliced"
+      },
+      {
+        "qty": 500,
+        "unit": "g",
+        "item": "chicken breast, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "plain flour"
+      },
+      {
+        "qty": 300,
+        "unit": "ml",
+        "item": "chicken stock"
+      },
+      {
+        "qty": 100,
+        "unit": "ml",
+        "item": "double cream"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "Dijon mustard"
+      },
+      {
+        "qty": 6,
+        "unit": "sheets",
+        "item": "filo pastry"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "butter, melted, for brushing"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and black pepper"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Melt the butter in a large pan and cook the leeks over medium heat for 5 minutes until soft.",
+      "Add the chicken and cook for 5-6 minutes until browned.",
+      "Stir in the flour and cook for 1 minute, then gradually add the chicken stock, stirring until thickened.",
+      "Stir in the cream and Dijon mustard, season with salt and pepper, and transfer to a baking dish.",
+      "Scrunch the filo sheets and arrange over the top of the filling, brushing with melted butter.",
+      "Bake for 20-25 minutes until the filo is golden and crisp."
+    ],
+    "servings": 2
   }
 ]

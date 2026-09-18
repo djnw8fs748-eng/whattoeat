@@ -142,5 +142,33 @@
       "Add the noodles, soy sauce, and beansprouts, and toss everything together for 1-2 minutes. Return the prawns to the pan and serve."
     ],
     "servings": 2
+  },
+  {
+    "title": "Sesame Ginger Beef Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Tender strips of beef tossed with noodles in a quick sesame-ginger sauce.",
+    "ingredients": [
+      { "qty": 250, "unit": "g", "item": "beef sirloin, thinly sliced" },
+      { "qty": 200, "unit": "g", "item": "dried egg noodles" },
+      { "qty": 2, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "sesame oil" },
+      { "qty": 1, "unit": "tbsp", "item": "rice vinegar" },
+      { "qty": 1, "unit": "tbsp", "item": "honey" },
+      { "qty": 3, "unit": "cm", "item": "piece ginger, grated" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 2, "unit": null, "item": "spring onions, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "sesame seeds" }
+    ],
+    "steps": [
+      "Cook the noodles according to the packet instructions, then drain and set aside.",
+      "Whisk together the soy sauce, sesame oil, rice vinegar, and honey in a small bowl.",
+      "Heat the vegetable oil in a wok over high heat and stir-fry the beef for 2-3 minutes until browned.",
+      "Add the ginger and garlic and stir-fry for 30 seconds until fragrant.",
+      "Add the noodles and sauce to the wok and toss everything together for 1-2 minutes until well coated.",
+      "Serve topped with spring onions and sesame seeds."
+    ],
+    "servings": 2
   }
 ]
