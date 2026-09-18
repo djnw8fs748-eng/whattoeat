@@ -688,5 +688,35 @@
     "category": "Mexican",
     "time": 20,
     "file": "mexican.json"
+  },
+  {
+    "title": "Butternut Squash & Sage Soup",
+    "category": "Soup",
+    "time": 30,
+    "file": "soup.json"
+  },
+  {
+    "title": "Thai Red Curry with Prawns",
+    "category": "Curry",
+    "time": 25,
+    "file": "curry.json"
+  },
+  {
+    "title": "Mediterranean Chickpea Salad",
+    "category": "Salad",
+    "time": 15,
+    "file": "salad.json"
+  },
+  {
+    "title": "Sesame Ginger Beef Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "file": "noodles.json"
+  },
+  {
+    "title": "Chicken & Leek Filo Pie",
+    "category": "Bake",
+    "time": 45,
+    "file": "bake.json"
   }
 ]
