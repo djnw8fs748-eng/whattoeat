@@ -170,5 +170,32 @@
       "Serve topped with spring onions and sesame seeds."
     ],
     "servings": 2
+  },
+  {
+    "title": "Honey Garlic Pork Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Browned pork mince and peppers tossed with egg noodles in a sticky honey garlic sauce.",
+    "ingredients": [
+      { "qty": 250, "unit": "g", "item": "pork mince" },
+      { "qty": 200, "unit": "g", "item": "egg noodles" },
+      { "qty": 3, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "fresh ginger, grated" },
+      { "qty": 3, "unit": "tbsp", "item": "honey" },
+      { "qty": 3, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "rice vinegar" },
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 1, "unit": "red", "item": "pepper, sliced" },
+      { "qty": 2, "unit": null, "item": "spring onions, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "sesame seeds, to serve" }
+    ],
+    "steps": [
+      "Cook the egg noodles according to the packet instructions, then drain and set aside.",
+      "Heat the vegetable oil in a wok or large frying pan over high heat and fry the pork mince for 4-5 minutes, breaking it up, until browned.",
+      "Add the garlic, ginger, and red pepper, and stir-fry for 2-3 minutes until the pepper softens.",
+      "Whisk together the honey, soy sauce, and rice vinegar, then pour into the pan and simmer for 2 minutes until slightly sticky.",
+      "Toss through the cooked noodles until well coated, then serve scattered with spring onions and sesame seeds."
+    ],
+    "servings": 2
   }
 ]

@@ -300,5 +300,34 @@
       "Divide the rice between bowls, arrange the beef and vegetables on top, and finish with a fried egg, a spoonful of gochujang, and sesame seeds."
     ],
     "servings": 2
+  },
+  {
+    "title": "Crispy Tofu Rice Bowl with Peanut Sauce",
+    "category": "Rice Bowl",
+    "time": 25,
+    "teaser": "Cornflour-crisped tofu over rice with fresh veg and a quick peanut-lime sauce.",
+    "ingredients": [
+      { "qty": 280, "unit": "g", "item": "firm tofu, pressed and cubed" },
+      { "qty": 2, "unit": "tbsp", "item": "cornflour" },
+      { "qty": 2, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 300, "unit": "g", "item": "cooked rice" },
+      { "qty": 1, "unit": null, "item": "carrot, julienned" },
+      { "qty": 0.5, "unit": null, "item": "cucumber, sliced" },
+      { "qty": 3, "unit": "tbsp", "item": "peanut butter" },
+      { "qty": 1, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "rice vinegar" },
+      { "qty": 1, "unit": "tsp", "item": "honey" },
+      { "qty": 1, "unit": "clove", "item": "garlic, minced" },
+      { "qty": null, "unit": null, "item": "2-4 tbsp warm water, to thin" },
+      { "qty": 1, "unit": null, "item": "spring onion, sliced" }
+    ],
+    "steps": [
+      "Toss the tofu cubes in cornflour until evenly coated.",
+      "Heat the vegetable oil in a frying pan over medium-high heat and fry the tofu for 6-8 minutes, turning occasionally, until crisp and golden on all sides.",
+      "Meanwhile, whisk together the peanut butter, soy sauce, rice vinegar, honey, and garlic, adding warm water a tablespoon at a time until the sauce is pourable.",
+      "Divide the rice between bowls and top with the carrot, cucumber, and crispy tofu.",
+      "Drizzle over the peanut sauce and scatter with spring onion before serving."
+    ],
+    "servings": 2
   }
 ]

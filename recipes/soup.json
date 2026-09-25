@@ -250,5 +250,35 @@
       "Stir in the cream, season with salt and pepper, and serve warm."
     ],
     "servings": 2
+  },
+  {
+    "title": "Spicy Chicken Tortilla Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A smoky, chilli-spiked broth with shredded chicken, black beans, and sweetcorn, topped with crunchy tortilla chips.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": null, "item": "red chilli, finely chopped" },
+      { "qty": 1, "unit": "tsp", "item": "ground cumin" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 400, "unit": "g", "item": "tin chopped tomatoes" },
+      { "qty": 700, "unit": "ml", "item": "chicken stock" },
+      { "qty": 2, "unit": null, "item": "chicken breasts" },
+      { "qty": 400, "unit": "g", "item": "tin black beans, drained" },
+      { "qty": 150, "unit": "g", "item": "sweetcorn" },
+      { "qty": null, "unit": null, "item": "Juice of 1 lime" },
+      { "qty": null, "unit": null, "item": "Tortilla chips, to serve" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a large pot over medium heat and cook the onion for 4-5 minutes until softened.",
+      "Add the garlic, chilli, cumin, and smoked paprika, and cook for 1 minute until fragrant.",
+      "Stir in the chopped tomatoes and chicken stock, then add the chicken breasts whole. Bring to a simmer and cook for 15-18 minutes until the chicken is cooked through.",
+      "Remove the chicken, shred with two forks, and return to the pot along with the black beans and sweetcorn. Simmer for 5 minutes.",
+      "Stir in the lime juice, season to taste, and serve topped with tortilla chips."
+    ],
+    "servings": 2
   }
 ]
