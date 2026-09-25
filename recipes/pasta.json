@@ -377,5 +377,30 @@
       "Toss the pasta through the sauce with a splash of the reserved water, season, and serve with parmesan."
     ],
     "servings": 2
+  },
+  {
+    "title": "One-Pan Lemon Chicken Orzo",
+    "category": "Pasta",
+    "time": 25,
+    "teaser": "Chicken and orzo simmered together in one pan with lemon, garlic, and wilted spinach.",
+    "ingredients": [
+      { "qty": 2, "unit": null, "item": "chicken breasts, diced" },
+      { "qty": 200, "unit": "g", "item": "orzo" },
+      { "qty": 1, "unit": null, "item": "lemon, zested and juiced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 500, "unit": "ml", "item": "chicken stock" },
+      { "qty": 100, "unit": "g", "item": "baby spinach" },
+      { "qty": 30, "unit": "g", "item": "parmesan, grated" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat olive oil in a large pan over medium-high heat and season the chicken with salt and pepper. Cook for 5-6 minutes until golden and cooked through, then remove and set aside.",
+      "Add the garlic to the pan and cook for 30 seconds until fragrant.",
+      "Stir in the orzo and chicken stock, bring to a simmer, and cook for 10-12 minutes, stirring occasionally, until the orzo is tender and most of the liquid is absorbed.",
+      "Return the chicken to the pan along with the lemon zest and juice, then stir through the spinach until wilted.",
+      "Remove from the heat, stir in the parmesan, and season to taste before serving."
+    ],
+    "servings": 2
   }
 ]
