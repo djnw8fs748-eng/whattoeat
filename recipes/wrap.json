@@ -5,31 +5,11 @@
     "time": 15,
     "teaser": "Fried halloumi, salad, and sweet chilli sauce rolled into a wrap.",
     "ingredients": [
-      {
-        "qty": 1,
-        "unit": "block",
-        "item": "halloumi, sliced"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Sweet chilli sauce"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Olive oil"
-      }
+      { "qty": 1, "unit": "block", "item": "halloumi, sliced" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": null, "unit": null, "item": "Sweet chilli sauce" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
     ],
     "steps": [
       "Fry the halloumi slices in a little oil until golden on both sides, about 2 minutes per side.",
@@ -45,31 +25,11 @@
     "time": 15,
     "teaser": "A lunch-counter classic that works just as well for dinner.",
     "ingredients": [
-      {
-        "qty": 1,
-        "unit": "cooked",
-        "item": "chicken breast, sliced (or leftover roast chicken)"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful romaine or cos lettuce, shredded"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "caesar dressing"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "parmesan, grated"
-      }
+      { "qty": 1, "unit": "cooked", "item": "chicken breast, sliced (or leftover roast chicken)" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": null, "unit": null, "item": "Handful romaine or cos lettuce, shredded" },
+      { "qty": 3, "unit": "tbsp", "item": "caesar dressing" },
+      { "qty": 2, "unit": "tbsp", "item": "parmesan, grated" }
     ],
     "steps": [
       "Toss the lettuce with the caesar dressing and parmesan.",
@@ -85,31 +45,11 @@
     "time": 15,
     "teaser": "Shop-bought falafel and hummus make this a five-minute assembly job.",
     "ingredients": [
-      {
-        "qty": null,
-        "unit": null,
-        "item": "6-8 falafel (shop-bought or homemade)"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps or pitta"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "hummus"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Few slices cucumber and tomato"
-      }
+      { "qty": null, "unit": null, "item": "6-8 falafel (shop-bought or homemade)" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps or pitta" },
+      { "qty": 3, "unit": "tbsp", "item": "hummus" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": null, "unit": null, "item": "Few slices cucumber and tomato" }
     ],
     "steps": [
       "Warm the falafel according to packet instructions.",
@@ -125,31 +65,11 @@
     "time": 15,
     "teaser": "Bacon, lettuce, and tomato — a sandwich that never needs improving.",
     "ingredients": [
-      {
-        "qty": 6,
-        "unit": "rashers",
-        "item": "bacon"
-      },
-      {
-        "qty": 4,
-        "unit": "slices",
-        "item": "bread"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "tomato, sliced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Mayonnaise"
-      }
+      { "qty": 6, "unit": "rashers", "item": "bacon" },
+      { "qty": 4, "unit": "slices", "item": "bread" },
+      { "qty": null, "unit": null, "item": "Handful lettuce" },
+      { "qty": 1, "unit": null, "item": "tomato, sliced" },
+      { "qty": null, "unit": null, "item": "Mayonnaise" }
     ],
     "steps": [
       "Fry or grill the bacon until crisp.",
@@ -165,41 +85,13 @@
     "time": 25,
     "teaser": "Spiced chicken strips with a garlic yoghurt sauce, rolled into a warm wrap.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "shawarma or mixed spice (cumin, paprika, turmeric)"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "yoghurt"
-      },
-      {
-        "qty": 1,
-        "unit": "clove",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Shredded lettuce and sliced tomato"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Olive oil"
-      }
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 2, "unit": "tsp", "item": "shawarma or mixed spice (cumin, paprika, turmeric)" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": 3, "unit": "tbsp", "item": "yoghurt" },
+      { "qty": 1, "unit": "clove", "item": "garlic, minced" },
+      { "qty": null, "unit": null, "item": "Shredded lettuce and sliced tomato" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
     ],
     "steps": [
       "Toss the chicken with the spices and a little oil.",
@@ -216,31 +108,11 @@
     "time": 15,
     "teaser": "Shredded or sliced chicken tossed in barbecue sauce and rolled into a wrap.",
     "ingredients": [
-      {
-        "qty": 1,
-        "unit": "cooked",
-        "item": "chicken breast, shredded (or leftover roast chicken)"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "barbecue sauce"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": 30,
-        "unit": "g",
-        "item": "cheddar, grated"
-      }
+      { "qty": 1, "unit": "cooked", "item": "chicken breast, shredded (or leftover roast chicken)" },
+      { "qty": 3, "unit": "tbsp", "item": "barbecue sauce" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": 30, "unit": "g", "item": "cheddar, grated" }
     ],
     "steps": [
       "Toss the shredded chicken with the barbecue sauce.",
@@ -256,41 +128,13 @@
     "time": 25,
     "teaser": "A messy, saucy mince filling piled into soft bread rolls.",
     "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "Worcestershire sauce"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "brown sugar"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "mustard"
-      },
-      {
-        "qty": 4,
-        "unit": "soft",
-        "item": "bread rolls"
-      }
+      { "qty": 400, "unit": "g", "item": "beef mince" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "tbsp", "item": "Worcestershire sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "brown sugar" },
+      { "qty": 1, "unit": "tsp", "item": "mustard" },
+      { "qty": 4, "unit": "soft", "item": "bread rolls" }
     ],
     "steps": [
       "Fry the onion in a little oil for 4 minutes until soft.",
@@ -307,41 +151,13 @@
     "time": 20,
     "teaser": "Grilled chicken, tzatziki, and salad rolled into a warm pitta.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried oregano"
-      },
-      {
-        "qty": 2,
-        "unit": "pittas",
-        "item": "or large tortilla wraps"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "tzatziki (or yoghurt mixed with grated cucumber and garlic)"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Few slices tomato and red onion"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Olive oil"
-      }
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" },
+      { "qty": 2, "unit": "pittas", "item": "or large tortilla wraps" },
+      { "qty": 4, "unit": "tbsp", "item": "tzatziki (or yoghurt mixed with grated cucumber and garlic)" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": null, "unit": null, "item": "Few slices tomato and red onion" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
     ],
     "steps": [
       "Toss the chicken with the oregano and a little oil.",
@@ -358,51 +174,15 @@
     "time": 20,
     "teaser": "Golden pan-fried chicken strips with a spicy mayo, rolled up with crunchy lettuce.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced into strips"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "flour"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "egg, beaten"
-      },
-      {
-        "qty": 80,
-        "unit": "g",
-        "item": "breadcrumbs"
-      },
-      {
-        "qty": 2,
-        "unit": "large",
-        "item": "tortilla wraps"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "mayonnaise"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sriracha (or to taste)"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful lettuce, shredded"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Vegetable oil"
-      }
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced into strips" },
+      { "qty": 50, "unit": "g", "item": "flour" },
+      { "qty": 1, "unit": null, "item": "egg, beaten" },
+      { "qty": 80, "unit": "g", "item": "breadcrumbs" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": 3, "unit": "tbsp", "item": "mayonnaise" },
+      { "qty": 1, "unit": "tbsp", "item": "sriracha (or to taste)" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": null, "unit": null, "item": "Vegetable oil" }
     ],
     "steps": [
       "Coat the chicken strips in flour, then egg, then breadcrumbs.",
@@ -410,6 +190,30 @@
       "Mix the mayonnaise and sriracha together.",
       "Warm the tortillas, then spread with the sriracha mayo and layer with lettuce and chicken.",
       "Roll up tightly and slice in half to serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Chicken Burrito Wrap",
+    "category": "Wrap",
+    "time": 20,
+    "teaser": "A filling burrito-style wrap with spiced chicken, rice, and black beans.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "fajita seasoning" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": 100, "unit": "g", "item": "cooked rice" },
+      { "qty": 1, "unit": "tin", "item": "(400g) black beans, drained" },
+      { "qty": 50, "unit": "g", "item": "cheddar, grated" },
+      { "qty": 3, "unit": "tbsp", "item": "soured cream" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" }
+    ],
+    "steps": [
+      "Toss the chicken with the fajita seasoning and a little oil.",
+      "Fry in a hot pan for 6-8 minutes until cooked through and lightly charred.",
+      "Warm the tortillas and the rice and black beans separately.",
+      "Layer the rice, black beans, chicken, cheddar, and lettuce onto the wraps.",
+      "Top with soured cream, roll up tightly, and slice in half to serve."
     ],
     "servings": 2
   }

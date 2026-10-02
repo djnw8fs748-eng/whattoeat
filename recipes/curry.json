@@ -217,5 +217,29 @@
       "Stir in the fish sauce and lime juice, then serve over jasmine rice, topped with coriander."
     ],
     "servings": 2
+  },
+  {
+    "title": "Thai Yellow Curry with Chicken",
+    "category": "Curry",
+    "time": 30,
+    "teaser": "A milder, slightly sweet curry made with yellow curry paste and chunks of potato.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 3, "unit": "tbsp", "item": "Thai yellow curry paste" },
+      { "qty": 1, "unit": "tin", "item": "(400ml) coconut milk" },
+      { "qty": 2, "unit": null, "item": "potatoes, peeled and cubed" },
+      { "qty": 1, "unit": null, "item": "onion, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "fish sauce" },
+      { "qty": 1, "unit": "tsp", "item": "brown sugar" },
+      { "qty": null, "unit": null, "item": "Rice to serve" }
+    ],
+    "steps": [
+      "Fry the curry paste in a little oil for 1 minute until fragrant.",
+      "Add the onion and potatoes and cook for 3-4 minutes.",
+      "Pour in the coconut milk and simmer for 12-15 minutes until the potatoes are nearly tender.",
+      "Add the chicken and cook for a further 6-8 minutes until cooked through.",
+      "Stir in the fish sauce and brown sugar, and serve with rice."
+    ],
+    "servings": 2
   }
 ]

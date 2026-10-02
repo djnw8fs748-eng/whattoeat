@@ -5,51 +5,15 @@
     "time": 45,
     "teaser": "A comforting mince and mashed potato bake that's mostly hands-off in the oven.",
     "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 4,
-        "unit": null,
-        "item": "potatoes, peeled and chopped"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": null,
-        "item": "carrots, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "Worcestershire sauce"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "butter"
-      },
-      {
-        "qty": 50,
-        "unit": "ml",
-        "item": "milk"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Cheddar, grated (optional)"
-      }
+      { "qty": 400, "unit": "g", "item": "beef mince" },
+      { "qty": 4, "unit": null, "item": "potatoes, peeled and chopped" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": null, "item": "carrots, diced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "tbsp", "item": "Worcestershire sauce" },
+      { "qty": 50, "unit": "g", "item": "butter" },
+      { "qty": 50, "unit": "ml", "item": "milk" },
+      { "qty": null, "unit": null, "item": "Cheddar, grated (optional)" }
     ],
     "steps": [
       "Boil the potatoes until soft, about 15 minutes, then drain and mash with the butter and milk.",
@@ -67,41 +31,13 @@
     "time": 40,
     "teaser": "Bell peppers filled with a savoury mince and rice mixture, baked until tender.",
     "ingredients": [
-      {
-        "qty": 4,
-        "unit": "bell",
-        "item": "peppers, tops cut and deseeded"
-      },
-      {
-        "qty": 300,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "cooked rice"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "cheddar, grated"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried oregano"
-      }
+      { "qty": 4, "unit": "bell", "item": "peppers, tops cut and deseeded" },
+      { "qty": 300, "unit": "g", "item": "beef mince" },
+      { "qty": 100, "unit": "g", "item": "cooked rice" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 50, "unit": "g", "item": "cheddar, grated" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" }
     ],
     "steps": [
       "Preheat the oven to 190°C (fan 170°C).",
@@ -118,36 +54,12 @@
     "time": 40,
     "teaser": "A baked pasta dish with a rich mince sauce and melted cheese on top.",
     "ingredients": [
-      {
-        "qty": 250,
-        "unit": "g",
-        "item": "pasta (penne works well)"
-      },
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "cheddar or mozzarella, grated"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried mixed herbs"
-      }
+      { "qty": 250, "unit": "g", "item": "pasta (penne works well)" },
+      { "qty": 400, "unit": "g", "item": "beef mince" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 100, "unit": "g", "item": "cheddar or mozzarella, grated" },
+      { "qty": 1, "unit": "tsp", "item": "dried mixed herbs" }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -164,41 +76,13 @@
     "time": 35,
     "teaser": "Breaded chicken baked under tomato sauce and melted cheese.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "breadcrumbs"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "egg, beaten"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "mozzarella, sliced"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "parmesan, grated"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried oregano"
-      }
+      { "qty": 2, "unit": "chicken", "item": "breasts" },
+      { "qty": 50, "unit": "g", "item": "breadcrumbs" },
+      { "qty": 1, "unit": null, "item": "egg, beaten" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 100, "unit": "g", "item": "mozzarella, sliced" },
+      { "qty": 2, "unit": "tbsp", "item": "parmesan, grated" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -215,46 +99,14 @@
     "time": 45,
     "teaser": "The classic mashed-potato-topped bake, made with lamb mince for a slightly richer flavour.",
     "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "lamb mince"
-      },
-      {
-        "qty": 4,
-        "unit": null,
-        "item": "potatoes, peeled and chopped"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": null,
-        "item": "carrots, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "tomato purée"
-      },
-      {
-        "qty": 300,
-        "unit": "ml",
-        "item": "beef or lamb stock"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "butter"
-      },
-      {
-        "qty": 50,
-        "unit": "ml",
-        "item": "milk"
-      }
+      { "qty": 400, "unit": "g", "item": "lamb mince" },
+      { "qty": 4, "unit": null, "item": "potatoes, peeled and chopped" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": null, "item": "carrots, diced" },
+      { "qty": 1, "unit": "tbsp", "item": "tomato purée" },
+      { "qty": 300, "unit": "ml", "item": "beef or lamb stock" },
+      { "qty": 50, "unit": "g", "item": "butter" },
+      { "qty": 50, "unit": "ml", "item": "milk" }
     ],
     "steps": [
       "Boil the potatoes until soft, about 15 minutes, then drain and mash with the butter and milk.",
@@ -271,41 +123,13 @@
     "time": 50,
     "teaser": "A weeknight-sized lasagne — not quick, but mostly hands-off once it's in the oven.",
     "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "6-8 lasagne sheets"
-      },
-      {
-        "qty": 300,
-        "unit": "ml",
-        "item": "cheese sauce (from a jar, or butter, flour, and milk with cheddar stirred through)"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "cheddar, grated"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried oregano"
-      }
+      { "qty": 400, "unit": "g", "item": "beef mince" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": null, "unit": null, "item": "6-8 lasagne sheets" },
+      { "qty": 300, "unit": "ml", "item": "cheese sauce (from a jar, or butter, flour, and milk with cheddar stirred through)" },
+      { "qty": 50, "unit": "g", "item": "cheddar, grated" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" }
     ],
     "steps": [
       "Preheat the oven to 190°C (fan 170°C).",
@@ -322,56 +146,16 @@
     "time": 45,
     "teaser": "A comforting pie with a creamy chicken and leek filling wrapped in crisp filo pastry.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": 2,
-        "unit": null,
-        "item": "leeks, sliced"
-      },
-      {
-        "qty": 500,
-        "unit": "g",
-        "item": "chicken breast, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "plain flour"
-      },
-      {
-        "qty": 300,
-        "unit": "ml",
-        "item": "chicken stock"
-      },
-      {
-        "qty": 100,
-        "unit": "ml",
-        "item": "double cream"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "Dijon mustard"
-      },
-      {
-        "qty": 6,
-        "unit": "sheets",
-        "item": "filo pastry"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "butter, melted, for brushing"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Salt and black pepper"
-      }
+      { "qty": 2, "unit": "tbsp", "item": "butter" },
+      { "qty": 2, "unit": null, "item": "leeks, sliced" },
+      { "qty": 500, "unit": "g", "item": "chicken breast, diced" },
+      { "qty": 2, "unit": "tbsp", "item": "plain flour" },
+      { "qty": 300, "unit": "ml", "item": "chicken stock" },
+      { "qty": 100, "unit": "ml", "item": "double cream" },
+      { "qty": 1, "unit": "tsp", "item": "Dijon mustard" },
+      { "qty": 6, "unit": "sheets", "item": "filo pastry" },
+      { "qty": 2, "unit": "tbsp", "item": "butter, melted, for brushing" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
     ],
     "steps": [
       "Preheat the oven to 200°C (fan 180°C).",
@@ -380,6 +164,32 @@
       "Stir in the flour and cook for 1 minute, then gradually add the chicken stock, stirring until thickened.",
       "Stir in the cream and Dijon mustard, season with salt and pepper, and transfer to a baking dish.",
       "Scrunch the filo sheets and arrange over the top of the filling, brushing with melted butter.",
+      "Bake for 20-25 minutes until the filo is golden and crisp."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spinach & Feta Filo Pie",
+    "category": "Bake",
+    "time": 40,
+    "teaser": "A vegetarian filo pie with a creamy spinach and feta filling.",
+    "ingredients": [
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 400, "unit": "g", "item": "spinach" },
+      { "qty": 200, "unit": "g", "item": "feta, crumbled" },
+      { "qty": 2, "unit": null, "item": "eggs, beaten" },
+      { "qty": 1, "unit": "tsp", "item": "dried dill" },
+      { "qty": 6, "unit": "sheets", "item": "filo pastry" },
+      { "qty": 2, "unit": "tbsp", "item": "butter, melted, for brushing" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Heat the olive oil in a large pan and soften the onion for 4-5 minutes.",
+      "Add the spinach and cook for 2-3 minutes until wilted, then remove from the heat and let cool slightly.",
+      "Stir in the feta, eggs, and dill, and season with salt and pepper.",
+      "Transfer to a baking dish and scrunch the filo sheets over the top, brushing with melted butter.",
       "Bake for 20-25 minutes until the filo is golden and crisp."
     ],
     "servings": 2

@@ -280,5 +280,29 @@
       "Stir in the lime juice, season to taste, and serve topped with tortilla chips."
     ],
     "servings": 2
+  },
+  {
+    "title": "Thai Coconut Chicken Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A fragrant coconut broth with tender chicken, ready in under half an hour.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 1, "unit": "tin", "item": "(400ml) coconut milk" },
+      { "qty": 700, "unit": "ml", "item": "chicken stock" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 2, "unit": "tbsp", "item": "Thai red curry paste" },
+      { "qty": 1, "unit": "tbsp", "item": "fish sauce" },
+      { "qty": 1, "unit": null, "item": "lime, juiced" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, to serve" }
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot with the ginger and curry paste.",
+      "Pour in the coconut milk and simmer for 5 minutes.",
+      "Add the chicken and cook for 8-10 minutes until cooked through.",
+      "Stir in the fish sauce and lime juice.",
+      "Ladle into bowls and top with coriander."
+    ],
+    "servings": 2
   }
 ]

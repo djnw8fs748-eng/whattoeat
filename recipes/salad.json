@@ -5,41 +5,13 @@
     "time": 15,
     "teaser": "A fresh, no-cook option for a hot evening.",
     "ingredients": [
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "cucumber, chopped"
-      },
-      {
-        "qty": 3,
-        "unit": null,
-        "item": "tomatoes, chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "red",
-        "item": "onion, thinly sliced"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "feta, cubed"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful olives"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "red wine vinegar"
-      }
+      { "qty": 1, "unit": null, "item": "cucumber, chopped" },
+      { "qty": 3, "unit": null, "item": "tomatoes, chopped" },
+      { "qty": 1, "unit": "red", "item": "onion, thinly sliced" },
+      { "qty": 100, "unit": "g", "item": "feta, cubed" },
+      { "qty": null, "unit": null, "item": "Handful olives" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "red wine vinegar" }
     ],
     "steps": [
       "Combine the cucumber, tomatoes, and onion in a large bowl.",
@@ -55,31 +27,11 @@
     "time": 20,
     "teaser": "A heartier, main-course version of the classic side salad.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts"
-      },
-      {
-        "qty": 1,
-        "unit": "romaine",
-        "item": "or cos lettuce, chopped"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "caesar dressing"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "parmesan, grated"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful croutons"
-      }
+      { "qty": 2, "unit": "chicken", "item": "breasts" },
+      { "qty": 1, "unit": "romaine", "item": "or cos lettuce, chopped" },
+      { "qty": 4, "unit": "tbsp", "item": "caesar dressing" },
+      { "qty": 3, "unit": "tbsp", "item": "parmesan, grated" },
+      { "qty": null, "unit": null, "item": "Handful croutons" }
     ],
     "steps": [
       "Season the chicken and pan-fry or grill until cooked through, then slice.",
@@ -95,36 +47,12 @@
     "time": 25,
     "teaser": "New potatoes and crispy bacon in a light mustard dressing, best served warm.",
     "ingredients": [
-      {
-        "qty": 500,
-        "unit": "g",
-        "item": "new potatoes, halved"
-      },
-      {
-        "qty": 6,
-        "unit": "rashers",
-        "item": "bacon, chopped"
-      },
-      {
-        "qty": 2,
-        "unit": "spring",
-        "item": "onions, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "mustard"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "red wine vinegar"
-      }
+      { "qty": 500, "unit": "g", "item": "new potatoes, halved" },
+      { "qty": 6, "unit": "rashers", "item": "bacon, chopped" },
+      { "qty": 2, "unit": "spring", "item": "onions, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "mustard" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "red wine vinegar" }
     ],
     "steps": [
       "Boil the potatoes until tender, about 15 minutes, then drain.",
@@ -140,41 +68,13 @@
     "time": 25,
     "teaser": "Warm new potatoes, flaked salmon, and a light mustard dressing.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "salmon",
-        "item": "fillets"
-      },
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "new potatoes, halved"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful green beans"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "mustard"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "lemon juice"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Salt and pepper"
-      }
+      { "qty": 2, "unit": "salmon", "item": "fillets" },
+      { "qty": 400, "unit": "g", "item": "new potatoes, halved" },
+      { "qty": null, "unit": null, "item": "Handful green beans" },
+      { "qty": 1, "unit": "tbsp", "item": "mustard" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "lemon juice" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
     ],
     "steps": [
       "Boil the potatoes for 12-15 minutes until tender, adding the green beans for the last 3 minutes. Drain.",
@@ -191,36 +91,12 @@
     "time": 20,
     "teaser": "A pasta twist on the classic Caesar, good served warm or chilled.",
     "ingredients": [
-      {
-        "qty": 200,
-        "unit": "g",
-        "item": "pasta (fusilli or penne)"
-      },
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, cooked and sliced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful cos lettuce, shredded"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "caesar dressing"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "parmesan, grated"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Handful croutons"
-      }
+      { "qty": 200, "unit": "g", "item": "pasta (fusilli or penne)" },
+      { "qty": 2, "unit": "chicken", "item": "breasts, cooked and sliced" },
+      { "qty": null, "unit": null, "item": "Handful cos lettuce, shredded" },
+      { "qty": 4, "unit": "tbsp", "item": "caesar dressing" },
+      { "qty": 3, "unit": "tbsp", "item": "parmesan, grated" },
+      { "qty": null, "unit": null, "item": "Handful croutons" }
     ],
     "steps": [
       "Cook the pasta according to packet instructions, drain, and cool slightly.",
@@ -236,62 +112,43 @@
     "time": 15,
     "teaser": "A crunchy, no-cook salad packed with Mediterranean flavours, ready in 15 minutes.",
     "ingredients": [
-      {
-        "qty": 800,
-        "unit": "g",
-        "item": "chickpeas, drained and rinsed"
-      },
-      {
-        "qty": 200,
-        "unit": "g",
-        "item": "cherry tomatoes, halved"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "cucumber, diced"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "feta cheese, crumbled"
-      },
-      {
-        "qty": 80,
-        "unit": "g",
-        "item": "kalamata olives"
-      },
-      {
-        "qty": 0.5,
-        "unit": null,
-        "item": "red onion, thinly sliced"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "red wine vinegar"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried oregano"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Salt and black pepper"
-      }
+      { "qty": 800, "unit": "g", "item": "chickpeas, drained and rinsed" },
+      { "qty": 200, "unit": "g", "item": "cherry tomatoes, halved" },
+      { "qty": 1, "unit": null, "item": "cucumber, diced" },
+      { "qty": 100, "unit": "g", "item": "feta cheese, crumbled" },
+      { "qty": 80, "unit": "g", "item": "kalamata olives" },
+      { "qty": 0.5, "unit": null, "item": "red onion, thinly sliced" },
+      { "qty": 3, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "red wine vinegar" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
     ],
     "steps": [
       "Combine the chickpeas, cherry tomatoes, cucumber, feta, olives, and red onion in a large bowl.",
       "Whisk together the olive oil, red wine vinegar, and dried oregano in a small bowl.",
       "Pour the dressing over the salad and toss to combine.",
       "Season with salt and pepper to taste and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Avocado Ranch Salad",
+    "category": "Salad",
+    "time": 20,
+    "teaser": "A creamy, filling salad that's ready in the time it takes to cook the chicken.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts" },
+      { "qty": 2, "unit": "handfuls", "item": "mixed salad leaves" },
+      { "qty": 1, "unit": null, "item": "avocado, sliced" },
+      { "qty": 150, "unit": "g", "item": "cherry tomatoes, halved" },
+      { "qty": 4, "unit": "tbsp", "item": "ranch dressing" },
+      { "qty": 30, "unit": "g", "item": "cheddar, grated" }
+    ],
+    "steps": [
+      "Season the chicken and pan-fry or grill for 6-8 minutes per side until cooked through, then slice.",
+      "Toss the salad leaves and cherry tomatoes with the ranch dressing in a large bowl.",
+      "Top with the sliced chicken, avocado, and cheddar.",
+      "Serve immediately."
     ],
     "servings": 2
   }
