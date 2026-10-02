@@ -123,5 +123,10 @@
   { "title": "Spicy Chicken Tortilla Soup", "category": "Soup", "time": 30, "file": "soup.json" },
   { "title": "Crispy Tofu Rice Bowl with Peanut Sauce", "category": "Rice Bowl", "time": 25, "file": "rice-bowl.json" },
   { "title": "Honey Garlic Pork Noodles", "category": "Noodles", "time": 20, "file": "noodles.json" },
-  { "title": "Sheet-Pan Harissa Cauliflower & Chickpeas", "category": "Sheet-Pan", "time": 30, "file": "sheet-pan.json" }
+  { "title": "Sheet-Pan Harissa Cauliflower & Chickpeas", "category": "Sheet-Pan", "time": 30, "file": "sheet-pan.json" },
+  { "title": "Thai Yellow Curry with Chicken", "category": "Curry", "time": 30, "file": "curry.json" },
+  { "title": "Chicken Avocado Ranch Salad", "category": "Salad", "time": 20, "file": "salad.json" },
+  { "title": "Spinach & Feta Filo Pie", "category": "Bake", "time": 40, "file": "bake.json" },
+  { "title": "Thai Coconut Chicken Soup", "category": "Soup", "time": 25, "file": "soup.json" },
+  { "title": "Spicy Chicken Burrito Wrap", "category": "Wrap", "time": 20, "file": "wrap.json" }
 ]
