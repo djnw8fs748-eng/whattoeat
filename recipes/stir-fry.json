@@ -213,5 +213,30 @@
       "Toss everything together for 1-2 minutes and serve with rice."
     ],
     "servings": 2
+  },
+  {
+    "title": "Hoisin Pork & Pepper Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "Pork mince and peppers tossed in a sticky hoisin sauce — ready in the time it takes to cook the rice.",
+    "ingredients": [
+      { "qty": 400, "unit": "g", "item": "pork mince" },
+      { "qty": 1, "unit": "red", "item": "pepper, sliced" },
+      { "qty": 1, "unit": null, "item": "onion, sliced" },
+      { "qty": 3, "unit": "tbsp", "item": "hoisin sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "grated ginger" },
+      { "qty": null, "unit": null, "item": "Vegetable oil" },
+      { "qty": null, "unit": null, "item": "Spring onion, sliced, to garnish" }
+    ],
+    "steps": [
+      "Heat oil in a wok or large frying pan over high heat and fry the pork mince until browned, breaking it up as it cooks.",
+      "Add the onion and pepper and stir-fry for 3-4 minutes until starting to soften.",
+      "Add the garlic and ginger and cook for 30 seconds.",
+      "Stir in the hoisin sauce and soy sauce, and toss to coat everything.",
+      "Cook for 1-2 minutes until glossy, then scatter with spring onion and serve with rice."
+    ],
+    "servings": 2
   }
 ]
