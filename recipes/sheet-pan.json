@@ -334,5 +334,28 @@
       "Serve the roasted vegetables drizzled with the lemon yoghurt and scattered with coriander."
     ],
     "servings": 2
+  },
+  {
+    "title": "Harissa Salmon & Sweet Potato Traybake",
+    "category": "Sheet-Pan",
+    "time": 25,
+    "teaser": "Salmon and sweet potato roast together with a spicy harissa glaze — minimal effort, big flavour.",
+    "ingredients": [
+      { "qty": 2, "unit": "salmon", "item": "fillets" },
+      { "qty": 2, "unit": "sweet", "item": "potatoes, cut into wedges" },
+      { "qty": 2, "unit": "tbsp", "item": "harissa paste" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "lemon, sliced" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, chopped, to serve" }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the sweet potato wedges with half the oil and a pinch of salt, and spread on a baking tray. Roast for 15 minutes.",
+      "Mix the harissa paste with the remaining oil and brush over the salmon.",
+      "Add the salmon and lemon slices to the tray among the sweet potato.",
+      "Roast for a further 10-12 minutes until the salmon is cooked through. Scatter with coriander before serving."
+    ],
+    "servings": 2
   }
 ]

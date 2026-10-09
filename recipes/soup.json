@@ -304,5 +304,30 @@
       "Ladle into bowls and top with coriander."
     ],
     "servings": 2
+  },
+  {
+    "title": "Spicy Sausage & Butter Bean Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A warming, one-pot soup that turns a pack of sausages and a tin of beans into a full meal.",
+    "ingredients": [
+      { "qty": 6, "unit": null, "item": "sausages" },
+      { "qty": 1, "unit": "tin", "item": "butter beans, drained and rinsed" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 700, "unit": "ml", "item": "chicken or vegetable stock" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 0.5, "unit": "tsp", "item": "chilli flakes" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Squeeze the sausage meat out of the skins into small chunks. Heat a little oil in a large pot and fry the sausage pieces until browned.",
+      "Add the onion and garlic and cook for 4-5 minutes until softened.",
+      "Stir in the smoked paprika and chilli flakes and cook for 30 seconds.",
+      "Add the chopped tomatoes, butter beans, and stock.",
+      "Simmer for 15-18 minutes, stirring occasionally, until slightly thickened. Season to taste and serve with bread."
+    ],
+    "servings": 2
   }
 ]

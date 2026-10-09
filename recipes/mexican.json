@@ -228,5 +228,29 @@
       "Top with red onion, coriander, and a squeeze of the remaining lime juice."
     ],
     "servings": 2
+  },
+  {
+    "title": "Chicken & Pepper Quesadillas",
+    "category": "Mexican",
+    "time": 20,
+    "teaser": "Spiced chicken and peppers folded into crisp, cheesy tortillas — ready in 20 minutes.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, diced" },
+      { "qty": 1, "unit": "red", "item": "pepper, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "ground cumin" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 4, "unit": "large", "item": "tortillas" },
+      { "qty": 150, "unit": "g", "item": "cheddar, grated" },
+      { "qty": null, "unit": null, "item": "Salsa and soured cream to serve" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat a little oil in a pan and fry the chicken with the cumin and smoked paprika for 6-7 minutes until golden and cooked through.",
+      "Add the pepper and cook for a further 2-3 minutes until just softened. Remove from the heat.",
+      "Spread the chicken and pepper mixture and the cheese over half of each tortilla, then fold over.",
+      "Dry-fry each quesadilla in a pan over medium heat for 2-3 minutes per side, until golden and the cheese has melted.",
+      "Slice into wedges and serve with salsa and soured cream."
+    ],
+    "servings": 2
   }
 ]
