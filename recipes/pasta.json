@@ -426,5 +426,28 @@
       "Toss the pasta through the sauce with a splash of the reserved water, season, and serve with parmesan."
     ],
     "servings": 2
+  },
+  {
+    "title": "Simple Caprese Pasta",
+    "category": "Pasta",
+    "time": 15,
+    "teaser": "Fresh mozzarella, tomatoes, and basil tossed with hot pasta and olive oil — a no-cook sauce for warm evenings.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (fusilli or penne)" },
+      { "qty": 200, "unit": "g", "item": "cherry tomatoes, halved" },
+      { "qty": 125, "unit": "g", "item": "mozzarella, torn into chunks" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "balsamic vinegar (optional)" },
+      { "qty": null, "unit": null, "item": "Handful fresh basil, torn" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain and run briefly under cold water to stop it cooking further.",
+      "Toss the warm pasta with the olive oil and balsamic vinegar, if using.",
+      "Fold in the cherry tomatoes and mozzarella.",
+      "Season with salt and pepper and scatter basil over the top.",
+      "Serve warm or at room temperature."
+    ],
+    "servings": 2
   }
 ]
