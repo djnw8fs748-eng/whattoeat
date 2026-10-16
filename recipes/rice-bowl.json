@@ -329,5 +329,30 @@
       "Drizzle over the peanut sauce and scatter with spring onion before serving."
     ],
     "servings": 2
+  },
+  {
+    "title": "Spicy Tuna Poke Rice Bowl",
+    "category": "Rice Bowl",
+    "time": 15,
+    "teaser": "Fresh tuna cubes tossed in a spicy sesame-soy dressing over rice — ready faster than ordering takeout.",
+    "ingredients": [
+      { "qty": 300, "unit": "g", "item": "sushi-grade tuna, cubed" },
+      { "qty": 300, "unit": "g", "item": "cooked rice" },
+      { "qty": 1, "unit": null, "item": "avocado, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tsp", "item": "sesame oil" },
+      { "qty": 1, "unit": "tsp", "item": "sriracha (or other hot sauce)" },
+      { "qty": 1, "unit": "tsp", "item": "rice vinegar" },
+      { "qty": null, "unit": null, "item": "Spring onion, sliced, to garnish" },
+      { "qty": null, "unit": null, "item": "Sesame seeds, to garnish" }
+    ],
+    "steps": [
+      "Mix the soy sauce, sesame oil, sriracha, and rice vinegar together in a bowl.",
+      "Toss the tuna cubes through the dressing until coated.",
+      "Divide the rice between bowls.",
+      "Top with the dressed tuna and sliced avocado.",
+      "Garnish with spring onion and sesame seeds before serving."
+    ],
+    "servings": 2
   }
 ]
