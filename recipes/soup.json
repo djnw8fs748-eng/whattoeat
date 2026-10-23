@@ -329,5 +329,31 @@
       "Simmer for 15-18 minutes, stirring occasionally, until slightly thickened. Season to taste and serve with bread."
     ],
     "servings": 2
+  },
+  {
+    "title": "Minestrone Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A classic vegetable and bean soup that uses up odds and ends from the fridge, with small pasta to bulk it out.",
+    "ingredients": [
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": null, "item": "carrots, diced" },
+      { "qty": 2, "unit": "sticks", "item": "celery, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "tin", "item": "cannellini beans, drained and rinsed" },
+      { "qty": 100, "unit": "g", "item": "small pasta (e.g. macaroni)" },
+      { "qty": 1, "unit": "litre", "item": "vegetable stock" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a large pot and fry the onion, carrots, and celery for 5-6 minutes until softened.",
+      "Add the garlic and cook for 1 minute.",
+      "Stir in the chopped tomatoes, cannellini beans, and vegetable stock, and bring to a simmer.",
+      "Add the pasta and cook for 10-12 minutes until tender.",
+      "Season with salt and pepper and serve."
+    ],
+    "servings": 2
   }
 ]

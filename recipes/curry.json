@@ -241,5 +241,30 @@
       "Stir in the fish sauce and brown sugar, and serve with rice."
     ],
     "servings": 2
+  },
+  {
+    "title": "Creamy Coconut Lentil Curry",
+    "category": "Curry",
+    "time": 25,
+    "teaser": "A fuss-free vegetarian curry where the lentils and coconut milk do most of the work.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "red lentils, rinsed" },
+      { "qty": 1, "unit": "tin", "item": "(400ml) coconut milk" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "curry powder" },
+      { "qty": 1, "unit": "tsp", "item": "ground turmeric" },
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 300, "unit": "ml", "item": "vegetable stock" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a pan and fry the onion for 5 minutes until softened.",
+      "Add the garlic, curry powder, and turmeric, and cook for 1 minute until fragrant.",
+      "Stir in the lentils, coconut milk, and stock.",
+      "Simmer for 15-18 minutes, stirring occasionally, until the lentils are tender and the curry has thickened.",
+      "Season with salt and pepper and serve with rice or naan."
+    ],
+    "servings": 2
   }
 ]

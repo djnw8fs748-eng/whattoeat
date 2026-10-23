@@ -138,5 +138,10 @@
   { "title": "Simple Caprese Pasta", "category": "Pasta", "time": 15, "file": "pasta.json" },
   { "title": "Spicy Tuna Poke Rice Bowl", "category": "Rice Bowl", "time": 15, "file": "rice-bowl.json" },
   { "title": "Loaded Baked Potato Bar", "category": "Other", "time": 30, "file": "other.json" },
-  { "title": "Sausage & Lentil Stew", "category": "Casserole", "time": 35, "file": "casserole.json" }
+  { "title": "Sausage & Lentil Stew", "category": "Casserole", "time": 35, "file": "casserole.json" },
+  { "title": "Lemon Ricotta Pasta with Peas", "category": "Pasta", "time": 20, "file": "pasta.json" },
+  { "title": "Ginger Soy Tofu & Broccoli Stir-Fry", "category": "Stir-Fry", "time": 20, "file": "stir-fry.json" },
+  { "title": "Creamy Coconut Lentil Curry", "category": "Curry", "time": 25, "file": "curry.json" },
+  { "title": "Chicken Tinga Tacos", "category": "Mexican", "time": 30, "file": "mexican.json" },
+  { "title": "Minestrone Soup", "category": "Soup", "time": 30, "file": "soup.json" }
 ]

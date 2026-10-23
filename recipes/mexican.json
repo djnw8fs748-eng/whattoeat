@@ -252,5 +252,30 @@
       "Slice into wedges and serve with salsa and soured cream."
     ],
     "servings": 2
+  },
+  {
+    "title": "Chicken Tinga Tacos",
+    "category": "Mexican",
+    "time": 30,
+    "teaser": "Smoky, shredded chicken simmered in a chipotle tomato sauce until it falls apart — a slower-tasting taco for barely any extra effort.",
+    "ingredients": [
+      { "qty": 300, "unit": "g", "item": "chicken breast" },
+      { "qty": 1, "unit": null, "item": "onion, sliced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "tbsp", "item": "chipotle paste" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 6, "unit": "small", "item": "tortillas" },
+      { "qty": 250, "unit": "ml", "item": "chicken stock" }
+    ],
+    "steps": [
+      "Heat the oil in a pan and fry the onion for 5 minutes until soft.",
+      "Add the garlic, chipotle paste, and smoked paprika, and cook for 1 minute.",
+      "Add the chicken breast, chopped tomatoes, and stock, and simmer for 15-18 minutes until the chicken is cooked through.",
+      "Remove the chicken, shred with two forks, then return to the sauce and simmer for a further 5 minutes to thicken.",
+      "Warm the tortillas and fill with the shredded chicken tinga."
+    ],
+    "servings": 2
   }
 ]

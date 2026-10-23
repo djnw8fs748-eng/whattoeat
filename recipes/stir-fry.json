@@ -264,5 +264,32 @@
       "Remove from the heat and stir through the basil leaves until just wilted. Serve with rice."
     ],
     "servings": 2
+  },
+  {
+    "title": "Ginger Soy Tofu & Broccoli Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "Crispy tofu and crunchy broccoli tossed in a sticky ginger-soy sauce — a vegetarian stir-fry that still feels substantial.",
+    "ingredients": [
+      { "qty": 1, "unit": "block", "item": "firm tofu, cubed and patted dry" },
+      { "qty": 200, "unit": "g", "item": "broccoli florets" },
+      { "qty": 2, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "sesame oil" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "cornflour" },
+      { "qty": 2, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 1, "unit": "tbsp", "item": "rice vinegar" },
+      { "qty": 1, "unit": "tsp", "item": "honey" }
+    ],
+    "steps": [
+      "Toss the tofu cubes in the cornflour until lightly coated.",
+      "Heat the vegetable oil in a wok or large frying pan and fry the tofu until golden on most sides. Remove and set aside.",
+      "Add the broccoli to the pan with a splash of water, cover, and steam-fry for 3-4 minutes until just tender.",
+      "Add the ginger and garlic and cook for 30 seconds.",
+      "Stir in the soy sauce, rice vinegar, honey, and sesame oil, then return the tofu to the pan.",
+      "Toss everything together until coated and heated through, and serve with rice."
+    ],
+    "servings": 2
   }
 ]
