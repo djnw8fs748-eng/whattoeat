@@ -449,5 +449,29 @@
       "Serve warm or at room temperature."
     ],
     "servings": 2
+  },
+  {
+    "title": "Lemon Ricotta Pasta with Peas",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "A creamy five-minute sauce built from ricotta and lemon, with peas stirred through for colour and sweetness.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (tagliatelle or fusilli)" },
+      { "qty": 150, "unit": "g", "item": "ricotta cheese" },
+      { "qty": 100, "unit": "g", "item": "frozen peas" },
+      { "qty": 1, "unit": null, "item": "lemon, zested and juiced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 25, "unit": "g", "item": "parmesan, grated" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water according to packet instructions, adding the peas for the last 2 minutes. Drain, keeping a splash of the pasta water.",
+      "Heat the olive oil in a pan and gently fry the garlic for 30 seconds until fragrant.",
+      "Stir in the ricotta, lemon zest, and lemon juice, loosening with a splash of the reserved pasta water.",
+      "Toss the drained pasta and peas through the ricotta sauce.",
+      "Season with salt and pepper and top with grated parmesan to serve."
+    ],
+    "servings": 2
   }
 ]
