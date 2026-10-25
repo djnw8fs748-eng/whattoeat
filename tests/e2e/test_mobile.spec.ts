@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { setupMockApi } from './fixtures/mock-api';
+import { chooseOption } from './fixtures/ui';
 
 test.describe('Unified search input', () => {
   test.beforeEach(async ({ page }) => {
@@ -15,7 +16,7 @@ test.describe('Unified search input', () => {
     expect(filtered).toBeGreaterThan(0);
     expect(filtered).toBeLessThan(total);
     // Verify title-match works: at least one visible card must have 'pasta' in its title
-    const titles = await page.locator('.card h3').allTextContents();
+    const titles = await page.locator('.card h2').allTextContents();
     expect(titles.some(t => t.toLowerCase().includes('pasta'))).toBe(true);
   });
 
@@ -50,11 +51,10 @@ test.describe('Mobile layout', () => {
   });
 
   test('Filters button shows badge count when a filter is active', async ({ page }) => {
-    await page.evaluate(() => {
-      window.activeCategory = 'Pasta';
-      window.activeMaxTime = 30;
-      window.renderGrid();
-    });
+    await page.locator('#filtersBtn').click();
+    await chooseOption(page, '#sheetCatSelect', 'Pasta');
+    await page.locator('#sheetTimeChips [data-time="30"]').click();
+    await page.locator('#filterSheetBackdrop').click({ position: { x: 10, y: 10 } });
     await expect(page.locator('#filtersBtn')).toHaveText('Filters • 2');
   });
 
@@ -67,7 +67,7 @@ test.describe('Mobile layout', () => {
   test('tapping backdrop closes the sheet', async ({ page }) => {
     await page.locator('#filtersBtn').click();
     await expect(page.locator('#filterSheet')).toBeVisible();
-    await page.locator('#filterSheetBackdrop').click();
+    await page.locator('#filterSheetBackdrop').click({ position: { x: 10, y: 10 } });
     await expect(page.locator('#filterSheet')).not.toBeVisible();
     await expect(page.locator('#filtersBtn')).toHaveAttribute('aria-expanded', 'false');
   });
