@@ -59,7 +59,7 @@ jobs:
           PYEOF
 
       - name: Run api tests
-        run: pip install fastapi uvicorn httpx pytest && python -m pytest api/tests/ -v
+        run: pip install -r api/requirements.txt -r api/requirements-dev.txt && python -m pytest api/tests/ -v
 
       - name: Set up Node.js
         uses: actions/setup-node@v4

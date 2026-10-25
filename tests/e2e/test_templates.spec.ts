@@ -55,3 +55,17 @@ test('failed template load shows an error banner and leaves the existing plan in
   await expect(page.locator('#planGrid')).toContainText('Garlic Butter Pasta with Parmesan');
   await expect(page.locator('#planGrid')).not.toContainText('detail');
 });
+
+test('deleting a template removes it from the list', async ({ page }) => {
+  await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
+  await page.click('#planTab');
+
+  page.once('dialog', dialog => dialog.accept('Usual Week'));
+  await page.click('#saveTemplateBtn');
+  await expect(page.locator('#loadTemplateSelect option[value="Usual Week"]')).toHaveCount(1);
+
+  await page.selectOption('#loadTemplateSelect', 'Usual Week');
+  page.once('dialog', dialog => dialog.accept());
+  await page.click('#deleteTemplateBtn');
+  await expect(page.locator('#loadTemplateSelect option[value="Usual Week"]')).toHaveCount(0);
+});

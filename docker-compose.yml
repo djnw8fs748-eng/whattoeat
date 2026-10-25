@@ -15,6 +15,8 @@ services:
     image: ghcr.io/djnw8fs748-eng/whattoeat-api:latest
     container_name: recipes-api
     restart: unless-stopped
+    environment:
+      - TZ=Europe/London  # week rolls over at local midnight, not UTC
     volumes:
       - plan-data:/data
 

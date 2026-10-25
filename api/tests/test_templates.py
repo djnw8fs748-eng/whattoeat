@@ -69,3 +69,8 @@ def test_save_template_rejects_missing_day_key():
     incomplete_plan = {k: v for k, v in SAMPLE_PLAN.items() if k != "sun"}
     response = client.post("/api/templates", json={"name": "Broken", "plan": incomplete_plan})
     assert response.status_code == 422
+
+
+def test_template_name_with_slash_is_rejected():
+    response = client.post("/api/templates", json={"name": "Week 1/2", "plan": SAMPLE_PLAN})
+    assert response.status_code == 422
