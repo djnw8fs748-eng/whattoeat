@@ -1,3 +1,11 @@
 node_modules/
 .worktrees/
 .superpowers/
+__pycache__/
+.pytest_cache/
+.venv/
+tests/e2e/test-results/
+favicon-16.png
+favicon-32.png
+apple-touch-icon.png
+favicon.ico

@@ -42,3 +42,11 @@ test('clear filters deactivates all allergen chips', async ({ page }) => {
   const totalAfter = await page.locator('.card').count();
   expect(totalAfter).toBeGreaterThan(0);
 });
+
+test('allergen chips catch hidden sources (halloumi, soy sauce)', async ({ page }) => {
+  await page.locator('.allergen-chip[data-allergen="dairy"]').click();
+  await expect(page.locator('.card[data-title="Halloumi Wrap with Sweet Chilli"]')).toHaveCount(0);
+  await page.locator('.allergen-chip[data-allergen="dairy"]').click();
+  await page.locator('.allergen-chip[data-allergen="gluten"]').click();
+  await expect(page.locator('.card[data-title="Egg Fried Rice"]')).toHaveCount(0);
+});

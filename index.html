@@ -1071,6 +1071,7 @@
         <button type="button" id="saveTemplateBtn">Save as template</button>
         <select id="loadTemplateSelect"><option value="">Load template…</option></select>
         <button type="button" id="loadTemplateBtn">Load</button>
+        <button type="button" id="deleteTemplateBtn">Delete</button>
       </div>
       <div class="history-controls">
         <button type="button" id="historyBtn">History</button>
@@ -1193,14 +1194,17 @@ let recipeAddOrder = [];
 const ALLERGEN_KEYWORDS = {
   gluten:    ['flour','bread','pasta','spaghetti','linguine','penne','fettuccine',
                'rigatoni','wheat','breadcrumb','noodle','tortilla','wrap','couscous',
-               'pitta','pita'],
+               'pitta','pita','soy sauce','gnocchi','crouton','lasagne',
+               'worcestershire','oyster sauce','stock cube','udon'],
   dairy:     ['milk','cream','butter','cheese','parmesan','mozzarella','cheddar',
-               'feta','ricotta','yogurt','yoghurt','crème fraîche','creme fraiche'],
-  eggs:      ['egg'],
+               'feta','ricotta','yogurt','yoghurt','crème fraîche','creme fraiche',
+               'halloumi','pesto'],
+  eggs:      ['egg','mayonnaise','caesar'],
   fish:      ['salmon','tuna','cod','haddock','anchov','sardine','mackerel',
-               'trout','bass','bream','tilapia','fish sauce','fish stock'],
+               'trout','bass','bream','tilapia','fish sauce','fish stock',
+               'worcestershire','caesar'],
   shellfish: ['prawn','shrimp','crab','lobster','scallop','mussel','clam','oyster'],
-  nuts:      ['almond','cashew','walnut','pecan','pistachio','hazelnut','peanut','pine nut'],
+  nuts:      ['almond','cashew','walnut','pecan','pistachio','hazelnut','peanut','pine nut','pesto'],
   soy:       ['soy sauce','soy','tofu','edamame','tempeh','miso'],
   sesame:    ['sesame','tahini'],
   mustard:   ['mustard'],
@@ -1228,10 +1232,7 @@ function populateCategories() {
   const categories = [...new Set(recipes.map(r => r.category))].sort();
   categories.forEach((cat, i) => {
     categoryColors[cat] = i % 9;
-    const opt = document.createElement('option');
-    opt.value = cat;
-    opt.textContent = cat;
-    catSelect.appendChild(opt);
+    [catSelect, sheetCatSelect].forEach(sel => sel.add(new Option(cat, cat)));
   });
 }
 
@@ -1463,7 +1464,7 @@ function renderShoppingList() {
   const rows = [...merged.values()].sort((a, b) => a.sortKey.localeCompare(b.sortKey));
 
   const groups = new Map(AISLE_ORDER.map(name => [name, []]));
-  rows.forEach(row => groups.get(categorizeItem(row.item)).push(row));
+  rows.forEach(row => groups.get(categorizeItem(ingredientText(row))).push(row));
 
   grid.innerHTML = AISLE_ORDER
     .map((name, groupIndex) => ({ name, groupIndex, items: groups.get(name) }))
@@ -1496,15 +1497,15 @@ const AISLE_KEYWORDS = [
     'lettuce', 'cucumber', 'avocado', 'lime', 'lemon', 'ginger', 'chilli', 'chili',
     'coriander', 'parsley', 'basil', 'courgette', 'broccoli', 'cauliflower', 'apple',
     'banana', 'celery', 'kale', 'spring onion', 'leek', 'aubergine', 'sweet potato',
-    'apricot', 'mango']],
+    'apricot', 'mango', 'butternut']],
   ['Meat & Fish', ['chicken', 'beef', 'pork', 'lamb', 'turkey', 'bacon', 'sausage',
-    'mince', 'salmon', 'tuna', 'cod', 'shrimp', 'prawn', 'fish', 'haddock']],
+    'mince', 'salmon', 'tuna', 'cod', 'shrimp', 'prawn', 'fish', 'haddock', 'chorizo']],
   ['Dairy & Eggs', ['milk', 'cream', 'butter', 'cheese', 'parmesan', 'mozzarella',
-    'cheddar', 'feta', 'yogurt', 'yoghurt', 'egg']],
+    'cheddar', 'feta', 'halloumi', 'yogurt', 'yoghurt', 'egg']],
   ['Bakery', ['bread', 'tortilla', 'wrap', 'pitta', 'pita', 'naan', 'bun']],
   ['Frozen', ['frozen']],
-  ['Pantry', ['rice', 'pasta', 'noodle', 'flour', 'sugar', 'oil', 'vinegar', 'sauce',
-    'stock', 'spice', 'curry powder', 'cumin', 'paprika', 'salt', 'herb', 'tin',
+  ['Pantry', ['rice', 'pasta', 'spaghetti', 'gnocchi', 'lasagne', 'noodle', 'flour', 'sugar', 'oil', 'vinegar', 'sauce',
+    'stock', 'spice', 'curry powder', 'cumin', 'paprika', 'salt', 'herb',
     'canned', 'chickpea', 'lentil', 'bean', 'coconut milk', 'honey', 'soy sauce']],
 ];
 const AISLE_ORDER = [...AISLE_KEYWORDS.map(([name]) => name), 'Other'];
@@ -1517,6 +1518,7 @@ const AISLE_ORDER = [...AISLE_KEYWORDS.map(([name]) => name), 'Other'];
 const PANTRY_OVERRIDES = [
   'salt and pepper', 'salt and black pepper', 'chilli flakes', 'chilli powder',
   'chilli paste', 'chilli sauce', 'chilli oil', 'ground coriander', 'coriander seeds',
+  'coconut milk', 'peanut butter', 'butter bean', 'stock', 'fish sauce',
 ];
 
 function categorizeItem(item) {
@@ -1598,12 +1600,12 @@ function openRecipe(title) {
       </span>
     </div>
     <div class="panel-rating" id="panelRatingButtons"></div>
-    <p class="teaser">${r.teaser}</p>
+    <p class="teaser">${escapeHtml(r.teaser)}</p>
     <h4>Ingredients</h4>
     <ul class="ingredient-list" id="panelIngredientList"></ul>
     <h4>Method</h4>
     <ol class="steps-list">
-      ${r.steps.map(step => `<li>${step}</li>`).join('')}
+      ${r.steps.map(step => `<li>${escapeHtml(step)}</li>`).join('')}
     </ol>
   `;
 
@@ -1665,62 +1667,6 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
   renderGrid();
 });
 
-catSelect.addEventListener('change', (e) => {
-  activeCategory = e.target.value;
-  renderGrid();
-});
-
-document.querySelectorAll('.chip[data-time]').forEach(chip => {
-  chip.addEventListener('click', () => {
-    document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
-    chip.classList.add('active');
-    activeMaxTime = parseInt(chip.dataset.time, 10);
-    renderGrid();
-  });
-});
-
-document.querySelectorAll('.allergen-chip').forEach(chip => {
-  chip.addEventListener('click', () => {
-    const allergen = chip.dataset.allergen;
-    if (activeAllergens.has(allergen)) {
-      activeAllergens.delete(allergen);
-      chip.classList.remove('active');
-    } else {
-      activeAllergens.add(allergen);
-      chip.classList.add('active');
-    }
-    document.querySelector(`.sheet-allergen-chip[data-allergen="${allergen}"]`)
-      ?.classList.toggle('active', activeAllergens.has(allergen));
-    renderGrid();
-  });
-});
-
-document.getElementById('likedChip').addEventListener('click', () => {
-  activeLikedOnly = !activeLikedOnly;
-  document.getElementById('likedChip').classList.toggle('active', activeLikedOnly);
-  document.getElementById('likedChip').setAttribute('aria-pressed', String(activeLikedOnly));
-  document.getElementById('sheetLikedChip').classList.toggle('active', activeLikedOnly);
-  document.getElementById('sheetLikedChip').setAttribute('aria-pressed', String(activeLikedOnly));
-  renderGrid();
-});
-
-document.getElementById('clearBtn').addEventListener('click', () => {
-  activeSearch = "";
-  activeCategory = "";
-  activeMaxTime = 999;
-  activeAllergens = new Set();
-  activeLikedOnly = false;
-  document.getElementById('searchInput').value = "";
-  catSelect.value = "";
-  document.querySelectorAll('.chip[data-time], .sheet-time-chip').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('#likedChip, #sheetLikedChip').forEach(c => {
-    c.classList.remove('active');
-    c.setAttribute('aria-pressed', 'false');
-  });
-  renderGrid();
-});
-
 /* ============================================================
    BOTTOM SHEET: open/close, swipe-to-dismiss, sheet controls
    ============================================================ */
@@ -1736,7 +1682,7 @@ function openSheet() {
   filterSheet.classList.add('open');
   filterSheetBackdrop.classList.add('visible');
   filtersBtn.setAttribute('aria-expanded', 'true');
-  syncSheetControls();
+  syncFilterUI();
   // Move focus inside the dialog
   document.getElementById('sheetCatSelect').focus();
 }
@@ -1754,18 +1700,6 @@ function closeSheet() {
   setTimeout(hide, 300);
 }
 
-function syncSheetControls() {
-  document.getElementById('sheetCatSelect').value = activeCategory;
-  document.querySelectorAll('.sheet-time-chip').forEach(c => {
-    c.classList.toggle('active', parseInt(c.dataset.sheetTime, 10) === activeMaxTime);
-  });
-  document.querySelectorAll('.sheet-allergen-chip').forEach(c => {
-    c.classList.toggle('active', activeAllergens.has(c.dataset.allergen));
-  });
-  document.getElementById('sheetLikedChip').classList.toggle('active', activeLikedOnly);
-  document.getElementById('sheetLikedChip').setAttribute('aria-pressed', String(activeLikedOnly));
-}
-
 filtersBtn.addEventListener('click', () => {
   if (filterSheet.classList.contains('open')) {
     closeSheet();
@@ -1778,75 +1712,74 @@ filterSheetBackdrop.addEventListener('click', closeSheet);
 
 const sheetCatSelect = document.getElementById('sheetCatSelect');
 
-function populateSheetCategories() {
-  const categories = [...new Set(recipes.map(r => r.category))].sort();
-  categories.forEach(cat => {
-    const opt = document.createElement('option');
-    opt.value = cat;
-    opt.textContent = cat;
-    sheetCatSelect.appendChild(opt);
+// Desktop filters and the mobile sheet share one filter state; this mirrors
+// it onto both sets of controls.
+function syncFilterUI() {
+  catSelect.value = activeCategory;
+  sheetCatSelect.value = activeCategory;
+  document.querySelectorAll('.chip[data-time], .sheet-time-chip').forEach(c => {
+    c.classList.toggle('active', parseInt(c.dataset.time ?? c.dataset.sheetTime, 10) === activeMaxTime);
+  });
+  document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(c => {
+    c.classList.toggle('active', activeAllergens.has(c.dataset.allergen));
+  });
+  document.querySelectorAll('#likedChip, #sheetLikedChip').forEach(c => {
+    c.classList.toggle('active', activeLikedOnly);
+    c.setAttribute('aria-pressed', String(activeLikedOnly));
   });
 }
 
-sheetCatSelect.addEventListener('change', (e) => {
-  activeCategory = e.target.value;
-  catSelect.value = activeCategory;
-  renderGrid();
-});
-
-document.querySelectorAll('.sheet-time-chip').forEach(chip => {
-  chip.addEventListener('click', () => {
-    document.querySelectorAll('.chip[data-time]').forEach(c => c.classList.remove('active'));
-    document.querySelectorAll('.sheet-time-chip').forEach(c => c.classList.remove('active'));
-    chip.classList.add('active');
-    activeMaxTime = parseInt(chip.dataset.sheetTime, 10);
-    document.querySelector(`.chip[data-time="${activeMaxTime}"]`)?.classList.add('active');
+document.querySelectorAll('#catSelect, #sheetCatSelect').forEach(sel => {
+  sel.addEventListener('change', (e) => {
+    activeCategory = e.target.value;
+    syncFilterUI();
     renderGrid();
   });
 });
 
-document.querySelectorAll('.sheet-allergen-chip').forEach(chip => {
+document.querySelectorAll('.chip[data-time], .sheet-time-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    activeMaxTime = parseInt(chip.dataset.time ?? chip.dataset.sheetTime, 10);
+    syncFilterUI();
+    renderGrid();
+  });
+});
+
+document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(chip => {
   chip.addEventListener('click', () => {
     const allergen = chip.dataset.allergen;
     if (activeAllergens.has(allergen)) {
       activeAllergens.delete(allergen);
-      chip.classList.remove('active');
-      document.querySelector(`.allergen-chip[data-allergen="${allergen}"]`)?.classList.remove('active');
     } else {
       activeAllergens.add(allergen);
-      chip.classList.add('active');
-      document.querySelector(`.allergen-chip[data-allergen="${allergen}"]`)?.classList.add('active');
     }
+    syncFilterUI();
     renderGrid();
   });
 });
 
-document.getElementById('sheetLikedChip').addEventListener('click', () => {
-  activeLikedOnly = !activeLikedOnly;
-  document.getElementById('sheetLikedChip').classList.toggle('active', activeLikedOnly);
-  document.getElementById('sheetLikedChip').setAttribute('aria-pressed', String(activeLikedOnly));
-  document.getElementById('likedChip').classList.toggle('active', activeLikedOnly);
-  document.getElementById('likedChip').setAttribute('aria-pressed', String(activeLikedOnly));
-  renderGrid();
+document.querySelectorAll('#likedChip, #sheetLikedChip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    activeLikedOnly = !activeLikedOnly;
+    syncFilterUI();
+    renderGrid();
+  });
 });
 
-document.getElementById('sheetClearBtn').addEventListener('click', () => {
-  activeSearch = "";
-  activeCategory = "";
-  activeMaxTime = 999;
-  activeAllergens = new Set();
-  activeLikedOnly = false;
-  document.getElementById('searchInput').value = "";
-  catSelect.value = "";
-  sheetCatSelect.value = "";
-  document.querySelectorAll('.chip[data-time], .sheet-time-chip').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('.allergen-chip, .sheet-allergen-chip').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('#likedChip, #sheetLikedChip').forEach(c => {
-    c.classList.remove('active');
-    c.setAttribute('aria-pressed', 'false');
+document.querySelectorAll('#clearBtn, #sheetClearBtn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    activeSearch = "";
+    activeCategory = "";
+    activeMaxTime = 999;
+    activeAllergens = new Set();
+    activeLikedOnly = false;
+    document.getElementById('searchInput').value = "";
+    syncFilterUI();
+    renderGrid();
   });
-  renderGrid();
 });
+
+
 
 // Swipe down to close
 let touchStartY = 0;
@@ -1988,12 +1921,7 @@ function selectDay(day) {
     })
     .catch((err) => {
       closeDayPicker();
-      const msg = document.getElementById('apiErrorMsg');
-      if (msg) {
-        msg.textContent = `Could not save plan — is the API running? (${err.message})`;
-        msg.hidden = false;
-        setTimeout(() => { msg.hidden = true; }, 5000);
-      }
+      showApiError(`Could not save plan — is the API running? (${err.message})`);
     });
 }
 
@@ -2047,9 +1975,11 @@ document.getElementById('planTab').addEventListener('click', () => switchTab('pl
    plan tab if it's visible. Called on load and every 15s.
    ============================================================ */
 function fetchPlan() {
-  fetch('/api/plan')
+  return fetch('/api/plan')
     .then(res => res.json())
     .then(data => {
+      // Unchanged: skip the redraw so shopping-list ticks and focus survive the poll.
+      if (JSON.stringify(data) === JSON.stringify(plan)) return;
       plan = data;
       renderPlanTab();
       renderGrid();
@@ -2061,6 +1991,7 @@ function fetchRatings() {
   fetch('/api/ratings')
     .then(res => res.json())
     .then(data => {
+      if (JSON.stringify(data) === JSON.stringify(ratings)) return;
       ratings = data;
       renderGrid();
       renderPanelRating();
@@ -2126,6 +2057,20 @@ document.getElementById('loadTemplateBtn').addEventListener('click', () => {
     })
     .catch((err) => {
       showApiError(`Could not load template — is the API running? (${err.message})`);
+    });
+});
+
+document.getElementById('deleteTemplateBtn').addEventListener('click', () => {
+  const name = document.getElementById('loadTemplateSelect').value;
+  if (!name) return;
+  if (!confirm(`Delete template "${name}"?`)) return;
+  fetch(`/api/templates/${encodeURIComponent(name)}`, { method: 'DELETE' })
+    .then(res => {
+      if (!res.ok) throw new Error(`${res.status}`);
+      fetchTemplateNames();
+    })
+    .catch((err) => {
+      showApiError(`Could not delete template — is the API running? (${err.message})`);
     });
 });
 
@@ -2203,8 +2148,9 @@ fetch('recipes.json')
   .then(data => {
     recipes = data;
     populateCategories();
-    populateSheetCategories();
+    syncFilterUI();
     renderGrid();
+    renderPlanTab();
     fetchPlan();
     fetchRatings();
     fetchTemplateNames();

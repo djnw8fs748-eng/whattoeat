@@ -112,3 +112,19 @@ test('pantry seasonings land in Pantry, not Produce, despite containing a produc
   // Fresh avocado should still land in Produce.
   await expect(produceGroup.locator('.shopping-item label', { hasText: 'avocado' })).toHaveCount(1);
 });
+
+test('chicken is grouped under Meat & Fish', async ({ page }) => {
+  await addRecipeToDay(page, 'Creamy Chicken & Bacon Pasta', 'mon');
+  await page.click('#planTab');
+  const meat = page.locator('.shopping-group', { has: page.locator('h4', { hasText: 'Meat & Fish' }) });
+  await expect(meat).toContainText(/chicken/i);
+});
+
+test('ticked items survive the background plan poll', async ({ page }) => {
+  await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
+  await page.click('#planTab');
+  const box = page.locator('#shoppingGrid .shopping-item input').first();
+  await box.check();
+  await page.evaluate(() => window.fetchPlan());
+  await expect(box).toBeChecked();
+});

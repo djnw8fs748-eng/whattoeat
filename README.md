@@ -15,9 +15,9 @@ Repo: https://github.com/djnw8fs748-eng/whattoeat
 ## Port details
 
 - **Inside the container**, nginx always listens on port **80** — this comes from the base `nginx:alpine` image and isn't something you configure.
-- **On the host**, the container is published on port **8090** (set in `docker-compose.yml` as `"8090:80"` — format is `host:container`).
-- To use a different host port, change the left-hand number, e.g. `"8100:80"` to serve it on 8100 instead. The `80` on the right should stay as-is, since that's what nginx is actually listening on inside the container.
-- Once running, the page is reachable at `http://<host-address>:8090` — e.g. `http://docker.dom.local:8090` — or via whatever hostname you set up in Nginx Proxy Manager if you're putting it behind a subdomain.
+- **On the host**, the container is published on port **9090** (set in `docker-compose.yml` as `published: 9090`, with `target: 80` for the container side).
+- To use a different host port, change `published`, e.g. `published: 8100` to serve it on 8100 instead. `target: 80` should stay as-is, since that's what nginx is actually listening on inside the container.
+- Once running, the page is reachable at `http://<host-address>:9090` — e.g. `http://docker.dom.local:9090` — or via whatever hostname you set up in Nginx Proxy Manager if you're putting it behind a subdomain.
 
 ## One-time setup
 
@@ -37,11 +37,20 @@ ghcr.io/djnw8fs748-eng/whattoeat:latest
 
 By default, a package built from a private repo is also private, which means Portainer would need to authenticate to pull it. Easiest fix: go to your GitHub profile → **Packages** → click the `whattoeat` package → **Package settings** → change visibility to **Public**. The image itself contains nothing sensitive (just the HTML page), so this is generally fine even if the repo stays private.
 
+## Building the image locally
+
+CI generates the favicon PNGs and `favicon.ico` from `favicon.svg` before building, so a plain `docker build .` fails without them. Generate them first:
+
+```
+pip install cairosvg pillow
+python3 -c "import cairosvg; from PIL import Image; [cairosvg.svg2png(url='favicon.svg', write_to=n, output_width=w, output_height=w) for w, n in [(180, 'apple-touch-icon.png'), (32, 'favicon-32.png'), (16, 'favicon-16.png')]]; Image.open('favicon-16.png').save('favicon.ico', sizes=[(16, 16), (32, 32)])"
+```
+
 ## Deploying it
 
 In Portainer: **Stacks → Add stack**, paste in `docker-compose.yml` from this repo, and deploy — the image name is already set to `ghcr.io/djnw8fs748-eng/whattoeat:latest`, no username swap needed.
 
-Then visit `http://docker.dom.local:8090` (or wherever you pointed it) to see the page. Add an Nginx Proxy Manager proxy host if you want it on a subdomain like `whattoeat.domlittler.com` instead — point it at the same host and the 8090 port.
+Then visit `http://docker.dom.local:9090` (or wherever you pointed it) to see the page. Add an Nginx Proxy Manager proxy host if you want it on a subdomain like `whattoeat.domlittler.com` instead — point it at the same host and the 9090 port.
 
 ## Updating the recipes later
 
