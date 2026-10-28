@@ -41,10 +41,10 @@ test('rating a recipe up from the detail panel shows a thumbs-up on its card', a
   await expect(page.locator('#panel')).toHaveClass(/open/);
 
   await page.click('#ratingUpBtn');
-  await expect(page.locator('#ratingUpBtn')).toHaveClass(/active/);
+  await expect(page.locator('#ratingUpBtn')).toHaveAttribute('aria-pressed', 'true');
 
   await page.click('#panelClose');
-  await expect(firstCard.locator('.rating-indicator')).toHaveText('👍');
+  await expect(firstCard.locator('.rating-indicator')).toHaveAttribute('data-rating', 'up');
 });
 
 test('clicking the same rating again clears it', async ({ page }) => {
@@ -56,10 +56,10 @@ test('clicking the same rating again clears it', async ({ page }) => {
   await firstCard.click({ position: { x: 10, y: 10 } });
 
   await page.click('#ratingUpBtn');
-  await expect(page.locator('#ratingUpBtn')).toHaveClass(/active/);
+  await expect(page.locator('#ratingUpBtn')).toHaveAttribute('aria-pressed', 'true');
 
   await page.click('#ratingUpBtn');
-  await expect(page.locator('#ratingUpBtn')).not.toHaveClass(/active/);
+  await expect(page.locator('#ratingUpBtn')).toHaveAttribute('aria-pressed', 'false');
 
   await page.click('#panelClose');
   await expect(firstCard.locator('.rating-indicator')).toHaveCount(0);
@@ -75,7 +75,7 @@ test('"Liked only" filter shows only recipes rated up', async ({ page }) => {
   expect(totalBefore).toBeGreaterThan(1);
 
   await page.click('#likedChip');
-  await expect(page.locator('#likedChip')).toHaveClass(/active/);
+  await expect(page.locator('#likedChip')).toHaveAttribute('aria-pressed', 'true');
 
   const cards = page.locator('.card');
   await expect(cards).toHaveCount(1);

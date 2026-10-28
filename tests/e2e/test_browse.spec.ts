@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { setupMockApi } from './fixtures/mock-api';
+import { chooseOption } from './fixtures/ui';
 
 let totalCards = 0;
 
@@ -17,7 +18,7 @@ test('page loads with all recipe cards', async ({ page }) => {
 test('text search by name filters cards', async ({ page }) => {
   await page.fill('#searchInput', 'Garlic Butter Pasta with Parmesan');
   await expect(page.locator('.card')).toHaveCount(1);
-  await expect(page.locator('.card h3').first()).toContainText('Garlic Butter Pasta with Parmesan');
+  await expect(page.locator('.card h2').first()).toContainText('Garlic Butter Pasta with Parmesan');
 });
 
 test('text search by ingredient filters cards', async ({ page }) => {
@@ -29,7 +30,7 @@ test('text search by ingredient filters cards', async ({ page }) => {
 });
 
 test('category filter shows only matching category', async ({ page }) => {
-  await page.selectOption('#catSelect', 'Pasta');
+  await chooseOption(page, '#catSelect', 'Pasta');
   const pills = page.locator('.card .category-pill');
   const count = await pills.count();
   expect(count).toBeGreaterThan(0);
@@ -39,7 +40,7 @@ test('category filter shows only matching category', async ({ page }) => {
 });
 
 test('time filter hides recipes over 30 minutes', async ({ page }) => {
-  await page.locator('.chip[data-time="30"]').click();
+  await page.locator('#timeChips [data-time="30"]').click();
   await expect(page.locator('.card[data-title="Tuna & Sweetcorn Pasta Bake"]')).not.toBeVisible();
   const filteredCount = await page.locator('.card').count();
   expect(filteredCount).toBeGreaterThan(0);

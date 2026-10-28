@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
 
 test('clicking a card opens the recipe panel with correct title', async ({ page }) => {
   const firstCard = page.locator('.card').first();
-  const expectedTitle = await firstCard.locator('h3').textContent();
+  const expectedTitle = await firstCard.locator('h2').textContent();
 
   // Click the card body (not the add-to-plan button)
   await firstCard.click({ position: { x: 10, y: 10 } });
