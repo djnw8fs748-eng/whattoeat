@@ -277,5 +277,55 @@
       "Warm the tortillas and fill with the shredded chicken tinga."
     ],
     "servings": 2
+  },
+  {
+    "title": "Chipotle Chicken Tacos with Lime Crema",
+    "category": "Mexican",
+    "time": 25,
+    "teaser": "Smoky chipotle chicken, pan-seared and piled into warm tortillas with a cooling lime crema.",
+    "ingredients": [
+      { "qty": 2, "unit": null, "item": "chicken breasts, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "chipotle paste" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "lime, juiced" },
+      { "qty": 3, "unit": "tbsp", "item": "sour cream" },
+      { "qty": 6, "unit": null, "item": "small tortillas" },
+      { "qty": null, "unit": null, "item": "1/2 red onion, finely sliced" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, chopped" }
+    ],
+    "steps": [
+      "Toss the sliced chicken with the chipotle paste, olive oil, and a pinch of salt.",
+      "Heat a pan over high heat and cook the chicken for 6-8 minutes until charred and cooked through.",
+      "Mix the sour cream with half the lime juice and a pinch of salt to make the crema.",
+      "Warm the tortillas in a dry pan or microwave.",
+      "Fill the tortillas with the chicken, red onion, and coriander, then drizzle with the lime crema and remaining lime juice."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Steak Fajita Tacos with Charred Peppers",
+    "category": "Mexican",
+    "time": 25,
+    "teaser": "Seared steak strips and charred peppers folded into warm tortillas with a squeeze of lime.",
+    "ingredients": [
+      { "qty": 300, "unit": "g", "item": "sirloin steak, sliced into strips" },
+      { "qty": 1, "unit": null, "item": "red pepper, sliced" },
+      { "qty": 1, "unit": null, "item": "yellow pepper, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "ground cumin" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "lime, juiced" },
+      { "qty": 6, "unit": null, "item": "small tortillas" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Toss the steak strips with the cumin, smoked paprika, salt, and pepper.",
+      "Heat the olive oil in a pan over high heat and sear the steak for 2-3 minutes until browned. Remove and set aside.",
+      "Add the peppers to the same pan and cook for 5-6 minutes until charred and softened.",
+      "Return the steak to the pan, squeeze over the lime juice, and toss together.",
+      "Warm the tortillas and fill with the steak and peppers."
+    ],
+    "servings": 2
   }
 ]
