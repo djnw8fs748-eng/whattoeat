@@ -355,5 +355,29 @@
       "Season with salt and pepper and serve."
     ],
     "servings": 2
+  },
+  {
+    "title": "Creamy Tomato & White Bean Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A cosy, creamy tomato soup with white beans for extra heartiness.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 400, "unit": "g", "item": "tin chopped tomatoes" },
+      { "qty": 400, "unit": "g", "item": "tin white beans, drained" },
+      { "qty": 300, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 2, "unit": "tbsp", "item": "double cream" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the olive oil in a pot and cook the onion and garlic for 4-5 minutes until soft.",
+      "Add the chopped tomatoes, white beans, and stock, then bring to a simmer.",
+      "Cook for 15 minutes, then blend until smooth, or leave chunky if you prefer.",
+      "Stir in the double cream and season with salt and pepper.",
+      "Serve warm with crusty bread."
+    ],
+    "servings": 2
   }
 ]
