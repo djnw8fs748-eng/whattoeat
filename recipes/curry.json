@@ -266,5 +266,30 @@
       "Season with salt and pepper and serve with rice or naan."
     ],
     "servings": 2
+  },
+  {
+    "title": "Red Lentil & Butternut Squash Curry",
+    "category": "Curry",
+    "time": 30,
+    "teaser": "A warming, creamy curry packed with red lentils and sweet roasted squash.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "curry powder" },
+      { "qty": 300, "unit": "g", "item": "butternut squash, cubed" },
+      { "qty": 150, "unit": "g", "item": "red lentils, rinsed" },
+      { "qty": 400, "unit": "ml", "item": "coconut milk" },
+      { "qty": 300, "unit": "ml", "item": "vegetable stock" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a large pan and fry the onion and garlic for 3-4 minutes until soft.",
+      "Stir in the curry powder and cook for 1 minute.",
+      "Add the squash, lentils, coconut milk, and stock, then bring to a simmer.",
+      "Cook for 20 minutes, stirring occasionally, until the squash is tender and the lentils have softened.",
+      "Season with salt and pepper and serve."
+    ],
+    "servings": 2
   }
 ]

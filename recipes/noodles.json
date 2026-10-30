@@ -197,5 +197,30 @@
       "Toss through the cooked noodles until well coated, then serve scattered with spring onions and sesame seeds."
     ],
     "servings": 2
+  },
+  {
+    "title": "Vegetable Chow Mein",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "A quick vegetable-packed noodle stir-fry with scrambled egg and a simple soy sauce.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "egg noodles" },
+      { "qty": 2, "unit": null, "item": "eggs, beaten" },
+      { "qty": 1, "unit": null, "item": "carrot, julienned" },
+      { "qty": 1, "unit": null, "item": "red pepper, sliced" },
+      { "qty": 100, "unit": "g", "item": "beansprouts" },
+      { "qty": 3, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 2, "unit": null, "item": "spring onions, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "sesame oil" }
+    ],
+    "steps": [
+      "Cook the egg noodles according to packet instructions, drain, and set aside.",
+      "Heat the vegetable oil in a wok and scramble the eggs until just set, then remove and set aside.",
+      "Add the carrot and red pepper to the wok and stir-fry for 3-4 minutes until just tender.",
+      "Add the beansprouts, noodles, soy sauce, and scrambled egg, and toss everything together for 1-2 minutes.",
+      "Drizzle with the sesame oil and top with spring onions."
+    ],
+    "servings": 2
   }
 ]

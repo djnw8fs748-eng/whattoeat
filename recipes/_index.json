@@ -143,5 +143,10 @@
   { "title": "Ginger Soy Tofu & Broccoli Stir-Fry", "category": "Stir-Fry", "time": 20, "file": "stir-fry.json" },
   { "title": "Creamy Coconut Lentil Curry", "category": "Curry", "time": 25, "file": "curry.json" },
   { "title": "Chicken Tinga Tacos", "category": "Mexican", "time": 30, "file": "mexican.json" },
-  { "title": "Minestrone Soup", "category": "Soup", "time": 30, "file": "soup.json" }
+  { "title": "Minestrone Soup", "category": "Soup", "time": 30, "file": "soup.json" },
+  { "title": "Chipotle Chicken Tacos with Lime Crema", "category": "Mexican", "time": 25, "file": "mexican.json" },
+  { "title": "Steak Fajita Tacos with Charred Peppers", "category": "Mexican", "time": 25, "file": "mexican.json" },
+  { "title": "Red Lentil & Butternut Squash Curry", "category": "Curry", "time": 30, "file": "curry.json" },
+  { "title": "Vegetable Chow Mein", "category": "Noodles", "time": 20, "file": "noodles.json" },
+  { "title": "Creamy Tomato & White Bean Soup", "category": "Soup", "time": 25, "file": "soup.json" }
 ]
