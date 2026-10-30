@@ -1481,4 +1481,817 @@
       "Roast for a further 10-12 minutes until the salmon is cooked through. Scatter with coriander before serving."
     ],
     "servings": 2
-  }]
+  },
+  {
+    "title": "Tomato & Lentil Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A filling, budget-friendly soup that mostly looks after itself on the stove.",
+    "ingredients": [
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 150, "unit": "g", "item": "red lentils, rinsed" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 800, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 1, "unit": "tsp", "item": "cumin" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and garlic for 4-5 minutes.",
+      "Add the cumin, tomatoes, lentils, and stock.",
+      "Bring to a simmer and cook for 20-25 minutes, stirring occasionally, until the lentils are soft.",
+      "Blend if you'd like it smooth, or leave as is. Season to taste and serve with bread."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Noodle Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A comforting classic that comes together with shop-bought stock and leftover or quick-cooked chicken.",
+    "ingredients": [
+      { "qty": 1, "unit": "litre", "item": "chicken stock" },
+      { "qty": 150, "unit": "g", "item": "cooked chicken, shredded (or 1 raw breast, sliced thin)" },
+      { "qty": 100, "unit": "g", "item": "dried noodles or vermicelli" },
+      { "qty": 1, "unit": null, "item": "carrot, sliced" },
+      { "qty": 1, "unit": "stick", "item": "celery, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "dried thyme" }
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot.",
+      "Add the carrot and celery and cook for 5 minutes.",
+      "Add the chicken (raw or cooked) and thyme, and simmer for 8-10 minutes until the chicken is cooked through.",
+      "Add the noodles for the last 3-4 minutes of cooking, until tender. Season and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Broccoli & Potato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Blended into velvety smoothness — good for using up an ageing head of broccoli.",
+    "ingredients": [
+      { "qty": 1, "unit": "head", "item": "broccoli, chopped" },
+      { "qty": 2, "unit": null, "item": "potatoes, peeled and chopped" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 800, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 100, "unit": "ml", "item": "cream (optional)" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion for 4 minutes.",
+      "Add the potatoes and stock, bring to a simmer, and cook for 10 minutes.",
+      "Add the broccoli and cook for a further 8-10 minutes until everything is tender.",
+      "Blend until smooth, stir in the cream if using, and season to taste."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spiced Carrot & Ginger Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Naturally sweet and warming, with just a handful of ingredients.",
+    "ingredients": [
+      { "qty": 500, "unit": "g", "item": "carrots, chopped" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 800, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 1, "unit": "tsp", "item": "ground coriander" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and ginger for 4-5 minutes.",
+      "Add the carrots, coriander, and stock.",
+      "Simmer for 20 minutes until the carrots are soft.",
+      "Blend until smooth and season to taste."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken & Sweetcorn Chowder",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A creamy, filling soup that's closer to a stew — good on a cold evening.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, diced" },
+      { "qty": 1, "unit": "tin", "item": "sweetcorn, drained" },
+      { "qty": 2, "unit": null, "item": "potatoes, diced small" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 700, "unit": "ml", "item": "chicken stock" },
+      { "qty": 100, "unit": "ml", "item": "single cream" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Fry the onion in a little oil for 4 minutes.",
+      "Add the chicken and potatoes and cook for 3-4 minutes.",
+      "Pour in the stock, bring to a simmer, and cook for 15 minutes until the potatoes and chicken are cooked through.",
+      "Stir in the sweetcorn and cream, warm through, and season to taste."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Leek & Potato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A classic, gently flavoured soup that blends into something silky with barely any effort.",
+    "ingredients": [
+      { "qty": 2, "unit": null, "item": "leeks, sliced" },
+      { "qty": 3, "unit": null, "item": "potatoes, peeled and chopped" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 800, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 100, "unit": "ml", "item": "cream (optional)" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and leeks for 5 minutes.",
+      "Add the potatoes and stock, bring to a simmer, and cook for 15-18 minutes until the potatoes are soft.",
+      "Blend until smooth, stir in the cream if using, and season to taste.",
+      "Serve with crusty bread."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Black Bean Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A store-cupboard soup that gets its kick from chilli and smoked paprika.",
+    "ingredients": [
+      { "qty": 2, "unit": "tins", "item": "black beans, drained and rinsed" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "ground cumin" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 0.5, "unit": "tsp", "item": "chilli powder" },
+      { "qty": 700, "unit": "ml", "item": "vegetable stock" },
+      { "qty": null, "unit": null, "item": "Lime juice and chopped coriander to serve" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion and garlic for 4-5 minutes.",
+      "Add the cumin, smoked paprika, and chilli powder, and cook for 30 seconds.",
+      "Add the black beans and stock, and simmer for 15 minutes.",
+      "Blend partially for a thicker texture if you like, and season to taste.",
+      "Serve with a squeeze of lime and chopped coriander."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Roasted Red Pepper & Tomato Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "Roasted peppers and tomatoes blended into a smoky, comforting soup.",
+    "ingredients": [
+      { "qty": 3, "unit": "red", "item": "peppers, halved and deseeded" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 700, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Roast the peppers, cut-side down, with a drizzle of oil for 20 minutes until softened and lightly charred. Roughly chop.",
+      "Meanwhile, soften the onion and garlic in a pot for 4-5 minutes.",
+      "Add the roasted peppers, tomatoes, smoked paprika, and stock.",
+      "Simmer for 10-15 minutes, then blend until smooth. Season to taste."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Chickpea & Coconut Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A warming, spiced soup that comes together almost entirely from the store cupboard.",
+    "ingredients": [
+      { "qty": 2, "unit": "tins", "item": "chickpeas, drained and rinsed" },
+      { "qty": 1, "unit": "tin", "item": "coconut milk" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 2, "unit": "tsp", "item": "curry powder" },
+      { "qty": 0.5, "unit": "tsp", "item": "chilli flakes" },
+      { "qty": 500, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 2, "unit": "handfuls", "item": "spinach" },
+      { "qty": null, "unit": null, "item": "Lime wedges, to serve" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Heat oil in a pot and soften the onion, garlic, and ginger for 4-5 minutes.",
+      "Stir in the curry powder and chilli flakes and cook for 30 seconds.",
+      "Add the chickpeas, coconut milk, and stock, and simmer for 12-15 minutes.",
+      "Stir in the spinach until wilted.",
+      "Season to taste and serve with a squeeze of lime."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Shrimp Noodle Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A punchy, gingery broth with prawns, noodles, and greens — ready in one pot.",
+    "ingredients": [
+      { "qty": 300, "unit": "g", "item": "raw prawns, peeled" },
+      { "qty": 100, "unit": "g", "item": "rice noodles" },
+      { "qty": 1, "unit": "litre", "item": "chicken or vegetable stock" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 1, "unit": "tsp", "item": "chilli flakes (or 1 tbsp sriracha)" },
+      { "qty": 2, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 2, "unit": "heads", "item": "pak choi, halved (or a handful of spinach)" },
+      { "qty": 2, "unit": "spring", "item": "onions, sliced" },
+      { "qty": 1, "unit": null, "item": "lime, cut into wedges" }
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot with the garlic, ginger, chilli flakes, and soy sauce.",
+      "Add the rice noodles and cook according to packet instructions.",
+      "Add the prawns and pak choi, and simmer for 3-4 minutes until the prawns are pink and cooked through.",
+      "Ladle into bowls and top with spring onion and a squeeze of lime."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Butternut Squash & Sage Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A silky, warming soup that's ready in half an hour with just a handful of ingredients.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 600, "unit": "g", "item": "butternut squash, peeled and cubed" },
+      { "qty": 750, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 6, "unit": null, "item": "fresh sage leaves" },
+      { "qty": 100, "unit": "ml", "item": "double cream" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the olive oil in a large pot over medium heat and cook the onion until soft, about 5 minutes.",
+      "Add the garlic and sage leaves and cook for 1 minute until fragrant.",
+      "Add the butternut squash and vegetable stock, bring to a boil, then simmer for 18-20 minutes until the squash is tender.",
+      "Blend the soup until smooth using a stick blender.",
+      "Stir in the cream, season with salt and pepper, and serve warm."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Chicken Tortilla Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A smoky, chilli-spiked broth with shredded chicken, black beans, and sweetcorn, topped with crunchy tortilla chips.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": null, "item": "red chilli, finely chopped" },
+      { "qty": 1, "unit": "tsp", "item": "ground cumin" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 400, "unit": "g", "item": "tin chopped tomatoes" },
+      { "qty": 700, "unit": "ml", "item": "chicken stock" },
+      { "qty": 2, "unit": null, "item": "chicken breasts" },
+      { "qty": 400, "unit": "g", "item": "tin black beans, drained" },
+      { "qty": 150, "unit": "g", "item": "sweetcorn" },
+      { "qty": null, "unit": null, "item": "Juice of 1 lime" },
+      { "qty": null, "unit": null, "item": "Tortilla chips, to serve" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a large pot over medium heat and cook the onion for 4-5 minutes until softened.",
+      "Add the garlic, chilli, cumin, and smoked paprika, and cook for 1 minute until fragrant.",
+      "Stir in the chopped tomatoes and chicken stock, then add the chicken breasts whole. Bring to a simmer and cook for 15-18 minutes until the chicken is cooked through.",
+      "Remove the chicken, shred with two forks, and return to the pot along with the black beans and sweetcorn. Simmer for 5 minutes.",
+      "Stir in the lime juice, season to taste, and serve topped with tortilla chips."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Thai Coconut Chicken Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A fragrant coconut broth with tender chicken, ready in under half an hour.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 1, "unit": "tin", "item": "(400ml) coconut milk" },
+      { "qty": 700, "unit": "ml", "item": "chicken stock" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 2, "unit": "tbsp", "item": "Thai red curry paste" },
+      { "qty": 1, "unit": "tbsp", "item": "fish sauce" },
+      { "qty": 1, "unit": null, "item": "lime, juiced" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, to serve" }
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot with the ginger and curry paste.",
+      "Pour in the coconut milk and simmer for 5 minutes.",
+      "Add the chicken and cook for 8-10 minutes until cooked through.",
+      "Stir in the fish sauce and lime juice.",
+      "Ladle into bowls and top with coriander."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Sausage & Butter Bean Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A warming, one-pot soup that turns a pack of sausages and a tin of beans into a full meal.",
+    "ingredients": [
+      { "qty": 6, "unit": null, "item": "sausages" },
+      { "qty": 1, "unit": "tin", "item": "butter beans, drained and rinsed" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 700, "unit": "ml", "item": "chicken or vegetable stock" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 0.5, "unit": "tsp", "item": "chilli flakes" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Squeeze the sausage meat out of the skins into small chunks. Heat a little oil in a large pot and fry the sausage pieces until browned.",
+      "Add the onion and garlic and cook for 4-5 minutes until softened.",
+      "Stir in the smoked paprika and chilli flakes and cook for 30 seconds.",
+      "Add the chopped tomatoes, butter beans, and stock.",
+      "Simmer for 15-18 minutes, stirring occasionally, until slightly thickened. Season to taste and serve with bread."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Minestrone Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A classic vegetable and bean soup that uses up odds and ends from the fridge, with small pasta to bulk it out.",
+    "ingredients": [
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": null, "item": "carrots, diced" },
+      { "qty": 2, "unit": "sticks", "item": "celery, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "tin", "item": "cannellini beans, drained and rinsed" },
+      { "qty": 100, "unit": "g", "item": "small pasta (e.g. macaroni)" },
+      { "qty": 1, "unit": "litre", "item": "vegetable stock" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a large pot and fry the onion, carrots, and celery for 5-6 minutes until softened.",
+      "Add the garlic and cook for 1 minute.",
+      "Stir in the chopped tomatoes, cannellini beans, and vegetable stock, and bring to a simmer.",
+      "Add the pasta and cook for 10-12 minutes until tender.",
+      "Season with salt and pepper and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Tomato & White Bean Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A cosy, creamy tomato soup with white beans for extra heartiness.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 400, "unit": "g", "item": "tin chopped tomatoes" },
+      { "qty": 400, "unit": "g", "item": "tin white beans, drained" },
+      { "qty": 300, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 2, "unit": "tbsp", "item": "double cream" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the olive oil in a pot and cook the onion and garlic for 4-5 minutes until soft.",
+      "Add the chopped tomatoes, white beans, and stock, then bring to a simmer.",
+      "Cook for 15 minutes, then blend until smooth, or leave chunky if you prefer.",
+      "Stir in the double cream and season with salt and pepper.",
+      "Serve warm with crusty bread."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Fried Egg & Avocado Toast",
+    "category": "Breakfast-for-Dinner",
+    "time": 10,
+    "teaser": "Breakfast food is fair game for dinner, and this one takes ten minutes.",
+    "ingredients": [
+      { "qty": 2, "unit": "slices", "item": "sourdough or thick bread" },
+      { "qty": 1, "unit": null, "item": "avocado" },
+      { "qty": 2, "unit": null, "item": "eggs" },
+      { "qty": null, "unit": null, "item": "Chilli flakes (optional)" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Toast the bread.",
+      "Mash the avocado with a little salt, pepper, and olive oil, and spread onto the toast.",
+      "Fry the eggs to your liking in a little oil.",
+      "Top the toast with the eggs and a pinch of chilli flakes if you like."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Cheesy Baked Beans on Toast",
+    "category": "Breakfast-for-Dinner",
+    "time": 10,
+    "teaser": "About as low-effort as dinner can get, and genuinely satisfying.",
+    "ingredients": [
+      { "qty": 1, "unit": "tin", "item": "baked beans" },
+      { "qty": null, "unit": null, "item": "2-4 slices bread" },
+      { "qty": 50, "unit": "g", "item": "cheddar, grated" },
+      { "qty": null, "unit": null, "item": "Butter" }
+    ],
+    "steps": [
+      "Warm the baked beans in a small pan over medium heat.",
+      "Toast and butter the bread.",
+      "Pile the beans onto the toast.",
+      "Top with grated cheddar and grill for 1-2 minutes if you'd like it melted, or serve as is."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Veggie Omelette",
+    "category": "Breakfast-for-Dinner",
+    "time": 12,
+    "teaser": "A flexible way to use up whatever vegetables are left in the fridge.",
+    "ingredients": [
+      { "qty": 3, "unit": null, "item": "eggs" },
+      { "qty": null, "unit": null, "item": "Handful spinach or mixed vegetables, chopped small" },
+      { "qty": 30, "unit": "g", "item": "cheese, grated" },
+      { "qty": null, "unit": null, "item": "Butter" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Whisk the eggs with salt and pepper.",
+      "Melt butter in a frying pan over medium heat and add the vegetables, cooking for 2-3 minutes until softened.",
+      "Pour in the eggs and let them set around the edges, then gently push the cooked edges towards the centre.",
+      "Sprinkle the cheese over one half, fold the omelette over, and slide onto a plate."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Halloumi Wrap with Sweet Chilli",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "Fried halloumi, salad, and sweet chilli sauce rolled into a wrap.",
+    "ingredients": [
+      { "qty": 1, "unit": "block", "item": "halloumi, sliced" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": null, "unit": null, "item": "Sweet chilli sauce" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Fry the halloumi slices in a little oil until golden on both sides, about 2 minutes per side.",
+      "Warm the tortillas briefly if you like.",
+      "Layer the lettuce and halloumi onto the wraps.",
+      "Drizzle with sweet chilli sauce, roll up, and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Caesar Wrap",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "A lunch-counter classic that works just as well for dinner.",
+    "ingredients": [
+      { "qty": 1, "unit": "cooked", "item": "chicken breast, sliced (or leftover roast chicken)" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": null, "unit": null, "item": "Handful romaine or cos lettuce, shredded" },
+      { "qty": 3, "unit": "tbsp", "item": "caesar dressing" },
+      { "qty": 2, "unit": "tbsp", "item": "parmesan, grated" }
+    ],
+    "steps": [
+      "Toss the lettuce with the caesar dressing and parmesan.",
+      "Lay the chicken over each wrap.",
+      "Top with the dressed lettuce.",
+      "Roll up tightly and slice in half to serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Falafel Wrap with Hummus",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "Shop-bought falafel and hummus make this a five-minute assembly job.",
+    "ingredients": [
+      { "qty": null, "unit": null, "item": "6-8 falafel (shop-bought or homemade)" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps or pitta" },
+      { "qty": 3, "unit": "tbsp", "item": "hummus" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": null, "unit": null, "item": "Few slices cucumber and tomato" }
+    ],
+    "steps": [
+      "Warm the falafel according to packet instructions.",
+      "Spread hummus over the wraps.",
+      "Layer in the lettuce, cucumber, tomato, and falafel.",
+      "Roll up and serve, or wrap in foil to eat on the go."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "BLT Sandwich",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "Bacon, lettuce, and tomato — a sandwich that never needs improving.",
+    "ingredients": [
+      { "qty": 6, "unit": "rashers", "item": "bacon" },
+      { "qty": 4, "unit": "slices", "item": "bread" },
+      { "qty": null, "unit": null, "item": "Handful lettuce" },
+      { "qty": 1, "unit": null, "item": "tomato, sliced" },
+      { "qty": null, "unit": null, "item": "Mayonnaise" }
+    ],
+    "steps": [
+      "Fry or grill the bacon until crisp.",
+      "Toast the bread if you like.",
+      "Spread mayonnaise on the bread.",
+      "Layer the bacon, lettuce, and tomato, then close the sandwich and slice in half."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Shawarma Wrap",
+    "category": "Wrap",
+    "time": 25,
+    "teaser": "Spiced chicken strips with a garlic yoghurt sauce, rolled into a warm wrap.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 2, "unit": "tsp", "item": "shawarma or mixed spice (cumin, paprika, turmeric)" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": 3, "unit": "tbsp", "item": "yoghurt" },
+      { "qty": 1, "unit": "clove", "item": "garlic, minced" },
+      { "qty": null, "unit": null, "item": "Shredded lettuce and sliced tomato" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Toss the chicken with the spices and a little oil.",
+      "Fry in a hot pan for 6-8 minutes until cooked through and lightly charred.",
+      "Mix the yoghurt with the garlic to make a quick sauce.",
+      "Warm the tortillas and layer with lettuce, tomato, and chicken.",
+      "Drizzle with the yoghurt sauce, roll up, and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "BBQ Chicken Wraps",
+    "category": "Wrap",
+    "time": 15,
+    "teaser": "Shredded or sliced chicken tossed in barbecue sauce and rolled into a wrap.",
+    "ingredients": [
+      { "qty": 1, "unit": "cooked", "item": "chicken breast, shredded (or leftover roast chicken)" },
+      { "qty": 3, "unit": "tbsp", "item": "barbecue sauce" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": 30, "unit": "g", "item": "cheddar, grated" }
+    ],
+    "steps": [
+      "Toss the shredded chicken with the barbecue sauce.",
+      "Warm the tortillas briefly if you like.",
+      "Layer the lettuce, chicken, and cheese onto the wraps.",
+      "Roll up tightly and slice in half to serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Sloppy Joe Rolls",
+    "category": "Wrap",
+    "time": 25,
+    "teaser": "A messy, saucy mince filling piled into soft bread rolls.",
+    "ingredients": [
+      { "qty": 400, "unit": "g", "item": "beef mince" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "tbsp", "item": "Worcestershire sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "brown sugar" },
+      { "qty": 1, "unit": "tsp", "item": "mustard" },
+      { "qty": 4, "unit": "soft", "item": "bread rolls" }
+    ],
+    "steps": [
+      "Fry the onion in a little oil for 4 minutes until soft.",
+      "Add the mince and brown, breaking it up as it cooks.",
+      "Stir in the tomatoes, Worcestershire sauce, brown sugar, and mustard.",
+      "Simmer for 12-15 minutes until thickened.",
+      "Split the rolls and pile the mince mixture inside."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Greek Chicken Pitta Wrap",
+    "category": "Wrap",
+    "time": 20,
+    "teaser": "Grilled chicken, tzatziki, and salad rolled into a warm pitta.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" },
+      { "qty": 2, "unit": "pittas", "item": "or large tortilla wraps" },
+      { "qty": 4, "unit": "tbsp", "item": "tzatziki (or yoghurt mixed with grated cucumber and garlic)" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": null, "unit": null, "item": "Few slices tomato and red onion" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Toss the chicken with the oregano and a little oil.",
+      "Fry in a hot pan for 6-8 minutes until cooked through and lightly charred.",
+      "Warm the pittas.",
+      "Layer the lettuce, tomato, onion, and chicken into the pittas.",
+      "Drizzle with tzatziki, roll or fold, and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Crispy Chicken Wrap with Sriracha Mayo",
+    "category": "Wrap",
+    "time": 20,
+    "teaser": "Golden pan-fried chicken strips with a spicy mayo, rolled up with crunchy lettuce.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced into strips" },
+      { "qty": 50, "unit": "g", "item": "flour" },
+      { "qty": 1, "unit": null, "item": "egg, beaten" },
+      { "qty": 80, "unit": "g", "item": "breadcrumbs" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": 3, "unit": "tbsp", "item": "mayonnaise" },
+      { "qty": 1, "unit": "tbsp", "item": "sriracha (or to taste)" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" },
+      { "qty": null, "unit": null, "item": "Vegetable oil" }
+    ],
+    "steps": [
+      "Coat the chicken strips in flour, then egg, then breadcrumbs.",
+      "Fry in a little oil for 3-4 minutes per side until golden and cooked through.",
+      "Mix the mayonnaise and sriracha together.",
+      "Warm the tortillas, then spread with the sriracha mayo and layer with lettuce and chicken.",
+      "Roll up tightly and slice in half to serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Chicken Burrito Wrap",
+    "category": "Wrap",
+    "time": 20,
+    "teaser": "A filling burrito-style wrap with spiced chicken, rice, and black beans.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "fajita seasoning" },
+      { "qty": 2, "unit": "large", "item": "tortilla wraps" },
+      { "qty": 100, "unit": "g", "item": "cooked rice" },
+      { "qty": 1, "unit": "tin", "item": "(400g) black beans, drained" },
+      { "qty": 50, "unit": "g", "item": "cheddar, grated" },
+      { "qty": 3, "unit": "tbsp", "item": "soured cream" },
+      { "qty": null, "unit": null, "item": "Handful lettuce, shredded" }
+    ],
+    "steps": [
+      "Toss the chicken with the fajita seasoning and a little oil.",
+      "Fry in a hot pan for 6-8 minutes until cooked through and lightly charred.",
+      "Warm the tortillas and the rice and black beans separately.",
+      "Layer the rice, black beans, chicken, cheddar, and lettuce onto the wraps.",
+      "Top with soured cream, roll up tightly, and slice in half to serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Greek-Style Salad with Feta",
+    "category": "Salad",
+    "time": 15,
+    "teaser": "A fresh, no-cook option for a hot evening.",
+    "ingredients": [
+      { "qty": 1, "unit": null, "item": "cucumber, chopped" },
+      { "qty": 3, "unit": null, "item": "tomatoes, chopped" },
+      { "qty": 1, "unit": "red", "item": "onion, thinly sliced" },
+      { "qty": 100, "unit": "g", "item": "feta, cubed" },
+      { "qty": null, "unit": null, "item": "Handful olives" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "red wine vinegar" }
+    ],
+    "steps": [
+      "Combine the cucumber, tomatoes, and onion in a large bowl.",
+      "Scatter the feta and olives over the top.",
+      "Whisk the olive oil and vinegar together and drizzle over the salad.",
+      "Toss gently and serve with warm pitta or bread."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Caesar Salad",
+    "category": "Salad",
+    "time": 20,
+    "teaser": "A heartier, main-course version of the classic side salad.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts" },
+      { "qty": 1, "unit": "romaine", "item": "or cos lettuce, chopped" },
+      { "qty": 4, "unit": "tbsp", "item": "caesar dressing" },
+      { "qty": 3, "unit": "tbsp", "item": "parmesan, grated" },
+      { "qty": null, "unit": null, "item": "Handful croutons" }
+    ],
+    "steps": [
+      "Season the chicken and pan-fry or grill until cooked through, then slice.",
+      "Toss the lettuce with the caesar dressing in a large bowl.",
+      "Top with the sliced chicken, parmesan, and croutons.",
+      "Serve immediately while the croutons are still crisp."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Warm Potato & Bacon Salad",
+    "category": "Salad",
+    "time": 25,
+    "teaser": "New potatoes and crispy bacon in a light mustard dressing, best served warm.",
+    "ingredients": [
+      { "qty": 500, "unit": "g", "item": "new potatoes, halved" },
+      { "qty": 6, "unit": "rashers", "item": "bacon, chopped" },
+      { "qty": 2, "unit": "spring", "item": "onions, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "mustard" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "red wine vinegar" }
+    ],
+    "steps": [
+      "Boil the potatoes until tender, about 15 minutes, then drain.",
+      "Fry the bacon until crisp.",
+      "Whisk the mustard, oil, and vinegar together.",
+      "Toss the warm potatoes with the bacon, spring onions, and dressing."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Salmon & New Potato Salad",
+    "category": "Salad",
+    "time": 25,
+    "teaser": "Warm new potatoes, flaked salmon, and a light mustard dressing.",
+    "ingredients": [
+      { "qty": 2, "unit": "salmon", "item": "fillets" },
+      { "qty": 400, "unit": "g", "item": "new potatoes, halved" },
+      { "qty": null, "unit": null, "item": "Handful green beans" },
+      { "qty": 1, "unit": "tbsp", "item": "mustard" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "lemon juice" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Boil the potatoes for 12-15 minutes until tender, adding the green beans for the last 3 minutes. Drain.",
+      "Meanwhile, season the salmon and pan-fry or grill for 4-5 minutes per side until cooked through. Flake into chunks.",
+      "Whisk the mustard, olive oil, and lemon juice together.",
+      "Toss the warm potatoes and beans with the dressing.",
+      "Top with the flaked salmon and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Caesar Pasta Salad",
+    "category": "Salad",
+    "time": 20,
+    "teaser": "A pasta twist on the classic Caesar, good served warm or chilled.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (fusilli or penne)" },
+      { "qty": 2, "unit": "chicken", "item": "breasts, cooked and sliced" },
+      { "qty": null, "unit": null, "item": "Handful cos lettuce, shredded" },
+      { "qty": 4, "unit": "tbsp", "item": "caesar dressing" },
+      { "qty": 3, "unit": "tbsp", "item": "parmesan, grated" },
+      { "qty": null, "unit": null, "item": "Handful croutons" }
+    ],
+    "steps": [
+      "Cook the pasta according to packet instructions, drain, and cool slightly.",
+      "Toss the pasta with the caesar dressing.",
+      "Fold in the lettuce, chicken, and parmesan.",
+      "Top with croutons just before serving."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Mediterranean Chickpea Salad",
+    "category": "Salad",
+    "time": 15,
+    "teaser": "A crunchy, no-cook salad packed with Mediterranean flavours, ready in 15 minutes.",
+    "ingredients": [
+      { "qty": 800, "unit": "g", "item": "chickpeas, drained and rinsed" },
+      { "qty": 200, "unit": "g", "item": "cherry tomatoes, halved" },
+      { "qty": 1, "unit": null, "item": "cucumber, diced" },
+      { "qty": 100, "unit": "g", "item": "feta cheese, crumbled" },
+      { "qty": 80, "unit": "g", "item": "kalamata olives" },
+      { "qty": 0.5, "unit": null, "item": "red onion, thinly sliced" },
+      { "qty": 3, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "red wine vinegar" },
+      { "qty": 1, "unit": "tsp", "item": "dried oregano" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Combine the chickpeas, cherry tomatoes, cucumber, feta, olives, and red onion in a large bowl.",
+      "Whisk together the olive oil, red wine vinegar, and dried oregano in a small bowl.",
+      "Pour the dressing over the salad and toss to combine.",
+      "Season with salt and pepper to taste and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chicken Avocado Ranch Salad",
+    "category": "Salad",
+    "time": 20,
+    "teaser": "A creamy, filling salad that's ready in the time it takes to cook the chicken.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts" },
+      { "qty": 2, "unit": "handfuls", "item": "mixed salad leaves" },
+      { "qty": 1, "unit": null, "item": "avocado, sliced" },
+      { "qty": 150, "unit": "g", "item": "cherry tomatoes, halved" },
+      { "qty": 4, "unit": "tbsp", "item": "ranch dressing" },
+      { "qty": 30, "unit": "g", "item": "cheddar, grated" }
+    ],
+    "steps": [
+      "Season the chicken and pan-fry or grill for 6-8 minutes per side until cooked through, then slice.",
+      "Toss the salad leaves and cherry tomatoes with the ranch dressing in a large bowl.",
+      "Top with the sliced chicken, avocado, and cheddar.",
+      "Serve immediately."
+    ],
+    "servings": 2
+  }
+]
