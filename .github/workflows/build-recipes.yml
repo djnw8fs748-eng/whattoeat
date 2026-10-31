@@ -1,0 +1,34 @@
+name: Build recipes.json
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'recipes_parts/**'
+      - '.github/workflows/build-recipes.yml'
+  workflow_dispatch: {}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Concatenate parts
+        run: |
+          python3 - <<'PYEOF'
+          import json, glob
+          parts = sorted(glob.glob('recipes_parts/part*.json'))
+          arr = []
+          for p in parts:
+              arr.extend(json.load(open(p, encoding='utf-8')))
+          print(f"Combined {len(arr)} recipes from {len(parts)} parts")
+          with open('recipes.json', 'w', encoding='utf-8') as f:
+              json.dump(arr, f, ensure_ascii=False)
+          PYEOF
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add recipes.json
+          git diff --staged --quiet && echo "No changes" || git commit -m "Auto-build recipes.json from recipes_parts/"
+          git push
