@@ -3,7 +3,10 @@
   "private": true,
   "version": "2.0.0",
   "scripts": {
+    "recipes": "node scripts/build-recipes.mjs",
+    "predev": "npm run recipes",
     "dev": "vite",
+    "prebuild": "npm run recipes",
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
