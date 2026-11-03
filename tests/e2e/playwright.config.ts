@@ -1,5 +1,4 @@
 import { defineConfig } from '@playwright/test';
-import path from 'path';
 
 export default defineConfig({
   testDir: '.',
@@ -9,8 +8,10 @@ export default defineConfig({
     headless: true,
   },
   webServer: {
-    command: 'npx serve . -l 3000',
-    cwd: path.resolve(__dirname, '../..'),
+    // Build the React app, then serve the finished site (dist/) — the same
+    // files the Docker image ships. Run `npm ci` in the repo root first.
+    command: 'npm --prefix ../.. run build && npx serve ../../dist -l 3000',
+    cwd: __dirname,
     url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
   },

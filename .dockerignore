@@ -1,0 +1,9 @@
+# Things the Docker build doesn't need (keeps builds fast and small).
+node_modules
+dist
+.git
+tests
+api
+migrations
+docs
+*.md

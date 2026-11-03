@@ -1,11 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { setupMockApi } from './fixtures/mock-api';
-
-async function addRecipeToDay(page: import('@playwright/test').Page, recipeTitle: string, day: string) {
-  const card = page.locator(`.card[data-title="${recipeTitle}"]`);
-  await card.locator('.add-plan-btn').click();
-  await page.locator(`#dayPickerList .day-picker-row[data-day="${day}"]`).dispatchEvent('click');
-}
+import { addRecipeToDay, chooseOption } from './fixtures/ui';
 
 test.beforeEach(async ({ page }) => {
   await setupMockApi(page);
@@ -15,28 +10,30 @@ test.beforeEach(async ({ page }) => {
 
 test('saving and loading a template round-trips the plan', async ({ page }) => {
   await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
 
-  page.once('dialog', dialog => dialog.accept('Usual Week'));
   await page.click('#saveTemplateBtn');
+  await page.fill('#templateNameInput', 'Usual Week');
+  await page.click('#templateSaveConfirm');
 
   // Clear the plan
-  await page.locator('.day-col-remove').first().click();
+  await page.getByTestId('day-col-remove').first().click();
   await expect(page.locator('#planGrid .day-col-recipe')).toHaveCount(0);
 
-  await page.selectOption('#loadTemplateSelect', 'Usual Week');
-  page.once('dialog', dialog => dialog.accept());
+  await chooseOption(page, '#loadTemplateSelect', 'Usual Week');
   await page.click('#loadTemplateBtn');
+  await page.click('#confirmModalOk');
 
   await expect(page.locator('#planGrid')).toContainText('Garlic Butter Pasta with Parmesan');
 });
 
 test('failed template load shows an error banner and leaves the existing plan intact', async ({ page }) => {
   await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
 
-  page.once('dialog', dialog => dialog.accept('Usual Week'));
   await page.click('#saveTemplateBtn');
+  await page.fill('#templateNameInput', 'Usual Week');
+  await page.click('#templateSaveConfirm');
 
   // Simulate the template having been deleted from another browser tab:
   // the select still lists it, but applying it now 404s.
@@ -46,9 +43,9 @@ test('failed template load shows an error banner and leaves the existing plan in
 
   await expect(page.locator('#planGrid')).toContainText('Garlic Butter Pasta with Parmesan');
 
-  await page.selectOption('#loadTemplateSelect', 'Usual Week');
-  page.once('dialog', dialog => dialog.accept());
+  await chooseOption(page, '#loadTemplateSelect', 'Usual Week');
   await page.click('#loadTemplateBtn');
+  await page.click('#confirmModalOk');
 
   await expect(page.locator('#apiErrorMsg')).toBeVisible();
   // plan state must not have been corrupted with the error body

@@ -1,14 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { setupMockApi } from './fixtures/mock-api';
-
-async function addRecipeToDay(page: import('@playwright/test').Page, recipeTitle: string, day: string) {
-  const card = page.locator(`.card[data-title="${recipeTitle}"]`);
-  await card.locator('.add-plan-btn').click();
-  await expect(page.locator('#dayPicker')).toHaveClass(/open/);
-  // Using dispatchEvent instead of click() to bypass viewport checks for fixed-position elements
-  await page.locator(`#dayPickerList .day-picker-row[data-day="${day}"]`).dispatchEvent('click');
-  await expect(page.locator('#dayPicker')).not.toHaveClass(/open/);
-}
+import { addRecipeToDay } from './fixtures/ui';
 
 test.beforeEach(async ({ page }) => {
   await setupMockApi(page);
@@ -19,7 +11,7 @@ test.beforeEach(async ({ page }) => {
 test('planning a recipe shows its ingredients in the shopping list', async ({ page }) => {
   await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
 
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
   await expect(page.locator('#shoppingSection')).toBeVisible();
   const items = page.locator('#shoppingGrid .shopping-item label');
   await expect(items).not.toHaveCount(0);
@@ -30,7 +22,7 @@ test('matching ingredients are merged and summed across planned recipes', async 
   await addRecipeToDay(page, 'One-Pan Tomato & Basil Pasta', 'mon');
   await addRecipeToDay(page, 'Creamy Chicken & Bacon Pasta', 'tue');
 
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
 
   const items = page.locator('#shoppingGrid .shopping-item label');
   const texts = await items.allTextContents();
@@ -42,11 +34,11 @@ test('matching ingredients are merged and summed across planned recipes', async 
 
 test('shopping list quantities scale with a day\'s servings', async ({ page }) => {
   const card = page.locator('.card[data-title="Garlic Butter Pasta with Parmesan"]');
-  await card.locator('.add-plan-btn').click();
+  await card.getByTestId('add-plan-btn').click();
   await page.locator('#dayPickerServingsPlus').click(); // 2 -> 3
   await page.locator('#dayPickerList .day-picker-row[data-day="mon"]').dispatchEvent('click');
 
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
   const spaghettiItem = page.locator('#shoppingGrid .shopping-item label', { hasText: 'spaghetti or linguine' });
   await expect(spaghettiItem).toContainText('300g');
 });
@@ -55,7 +47,7 @@ test('shopping list items are grouped by aisle, alphabetical within each group',
   await addRecipeToDay(page, 'One-Pan Tomato & Basil Pasta', 'mon');
   await addRecipeToDay(page, 'Creamy Chicken & Bacon Pasta', 'tue');
 
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
 
   // Rendered labels lead with quantity ("300g spaghetti"), so ordering is
   // driven by each row's normalized ingredient name, exposed via data-sort-key
@@ -76,7 +68,7 @@ test('shopping list items are grouped by aisle, alphabetical within each group',
 
 test('copy list button briefly shows "Copied!" text', async ({ page }) => {
   await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
 
   // Mock clipboard API in case the browser sandbox blocks it
   await page.evaluate(() => {
@@ -99,7 +91,7 @@ test('pantry seasonings land in Pantry, not Produce, despite containing a produc
   // ("chilli", "pepper") as a substring, but as dried/jarred seasonings they
   // belong in Pantry — regression test for that keyword-collision bug.
   await addRecipeToDay(page, 'Fried Egg & Avocado Toast', 'mon');
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
 
   const pantryGroup = page.locator('.shopping-group', { has: page.locator('.shopping-group-heading', { hasText: 'Pantry' }) });
   const produceGroup = page.locator('.shopping-group', { has: page.locator('.shopping-group-heading', { hasText: 'Produce' }) });

@@ -1,14 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { setupMockApi } from './fixtures/mock-api';
-
-async function addRecipeToDay(page: import('@playwright/test').Page, recipeTitle: string, day: string) {
-  const card = page.locator(`.card[data-title="${recipeTitle}"]`);
-  await card.locator('.add-plan-btn').click();
-  await expect(page.locator('#dayPicker')).toHaveClass(/open/);
-  // Using dispatchEvent instead of click() to bypass viewport checks for fixed-position elements
-  await page.locator(`#dayPickerList .day-picker-row[data-day="${day}"]`).dispatchEvent('click');
-  await expect(page.locator('#dayPicker')).not.toHaveClass(/open/);
-}
+import { addRecipeToDay } from './fixtures/ui';
 
 test.beforeEach(async ({ page }) => {
   await setupMockApi(page);
@@ -20,7 +12,7 @@ test('Add to plan button opens day picker with 7 day rows', async ({ page }) => 
   // Scroll down to simulate a real user who has scrolled past the hero — this is what
   // exposed the scrollY positioning bug where the picker appeared below the viewport.
   await page.evaluate(() => window.scrollBy(0, 300));
-  await page.locator('.card').first().locator('.add-plan-btn').click();
+  await page.locator('.card').first().getByTestId('add-plan-btn').click();
   await expect(page.locator('#dayPicker')).toBeVisible();
   await expect(page.locator('#dayPickerList .day-picker-row')).toHaveCount(7);
   await page.locator('#dayPickerCancel').dispatchEvent('click');
@@ -29,16 +21,16 @@ test('Add to plan button opens day picker with 7 day rows', async ({ page }) => 
 test('selecting a day adds recipe to that day in the plan tab', async ({ page }) => {
   await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
 
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
   await expect(page.locator('#planGrid')).toContainText('Garlic Butter Pasta with Parmesan');
 });
 
-test('card shows "✓ In plan" badge after adding to plan', async ({ page }) => {
+test('card shows "In plan" after adding to plan', async ({ page }) => {
   await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
 
-  const btn = page.locator('.card[data-title="Garlic Butter Pasta with Parmesan"] .add-plan-btn');
-  await expect(btn).toHaveText('✓ In plan');
-  await expect(btn).toHaveClass(/planned/);
+  const btn = page.locator('.card[data-title="Garlic Butter Pasta with Parmesan"]').getByTestId('add-plan-btn');
+  await expect(btn).toHaveText('In plan');
+  await expect(btn).toHaveAttribute('data-planned', 'true');
 });
 
 test('plan tab badge count increments after adding recipe', async ({ page }) => {
@@ -56,7 +48,7 @@ test('adding to an occupied day replaces the recipe', async ({ page }) => {
   await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
   await addRecipeToDay(page, 'One-Pan Tomato & Basil Pasta', 'mon');
 
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
   await expect(page.locator('#planGrid')).not.toContainText('Garlic Butter Pasta with Parmesan');
   await expect(page.locator('#planGrid')).toContainText('One-Pan Tomato & Basil Pasta');
 });
@@ -64,31 +56,31 @@ test('adding to an occupied day replaces the recipe', async ({ page }) => {
 test('remove button clears the day and removes card badge', async ({ page }) => {
   await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
 
-  await page.click('#planTab');
-  await page.locator('.day-col-remove').first().click();
+  await page.click('[data-testid="planTab"]');
+  await page.getByTestId('day-col-remove').first().click();
 
   await expect(page.locator('#planGrid .day-col-recipe')).toHaveCount(0);
 
   // badge on card should be gone after switching back to browse
-  await page.click('#browseTab');
-  const btn = page.locator('.card[data-title="Garlic Butter Pasta with Parmesan"] .add-plan-btn');
-  await expect(btn).toHaveText('+ Add to plan');
-  await expect(btn).not.toHaveClass(/planned/);
+  await page.click('[data-testid="browseTab"]');
+  const btn = page.locator('.card[data-title="Garlic Butter Pasta with Parmesan"]').getByTestId('add-plan-btn');
+  await expect(btn).toHaveText('Add to plan');
+  await expect(btn).toHaveAttribute('data-planned', 'false');
 });
 
 test('clicking an empty day slot in the plan tab switches to Browse', async ({ page }) => {
   // Navigate to plan tab with an empty plan — all slots are empty
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
   await page.locator('.day-col-empty').first().click();
 
   await expect(page.locator('#browseView')).toBeVisible();
   await expect(page.locator('#planView')).toBeHidden();
-  await expect(page.locator('#browseTab')).toHaveClass(/active/);
+  await expect(page.locator('[data-testid="browseTab"]')).toHaveAttribute('aria-selected', 'true');
 });
 
 test('planned day shows the recipe base servings by default', async ({ page }) => {
   await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
 
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
   await expect(page.locator('.day-col-recipe')).toContainText('2');
 });

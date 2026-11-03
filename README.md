@@ -1,16 +1,40 @@
 # Recipe Catalogue — Docker image
 
-A self-contained web page (70 easy dinner recipes) packaged as a Docker image, built automatically by GitHub whenever you push a change.
+A recipe browser and weekly meal planner, built with React and the [Atlassian Design System](https://atlassian.design/), packaged as a Docker image that GitHub builds automatically whenever you push a change.
 
 Repo: https://github.com/djnw8fs748-eng/whattoeat
 
 ## How the pieces fit together
 
-- **`index.html`** — the page's structure, styling, and logic. It doesn't contain the recipes themselves — it fetches `recipes.json` when the page loads.
-- **`recipes.json`** — just the recipe data: a plain list of objects (title, category, time, ingredients, steps). This is the *only* file that needs editing to add, remove, or change recipes — by you or by an automated agent.
-- **`Dockerfile`** — instructions for turning those two files into a runnable container image (a tiny nginx web server with both baked in).
-- **`.github/workflows/docker-publish.yml`** — tells GitHub to build that image and publish it to GitHub's container registry (GHCR) every time you push to `main`. You never run this by hand.
+- **`src/`** — the app itself, written in React + TypeScript using Atlassian's components (`@atlaskit/...`) and design tokens:
+  - `src/App.tsx` — holds all the app's state (filters, plan, ratings…) and lays out the page.
+  - `src/components/` — one file per part of the screen (recipe card, filter bar, detail panel, meal plan, shopping list…).
+  - `src/lib/` — the logic with no visuals: recipe filtering and scaling (`recipes.ts`), the shopping list (`shopping.ts`), and calls to the API (`api.ts`).
+  - `src/styles.css` — layout styles. Every colour, space and shadow is an Atlassian token (`var(--ds-…)`), so light and dark mode come for free.
+- **`index.html`** — a tiny shell page that the React app draws itself into.
+- **`package.json`** — the list of libraries the app uses (React, Vite, Atlassian components). `package-lock.json` pins their exact versions.
+- **`vite.config.ts`** — settings for Vite, the tool that turns `src/` into plain files a browser can run (the `dist/` folder).
+- **`recipes.json`** — the recipe data the app loads when it starts (generated — see "Updating the recipes" below).
+- **`Dockerfile`** — builds the app with Node.js, then copies the finished `dist/` folder into a tiny nginx web server image.
+- **`.github/workflows/docker-publish.yml`** — tells GitHub to type-check and test the app, then build and publish the images to GitHub's container registry (GHCR) every time you push to `main`. You never run this by hand.
 - **`docker-compose.yml`** — what you paste into Portainer to actually run the published image.
+
+## Working on the app on your own computer
+
+You need [Node.js](https://nodejs.org/) 22 or newer.
+
+```sh
+npm install        # once, to download the libraries
+npm run dev        # starts a live-reloading copy at http://localhost:5173
+```
+
+`npm run dev` forwards `/api/...` requests to the Python API on port 8000. To run that too: `cd api && pip install -r requirements.txt && uvicorn main:app --port 8000` (it stores data in `/data/store.json`, so that folder must exist and be writable). Without the API the recipes still browse fine; planning and ratings just won't save.
+
+Other handy commands:
+
+- `npm run typecheck` — checks the TypeScript code for mistakes.
+- `npm run build` — produces the finished site in `dist/` (what the Docker image serves).
+- Browser tests: `cd tests/e2e && npm install && npx playwright install chromium && npx playwright test` (builds the app first automatically).
 
 ## Port details
 
@@ -35,7 +59,7 @@ ghcr.io/djnw8fs748-eng/whattoeat:latest
 
 **3. If the repo is private**
 
-By default, a package built from a private repo is also private, which means Portainer would need to authenticate to pull it. Easiest fix: go to your GitHub profile → **Packages** → click the `whattoeat` package → **Package settings** → change visibility to **Public**. The image itself contains nothing sensitive (just the HTML page), so this is generally fine even if the repo stays private.
+By default, a package built from a private repo is also private, which means Portainer would need to authenticate to pull it. Easiest fix: go to your GitHub profile → **Packages** → click the `whattoeat` package → **Package settings** → change visibility to **Public**. The image itself contains nothing sensitive (just the built web page), so this is generally fine even if the repo stays private.
 
 ## Deploying it
 
@@ -64,7 +88,7 @@ Then visit `http://docker.dom.local:8090` (or wherever you pointed it) to see th
    }
    ```
 
-   Ingredients must be `{qty, unit, item}` objects, not plain strings — a plain string breaks `renderShoppingList()` in `index.html`. `qty` and `unit` can be `null` for ingredients with no sensible quantity (e.g. "salt to taste"), but `item` is required. `servings` is required and must be an integer — it's the base serving count the ingredient quantities above are written for; the app scales quantities up/down from it, and a missing `servings` produces `NaN` in that scaling.
+   Ingredients must be `{qty, unit, item}` objects, not plain strings — a plain string breaks the shopping list (`src/lib/shopping.ts`). `qty` and `unit` can be `null` for ingredients with no sensible quantity (e.g. "salt to taste"), but `item` is required. `servings` is required and must be an integer — it's the base serving count the ingredient quantities above are written for; the app scales quantities up/down from it, and a missing `servings` produces `NaN` in that scaling.
 
 2. If you added a new file or category, add a matching entry (or entries) to `recipes/_index.json` — one per recipe, pointing at the `file` you just added/edited.
 3. `git add recipes/... && git commit -m "Update recipes" && git push` (or edit directly on GitHub).
@@ -73,7 +97,7 @@ Then visit `http://docker.dom.local:8090` (or wherever you pointed it) to see th
 
 That last step is the only manual part — Portainer won't automatically notice a new image unless you tell it to check, though tools like Watchtower can automate that too if you'd rather not do it by hand.
 
-This split is also what makes a scheduled/automated update job practical: an agent just needs to read/write the relevant `recipes/<category>.json` file and keep `recipes/_index.json` in sync, then push — it never has to parse or touch the page's HTML/CSS/JS, or `recipes.json`, to do it.
+This split is also what makes a scheduled/automated update job practical: an agent just needs to read/write the relevant `recipes/<category>.json` file and keep `recipes/_index.json` in sync, then push — it never has to parse or touch the app's code in `src/`, or `recipes.json`, to do it.
 
 ## Planning features
 
