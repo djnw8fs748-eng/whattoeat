@@ -5,6 +5,8 @@ __pycache__/
 .pytest_cache/
 .venv/
 dist/
+# Generated from recipes/ by scripts/build-recipes.mjs
+recipes.json
 test-results/
 playwright-report/
 # Generated from favicon.svg by CI

@@ -20,30 +20,6 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
 
-      - name: Build recipes.json from the recipes/ category files
-        run: |
-          python3 - <<'PYEOF'
-          import json
-
-          with open('recipes/_index.json') as f:
-              index = json.load(f)
-
-          seen_files = []
-          for entry in index:
-              if entry['file'] not in seen_files:
-                  seen_files.append(entry['file'])
-
-          recipes = []
-          for filename in seen_files:
-              with open(f'recipes/{filename}') as rf:
-                  recipes.extend(json.load(rf))
-
-          with open('recipes.json', 'w') as out:
-              json.dump(recipes, out, indent=2, ensure_ascii=False)
-
-          print(f"Built recipes.json with {len(recipes)} recipes from {len(seen_files)} category files")
-          PYEOF
-
       - name: Generate favicon PNGs and ICO from favicon.svg
         run: |
           pip install --quiet cairosvg pillow
@@ -70,9 +46,12 @@ jobs:
             package-lock.json
             tests/e2e/package-lock.json
 
-      - name: Install app dependencies and type-check
+      # `npm run recipes` checks the recipe data and builds recipes.json from
+      # recipes/ (it also runs automatically before every `npm run build`).
+      - name: Install app dependencies, check recipes and type-check
         run: |
           npm ci
+          npm run recipes
           npm run typecheck
 
       # Playwright builds the React app and serves dist/ itself
