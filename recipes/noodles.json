@@ -5,46 +5,14 @@
     "time": 20,
     "teaser": "Pan-fried salmon and noodles tossed in a sticky homemade teriyaki sauce.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "salmon",
-        "item": "fillets"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "noodles (egg or udon)"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "honey"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "rice vinegar"
-      },
-      {
-        "qty": 1,
-        "unit": "clove",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "sesame oil"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Spring onion and sesame seeds to garnish"
-      }
+      { "qty": 2, "unit": "salmon", "item": "fillets" },
+      { "qty": 150, "unit": "g", "item": "noodles (egg or udon)" },
+      { "qty": 3, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 2, "unit": "tbsp", "item": "honey" },
+      { "qty": 1, "unit": "tbsp", "item": "rice vinegar" },
+      { "qty": 1, "unit": "clove", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "sesame oil" },
+      { "qty": null, "unit": null, "item": "Spring onion and sesame seeds to garnish" }
     ],
     "steps": [
       "Cook the noodles according to packet instructions and drain.",
@@ -61,46 +29,14 @@
     "time": 20,
     "teaser": "Chicken and vegetables stir-fried with noodles in a simple soy sauce.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "noodles"
-      },
-      {
-        "qty": 1,
-        "unit": "bell",
-        "item": "pepper, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "carrot, julienned"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sesame oil"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Vegetable oil"
-      }
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 150, "unit": "g", "item": "noodles" },
+      { "qty": 1, "unit": "bell", "item": "pepper, sliced" },
+      { "qty": 1, "unit": null, "item": "carrot, julienned" },
+      { "qty": 3, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "sesame oil" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": null, "unit": null, "item": "Vegetable oil" }
     ],
     "steps": [
       "Cook the noodles according to packet instructions, drain, and set aside.",
@@ -117,46 +53,14 @@
     "time": 20,
     "teaser": "Chicken and egg noodles tossed in a sticky sesame-soy glaze.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "egg noodles"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "honey"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sesame oil"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "sesame seeds"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Vegetable oil"
-      }
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 150, "unit": "g", "item": "egg noodles" },
+      { "qty": 3, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 2, "unit": "tbsp", "item": "honey" },
+      { "qty": 1, "unit": "tbsp", "item": "sesame oil" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "sesame seeds" },
+      { "qty": null, "unit": null, "item": "Vegetable oil" }
     ],
     "steps": [
       "Cook the noodles according to packet instructions, drain, and set aside.",
@@ -173,51 +77,15 @@
     "time": 20,
     "teaser": "Noodles and chicken tossed in a quick peanut butter and chilli sauce.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "breasts, sliced"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "noodles (egg or udon)"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "peanut butter"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "rice vinegar"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "chilli flakes (or to taste)"
-      },
-      {
-        "qty": 1,
-        "unit": "clove",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Splash of hot water to loosen"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Vegetable oil"
-      }
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 150, "unit": "g", "item": "noodles (egg or udon)" },
+      { "qty": 3, "unit": "tbsp", "item": "peanut butter" },
+      { "qty": 2, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "rice vinegar" },
+      { "qty": 1, "unit": "tsp", "item": "chilli flakes (or to taste)" },
+      { "qty": 1, "unit": "clove", "item": "garlic, minced" },
+      { "qty": null, "unit": null, "item": "Splash of hot water to loosen" },
+      { "qty": null, "unit": null, "item": "Vegetable oil" }
     ],
     "steps": [
       "Cook the noodles according to packet instructions, drain, and set aside.",
@@ -234,41 +102,13 @@
     "time": 20,
     "teaser": "Shrimp and noodles tossed in a quick garlic butter sauce — simple and fast.",
     "ingredients": [
-      {
-        "qty": 300,
-        "unit": "g",
-        "item": "raw shrimp or prawns, peeled"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "noodles (egg or udon)"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": 3,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 0.5,
-        "unit": null,
-        "item": "lemon, juiced"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Chopped parsley to garnish"
-      }
+      { "qty": 300, "unit": "g", "item": "raw shrimp or prawns, peeled" },
+      { "qty": 150, "unit": "g", "item": "noodles (egg or udon)" },
+      { "qty": 3, "unit": "tbsp", "item": "butter" },
+      { "qty": 3, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 2, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 0.5, "unit": null, "item": "lemon, juiced" },
+      { "qty": null, "unit": null, "item": "Chopped parsley to garnish" }
     ],
     "steps": [
       "Cook the noodles according to packet instructions and drain.",
@@ -276,6 +116,110 @@
       "Add the shrimp and cook for 2-3 minutes per side until pink and cooked through.",
       "Stir in the soy sauce and lemon juice, then toss the noodles through.",
       "Garnish with parsley and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Singapore-Style Curry Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "A quick, curry-spiced noodle stir-fry loaded with prawns and vegetables — ready faster than a takeaway.",
+    "ingredients": [
+      { "qty": 150, "unit": "g", "item": "rice vermicelli noodles" },
+      { "qty": 200, "unit": "g", "item": "raw prawns, peeled" },
+      { "qty": 2, "unit": null, "item": "eggs, beaten" },
+      { "qty": 1, "unit": "red", "item": "pepper, sliced" },
+      { "qty": 2, "unit": "tsp", "item": "curry powder" },
+      { "qty": 2, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": null, "unit": null, "item": "Handful beansprouts" },
+      { "qty": null, "unit": null, "item": "Vegetable oil" }
+    ],
+    "steps": [
+      "Soak the rice vermicelli in boiling water according to packet instructions, then drain.",
+      "Heat oil in a wok over high heat and stir-fry the prawns for 2-3 minutes until pink. Set aside.",
+      "Push everything aside, pour in the beaten eggs, and scramble until just set.",
+      "Add the pepper and curry powder and stir-fry for 1-2 minutes.",
+      "Add the noodles, soy sauce, and beansprouts, and toss everything together for 1-2 minutes. Return the prawns to the pan and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Sesame Ginger Beef Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Tender strips of beef tossed with noodles in a quick sesame-ginger sauce.",
+    "ingredients": [
+      { "qty": 250, "unit": "g", "item": "beef sirloin, thinly sliced" },
+      { "qty": 200, "unit": "g", "item": "dried egg noodles" },
+      { "qty": 2, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "sesame oil" },
+      { "qty": 1, "unit": "tbsp", "item": "rice vinegar" },
+      { "qty": 1, "unit": "tbsp", "item": "honey" },
+      { "qty": 3, "unit": "cm", "item": "piece ginger, grated" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 2, "unit": null, "item": "spring onions, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "sesame seeds" }
+    ],
+    "steps": [
+      "Cook the noodles according to the packet instructions, then drain and set aside.",
+      "Whisk together the soy sauce, sesame oil, rice vinegar, and honey in a small bowl.",
+      "Heat the vegetable oil in a wok over high heat and stir-fry the beef for 2-3 minutes until browned.",
+      "Add the ginger and garlic and stir-fry for 30 seconds until fragrant.",
+      "Add the noodles and sauce to the wok and toss everything together for 1-2 minutes until well coated.",
+      "Serve topped with spring onions and sesame seeds."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Honey Garlic Pork Noodles",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "Browned pork mince and peppers tossed with egg noodles in a sticky honey garlic sauce.",
+    "ingredients": [
+      { "qty": 250, "unit": "g", "item": "pork mince" },
+      { "qty": 200, "unit": "g", "item": "egg noodles" },
+      { "qty": 3, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "fresh ginger, grated" },
+      { "qty": 3, "unit": "tbsp", "item": "honey" },
+      { "qty": 3, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "rice vinegar" },
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 1, "unit": "red", "item": "pepper, sliced" },
+      { "qty": 2, "unit": null, "item": "spring onions, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "sesame seeds, to serve" }
+    ],
+    "steps": [
+      "Cook the egg noodles according to the packet instructions, then drain and set aside.",
+      "Heat the vegetable oil in a wok or large frying pan over high heat and fry the pork mince for 4-5 minutes, breaking it up, until browned.",
+      "Add the garlic, ginger, and red pepper, and stir-fry for 2-3 minutes until the pepper softens.",
+      "Whisk together the honey, soy sauce, and rice vinegar, then pour into the pan and simmer for 2 minutes until slightly sticky.",
+      "Toss through the cooked noodles until well coated, then serve scattered with spring onions and sesame seeds."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Vegetable Chow Mein",
+    "category": "Noodles",
+    "time": 20,
+    "teaser": "A quick vegetable-packed noodle stir-fry with scrambled egg and a simple soy sauce.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "egg noodles" },
+      { "qty": 2, "unit": null, "item": "eggs, beaten" },
+      { "qty": 1, "unit": null, "item": "carrot, julienned" },
+      { "qty": 1, "unit": null, "item": "red pepper, sliced" },
+      { "qty": 100, "unit": "g", "item": "beansprouts" },
+      { "qty": 3, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 2, "unit": null, "item": "spring onions, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "sesame oil" }
+    ],
+    "steps": [
+      "Cook the egg noodles according to packet instructions, drain, and set aside.",
+      "Heat the vegetable oil in a wok and scramble the eggs until just set, then remove and set aside.",
+      "Add the carrot and red pepper to the wok and stir-fry for 3-4 minutes until just tender.",
+      "Add the beansprouts, noodles, soy sauce, and scrambled egg, and toss everything together for 1-2 minutes.",
+      "Drizzle with the sesame oil and top with spring onions."
     ],
     "servings": 2
   }

@@ -287,5 +287,75 @@
       "Serve with a spoonful of yoghurt on the side."
     ],
     "servings": 2
+  },
+  {
+    "title": "Sheet-Pan Sausage, Pepper & Sweet Potato Bake",
+    "category": "Sheet-Pan",
+    "time": 35,
+    "teaser": "Sausages roast alongside sweet potato and peppers for a colourful, mostly hands-off tray bake.",
+    "ingredients": [
+      { "qty": 6, "unit": null, "item": "sausages" },
+      { "qty": 2, "unit": "sweet", "item": "potatoes, cut into chunks" },
+      { "qty": 1, "unit": "red", "item": "pepper, sliced" },
+      { "qty": 1, "unit": "red", "item": "onion, wedged" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the sweet potato chunks with half the oil and roast for 10 minutes to get a head start.",
+      "Add the sausages, pepper, and red onion to the tray, drizzle with the remaining oil and the paprika, and season.",
+      "Roast for 25-30 minutes, turning once, until the sausages are browned and cooked through and the vegetables are tender."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Sheet-Pan Harissa Cauliflower & Chickpeas",
+    "category": "Sheet-Pan",
+    "time": 30,
+    "teaser": "Charred harissa-roasted cauliflower and chickpeas with a lemon yoghurt drizzle — a vegetarian tray bake with plenty of kick.",
+    "ingredients": [
+      { "qty": 1, "unit": "head", "item": "cauliflower, cut into florets" },
+      { "qty": 400, "unit": "g", "item": "tin chickpeas, drained" },
+      { "qty": 3, "unit": "tbsp", "item": "harissa paste" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "red onion, cut into wedges" },
+      { "qty": 150, "unit": "g", "item": "natural yoghurt" },
+      { "qty": 1, "unit": "tbsp", "item": "lemon juice" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, chopped" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Preheat the oven to 220°C (200°C fan).",
+      "Toss the cauliflower florets, chickpeas, and red onion with the harissa paste and olive oil on a large baking tray, and season with salt and pepper.",
+      "Roast for 25-30 minutes, turning halfway, until the cauliflower is tender and charred at the edges.",
+      "Meanwhile, stir the lemon juice into the yoghurt and season to taste.",
+      "Serve the roasted vegetables drizzled with the lemon yoghurt and scattered with coriander."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Harissa Salmon & Sweet Potato Traybake",
+    "category": "Sheet-Pan",
+    "time": 25,
+    "teaser": "Salmon and sweet potato roast together with a spicy harissa glaze — minimal effort, big flavour.",
+    "ingredients": [
+      { "qty": 2, "unit": "salmon", "item": "fillets" },
+      { "qty": 2, "unit": "sweet", "item": "potatoes, cut into wedges" },
+      { "qty": 2, "unit": "tbsp", "item": "harissa paste" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "lemon, sliced" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, chopped, to serve" }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (fan 180°C).",
+      "Toss the sweet potato wedges with half the oil and a pinch of salt, and spread on a baking tray. Roast for 15 minutes.",
+      "Mix the harissa paste with the remaining oil and brush over the salmon.",
+      "Add the salmon and lemon slices to the tray among the sweet potato.",
+      "Roast for a further 10-12 minutes until the salmon is cooked through. Scatter with coriander before serving."
+    ],
+    "servings": 2
   }
 ]

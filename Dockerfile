@@ -1,11 +1,16 @@
+# Stage 1 — build the React app into plain static files (dist/).
+# recipes.json, recipes/_index.json and the favicons are copied into
+# dist/ by the build (see vite.config.ts).
+FROM node:22-alpine AS build
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+# Stage 2 — serve those files with a tiny nginx web server. Only the
+# finished site is copied across; Node and the source code are left behind.
 FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
-COPY recipes.json /usr/share/nginx/html/recipes.json
-COPY recipes/_index.json /usr/share/nginx/html/recipes/_index.json
-COPY favicon.svg /usr/share/nginx/html/favicon.svg
-COPY favicon-16.png /usr/share/nginx/html/favicon-16.png
-COPY favicon-32.png /usr/share/nginx/html/favicon-32.png
-COPY apple-touch-icon.png /usr/share/nginx/html/apple-touch-icon.png
-COPY favicon.ico /usr/share/nginx/html/favicon.ico
+COPY --from=build /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80

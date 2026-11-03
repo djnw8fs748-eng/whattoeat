@@ -1,0 +1,99 @@
+[
+  {
+    "title": "Garlic Butter Pasta with Parmesan",
+    "category": "Pasta",
+    "time": 15,
+    "teaser": "A five-ingredient pantry pasta that tastes far fancier than the effort involved.",
+    "ingredients": [
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "spaghetti or linguine"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 4,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "parmesan, grated"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Salt and black pepper"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Fresh parsley, chopped (optional)"
+      }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Melt the butter in the same pot over low heat and add the garlic. Cook for 1 minute until fragrant, not browned.",
+      "Tip the pasta back in with a splash of the reserved water and toss well.",
+      "Stir in the parmesan until it melts into a light sauce, adding more water if it looks dry.",
+      "Season with salt and pepper and scatter parsley over the top."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "One-Pan Tomato & Basil Pasta",
+    "category": "Pasta",
+    "time": 25,
+    "teaser": "The pasta cooks straight in the sauce, so there's only one pot to wash.",
+    "ingredients": [
+      {
+        "qty": 250,
+        "unit": "g",
+        "item": "short pasta (penne or fusilli)"
+      },
+      {
+        "qty": 1,
+        "unit": "tin",
+        "item": "(400g) chopped tomatoes"
+      },
+      {
+        "qty": 500,
+        "unit": "ml",
+        "item": "vegetable stock"
+      },
+      {
+        "qty": 2,
+        "unit": "cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Handful fresh basil, torn"
+      },
+      {
+        "qty": null,
+        "unit": null,
+        "item": "Grated parmesan to serve"
+      }
+    ],
+    "steps": [
+      "Heat the oil in a large pot and soften the garlic for 30 seconds.",
+      "Add the tomatoes, stock, and pasta, and stir well.",
+      "Bring to a simmer and cook uncovered, stirring often, until the pasta is tender and most of the liquid has absorbed (about 12-15 minutes).",
+      "Stir in most of the basil and season to taste.",
+      "Serve topped with parmesan and the remaining basil."
+    ],
+    "servings": 2
+  }
+]

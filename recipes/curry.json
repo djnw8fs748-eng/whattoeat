@@ -191,5 +191,105 @@
       "Stir in the cream and remaining butter, warm through, and serve with rice."
     ],
     "servings": 2
+  },
+  {
+    "title": "Thai Red Curry with Prawns",
+    "category": "Curry",
+    "time": 25,
+    "teaser": "A fragrant, quick curry that brings big Thai flavour to a weeknight table.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 3, "unit": "tbsp", "item": "Thai red curry paste" },
+      { "qty": 400, "unit": "ml", "item": "coconut milk" },
+      { "qty": 300, "unit": "g", "item": "raw king prawns" },
+      { "qty": 1, "unit": null, "item": "red bell pepper, sliced" },
+      { "qty": 100, "unit": "g", "item": "sugar snap peas" },
+      { "qty": 1, "unit": "tbsp", "item": "fish sauce" },
+      { "qty": 1, "unit": null, "item": "lime, juiced" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, to serve" },
+      { "qty": 300, "unit": "g", "item": "jasmine rice, to serve" }
+    ],
+    "steps": [
+      "Heat the oil in a large pan or wok over medium heat and fry the curry paste for 1 minute until fragrant.",
+      "Pour in the coconut milk and bring to a gentle simmer.",
+      "Add the bell pepper and sugar snap peas and cook for 4-5 minutes until just tender.",
+      "Add the prawns and cook for 3-4 minutes until pink and cooked through.",
+      "Stir in the fish sauce and lime juice, then serve over jasmine rice, topped with coriander."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Thai Yellow Curry with Chicken",
+    "category": "Curry",
+    "time": 30,
+    "teaser": "A milder, slightly sweet curry made with yellow curry paste and chunks of potato.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 3, "unit": "tbsp", "item": "Thai yellow curry paste" },
+      { "qty": 1, "unit": "tin", "item": "(400ml) coconut milk" },
+      { "qty": 2, "unit": null, "item": "potatoes, peeled and cubed" },
+      { "qty": 1, "unit": null, "item": "onion, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "fish sauce" },
+      { "qty": 1, "unit": "tsp", "item": "brown sugar" },
+      { "qty": null, "unit": null, "item": "Rice to serve" }
+    ],
+    "steps": [
+      "Fry the curry paste in a little oil for 1 minute until fragrant.",
+      "Add the onion and potatoes and cook for 3-4 minutes.",
+      "Pour in the coconut milk and simmer for 12-15 minutes until the potatoes are nearly tender.",
+      "Add the chicken and cook for a further 6-8 minutes until cooked through.",
+      "Stir in the fish sauce and brown sugar, and serve with rice."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Coconut Lentil Curry",
+    "category": "Curry",
+    "time": 25,
+    "teaser": "A fuss-free vegetarian curry where the lentils and coconut milk do most of the work.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "red lentils, rinsed" },
+      { "qty": 1, "unit": "tin", "item": "(400ml) coconut milk" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "curry powder" },
+      { "qty": 1, "unit": "tsp", "item": "ground turmeric" },
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 300, "unit": "ml", "item": "vegetable stock" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a pan and fry the onion for 5 minutes until softened.",
+      "Add the garlic, curry powder, and turmeric, and cook for 1 minute until fragrant.",
+      "Stir in the lentils, coconut milk, and stock.",
+      "Simmer for 15-18 minutes, stirring occasionally, until the lentils are tender and the curry has thickened.",
+      "Season with salt and pepper and serve with rice or naan."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Red Lentil & Butternut Squash Curry",
+    "category": "Curry",
+    "time": 30,
+    "teaser": "A warming, creamy curry packed with red lentils and sweet roasted squash.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "vegetable oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "curry powder" },
+      { "qty": 300, "unit": "g", "item": "butternut squash, cubed" },
+      { "qty": 150, "unit": "g", "item": "red lentils, rinsed" },
+      { "qty": 400, "unit": "ml", "item": "coconut milk" },
+      { "qty": 300, "unit": "ml", "item": "vegetable stock" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a large pan and fry the onion and garlic for 3-4 minutes until soft.",
+      "Stir in the curry powder and cook for 1 minute.",
+      "Add the squash, lentils, coconut milk, and stock, then bring to a simmer.",
+      "Cook for 20 minutes, stirring occasionally, until the squash is tender and the lentils have softened.",
+      "Season with salt and pepper and serve."
+    ],
+    "servings": 2
   }
 ]

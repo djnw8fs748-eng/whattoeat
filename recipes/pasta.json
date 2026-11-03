@@ -354,5 +354,124 @@
       "Return the chicken to the pan, toss through the pasta and parmesan, and season to taste."
     ],
     "servings": 2
+  },
+  {
+    "title": "Spicy Nduja & Tomato Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "A spicy, spreadable Italian sausage melts into a simple tomato sauce for a pasta with big flavour and barely any effort.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (rigatoni or penne)" },
+      { "qty": 80, "unit": "g", "item": "nduja" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Grated parmesan" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Heat the oil in a pan and fry the nduja for 1-2 minutes until it starts to break down and release its oil.",
+      "Add the garlic and cook for 30 seconds.",
+      "Stir in the chopped tomatoes and simmer for 8-10 minutes until slightly thickened.",
+      "Toss the pasta through the sauce with a splash of the reserved water, season, and serve with parmesan."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "One-Pan Lemon Chicken Orzo",
+    "category": "Pasta",
+    "time": 25,
+    "teaser": "Chicken and orzo simmered together in one pan with lemon, garlic, and wilted spinach.",
+    "ingredients": [
+      { "qty": 2, "unit": null, "item": "chicken breasts, diced" },
+      { "qty": 200, "unit": "g", "item": "orzo" },
+      { "qty": 1, "unit": null, "item": "lemon, zested and juiced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 500, "unit": "ml", "item": "chicken stock" },
+      { "qty": 100, "unit": "g", "item": "baby spinach" },
+      { "qty": 30, "unit": "g", "item": "parmesan, grated" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat olive oil in a large pan over medium-high heat and season the chicken with salt and pepper. Cook for 5-6 minutes until golden and cooked through, then remove and set aside.",
+      "Add the garlic to the pan and cook for 30 seconds until fragrant.",
+      "Stir in the orzo and chicken stock, bring to a simmer, and cook for 10-12 minutes, stirring occasionally, until the orzo is tender and most of the liquid is absorbed.",
+      "Return the chicken to the pan along with the lemon zest and juice, then stir through the spinach until wilted.",
+      "Remove from the heat, stir in the parmesan, and season to taste before serving."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Chorizo & Butter Bean Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Smoky chorizo and butter beans tossed through pasta in a quick tomato sauce.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (penne or rigatoni)" },
+      { "qty": 150, "unit": "g", "item": "chorizo, diced" },
+      { "qty": 1, "unit": "tin", "item": "butter beans, drained and rinsed" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Grated parmesan" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Heat the oil in a pan and fry the chorizo for 4-5 minutes until it releases its oil and starts to crisp.",
+      "Add the garlic and cook for 30 seconds.",
+      "Stir in the chopped tomatoes and butter beans and simmer for 8-10 minutes until slightly thickened.",
+      "Toss the pasta through the sauce with a splash of the reserved water, season, and serve with parmesan."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Simple Caprese Pasta",
+    "category": "Pasta",
+    "time": 15,
+    "teaser": "Fresh mozzarella, tomatoes, and basil tossed with hot pasta and olive oil — a no-cook sauce for warm evenings.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (fusilli or penne)" },
+      { "qty": 200, "unit": "g", "item": "cherry tomatoes, halved" },
+      { "qty": 125, "unit": "g", "item": "mozzarella, torn into chunks" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": "tbsp", "item": "balsamic vinegar (optional)" },
+      { "qty": null, "unit": null, "item": "Handful fresh basil, torn" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain and run briefly under cold water to stop it cooking further.",
+      "Toss the warm pasta with the olive oil and balsamic vinegar, if using.",
+      "Fold in the cherry tomatoes and mozzarella.",
+      "Season with salt and pepper and scatter basil over the top.",
+      "Serve warm or at room temperature."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Lemon Ricotta Pasta with Peas",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "A creamy five-minute sauce built from ricotta and lemon, with peas stirred through for colour and sweetness.",
+    "ingredients": [
+      { "qty": 200, "unit": "g", "item": "pasta (tagliatelle or fusilli)" },
+      { "qty": 150, "unit": "g", "item": "ricotta cheese" },
+      { "qty": 100, "unit": "g", "item": "frozen peas" },
+      { "qty": 1, "unit": null, "item": "lemon, zested and juiced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 2, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 25, "unit": "g", "item": "parmesan, grated" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water according to packet instructions, adding the peas for the last 2 minutes. Drain, keeping a splash of the pasta water.",
+      "Heat the olive oil in a pan and gently fry the garlic for 30 seconds until fragrant.",
+      "Stir in the ricotta, lemon zest, and lemon juice, loosening with a splash of the reserved pasta water.",
+      "Toss the drained pasta and peas through the ricotta sauce.",
+      "Season with salt and pepper and top with grated parmesan to serve."
+    ],
+    "servings": 2
   }
 ]

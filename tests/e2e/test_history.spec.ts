@@ -1,16 +1,11 @@
 import { test, expect } from '@playwright/test';
 import { setupMockApi } from './fixtures/mock-api';
+import { addRecipeToDay, chooseOption, openOptions } from './fixtures/ui';
 
-const PAST_WEEK: Record<string, { recipe: string; servings: number } | null> = {
+const PAST_WEEK = {
   mon: { recipe: 'Garlic Butter Pasta with Parmesan', servings: 2 },
   tue: null, wed: null, thu: null, fri: null, sat: null, sun: null,
 };
-
-async function addRecipeToDay(page: import('@playwright/test').Page, recipeTitle: string, day: string) {
-  const card = page.locator(`.card[data-title="${recipeTitle}"]`);
-  await card.locator('.add-plan-btn').click();
-  await page.locator(`#dayPickerList .day-picker-row[data-day="${day}"]`).dispatchEvent('click');
-}
 
 test.beforeEach(async ({ page }) => {
   await setupMockApi(page, {}, { '2026-08-03': PAST_WEEK });
@@ -19,31 +14,31 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('history view lists past weeks and shows their plan read-only', async ({ page }) => {
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
   await page.click('#historyBtn');
 
-  await expect(page.locator('#historyWeekList option:not([value=""])')).toHaveCount(1);
-  await page.selectOption('#historyWeekList', '2026-08-03');
+  await expect(await openOptions(page, '#historyWeekList')).toHaveCount(1);
+  await page.getByRole('option', { name: '2026-08-03 (1 planned)' }).click();
 
   await expect(page.locator('#historyGrid')).toContainText('Garlic Butter Pasta with Parmesan');
 });
 
 test('copying a past week overwrites the current plan', async ({ page }) => {
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
   await page.click('#historyBtn');
-  await page.selectOption('#historyWeekList', '2026-08-03');
+  await chooseOption(page, '#historyWeekList', '2026-08-03 (1 planned)');
 
-  page.on('dialog', dialog => dialog.accept());
   await page.click('#historyCopyBtn');
+  await page.click('#confirmModalOk');
 
   await expect(page.locator('#planGrid')).toContainText('Garlic Butter Pasta with Parmesan');
 });
 
 test('failed history copy shows an error banner and leaves the existing plan intact', async ({ page }) => {
   await addRecipeToDay(page, 'One-Pan Tomato & Basil Pasta', 'tue');
-  await page.click('#planTab');
+  await page.click('[data-testid="planTab"]');
   await page.click('#historyBtn');
-  await page.selectOption('#historyWeekList', '2026-08-03');
+  await chooseOption(page, '#historyWeekList', '2026-08-03 (1 planned)');
 
   // Simulate the week having been deleted from another browser tab: the
   // list still shows it, but copying it now 404s.
@@ -53,8 +48,8 @@ test('failed history copy shows an error banner and leaves the existing plan int
 
   await expect(page.locator('#planGrid')).toContainText('One-Pan Tomato & Basil Pasta');
 
-  page.once('dialog', dialog => dialog.accept());
   await page.click('#historyCopyBtn');
+  await page.click('#confirmModalOk');
 
   await expect(page.locator('#apiErrorMsg')).toBeVisible();
   // plan state must not have been corrupted with the error body, and the

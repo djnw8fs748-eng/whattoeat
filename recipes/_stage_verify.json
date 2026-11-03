@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Beef Tacos",
+    "category": "Mexican",
+    "time": 20,
+    "teaser": "Mince and a simple spice mix, spooned into tortillas with your favourite toppings.",
+    "ingredients": [
+      { "qty": 400, "unit": "g", "item": "beef mince" }
+    ],
+    "steps": ["placeholder-check"],
+    "servings": 2
+  }
+]

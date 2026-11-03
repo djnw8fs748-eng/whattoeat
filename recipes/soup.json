@@ -226,5 +226,158 @@
       "Ladle into bowls and top with spring onion and a squeeze of lime."
     ],
     "servings": 2
+  },
+  {
+    "title": "Butternut Squash & Sage Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A silky, warming soup that's ready in half an hour with just a handful of ingredients.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 600, "unit": "g", "item": "butternut squash, peeled and cubed" },
+      { "qty": 750, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 6, "unit": null, "item": "fresh sage leaves" },
+      { "qty": 100, "unit": "ml", "item": "double cream" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the olive oil in a large pot over medium heat and cook the onion until soft, about 5 minutes.",
+      "Add the garlic and sage leaves and cook for 1 minute until fragrant.",
+      "Add the butternut squash and vegetable stock, bring to a boil, then simmer for 18-20 minutes until the squash is tender.",
+      "Blend the soup until smooth using a stick blender.",
+      "Stir in the cream, season with salt and pepper, and serve warm."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Chicken Tortilla Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A smoky, chilli-spiked broth with shredded chicken, black beans, and sweetcorn, topped with crunchy tortilla chips.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": null, "item": "red chilli, finely chopped" },
+      { "qty": 1, "unit": "tsp", "item": "ground cumin" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 400, "unit": "g", "item": "tin chopped tomatoes" },
+      { "qty": 700, "unit": "ml", "item": "chicken stock" },
+      { "qty": 2, "unit": null, "item": "chicken breasts" },
+      { "qty": 400, "unit": "g", "item": "tin black beans, drained" },
+      { "qty": 150, "unit": "g", "item": "sweetcorn" },
+      { "qty": null, "unit": null, "item": "Juice of 1 lime" },
+      { "qty": null, "unit": null, "item": "Tortilla chips, to serve" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a large pot over medium heat and cook the onion for 4-5 minutes until softened.",
+      "Add the garlic, chilli, cumin, and smoked paprika, and cook for 1 minute until fragrant.",
+      "Stir in the chopped tomatoes and chicken stock, then add the chicken breasts whole. Bring to a simmer and cook for 15-18 minutes until the chicken is cooked through.",
+      "Remove the chicken, shred with two forks, and return to the pot along with the black beans and sweetcorn. Simmer for 5 minutes.",
+      "Stir in the lime juice, season to taste, and serve topped with tortilla chips."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Thai Coconut Chicken Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A fragrant coconut broth with tender chicken, ready in under half an hour.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced" },
+      { "qty": 1, "unit": "tin", "item": "(400ml) coconut milk" },
+      { "qty": 700, "unit": "ml", "item": "chicken stock" },
+      { "qty": 1, "unit": "thumb", "item": "ginger, grated" },
+      { "qty": 2, "unit": "tbsp", "item": "Thai red curry paste" },
+      { "qty": 1, "unit": "tbsp", "item": "fish sauce" },
+      { "qty": 1, "unit": null, "item": "lime, juiced" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, to serve" }
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a large pot with the ginger and curry paste.",
+      "Pour in the coconut milk and simmer for 5 minutes.",
+      "Add the chicken and cook for 8-10 minutes until cooked through.",
+      "Stir in the fish sauce and lime juice.",
+      "Ladle into bowls and top with coriander."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Spicy Sausage & Butter Bean Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A warming, one-pot soup that turns a pack of sausages and a tin of beans into a full meal.",
+    "ingredients": [
+      { "qty": 6, "unit": null, "item": "sausages" },
+      { "qty": 1, "unit": "tin", "item": "butter beans, drained and rinsed" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 700, "unit": "ml", "item": "chicken or vegetable stock" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 0.5, "unit": "tsp", "item": "chilli flakes" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Squeeze the sausage meat out of the skins into small chunks. Heat a little oil in a large pot and fry the sausage pieces until browned.",
+      "Add the onion and garlic and cook for 4-5 minutes until softened.",
+      "Stir in the smoked paprika and chilli flakes and cook for 30 seconds.",
+      "Add the chopped tomatoes, butter beans, and stock.",
+      "Simmer for 15-18 minutes, stirring occasionally, until slightly thickened. Season to taste and serve with bread."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Minestrone Soup",
+    "category": "Soup",
+    "time": 30,
+    "teaser": "A classic vegetable and bean soup that uses up odds and ends from the fridge, with small pasta to bulk it out.",
+    "ingredients": [
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": null, "item": "carrots, diced" },
+      { "qty": 2, "unit": "sticks", "item": "celery, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "tin", "item": "cannellini beans, drained and rinsed" },
+      { "qty": 100, "unit": "g", "item": "small pasta (e.g. macaroni)" },
+      { "qty": 1, "unit": "litre", "item": "vegetable stock" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the oil in a large pot and fry the onion, carrots, and celery for 5-6 minutes until softened.",
+      "Add the garlic and cook for 1 minute.",
+      "Stir in the chopped tomatoes, cannellini beans, and vegetable stock, and bring to a simmer.",
+      "Add the pasta and cook for 10-12 minutes until tender.",
+      "Season with salt and pepper and serve."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Creamy Tomato & White Bean Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A cosy, creamy tomato soup with white beans for extra heartiness.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 400, "unit": "g", "item": "tin chopped tomatoes" },
+      { "qty": 400, "unit": "g", "item": "tin white beans, drained" },
+      { "qty": 300, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 2, "unit": "tbsp", "item": "double cream" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the olive oil in a pot and cook the onion and garlic for 4-5 minutes until soft.",
+      "Add the chopped tomatoes, white beans, and stock, then bring to a simmer.",
+      "Cook for 15 minutes, then blend until smooth, or leave chunky if you prefer.",
+      "Stir in the double cream and season with salt and pepper.",
+      "Serve warm with crusty bread."
+    ],
+    "servings": 2
   }
 ]

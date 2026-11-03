@@ -5,36 +5,12 @@
     "time": 35,
     "teaser": "Sausages simmered with beans in a tomato sauce — a filling one-pot dinner.",
     "ingredients": [
-      {
-        "qty": 6,
-        "unit": null,
-        "item": "sausages"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "butter beans or cannellini beans, drained"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried mixed herbs"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Olive oil"
-      }
+      { "qty": 6, "unit": null, "item": "sausages" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": "tin", "item": "butter beans or cannellini beans, drained" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 1, "unit": "tsp", "item": "dried mixed herbs" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
     ],
     "steps": [
       "Brown the sausages in a little oil in a large pan, then remove and set aside.",
@@ -50,41 +26,13 @@
     "time": 35,
     "teaser": "A simple, filling stew that mostly looks after itself once it's simmering.",
     "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "butter beans, drained"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": null,
-        "item": "carrots, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Beef stock as needed"
-      }
+      { "qty": 400, "unit": "g", "item": "beef mince" },
+      { "qty": 1, "unit": "tin", "item": "butter beans, drained" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": null, "item": "carrots, sliced" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": null, "unit": null, "item": "Beef stock as needed" }
     ],
     "steps": [
       "Fry the onion and carrots in a little oil for 5 minutes.",
@@ -100,41 +48,13 @@
     "time": 35,
     "teaser": "A simple, warming stew that leans on tinned chickpeas and tomatoes.",
     "ingredients": [
-      {
-        "qty": 2,
-        "unit": "chicken",
-        "item": "thighs, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "chickpeas, drained and rinsed"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Chicken stock as needed"
-      }
+      { "qty": 2, "unit": "chicken", "item": "thighs, diced" },
+      { "qty": 1, "unit": "tin", "item": "chickpeas, drained and rinsed" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": null, "unit": null, "item": "Chicken stock as needed" }
     ],
     "steps": [
       "Fry the onion and garlic in a little oil for 4-5 minutes.",
@@ -150,41 +70,13 @@
     "time": 25,
     "teaser": "A quicker mince twist on stroganoff, finished with a paprika soured cream sauce.",
     "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "beef mince"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 1,
-        "unit": "bell",
-        "item": "pepper, sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": 150,
-        "unit": "ml",
-        "item": "soured cream"
-      },
-      {
-        "qty": 200,
-        "unit": "ml",
-        "item": "beef stock"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Rice or pasta to serve"
-      }
+      { "qty": 400, "unit": "g", "item": "beef mince" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 1, "unit": "bell", "item": "pepper, sliced" },
+      { "qty": 1, "unit": "tbsp", "item": "smoked paprika" },
+      { "qty": 150, "unit": "ml", "item": "soured cream" },
+      { "qty": 200, "unit": "ml", "item": "beef stock" },
+      { "qty": null, "unit": null, "item": "Rice or pasta to serve" }
     ],
     "steps": [
       "Fry the onion and pepper in a little oil for 4-5 minutes until softened.",
@@ -201,52 +93,44 @@
     "time": 35,
     "teaser": "Lamb mince simmered with dried apricots and warm spices for a sweet-savoury weeknight stew.",
     "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "lamb mince"
-      },
-      {
-        "qty": 8,
-        "unit": "dried",
-        "item": "apricots, chopped"
-      },
-      {
-        "qty": 1,
-        "unit": null,
-        "item": "onion, diced"
-      },
-      {
-        "qty": 2,
-        "unit": "cloves",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground cumin"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground cinnamon"
-      },
-      {
-        "qty": 1,
-        "unit": "tin",
-        "item": "(400g) chopped tomatoes"
-      },
-      {
-        "qty": null,
-        "unit": null,
-        "item": "Lamb or vegetable stock as needed"
-      }
+      { "qty": 400, "unit": "g", "item": "lamb mince" },
+      { "qty": 8, "unit": "dried", "item": "apricots, chopped" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "ground cumin" },
+      { "qty": 1, "unit": "tsp", "item": "ground cinnamon" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": null, "unit": null, "item": "Lamb or vegetable stock as needed" }
     ],
     "steps": [
       "Fry the onion and garlic in a little oil for 4-5 minutes.",
       "Add the lamb mince and brown, breaking it up as it cooks.",
       "Stir in the cumin and cinnamon, then add the tomatoes and apricots, with a splash of stock if it looks dry.",
       "Simmer for 20-25 minutes until thickened. Serve with couscous or flatbread."
+    ],
+    "servings": 2
+  },
+  {
+    "title": "Sausage & Lentil Stew",
+    "category": "Casserole",
+    "time": 35,
+    "teaser": "Sausages simmered with red lentils and tomatoes until the lentils break down into a thick, comforting stew.",
+    "ingredients": [
+      { "qty": 6, "unit": null, "item": "sausages" },
+      { "qty": 150, "unit": "g", "item": "dried red lentils, rinsed" },
+      { "qty": 1, "unit": "tin", "item": "(400g) chopped tomatoes" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 600, "unit": "ml", "item": "vegetable or chicken stock" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Brown the sausages in a little oil in a large pan, then remove and slice into chunks.",
+      "Add the onion and garlic to the pan and soften for 4-5 minutes.",
+      "Stir in the paprika, lentils, tomatoes, and stock.",
+      "Return the sausage chunks to the pan and simmer for 20-25 minutes, stirring occasionally, until the lentils are soft and the stew has thickened.",
+      "Season to taste and serve with crusty bread."
     ],
     "servings": 2
   }
