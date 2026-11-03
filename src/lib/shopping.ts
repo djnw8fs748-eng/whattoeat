@@ -11,16 +11,17 @@ const AISLE_KEYWORDS: [string, string[]][] = [
     'lettuce', 'cucumber', 'avocado', 'lime', 'lemon', 'ginger', 'chilli', 'chili',
     'coriander', 'parsley', 'basil', 'courgette', 'broccoli', 'cauliflower', 'apple',
     'banana', 'celery', 'kale', 'spring onion', 'leek', 'aubergine', 'sweet potato',
-    'apricot', 'mango']],
+    'apricot', 'mango', 'butternut']],
   ['Meat & Fish', ['chicken', 'beef', 'pork', 'lamb', 'turkey', 'bacon', 'sausage',
-    'mince', 'salmon', 'tuna', 'cod', 'shrimp', 'prawn', 'fish', 'haddock']],
+    'mince', 'salmon', 'tuna', 'cod', 'shrimp', 'prawn', 'fish', 'haddock', 'chorizo']],
   ['Dairy & Eggs', ['milk', 'cream', 'butter', 'cheese', 'parmesan', 'mozzarella',
-    'cheddar', 'feta', 'yogurt', 'yoghurt', 'egg']],
+    'cheddar', 'feta', 'halloumi', 'yogurt', 'yoghurt', 'egg']],
   ['Bakery', ['bread', 'tortilla', 'wrap', 'pitta', 'pita', 'naan', 'bun']],
   ['Frozen', ['frozen']],
-  ['Pantry', ['rice', 'pasta', 'noodle', 'flour', 'sugar', 'oil', 'vinegar', 'sauce',
-    'stock', 'spice', 'curry powder', 'cumin', 'paprika', 'salt', 'herb', 'tin',
-    'canned', 'chickpea', 'lentil', 'bean', 'coconut milk', 'honey', 'soy sauce']],
+  // No 'tin': it matched inside words like "eating".
+  ['Pantry', ['rice', 'pasta', 'spaghetti', 'gnocchi', 'lasagne', 'noodle', 'flour', 'sugar',
+    'oil', 'vinegar', 'sauce', 'stock', 'spice', 'curry powder', 'cumin', 'paprika', 'salt',
+    'herb', 'canned', 'chickpea', 'lentil', 'bean', 'coconut milk', 'honey', 'soy sauce']],
 ];
 const AISLE_ORDER = [...AISLE_KEYWORDS.map(([name]) => name), 'Other'];
 
@@ -31,10 +32,13 @@ const AISLE_ORDER = [...AISLE_KEYWORDS.map(([name]) => name), 'Other'];
 const PANTRY_OVERRIDES = [
   'salt and pepper', 'salt and black pepper', 'chilli flakes', 'chilli powder',
   'chilli paste', 'chilli sauce', 'chilli oil', 'ground coriander', 'coriander seeds',
+  'coconut milk', 'peanut butter', 'butter bean', 'stock', 'fish sauce',
 ];
 
-function categorizeItem(item: string): string {
-  const text = item.toLowerCase();
+// Matches on unit + item, because the ingredient parser often put the noun in
+// `unit` (e.g. unit "chicken", item "breast, diced").
+function categorizeItem(unit: string | null, item: string): string {
+  const text = `${unit ?? ''} ${item}`.toLowerCase();
   if (PANTRY_OVERRIDES.some(kw => text.includes(kw))) return 'Pantry';
   const match = AISLE_KEYWORDS.find(([, keywords]) => keywords.some(kw => text.includes(kw)));
   return match ? match[0] : 'Other';
@@ -89,7 +93,7 @@ export function buildShoppingList(plan: Plan, recipes: Recipe[]): ShoppingGroup[
 
   const groups = new Map<string, ShoppingItem[]>(AISLE_ORDER.map(name => [name, []]));
   for (const row of rows) {
-    groups.get(categorizeItem(row.item))!.push({
+    groups.get(categorizeItem(row.unit, row.item))!.push({
       label: scaleIngredient({ qty: row.qty, unit: row.unit, item: row.item }, 1),
       sortKey: row.sortKey,
     });

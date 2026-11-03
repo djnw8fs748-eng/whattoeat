@@ -89,6 +89,10 @@ export async function setupMockApi(
       }
       Object.assign(plan, templates[name]);
       await route.fulfill({ json: { ...plan } });
+    } else if (segments.length === 3 && method === 'DELETE') {
+      const name = decodeURIComponent(segments[2]);
+      delete templates[name];
+      await route.fulfill({ json: { deleted: name } });
     } else {
       await route.continue();
     }

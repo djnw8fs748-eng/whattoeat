@@ -22,6 +22,7 @@ interface Props {
   onBrowse: () => void;
   onSaveTemplate: (name: string) => void;
   onLoadTemplate: (name: string) => void;
+  onDeleteTemplate: (name: string) => void;
   onCopyHistoryWeek: (weekKey: string) => Promise<boolean>;
 }
 
@@ -101,6 +102,23 @@ export default function PlanView(props: Props) {
           })}
         >
           Load
+        </Button>
+        <Button
+          id="deleteTemplateBtn"
+          appearance="subtle"
+          isDisabled={!templateChoice}
+          onClick={() => templateChoice && setConfirm({
+            title: `Delete "${templateChoice}"?`,
+            body: 'This removes the saved template. Your current week is not affected.',
+            confirmLabel: 'Delete template',
+            appearance: 'danger',
+            onConfirm: () => {
+              props.onDeleteTemplate(templateChoice);
+              setTemplateChoice(null);
+            },
+          })}
+        >
+          Delete
         </Button>
         <HistoryControls onCopy={props.onCopyHistoryWeek} askToConfirm={setConfirm} />
       </div>

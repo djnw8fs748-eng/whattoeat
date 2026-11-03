@@ -1,6 +1,14 @@
 node_modules/
 .worktrees/
 .superpowers/
+__pycache__/
+.pytest_cache/
+.venv/
 dist/
 test-results/
 playwright-report/
+# Generated from favicon.svg by CI
+favicon-16.png
+favicon-32.png
+apple-touch-icon.png
+favicon.ico

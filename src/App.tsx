@@ -59,8 +59,11 @@ export default function App({ initialColorMode }: { initialColorMode: ColorMode 
   useEffect(() => {
     let timers: number[] = [];
     // The API being down shouldn't break browsing, so these fail silently.
-    const fetchPlan = () => api.getPlan().then(setPlan).catch(() => {});
-    const fetchRatings = () => api.getRatings().then(setRatings).catch(() => {});
+    // If a refresh returns exactly what we already have, keep the old object so
+    // React skips redrawing (ticked shopping-list items and focus stay put).
+    const keepIfSame = <T,>(next: T) => (prev: T) => (JSON.stringify(prev) === JSON.stringify(next) ? prev : next);
+    const fetchPlan = () => api.getPlan().then(data => setPlan(keepIfSame(data))).catch(() => {});
+    const fetchRatings = () => api.getRatings().then(data => setRatings(keepIfSame(data))).catch(() => {});
 
     api.getRecipes()
       .then(data => {
@@ -141,6 +144,12 @@ export default function App({ initialColorMode }: { initialColorMode: ColorMode 
     api.saveTemplate(name, plan)
       .then(refreshTemplateNames)
       .catch(err => showError(`Could not save template — is the API running? (${err.message})`));
+  };
+
+  const deleteTemplate = (name: string) => {
+    api.deleteTemplate(name)
+      .then(refreshTemplateNames)
+      .catch(err => showError(`Could not delete template — is the API running? (${err.message})`));
   };
 
   const loadTemplate = (name: string) => {
@@ -239,6 +248,7 @@ export default function App({ initialColorMode }: { initialColorMode: ColorMode 
                   onBrowse={() => setView('browse')}
                   onSaveTemplate={saveTemplate}
                   onLoadTemplate={loadTemplate}
+                  onDeleteTemplate={deleteTemplate}
                   onCopyHistoryWeek={copyHistoryWeek}
                 />
               </div>

@@ -104,3 +104,28 @@ test('pantry seasonings land in Pantry, not Produce, despite containing a produc
   // Fresh avocado should still land in Produce.
   await expect(produceGroup.locator('.shopping-item label', { hasText: 'avocado' })).toHaveCount(1);
 });
+
+test('chicken is grouped under Meat & Fish', async ({ page }) => {
+  await addRecipeToDay(page, 'Creamy Chicken & Bacon Pasta', 'mon');
+  await page.click('[data-testid="planTab"]');
+  const meat = page.locator('.shopping-group', { has: page.locator('.shopping-group-heading', { hasText: 'Meat & Fish' }) });
+  await expect(meat).toContainText(/chicken/i);
+});
+
+test('ticked items survive the background plan poll', async ({ page }) => {
+  // Take control of the page's clock so the 15-second refresh can be fired on demand.
+  await page.clock.install();
+  await page.goto('/');
+  await page.waitForSelector('.card');
+
+  await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
+  await page.click('[data-testid="planTab"]');
+  const item = page.locator('#shoppingGrid .shopping-item').first();
+  await item.locator('label').click();
+  await expect(item.locator('input[type="checkbox"]')).toBeChecked();
+
+  const poll = page.waitForRequest(req => req.method() === 'GET' && new URL(req.url()).pathname === '/api/plan');
+  await page.clock.runFor(16000);
+  await poll;
+  await expect(item.locator('input[type="checkbox"]')).toBeChecked();
+});

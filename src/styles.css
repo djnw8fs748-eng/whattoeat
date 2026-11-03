@@ -538,6 +538,12 @@ body {
   gap: 0 var(--ds-space-300, 24px);
 }
 
+.field-error {
+  margin: var(--ds-space-050, 4px) 0 0;
+  font: var(--ds-font-body-small);
+  color: var(--ds-text-danger, #AE2E24);
+}
+
 footer {
   text-align: center;
   font: var(--ds-font-body-small);

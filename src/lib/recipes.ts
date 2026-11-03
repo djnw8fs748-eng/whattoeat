@@ -16,17 +16,23 @@ export const ALLERGENS: { key: string; label: string }[] = [
   { key: 'mustard', label: 'Mustard' },
 ];
 
+// Includes hidden sources: e.g. soy sauce and Worcestershire contain wheat,
+// Caesar dressing contains egg and anchovy, pesto contains cheese and nuts.
 const ALLERGEN_KEYWORDS: Record<string, string[]> = {
   gluten:    ['flour', 'bread', 'pasta', 'spaghetti', 'linguine', 'penne', 'fettuccine',
               'rigatoni', 'wheat', 'breadcrumb', 'noodle', 'tortilla', 'wrap', 'couscous',
-              'pitta', 'pita'],
+              'pitta', 'pita', 'soy sauce', 'gnocchi', 'crouton', 'lasagne',
+              'worcestershire', 'oyster sauce', 'stock cube', 'udon'],
   dairy:     ['milk', 'cream', 'butter', 'cheese', 'parmesan', 'mozzarella', 'cheddar',
-              'feta', 'ricotta', 'yogurt', 'yoghurt', 'crème fraîche', 'creme fraiche'],
-  eggs:      ['egg'],
+              'feta', 'ricotta', 'yogurt', 'yoghurt', 'crème fraîche', 'creme fraiche',
+              'halloumi', 'pesto'],
+  eggs:      ['egg', 'mayonnaise', 'caesar'],
   fish:      ['salmon', 'tuna', 'cod', 'haddock', 'anchov', 'sardine', 'mackerel',
-              'trout', 'bass', 'bream', 'tilapia', 'fish sauce', 'fish stock'],
+              'trout', 'bass', 'bream', 'tilapia', 'fish sauce', 'fish stock',
+              'worcestershire', 'caesar'],
   shellfish: ['prawn', 'shrimp', 'crab', 'lobster', 'scallop', 'mussel', 'clam', 'oyster'],
-  nuts:      ['almond', 'cashew', 'walnut', 'pecan', 'pistachio', 'hazelnut', 'peanut', 'pine nut'],
+  nuts:      ['almond', 'cashew', 'walnut', 'pecan', 'pistachio', 'hazelnut', 'peanut', 'pine nut',
+              'pesto'],
   soy:       ['soy sauce', 'soy', 'tofu', 'edamame', 'tempeh', 'miso'],
   sesame:    ['sesame', 'tahini'],
   mustard:   ['mustard'],

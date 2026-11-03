@@ -12,13 +12,10 @@ from pydantic import BaseModel, field_validator
 app = FastAPI()
 
 STORE_FILE = Path("/data/store.json")
-PLAN_FILE = Path("/data/plan.json")
 _lock = threading.Lock()
 
 VALID_DAYS = ("mon", "tue", "wed", "thu", "fri", "sat", "sun")
-LEGACY_DAYS = ("mon", "tue", "wed", "thu", "fri")
 EMPTY_DAY_PLAN: dict = {d: None for d in VALID_DAYS}
-LEGACY_DEFAULT_SERVINGS = 2
 
 
 def current_week_key(today: Optional[date] = None) -> str:
@@ -27,30 +24,9 @@ def current_week_key(today: Optional[date] = None) -> str:
     return monday.isoformat()
 
 
-def _migrate_legacy_plan() -> dict:
-    """One-time migration: if no store.json exists but a legacy plan.json
-    (old 5-day, day -> recipe title string format) does, wrap it into the
-    current week of a fresh store. The legacy file is left untouched as an
-    inert backup. Returns a normal empty store if plan.json is absent or
-    unreadable."""
-    if not PLAN_FILE.exists():
-        return {"weeks": {}, "templates": {}, "ratings": {}}
-    try:
-        legacy = json.loads(PLAN_FILE.read_text())
-    except json.JSONDecodeError:
-        return {"weeks": {}, "templates": {}, "ratings": {}}
-
-    week = dict(EMPTY_DAY_PLAN)
-    for day in LEGACY_DAYS:
-        title = legacy.get(day) if isinstance(legacy, dict) else None
-        if title:
-            week[day] = {"recipe": title, "servings": LEGACY_DEFAULT_SERVINGS}
-    return {"weeks": {current_week_key(): week}, "templates": {}, "ratings": {}}
-
-
 def _read_store() -> dict:
     if not STORE_FILE.exists():
-        return _migrate_legacy_plan()
+        return {"weeks": {}, "templates": {}, "ratings": {}}
     try:
         store = json.loads(STORE_FILE.read_text())
     except json.JSONDecodeError:
@@ -178,6 +154,14 @@ class DayPlanEntry(BaseModel):
 class TemplateCreate(BaseModel):
     name: str
     plan: dict[str, Optional[DayPlanEntry]]
+
+    @field_validator('name')
+    @classmethod
+    def no_slash(cls, v: str) -> str:
+        # The name is used as a URL path segment; "/" would never route back.
+        if "/" in v:
+            raise ValueError('template name must not contain "/"')
+        return v
 
     @field_validator('plan')
     @classmethod

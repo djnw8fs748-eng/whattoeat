@@ -35,6 +35,8 @@ export const api = {
   saveTemplate: (name: string, plan: Plan) => sendJson<unknown>('/api/templates', 'POST', { name, plan }),
   applyTemplate: (name: string) =>
     request<Plan>(`/api/templates/${encodeURIComponent(name)}/apply`, { method: 'POST' }),
+  deleteTemplate: (name: string) =>
+    request<unknown>(`/api/templates/${encodeURIComponent(name)}`, { method: 'DELETE' }),
 
   getHistoryWeeks: () => request<HistoryWeek[]>('/api/plan/history'),
   getHistoryWeek: (weekKey: string) => request<Plan>(`/api/plan/history/${weekKey}`),

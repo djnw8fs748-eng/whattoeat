@@ -10,6 +10,8 @@ export interface ConfirmRequest {
   body: string;
   confirmLabel: string;
   onConfirm: () => void;
+  /** 'danger' for actions that delete something; defaults to 'warning'. */
+  appearance?: 'warning' | 'danger';
 }
 
 /** "Are you sure?" dialog. Pass null to hide it. */
@@ -19,14 +21,14 @@ export function ConfirmModal({ request, onClose }: { request: ConfirmRequest | n
       {request && (
         <Modal onClose={onClose} width="small">
           <ModalHeader>
-            <ModalTitle appearance="warning">{request.title}</ModalTitle>
+            <ModalTitle appearance={request.appearance ?? 'warning'}>{request.title}</ModalTitle>
           </ModalHeader>
           <ModalBody>{request.body}</ModalBody>
           <ModalFooter>
             <Button appearance="subtle" onClick={onClose}>Cancel</Button>
             <Button
               id="confirmModalOk"
-              appearance="warning"
+              appearance={request.appearance ?? 'warning'}
               onClick={() => { onClose(); request.onConfirm(); }}
             >
               {request.confirmLabel}
@@ -54,10 +56,13 @@ export function TemplateNameModal({ isOpen, onSave, onClose }: {
 function TemplateNameForm({ onSave, onClose }: { onSave: (name: string) => void; onClose: () => void }) {
   const [name, setName] = useState('');
   const trimmed = name.trim();
+  // The name becomes part of a web address, so "/" would break loading it.
+  const hasSlash = trimmed.includes('/');
+  const isValid = trimmed !== '' && !hasSlash;
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!trimmed) return;
+    if (!isValid) return;
     onClose();
     onSave(trimmed);
   };
@@ -75,12 +80,17 @@ function TemplateNameForm({ onSave, onClose }: { onSave: (name: string) => void;
             autoFocus
             placeholder="e.g. Usual week"
             value={name}
+            isInvalid={hasSlash}
+            aria-describedby={hasSlash ? 'templateNameError' : undefined}
             onChange={e => setName(e.currentTarget.value)}
           />
+          {hasSlash && (
+            <p id="templateNameError" className="field-error">Template names can't contain "/".</p>
+          )}
         </ModalBody>
         <ModalFooter>
           <Button appearance="subtle" onClick={onClose}>Cancel</Button>
-          <Button id="templateSaveConfirm" appearance="primary" type="submit" isDisabled={!trimmed}>Save</Button>
+          <Button id="templateSaveConfirm" appearance="primary" type="submit" isDisabled={!isValid}>Save</Button>
         </ModalFooter>
       </form>
     </Modal>

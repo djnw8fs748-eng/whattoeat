@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { setupMockApi } from './fixtures/mock-api';
-import { addRecipeToDay, chooseOption } from './fixtures/ui';
+import { addRecipeToDay, chooseOption, openOptions } from './fixtures/ui';
 
 test.beforeEach(async ({ page }) => {
   await setupMockApi(page);
@@ -51,4 +51,30 @@ test('failed template load shows an error banner and leaves the existing plan in
   // plan state must not have been corrupted with the error body
   await expect(page.locator('#planGrid')).toContainText('Garlic Butter Pasta with Parmesan');
   await expect(page.locator('#planGrid')).not.toContainText('detail');
+});
+
+test('deleting a template removes it from the list', async ({ page }) => {
+  await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
+  await page.click('[data-testid="planTab"]');
+
+  await page.click('#saveTemplateBtn');
+  await page.fill('#templateNameInput', 'Usual Week');
+  await page.click('#templateSaveConfirm');
+  await expect(await openOptions(page, '#loadTemplateSelect')).toHaveText(['Usual Week']);
+
+  await page.getByRole('option', { name: 'Usual Week', exact: true }).click();
+  await page.click('#deleteTemplateBtn');
+  await page.click('#confirmModalOk');
+  await openOptions(page, '#loadTemplateSelect');
+  await expect(page.getByRole('option', { name: 'Usual Week', exact: true })).toHaveCount(0);
+});
+
+test('template names containing "/" are rejected before saving', async ({ page }) => {
+  await addRecipeToDay(page, 'Garlic Butter Pasta with Parmesan', 'mon');
+  await page.click('[data-testid="planTab"]');
+
+  await page.click('#saveTemplateBtn');
+  await page.fill('#templateNameInput', 'Week 1/2');
+  await expect(page.locator('#templateNameError')).toBeVisible();
+  await expect(page.locator('#templateSaveConfirm')).toBeDisabled();
 });
