@@ -379,5 +379,29 @@
       "Serve warm with crusty bread."
     ],
     "servings": 2
+  },
+  {
+    "title": "Creamy Tomato Basil Soup",
+    "category": "Soup",
+    "time": 25,
+    "teaser": "A smooth, comforting tomato soup finished with cream and plenty of fresh basil.",
+    "ingredients": [
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": 1, "unit": null, "item": "onion, diced" },
+      { "qty": 2, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 2, "unit": "tins", "item": "(400g) chopped tomatoes" },
+      { "qty": 500, "unit": "ml", "item": "vegetable stock" },
+      { "qty": 100, "unit": "ml", "item": "double cream" },
+      { "qty": null, "unit": null, "item": "Handful fresh basil, torn" },
+      { "qty": null, "unit": null, "item": "Salt and black pepper" }
+    ],
+    "steps": [
+      "Heat the olive oil in a large pot and soften the onion and garlic for 4-5 minutes.",
+      "Add the chopped tomatoes and stock, bring to a simmer, and cook for 15 minutes.",
+      "Blend the soup until smooth using a stick blender.",
+      "Stir in the cream and most of the basil, and season with salt and pepper.",
+      "Serve warm, scattered with the remaining basil."
+    ],
+    "servings": 2
   }
 ]

@@ -354,5 +354,27 @@
       "Garnish with spring onion and sesame seeds before serving."
     ],
     "servings": 2
+  },
+  {
+    "title": "BBQ Chicken Rice Bowl with Sweetcorn Salsa",
+    "category": "Rice Bowl",
+    "time": 25,
+    "teaser": "Smoky BBQ chicken over rice with a fresh sweetcorn and lime salsa.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts" },
+      { "qty": 3, "unit": "tbsp", "item": "BBQ sauce" },
+      { "qty": 300, "unit": "g", "item": "cooked rice" },
+      { "qty": 1, "unit": "tin", "item": "sweetcorn, drained" },
+      { "qty": 0.5, "unit": "red", "item": "onion, finely diced" },
+      { "qty": 1, "unit": null, "item": "lime, juiced" },
+      { "qty": null, "unit": null, "item": "Handful fresh coriander, chopped" }
+    ],
+    "steps": [
+      "Brush the chicken with half the BBQ sauce and grill or pan-fry for 6-7 minutes per side until cooked through, brushing with more sauce as it cooks.",
+      "Mix the sweetcorn, red onion, lime juice, and coriander together to make the salsa.",
+      "Slice the chicken.",
+      "Divide the rice between bowls and top with the chicken and sweetcorn salsa."
+    ],
+    "servings": 2
   }
 ]
