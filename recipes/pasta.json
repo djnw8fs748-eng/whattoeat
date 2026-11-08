@@ -473,5 +473,29 @@
       "Season with salt and pepper and top with grated parmesan to serve."
     ],
     "servings": 2
+  },
+  {
+    "title": "Lemon Garlic Butter Chicken Pasta",
+    "category": "Pasta",
+    "time": 20,
+    "teaser": "Pan-fried chicken tossed with pasta in a quick lemon-garlic butter sauce — bright, buttery, and ready in 20 minutes.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced thin" },
+      { "qty": 200, "unit": "g", "item": "pasta (linguine or spaghetti)" },
+      { "qty": 3, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": null, "item": "lemon, zested and juiced" },
+      { "qty": 3, "unit": "tbsp", "item": "butter" },
+      { "qty": 1, "unit": "tbsp", "item": "olive oil" },
+      { "qty": null, "unit": null, "item": "Handful fresh parsley, chopped" },
+      { "qty": null, "unit": null, "item": "Salt and pepper" }
+    ],
+    "steps": [
+      "Cook the pasta in salted boiling water until just tender, then drain, keeping a mugful of the pasta water.",
+      "Heat the oil in a pan and pan-fry the chicken for 6-7 minutes until golden and cooked through. Set aside.",
+      "In the same pan, melt the butter and fry the garlic for 30 seconds until fragrant.",
+      "Stir in the lemon zest and juice, then toss in the drained pasta and chicken with a splash of the reserved water.",
+      "Season with salt and pepper and scatter parsley over the top."
+    ],
+    "servings": 2
   }
 ]
