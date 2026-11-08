@@ -327,5 +327,27 @@
       "Warm the tortillas and fill with the steak and peppers."
     ],
     "servings": 2
+  },
+  {
+    "title": "Spicy Black Bean & Corn Quesadillas",
+    "category": "Mexican",
+    "time": 15,
+    "teaser": "Smoky black beans and sweetcorn folded into crisp, cheesy tortillas — a meat-free quesadilla night ready in 15 minutes.",
+    "ingredients": [
+      { "qty": 4, "unit": "large", "item": "tortillas" },
+      { "qty": 1, "unit": "tin", "item": "black beans, drained and rinsed" },
+      { "qty": 1, "unit": "tin", "item": "sweetcorn, drained" },
+      { "qty": 150, "unit": "g", "item": "cheddar, grated" },
+      { "qty": 1, "unit": "tsp", "item": "smoked paprika" },
+      { "qty": 0.5, "unit": "tsp", "item": "chilli powder" },
+      { "qty": null, "unit": null, "item": "Salsa and soured cream to serve" }
+    ],
+    "steps": [
+      "Lightly mash the black beans and mix with the sweetcorn, smoked paprika, and chilli powder.",
+      "Spread the bean and corn mixture and the cheese over half of each tortilla, then fold over.",
+      "Dry-fry each quesadilla in a pan over medium heat for 2-3 minutes per side, until golden and the cheese has melted.",
+      "Slice into wedges and serve with salsa and soured cream."
+    ],
+    "servings": 2
   }
 ]
