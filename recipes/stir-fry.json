@@ -291,5 +291,30 @@
       "Toss everything together until coated and heated through, and serve with rice."
     ],
     "servings": 2
+  },
+  {
+    "title": "Honey Garlic Chicken & Snap Pea Stir-Fry",
+    "category": "Stir-Fry",
+    "time": 20,
+    "teaser": "Juicy chicken and crisp sugar snap peas tossed in a sticky honey-garlic sauce — on the table in 20 minutes.",
+    "ingredients": [
+      { "qty": 2, "unit": "chicken", "item": "breasts, sliced thin" },
+      { "qty": 200, "unit": "g", "item": "sugar snap peas" },
+      { "qty": 3, "unit": "tbsp", "item": "soy sauce" },
+      { "qty": 2, "unit": "tbsp", "item": "honey" },
+      { "qty": 3, "unit": "cloves", "item": "garlic, minced" },
+      { "qty": 1, "unit": "tsp", "item": "grated ginger" },
+      { "qty": 1, "unit": "tsp", "item": "cornflour mixed with 2 tbsp water" },
+      { "qty": null, "unit": null, "item": "Vegetable oil" },
+      { "qty": null, "unit": null, "item": "Sesame seeds, to garnish" }
+    ],
+    "steps": [
+      "Heat oil in a wok or large frying pan over high heat and stir-fry the chicken until golden and cooked through. Set aside.",
+      "Add the sugar snap peas to the pan and stir-fry for 2-3 minutes until just tender.",
+      "Add the garlic and ginger and cook for 30 seconds.",
+      "Return the chicken to the pan, add the soy sauce and honey, and toss to coat.",
+      "Stir in the cornflour mixture and cook for 1 minute until glossy. Scatter with sesame seeds and serve with rice."
+    ],
+    "servings": 2
   }
 ]
