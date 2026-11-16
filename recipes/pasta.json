@@ -497,5 +497,37 @@
       "Season with salt and pepper and scatter parsley over the top."
     ],
     "servings": 2
+  },
+  {
+    "title": "Super Quick Chorizo & Tomato Spaghetti",
+    "category": "Pasta",
+    "time": 15,
+    "teaser": "Spaghetti in a creamy sun-dried tomato and chorizo sauce with spinach, finished with cheese, rocket and chilli.",
+    "ingredients": [
+      { "qty": 180, "unit": "g", "item": "spaghetti" },
+      { "qty": 60, "unit": "g", "item": "diced chorizo" },
+      { "qty": 30, "unit": "g", "item": "tomato puree" },
+      { "qty": 1, "unit": "sachet", "item": "chilli flakes" },
+      { "qty": 75, "unit": "g", "item": "creme fraiche" },
+      { "qty": 10, "unit": "g", "item": "chicken stock paste" },
+      { "qty": 40, "unit": "g", "item": "baby spinach" },
+      { "qty": 25, "unit": "g", "item": "sun-dried tomato paste" },
+      { "qty": 40, "unit": "g", "item": "grated hard Italian-style cheese" },
+      { "qty": 20, "unit": "g", "item": "wild rocket" },
+      { "qty": 0.5, "unit": "tsp", "item": "sugar" },
+      { "qty": 150, "unit": "ml", "item": "water (for the sauce)" },
+      { "qty": 0.5, "unit": "tsp", "item": "salt" },
+      { "qty": null, "unit": null, "item": "Olive oil" }
+    ],
+    "steps": [
+      "Boil a full kettle. Pour it into a large saucepan with the salt on high heat and boil the spaghetti for 8 minutes. Drain, return to the pan, drizzle with a little oil and stir through.",
+      "Meanwhile, heat a large frying pan on medium-high heat (no oil) and fry the chorizo for 3-4 minutes.",
+      "Stir in the tomato puree and half the chilli flakes and fry for 1 minute.",
+      "Add the creme fraiche, chicken stock paste, sugar and water. Simmer for 2-3 minutes.",
+      "Add the spinach in handfuls and cook for 1-2 minutes until wilted and piping hot.",
+      "Stir in the cooked spaghetti, sun-dried tomato paste and half the cheese, adding a splash of water if needed.",
+      "Share between bowls, top with the rocket and a drizzle of olive oil, then sprinkle over the remaining cheese and chilli flakes (use less if you'd prefer it milder)."
+    ],
+    "servings": 2
   }
 ]
