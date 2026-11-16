@@ -153,5 +153,6 @@
   { "title": "Spicy Black Bean & Corn Quesadillas", "category": "Mexican", "time": 15, "file": "mexican.json" },
   { "title": "Lemon Garlic Butter Chicken Pasta", "category": "Pasta", "time": 20, "file": "pasta.json" },
   { "title": "BBQ Chicken Rice Bowl with Sweetcorn Salsa", "category": "Rice Bowl", "time": 25, "file": "rice-bowl.json" },
-  { "title": "Creamy Tomato Basil Soup", "category": "Soup", "time": 25, "file": "soup.json" }
+  { "title": "Creamy Tomato Basil Soup", "category": "Soup", "time": 25, "file": "soup.json" },
+  { "title": "Super Quick Chorizo & Tomato Spaghetti", "category": "Pasta", "time": 15, "file": "pasta.json" }
 ]
